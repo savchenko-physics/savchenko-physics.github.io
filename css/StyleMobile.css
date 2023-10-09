@@ -1,0 +1,125 @@
+/* Reset some styles and apply mobile-first approach */
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+footer {
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    background: #3b59f2;
+    position: relative;
+    left: 0;
+    text-align: center; /* Center the text */
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    background: #3b59f2;
+    position: relative;
+    left: 0;
+}
+
+/* Hide nav on smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+/* Back to top button */
+  .back-to-top {
+    display: block;
+    float: left;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #999;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+
+
+  .back-to-top.affix {
+    position: fixed;
+    z-index: 200;
+    right:  15px;
+    bottom: 15px;
+  }
+
+  .back-to-top:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #999;
+  }
+
+/* Section styles */
+#main {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#main h2,
+#main h3 {
+    margin: 10px 0;
+}
+
+/* Horizontal rule styles */
+/*hr {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin: 20px 0;
+}*/
+
+hr {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    height: 4px;
+    margin-left: -30px;
+  }
+
+/* Odd and even horizontal rule styles */
+.odd hr {
+    background: #82d120;
+}
+
+.even hr {
+    background: #3b59f2;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .back-to-top {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
