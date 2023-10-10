@@ -12,14 +12,17 @@ footer {
     padding: 20px;
     box-sizing: border-box;
 }
-.third {
-    margin: 0;
-    padding-left: 10px;
-}
+
 .final {
     margin: 0;
     padding-left: 10px;
 }
+
+.third {
+    margin: 0;
+    padding-left: 10px;
+}
+
 .video-container {
     position: relative;
     width: 80%;
