@@ -114,6 +114,31 @@ footer {
 aside {
   padding-top: 20px;
 }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.solutions {
+    margin: 0 auto; 
+    padding-top: 20px;
+}
+
+.ScreenS {
+    max-width: 80%;
+    height: auto;
+}
+
 hr {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;

@@ -13,6 +13,29 @@ footer {
     box-sizing: border-box;
 }
 
+.video-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.solutions {
+    margin: 0 auto; 
+    padding-top: 20px;
+}
+
+.ScreenS {
+    max-width: 80%;
+    height: auto;
+}
 
 header h1 {
     margin: 0;
