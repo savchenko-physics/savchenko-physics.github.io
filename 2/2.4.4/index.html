@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+	  <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
+
 	</head>
 
 	<body style="">
@@ -142,11 +158,15 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(6.1.14^{∗}.\)  Какой минимальный заряд \(q\) нужно закрепить в нижней точке сферической полости радиуса \(R\), чтобы в поле тяжести небольшой шарик массы \(m\)
-и заряда \(Q\) находился в верхней точке полости в положении устойчивого равновесия?
+				\(2.4.4^{∗}.\) Лента транспортера движется горизонтально со скоростью $u$. На ленту по касательной к ней летит тело, скорость которого перпендикулярна направлению движения ленты и в момент попадания тела на нее равна $v$. Тело скользит
+по ленте и затем останавливается. Найдите работу силы трения, приложенной к
+телу со стороны ленты и к ленте со стороны тела. Почему работа в этих случаях
+неодинакова?
+
+
 				</p>
 				<div class="StatementDiv">
-					<img class="Statement" src="statement.png" alt="6.1.14">
+					<img class="Statement" src="statement.png" >
 				</div>
 			</div>
 		    <hr>
@@ -154,28 +174,14 @@
 		    	Решение:
 		    </h3>
 	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/wgnHVdgTGBA" frameborder="0" allowfullscreen></iframe>
+		        <iframe class="video" src="https://www.youtube.com/embed/g1OrH_o4zlA" frameborder="0" allowfullscreen></iframe>
 		    </div>
-
-		    <div class="solutions">
-		    	<img class="ScreenS" src="01.png" alt="6.1.14">
-			</div>		
-		    <div class="solutions">
-		    	<img class="ScreenS" src="02.png" alt="6.1.14">
-			</div>		
-		    <hr>
-		    <h3>
-		    	Альтернативное Решение:
-		    </h3>	
-		    <div class="solutions">
-		    	<img class="ScreenS" src="03.png" alt="6.1.14">
-			</div>	
 	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/pgWE4Oo1L6c" frameborder="0" allowfullscreen></iframe>
+		        <iframe class="video" src="https://www.youtube.com/embed/k5VqmYY8aOM" frameborder="0" allowfullscreen></iframe>
 		    </div>
-			
+		    	
 		    <h3>
-		    	Ответ: \(q ≥ \frac{32 \pi ε_{0} m g R^{2}}{Q}\)
+		    	Ответ: $A_1 = mu^2/2 − mv^2/2;$ $A_2 = −mu^2$
 <h3>
 		    </h3>
 		  </div>
