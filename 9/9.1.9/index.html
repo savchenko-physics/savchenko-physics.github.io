@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,8 +158,12 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.9.\) 
+				Треугольная проволочная рамка с током может вращаться вокруг горизонтальной оси $OO^\prime$ , проходящей через вершину треугольника. Масса единицы длины проволоки $\rho$, ток в рамке I. Рамка находится в магнитном поле индукции B, направленном вдоль поля тяжести. Определите угол отклонения плоскости треугольника от вертикали.
 				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" alt="9.1.8">
+				</div>
 			</div>
 		    <hr>
 		    <h3>
@@ -151,13 +171,16 @@
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   
+					Для решения воспользуемся тем, что $\overrightarrow{N} = \overrightarrow{M} \times \overrightarrow{B}$  справедливо для любого контура S (для доказательства см 9.1.10)
+Момент сил м/п: $N_{B} = |\overrightarrow{M} \times \overrightarrow{B}| = ISB cos(\alpha)$ т.к $\alpha$ имеет другой отсчёт. <br> Центр масс будет в точке пересечения медиан, расстояние от этой точки до точки подвеса: $\frac{2}{3}h$ 
+Момент силы тяжести: $M_{mg} = 3a\rho g\cdot \frac{2}{3}h sin(\alpha)$ где $a$ - сторона треугольника, его площадь $S = \frac{1}{2}ah$
+$M_{mg}= 4S\rho g\cdot sin(\alpha)$ приравниваем полученные моменты: $ISB\cdot cos(\alpha) = 4S\rho g \cdot sin(\alpha) \Rightarrow tg(\alpha) = \frac{IB}{4\rho g}$
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: $\fbox{$tg(\alpha) = \frac{IB}{4\rho g}$}$
 			
 		    </h3>
 		  </div>

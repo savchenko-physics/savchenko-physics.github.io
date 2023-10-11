@@ -20,6 +20,7 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
+
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	  	<script id="MathJax-script" async
           		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -142,8 +143,11 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.6.\) Квадратная рамка с током закреплена так, что может свободно вращаться вокруг горизонтально расположенной стороны. Рамка находится в вертикальном однородном магнитном поле индукции \(B\). Угол наклона рамки к горизонту \(\alpha\), ее масса \(m\), длина стороны \(a\). Найдите ток в рамке.
 				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" alt="9.1.6">
+				</div>
 			</div>
 		    <hr>
 		    <h3>
@@ -152,12 +156,13 @@
 
 		    <div class="solutions">
 				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+					Момент сил действующих на рамку со стороны м/п: \(M_B = Fa = Bsin(\alpha)a^2I\), момент \(\): \(M_{mg} = mg\cdot \frac{a}{2}cos(\alpha)\) <br>
+\(M_B = M_{mg} \Longleftrightarrow B sin(\alpha)aI = \frac{1}{2}mg\cdot cos(\alpha) \Rightarrow I = \frac{mg\cdot ctg(\alpha)}{2Ba}\)
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: \(\fbox{$I = \frac{mg\cdot ctg(\alpha)}{2Ba} $}\)
 			
 		    </h3>
 		  </div>

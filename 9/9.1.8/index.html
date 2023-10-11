@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,8 +158,12 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.8^*.\) 
+				В однородном магнитном поле индукции $B$ находится квадратная рамка с током. Масса рамки m, ток в ней I. Определите частоту свободных колебаний рамки вокруг оси $OO^\prime$
 				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" alt="9.1.8">
+				</div>
 			</div>
 		    <hr>
 		    <h3>
@@ -151,13 +171,20 @@
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   Рассмотрим малое отклонение от равновесия на угол $\alpha$ : Момент действующий на рамку со стороны м/п: $M = BIS\cdot sin(\alpha) = BIa^2 sin(\alpha)$  ($a$ - сторона рамки)сила тяжести не создает момента т. проходит через точку вращения.
+Из основного ур-я вращательного движения: 
+$J\ddot{\alpha} = \sum\pm{M_i}$  для нашего случая: $J\ddot{\alpha} = -BIa^2 sin(\alpha)$  (1)
+теперь найдём момент инерции $J$ рамки при данных колебаниях
+Момент инерции верхней и нижней стороны рамки равен: $J_1=J_2 = \frac{m}{4}\cdot (\frac{a}{2})^2 = \frac{m a^2}{16}$ <br> $\frac{a}{2}$- расстояние до этой стороны)
+момент инерции боковых сторон: $J_3 = J_4 = \frac{1}{12} \cdot \frac{m}{4}\cdot a^2 = \frac{m a^2}{48}$ 
+$J = J_1 + J_2 + J_3 + J_4 = 2\cdot \frac{m a^2}{16} + 2 \cdot \frac{m a^2}{48} = \frac{m a^2}{6}$
+тогда уравнение (1) будет иметь вид: $\frac{m a^2}{6}\ddot{\alpha} = -BIa^2 sin(\alpha)$ сократим $a^2$
+$\ddot{\alpha} = -\frac{6BI}{m} \alpha$  тогда $\omega = \sqrt{\frac{6BI}{m}}$ 
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: $\fbox{$\omega = \sqrt{\frac{6BI}{m}}$}$
 			
 		    </h3>
 		  </div>

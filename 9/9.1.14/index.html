@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,8 +158,12 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.14.\) 
+				Кольцо радиуса $R$, по которому циркулирует ток $I$, поместили в неоднородное аксиально-симметричное поле. Ось кольца совпадает с осью симметрии магнитного поля. Индукция магнитного поля $B$, действующего на ток, направлена под углом $\alpha$ к оси симметрии поля. Масса кольца $m$. Определите ускорение кольца.  <br>
 				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" alt="9.1.14">
+				</div>
 			</div>
 		    <hr>
 		    <h3>
@@ -151,13 +171,14 @@
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   
+					Ускорять кольцо будет $B_{\|}$ т.к $B_\bot$ направленно на деформацию кольца. В каждой точке кольца это $Bsin(\alpha)$ так как ускорение не меняет направление при повороте $dl$ то: <br>
+$ma = 2\pi RIBsin(\alpha) \Rightarrow a = 2\pi\frac{1}{m}RIBsin(\alpha)$
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: $\fbox{$2\pi\frac{1}{m}RIBsin(\alpha)$}$
 			
 		    </h3>
 		  </div>

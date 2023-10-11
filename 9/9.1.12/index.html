@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,8 +158,12 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.12.\) 
+				Виток радиуса R согнули по диаметру под прямым углом и поместили в однородное магнитное поле индукции B так, что одна из плоскостей витка оказалась расположенной под углом $\alpha$, другая — под углом $\frac{\pi}{2}-\alpha$ к направлению индукции B. Ток в витке I. Определите момент сил, действующих на виток.  <br>
 				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" alt="9.1.12">
+				</div>
 			</div>
 		    <hr>
 		    <h3>
@@ -151,13 +171,18 @@
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   
+Разобьем контур на два контура с одинаковым током, но в разных плоскостях.
+Найдем момент сил для каждого из них: <br>
+$M_1 = \frac{1}{2}\pi R^2IB\cdot sin(\alpha)$ <br>
+$M_2 = \frac{1}{2}\pi R^2IB\cdot sin(\frac{\pi}{2} -\alpha) = \frac{1}{2}\pi R^2IB\cdot cos(\alpha)$
+$M = M_1 + M_2 = \frac{1}{2}\pi R^2IB\cdot (sin(\alpha) + cos(\alpha))$ <br>
+}
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: $\fbox{$\frac{1}{2}\pi R^2IB\cdot (sin(\alpha) + cos(\alpha))$}$
 			
 		    </h3>
 		  </div>

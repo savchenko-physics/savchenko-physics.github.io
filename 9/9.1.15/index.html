@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,7 +158,8 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.15^*.\) 
+				Проводящее кольцо поместили в магнитное поле, перпендикулярноe его плоскости. По кольцу циркулирует ток $I$. Если проволока кольца выдерживает на разрыв нагрузку $F$, то при какой индукции магнитного поля кольцо разорвется? Радиус кольца $R$. Действием на кольцо магнитного поля, создаваемого током $I$, пренебречь.  <br>
 				</p>
 			</div>
 		    <hr>
@@ -151,13 +168,17 @@
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   
+					Сила действующая на небольшой участок длиной $\alpha R$ со стороны м/п равна $F_B = IRB \cdot \alpha$
+Эту силу уравновешивают 2 силы натяжения: $F_B = 2T\cdot cos(\frac{\pi}{2} - \frac{\alpha}{2}) = 2T\cdot sin(\frac{\alpha}{2})$ <br> 
+В приближении малого угла $\alpha$ получим $sin(\frac{\alpha}{2}) = \frac{\alpha}{2}$ тогда: <br>
+$F_B = T\alpha = IRB\cdot \alpha \Rightarrow B = \frac{T}{RI}$ здесь $T$ - предельная сила $F$ <br> 
+$B = \frac{F}{RI}$
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
+		    	Ответ: $\fbox{$B = \frac{F}{RI}$}$
 			
 		    </h3>
 		  </div>

@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -142,24 +158,23 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.1.2.\) На заряд \(1\) Кл, движущийся со скоростью \(1\) м/с, в магнитном поле действует сила \(10\) Н. Заряд движется под углом \(30^{\circ}\) к направлению индукции магнитного поля. Чему равна индукция этого поля?
+				\(9.1.10.\) 
+
+Докажите, что момент сил, действующий на любую плоскую рамку с током в однородном магнитном поле индукции B, $\vec{N} = [\vec{M} \times \vec{B}]$. 
 				</p>
 			</div>
 		    <hr>
 		    <h3>
-		    	Решение:
+		    	Доказательство:
 		    </h3>
 
 		    <div class="solutions">
-				<p class="TxtSolutions">                                                     
-					\(\overrightarrow{F} = q(\overrightarrow{v}\times \overrightarrow{B}) \)  в скалярном виде получим  \(F = vB\cdot sin(\alpha)\), \(\alpha\)  - угол между \(\overrightarrow{B}\) и \(\overrightarrow{v}\) \(\Rightarrow {B} = \frac{F}{v \cdot sin(\alpha)} = 30\) Тл.	
+				<p class="TxtSolutions">   
+					Разобьем произвольный контур вертикальными линиями, данные линии не внесут изменений в момент так как с одном стороны ток по ним идёт в одном направлении, а в соседнем контуре в обратном тогда для достаточно маленького разбиения это будут рамки, для которых мы уже доказывали это утверждение, тогда общее $\vec{N} =\int{d\vec{N}} = \int{[d\vec{M} \times \vec{B}]}$ в скалярном виде будет:  ${N} =\int{d{M}{B}sin(\alpha)}= BM\cdot sin(\alpha)$ так как направление $\vec N$  и $\vec M$ у всех  маленьких рамок совпадает, то справедливо, что  у $\vec N$ и $d\vec N$ сонаправлены тогда очевидно, что: <br>
+$\vec{N} = [\vec{M} \times \vec{B}]$
 				</p>
 			</div>		
 
-		    <h3>
-		    	Ответ: \(\fbox{20 Тл}\)
-			
-		    </h3>
 		  </div>
 
 		</div>
