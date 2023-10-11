@@ -20,9 +20,8 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-
 	  <script type="text/javascript" async
-	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 	  </script>
 
 	  <!-- MathJax configuration -->
@@ -40,6 +39,7 @@
 		  messageStyle: 'none'
 		});
 	  </script>
+
 	</head>
 
 	<body style="">
@@ -158,68 +158,30 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(1.3.3^*.\)   Под каким углом к вертикали должен быть направлен из точки $A$ гладкий желоб, чтобы шарик соскользнул по нему на наклонную плоскость за наименьшее время?
-			</p>
+				\(7.1.24^{∗}.\) Электроны, обладающие на бесконечности скоростью $v$, падают на
+металлический изолированный шар радиуса $R$. На сколько повысится температура шара, если его теплоемкость равна $C$?
 
-			<div class="StatementDiv">
-				<img class="Statement" src="statement.png" alt="1.3.3">
-			</div>
+				</p>
+				<div class="StatementDiv">
+					<img class="Statement" src="statement.png" >
+				</div>
 			</div>
 		    <hr>
 		    <h3>
 		    	Решение:
 		    </h3>
+	        <div class="video-container">
+		        <iframe class="video" src="https://www.youtube.com/embed/bBCXOC5uFUQ" frameborder="0" allowfullscreen></iframe>
+		    </div>
+		    	
 
 		    <div class="solutions">
-				<p class="TxtSolutions">  
-Рассмотрим возможные направления желоба из точки $A$. Видно, что меняя угол наклона желоба к плоскости меняется и длина желоба, но также изменяется и ускорение с которым шарик будет двигаться по желобу.
-
-
-
-<br>Из геометрических соображений:
-
-<br><center>$h = x \cdot tg\alpha + x \cdot tg\varphi$; $l = \frac{x}{cos\alpha}$. (1)</center>
-
-<br><br>Шарик будет скатываться с ускорением
-
-<br><center>$a = g \cdot sin\alpha$.</center>
-
-<br><br>Время находим из условия что шарик прошел путь $l$:
-
-<br><center>$l = \frac{at^2}{2}$,</center>
-
-<br><center>$\frac{x}{cos\alpha} = \frac{gsin\alpha \cdot t^2}{2}$,</center>
-
-<br><br>следовательно, выражая из (1) $x$, получим из последнего уравнения
-
-<br><center>$t^2 = \frac{2h}{g \cdot sin\alpha \cdot cos\alpha (tg\alpha + tg\varphi)}$.</center>
-
-<br>Время будет минимально если $sin\alpha \cdot cos\alpha (tg\alpha + tg\varphi)$ будет максимально.
-
-<br><center>$sin\alpha \cdot cos\alpha (tg\alpha + tg\varphi) = \frac{sin\alpha}{cos\varphi}sin(\alpha + \varphi) = \frac{1}{2cos\varphi}(cos\varphi – cos(2\alpha + \varphi))$</center>
-
-<br>Это выражение будет максимально когда $cos(2\alpha + \varphi)$ будет минимально, а значит равно – $1$, тогда $2\alpha + \varphi = \pi$, откуда
-
-<br><center>$\alpha = \frac{\pi}{2} - \frac{\varphi}{2}$.</center>
-
-<br>Угол желоба к вертикали равен
-
-<br><center>$\beta = \frac{\pi}{2} - \alpha = \frac{\pi}{2} – (\frac{\pi}{2} - \frac{\varphi}{2}) = \frac{\varphi}{2}$</center>
-
-				</p>
-			</div>	
-
-		    <hr>
-		    <h3>
-		    	Альтернативное решение:
-		    </h3>	
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/mZ1RBLH3pwc" frameborder="0" allowfullscreen></iframe>
-		    </div>
+		    	<img class="ScreenS" src="01.png" >
+			</div>
 
 		    <h3>
-		    	Ответ: угол желоба к вертикали, при котором шарик соскальзывает за наименьшее время равен $\fbox{$\frac{\varphi}{2}$}$
-			
+		    	Ответ: $∆t = πε_0R(m_ev^2)/(2e^2C)$
+<h3>
 		    </h3>
 		  </div>
 
