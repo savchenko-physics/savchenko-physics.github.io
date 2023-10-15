@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -141,38 +157,27 @@
 		    	Условие:
 		    </h3>
 		  	<div class="task">
-
-				<p>
-					  \(1.1.10^{∗}\) По прямому шоссе идет автобус с постоянной скоростью \(v\). Вы заметили автобус, когда тот находился в некоторой точке A. Из какой области
-около шоссе вы можете догнать этот автобус, если скорость вашего бега \(u < v\)?
-Нарисуйте эту область для \(u = v/2\)
+				<p>                                                         
+				\(2.6.49^*.\) Определите время падения Земли на Солнце, если ее внезапно остановить.
 				</p>
 			</div>
 		    <hr>
 		    <h3>
 		    	Решение:
 		    </h3>
-		    <div class="solutions">
-		    	<img class="ScreenS" src="1.1.10.png" alt="1.1.10" >
-			</div>	
-		    <hr>
-		    <h3>
-		    	Аналогичное Решение:
-		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/h2WIR9OVl9o" frameborder="0" allowfullscreen></iframe>
-		    </div>	
-		    <hr>
-		    <h3>
-		    	Аналогичное Решение:
-		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/zf1fcI9AHME" frameborder="0" allowfullscreen></iframe>
-		    </div>	
 
-		    <h3>
-		    	Ответ: Из области, ограниченной углом \(α = 2 \, arcsin(u/v)\) с вершиной в точке \(A\), биссектриса которого — шоссе
-		    </h3>
+	        <div class="video-container">
+		        <iframe class="video" src="https://www.youtube.com/embed/VwKomsy1vD0" frameborder="0" allowfullscreen></iframe>
+		    </div>
+		    	
+
+		    <div class="solutions">
+		    	<img class="ScreenS" src="01.png">
+			</div>
+
+			<h3>
+		    	Ответ: $t ≈ 65$ суток 
+			<h3>
 		  </div>
 
 		</div>
