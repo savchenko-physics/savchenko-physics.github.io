@@ -157,14 +157,13 @@
 		    	Условие:
 		    </h3>
 		  	<div class="task">
-				<p>                                                         
-				6.1.7. Три заряда $q_1$, $q_2$, $q_3$ связаны друг с другом двумя нитями. Длина
-каждой нити $l$. Найдите их силу натяжения.
+				<p>                          
+					$6.1.18^*.$ Чему равна напряженность электрического поля равномерно заряженной нити длины $l$ на прямой, которая является продолжением нити, на расстоянии $x$ от ближайшего ее конца? Заряд единицы длины нити $\rho$.
 				</p>
 				
-				<div class="StatementDiv">
+<!-- 				<div class="StatementDiv">
 					<img class="Statement" src="statement.png">
-				</div>
+				</div> -->
 			</div>
 		    <hr>
 		    <h3>
@@ -173,40 +172,17 @@
 
 		    <div class="solutions">
 				<p class="TxtSolutions">   
-					В установившемся режиме заряды будут покоиться, т.е. действие всех сил на них будет скомпенсированно. Запишем второй закон Ньютона для каждого из зарядов:<br>
-					$
-					\left\{ \begin{gathered} 
-					    1) F_{12}+F_{13}-T_{12}=0
-					    \\ 
-					    2) F_{12}+T_{12}-F_{23}-T_{23}=0
-					    \\ 
-					    3) F_{23}+F_{13}-T_{23}=0
-					    \\
-					  \end{gathered} 
-					\right.
-					$
-					<br><br>
-					$
-					\left\{ \begin{gathered} 
-					    \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{l^2}+\frac{1}{4\pi\varepsilon_0}\frac{q_1q_3}{(2l)^2}-T_{12}=0
-					    \\ 
-					    \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{l^2}-\frac{1}{4\pi\varepsilon_0}\frac{q_2q_3}{l^2}+T_{12}-T_{23}=0
-					    \\ 
-					    \frac{1}{4\pi\varepsilon_0}\frac{q_2q_3}{l^2}+\frac{1}{4\pi\varepsilon_0}\frac{q_1q_3}{(2l)^2}-T_{23}=0
-					    \\
-					  \end{gathered} 
-					\right.
-					$<br><br>
-					Из уравнений $(1),(3)$ найдём: <br><br>
-					$T_{12}=\frac{1}{4\pi\varepsilon_0}\frac{q_1(4q_2+q_3)}{4l^2}$<br><br>
-					$T_{23}=\frac{1}{4\pi\varepsilon_0}\frac{q_3(4q_2+q_1)}{4l^2}$
-					<br> <br>
+					Для решения данной задачи необходимо знать основы дифференциально-интегрального исчисления (или формулу площади под графиком квадратичной гиперболы).<br><br>
+Малый участок нити, находящийся на расстоянии a от исследуемой точки и имеющий длину da, имеет заряд $\rho \cdot da$ и создаёт в точке напряжённость $\frac{1}{4\pi\varepsilon_0}\frac{\rho \cdot da}{a^2}$.<br> <br>
+$dE=\frac{1}{4\pi\varepsilon_0}\frac{\rho \cdot da}{a^2}$<br><br>
+Проинтегрируем по всей длине нити:<br>
+$E=\int_x^{x+l}\frac{1}{4\pi\varepsilon_0}\frac{\rho \cdot da}{a^2}=\frac{\rho}{4\pi\varepsilon_0}(-\frac{1}{x+l}+\frac{1}{x})=\frac{\rho{l}}{4\pi\varepsilon_0x(x+l)}$
+<br> <br>
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: $\frac{q_1(4q_2+q_3)}{16\pi\varepsilon_0l^2}$ || $\frac{q_3(4q_2+q_1)}{16\pi\varepsilon_0l^2}$
-			
+		    	Ответ: $\frac{\rho{l}}{4\pi\varepsilon_0x(x+l)}$
 		    </h3>
 		  </div>
 

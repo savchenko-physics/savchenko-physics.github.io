@@ -20,10 +20,26 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+		
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -153,6 +169,21 @@
 		    <h3>
 		    	Решение:
 		    </h3>
+		    Если решать данную задачу как $F_k=mg$, то вы получите неверный ответ, т.к. такое равновесие будет неустойчивым. Для проверки устойчивости необходимо отклонить шарик на малый угол $\alpha\longrightarrow0$ и рассмотреть, при каких q будет возникать возвращающая сила.<br>
+Следует заметить, что при малых отклонениях силу Кулона можно считать постоянной ($F_k=const=\frac{1}{4\pi\varepsilon_0}\frac{qQ}{4R^2}$), $\sin{\alpha}\approx\alpha$.<br> <br>
+Рассмотрим проекции сил на ось $Ox$, параллельную касательной к сфере в точке контакта с шариком (наклонена под углом к $\alpha$ горизонту):<br>
+$(mg)_x=-mg \cdot \sin{\alpha}$<br>
+$(N)_x=0$<br>
+$(F_k)_x=F_k \cdot \sin{\alpha/2}$<br><br>
+В данном случае сила Кулона должна быть существенно больше mg, т.е. шарик не упадёт, но может скатиться по стенке, а значит равновесие будет являться устойчивым, если сумма проекций всех сил на $Ox$ будет >0<br><br>
+$F_k \cdot \sin{\alpha/2}-mg \cdot \sin{\alpha}=0$<br>
+$F_k=mg \cdot \frac{\alpha}{\alpha/2}$<br>
+$\frac{1}{4\pi\varepsilon_0}\frac{qQ}{4R^2}=2mg$<br><br>
+$q=\frac{32\pi\varepsilon_0mgR^2}{Q}$
+		    <hr>
+		    <h3>
+		    	Альтернативное Решение:
+		    </h3>	
 	        <div class="video-container">
 		        <iframe class="video" src="https://www.youtube.com/embed/wgnHVdgTGBA" frameborder="0" allowfullscreen></iframe>
 		    </div>
@@ -167,15 +198,15 @@
 		    <h3>
 		    	Альтернативное Решение:
 		    </h3>	
-		    <div class="solutions">
-		    	<img class="ScreenS" src="03.png" alt="6.1.14">
-			</div>	
 	        <div class="video-container">
 		        <iframe class="video" src="https://www.youtube.com/embed/pgWE4Oo1L6c" frameborder="0" allowfullscreen></iframe>
 		    </div>
+		    <div class="solutions">
+		    	<img class="ScreenS" src="03.png" alt="6.1.14">
+			</div>	
 			
 		    <h3>
-		    	Ответ: \(q ≥ \frac{32 \pi ε_{0} m g R^{2}}{Q}\)
+		    	<br><br>Ответ: \(q ≥ \frac{32 \pi ε_{0} m g R^{2}}{Q}\)
 <h3>
 		    </h3>
 		  </div>
