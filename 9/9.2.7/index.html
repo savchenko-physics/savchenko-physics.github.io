@@ -158,8 +158,7 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.2.2.\) 
-				Пользуясь формулой из <a href="../9.2.1" target="_blank">предыдущей задачи</a>, найдите распределение индукции магнитного поля вокруг бесконечной заряженной нити с линейной плотностью заряда $\rho$, если нить движется в продольном направлении со скоростью $v$.
+				\(9.2.7.\) Длинные прямые провода с током пересекаются под углом $\alpha$. Найдите индукцию магнитного поля на прямой, проходящей через точку пересечения проводов перпендикулярно им обоим. Ток в проводах $I$.<br>
 				</p>
 				
 <!-- 				<div class="StatementDiv">
@@ -173,13 +172,14 @@
 
 		    <div class="solutions">
 				<p class="TxtSolutions">   
-					Поле $E$ бесконечной заряженной нити $E = \frac{1}{2\pi \varepsilon_0 }\cdot \frac{\rho}{r}$
-тогда $|\overrightarrow{B}| = \varepsilon_0 \mu_0|\vec{v}\times \vec{E}| = \varepsilon_0 \mu_0 vE = \frac{\mu_0}{2\pi} \cdot \frac{\rho v}{r}$ <br>
+					$\overrightarrow{B} = \overrightarrow{B_1} + \overrightarrow{B_2}$$ \Rightarrow B = \sqrt{{B_1}^2 + {B_2}^2  - 2cos(\alpha)B_1 B_2}$ так как $B_1$ и $B_2$ направлены перпендикулярно соответствующим им проводам, то угол между ними будет $\pi - \alpha$ (если учитывать, что $\alpha$ - угол между направлениями тока), тогда при сложении в т. косинусов будет смежный угол - $\alpha$<br> 
+$B_1 = B_2 = \frac{\mu_0 I}{2\pi R}$<br> 
+$B = \sqrt{{B_1}^2 + {B_2}^2  - 2cos(\alpha)B_1 B_2} $$= \frac{\mu_0 I}{2\pi R} \sqrt{2-2cos(\alpha)} $$= \frac{\mu_0 I}{2\pi R} 2sin(\frac{\alpha}{2}) $$= \frac{\mu_0 I}{\pi R}sin(\frac{\alpha}{2})$ <br>
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: $\fbox{$\frac{\mu_0 \rho v}{2\pi r}$}$
+		    	Ответ: $\fbox{$\frac{\mu_0 I}{\pi R}sin(\frac{\alpha}{2})$}$
 			
 		    </h3>
 		  </div>

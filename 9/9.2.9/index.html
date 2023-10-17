@@ -158,8 +158,8 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(9.2.2.\) 
-				Пользуясь формулой из <a href="../9.2.1" target="_blank">предыдущей задачи</a>, найдите распределение индукции магнитного поля вокруг бесконечной заряженной нити с линейной плотностью заряда $\rho$, если нить движется в продольном направлении со скоростью $v$.
+				\(9.2.9.\) 
+				Докажите, что на больших расстояниях от двух последовательно соединенных участков провода $l_1$ и $l_2$, по которым течет ток, магнитное поле близко к магнитному полю участка провода $\vec{l} = \vec{l_1} + \vec{l_2}$, по которому течет тот же ток. <br><br>
 				</p>
 				
 <!-- 				<div class="StatementDiv">
@@ -168,19 +168,24 @@
 			</div>
 		    <hr>
 		    <h3>
-		    	Решение:
+		    	Доказательство:
 		    </h3>
 
 		    <div class="solutions">
 				<p class="TxtSolutions">   
-					Поле $E$ бесконечной заряженной нити $E = \frac{1}{2\pi \varepsilon_0 }\cdot \frac{\rho}{r}$
-тогда $|\overrightarrow{B}| = \varepsilon_0 \mu_0|\vec{v}\times \vec{E}| = \varepsilon_0 \mu_0 vE = \frac{\mu_0}{2\pi} \cdot \frac{\rho v}{r}$ <br>
+					Найдем м/п от каждого из проводов в векторном виде:
+$\overrightarrow{B} = \overrightarrow{B_1} + \overrightarrow{B_2}$ <br><br> 
+$\overrightarrow{B_1} = \frac{\mu_0}{4\pi R^3}[\overrightarrow{Il_1} \times \overrightarrow{R}] $$= \frac{\mu_0 I}{4\pi R^3}[\overrightarrow{l_1}\times \overrightarrow{R}]$ <br><br> 
+$\overrightarrow{B_2} = \frac{\mu_0}{4\pi R^3}[\overrightarrow{Il_2} \times \overrightarrow{R}] $$= \frac{\mu_0 I}{4\pi R^3}[\overrightarrow{l_2}\times \overrightarrow{R}]$ <br><br> 
+$\overrightarrow{B} = \overrightarrow{B_1} + \overrightarrow{B_2} $$= \frac{\mu_0 I}{4\pi R^3}([\overrightarrow{l_1}\times \overrightarrow{R}]+[\overrightarrow{l_2}\times \overrightarrow{R}]) $$=\frac{\mu_0 I}{4\pi R^3}[(\overrightarrow{l_1} + \overrightarrow{l_2})\times \overrightarrow{R}] $ <br><br> 
+Последнее преобразование следует из свойства дистрибутивности по сложению для векторного произведения. <br><br>
+Таким образом мы получили, что в сумме два провода оказывают такое же влияние как и провод $\overrightarrow{l} $$= \overrightarrow{l_1} + \overrightarrow{l_2}$ <br><br> 
+
 				</p>
 			</div>		
 
 		    <h3>
-		    	Ответ: $\fbox{$\frac{\mu_0 \rho v}{2\pi r}$}$
-			
+		    	Доказано.
 		    </h3>
 		  </div>
 
