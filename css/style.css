@@ -43,6 +43,16 @@ footer {
       background: #3b59f2;
       position: absolute;
     }
+
+    @media screen and (max-width: 1204px) {
+        nav {
+            display: none;
+        }
+        .col-lg-3 {
+          width: 10%;
+        }
+        max-width: 778px;
+    }
   nav {
     margin: 0 auto;
     width: 200px;
