@@ -160,9 +160,13 @@ hr {
     height: 6px;
     margin-left: -30px;
   }
+
 .odd hr {
   background: #82d120;
 }
 .even hr {
   background: #3b59f2;
+}
+.red hr {
+  background: #ff0022;
 }
