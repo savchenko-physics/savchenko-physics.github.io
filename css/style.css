@@ -71,6 +71,7 @@ footer {
 
   .back-to-top {
     display: block;
+
     float: left;
     padding: 7px 15px;
     font-weight: 500;
@@ -85,6 +86,10 @@ footer {
     z-index: 200;
     right:  15px;
     bottom: 15px;
+  }  
+  .back-to-top.affix-top {
+    color: #ffffff;
+    background-color: #ffffff;
   }
 
   .back-to-top:hover {

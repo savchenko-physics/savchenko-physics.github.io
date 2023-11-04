@@ -93,6 +93,10 @@ header h1 {
     right:  15px;
     bottom: 15px;
   }
+  .back-to-top.affix-top {
+    color: #ffffff;
+    background-color: #ffffff;
+  }
 
   .back-to-top:hover {
     color: #fff;
@@ -138,6 +142,10 @@ hr {
 
 .even hr {
     background: #3b59f2;
+}
+
+.red hr {
+  background: #ff0022;
 }
 
 /* Adjustments for smaller screens */
