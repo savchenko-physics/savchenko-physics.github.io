@@ -90,6 +90,8 @@ footer {
   .back-to-top.affix-top {
     color: #ffffff;
     background-color: #ffffff;
+    padding: 0;
+    height:0;
   }
 
   .back-to-top:hover {
