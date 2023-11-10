@@ -177,3 +177,7 @@ hr {
 .red hr {
   background: #ff0022;
 }
+
+.Statement {
+  width: 360;
+}
