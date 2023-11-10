@@ -172,5 +172,6 @@ hr {
 }
 
 .Statement {
-  width: 400;
+  max-width: 250;
+  max-height: 250;
 }
