@@ -151,6 +151,7 @@ aside {
 
 .solutions {
     margin: 0 auto; 
+    padding: 10px; 
     padding-top: 20px;
 }
 
@@ -181,4 +182,8 @@ hr {
 .Statement {
   max-width: 300;
   max-height: 250;
+}
+
+.TxtSolutions {
+  font-size:16px;
 }
