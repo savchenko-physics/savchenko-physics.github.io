@@ -825,6 +825,10 @@ pre code {
   width: 8.333333333333332%;
 }
 
+  .col-lg-6 {
+    width: 50%;
+  }
+  
 @media screen and (min-width: 768px) {
   .col-lg-12 {
     width: 100%;
@@ -844,9 +848,7 @@ pre code {
   .col-lg-7 {
     width: 58.333333333333336%;
   }
-  .col-lg-6 {
-    width: 50%;
-  }
+
   .col-lg-5 {
     width: 41.66666666666667%;
   }
