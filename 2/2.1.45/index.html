@@ -138,7 +138,7 @@
                      </center>
                      Перерисуем в плоскости $XY$<br><br>
                      <center>
-                        В начальный момент:
+                        В начальный момент $(\varphi=90^{\circ})$:
                      </center>
                      </p>
                   </div>
@@ -151,7 +151,7 @@
                      <p class="TxtSolutions">   
                      <center>
                         <br>
-                        В конечный момент:
+                        В конечный момент $(\varphi=0^{\circ})$:
                      </center>
                      <center>
                         <div class="StatementDiv">
@@ -189,9 +189,30 @@
 \frac{d}{dt} (u \, cos\,\varphi) = \frac{F (1-\, cos \, \varphi) }{m} & 
 \end{matrix}\right.$<br><br>
 </center>
-Решая систему дифференциальных уравнений получаем при $\varphi=0^{\circ}$:<br><br>
+Решаем систему дифференциальных уравнений:<br><br>
 <center>
-$u=\frac{u_0}{2}=\frac{v}{2}$<br><br>
+   $\left\{\begin{matrix}
+\frac{d\varphi}{dt} = \frac{F \, sin \, \varphi }{mu}& (a)\\ 
+\frac{du}{dt} = \frac{F (1-\, cos \, \varphi) }{m} & (b) 
+\end{matrix}\right.$<br><br>
+</center>
+Разделим $(b)$ на $(a)$:
+<center>
+   $\frac{du}{d\varphi} = u\frac{1-\, cos \, \varphi}{sin \, \varphi}$<br><br>
+   $\frac{du}{u} = \frac{1-\, cos \, \varphi}{sin \, \varphi} d\varphi$<br><br>
+   $\frac{du}{u} = tg (\frac{\varphi}{2}) \, d\varphi$<br><br>
+</center>
+Интегрируем обе части уравнения:
+<center>
+   <!-- $\int_{v_0}^{v}\frac{du}{u} = \int_{90^{\circ}}^{0^{\circ}}tg (\frac{\varphi}{2}) \, d\varphi \; (c)$<br><br> -->
+   $\int \frac{du}{u} = \int tg (\frac{\varphi}{2}) \, d\varphi \; (c)$<br><br>
+   $\int\frac{du}{u}=ln|u| \; (d)$<br><br>
+   $\int tg (\frac{\varphi}{2}) \, d\varphi=-2 ln(cos(\frac{x}{2})) \; (e)$<br><br>
+</center>
+Подставляем $(e)$ и $(d)$ в $(c)$:
+<center>
+   $ln(v)+C=ln(sin(\varphi)) $$-(ln(sin(\frac{\varphi}{2})-cos(\frac{\varphi}{2})))\; (e)$<br><br>
+   $v_x=\frac{v}{2}$<br><br>
 </center>
                      </p>
                   </div>
