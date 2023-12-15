@@ -70,9 +70,14 @@ header h1 {
     nav {
         display: none;
     }
-    
+    /*
     .col-lg-3 {
       width: 10%;
+    }    */
+
+    div .col-lg-6 {
+/*    text-align: center;*/
+        padding-left: 22%;
     }
 }
 
@@ -116,9 +121,16 @@ header h1 {
     border-radius: 5px;
 }
 
+
+#main h3 {
+    font-size:23px;
+}
 #main h2,
 #main h3 {
     margin: 10px 0;
+    padding-top: 13;
+    padding-bottom: 11;
+    text-align: center;
 }
 
 /* Horizontal rule styles */
@@ -178,4 +190,7 @@ hr {
 }
 .TxtSolutions {
   font-size:16px;
+}
+.col-lg-12{
+    padding-bottom: 15;
 }
