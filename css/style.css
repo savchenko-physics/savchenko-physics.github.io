@@ -42,6 +42,9 @@ header h1 {
    background: #3b59f2;
    position: absolute;
 }
+h3 {
+   text-align: center;
+}
 
 @media screen and (max-width: 1204px) {
    nav {
