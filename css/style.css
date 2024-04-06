@@ -1,3 +1,5 @@
+@import "general.css";
+
 body {
    background: #f5f5f5;
 }
@@ -5,8 +7,13 @@ body {
 ul {
     text-align: center;
     list-style-position: inside;
+    font-size: 18;
 }
 
+
+hr {   
+   max-width: 800; margin: 30 auto;
+}
 
 .container,
 footer {
@@ -121,7 +128,6 @@ nav.affix-bottom {
 }
 #main .col {
    margin-left: -30px;
-   margin-bottom: 40px;
 }
 #main .col.caption {
    margin-bottom: 10px;
@@ -175,7 +181,7 @@ hr {
    border-radius: 3px;
    border: none;
    height: 6px;
-   margin-left: -30px;
+/*   margin-left: -30px;*/
 }
 
 .odd hr {
@@ -185,7 +191,7 @@ hr {
    background: #3b59f2;
 }
 .red hr {
-   background: #ff0022;
+   background: #ff9500;
 }
 
 .Statement {
