@@ -1,3 +1,26 @@
-ul {
-    text-align: right;
+.task {
+    max-width: 750; 
+    margin: auto;
+    text-align: justify;
 }
+.StatementDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.ScreenS{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/*
+.video-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+*/

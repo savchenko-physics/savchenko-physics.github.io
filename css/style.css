@@ -152,6 +152,7 @@ aside {
 
 .video-container {
    position: relative;
+   left:10%;
    width: 100%;
    padding-bottom: 56.25%; /* 16:9 aspect ratio */
 }
