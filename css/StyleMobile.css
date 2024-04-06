@@ -13,6 +13,10 @@ body {
    padding: 0;
 }
 
+.col-lg-6 footer-middle{
+   width: 100%;
+}
+
 .container,
 footer {
    background: #fff;
@@ -83,8 +87,8 @@ header h1 {
     }    */
 
    div .col-lg-6 {
-      /*    text-align: center;*/
-      padding-left: 18%;
+          text-align: center;
+/*      padding-left: 18%;*/
    }
 }
 
@@ -159,7 +163,7 @@ hr {
 }
 
 .red hr {
-   background: #ff0022;
+   background: #ff9500;
 }
 
 /* Adjustments for smaller screens */
