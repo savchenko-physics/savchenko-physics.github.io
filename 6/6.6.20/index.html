@@ -24,6 +24,25 @@
 	  	<script id="MathJax-script" async
           		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 	  	</script>
+	  <script type="text/javascript" async
+	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -157,22 +176,58 @@
 		    <h3>
 		    	Решение:
 		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/naaEdcV9DnY" frameborder="0" allowfullscreen></iframe>
-		    </div>
+
 		    <div class="solutions">
-		    	<img class="ScreenS" src="01.png" alt="6.6.20" >
-			</div>	
-		    <div class="solutions">
-		    	<img class="ScreenS" src="02.png" alt="6.6.20" >
-			</div>	
-		    <div class="solutions">
-		    	<img class="ScreenS" src="03.png" alt="6.6.20" >
-			</div>	
+				<p class="TxtSolutions">   
+Емкость конденсатора представит емкость паралельных конденсаторов $C_1$ и $C_2$ для обкладок размера $a × b$
+
+<br><br><center>
+$C_1 = \frac{\varepsilon_0 b}{d}(a-x)$
+</center>
+<br><center>
+$C_2 = \frac{\varepsilon_0 b x\varepsilon}{d}$
+</center>
+
+<br><center>
+$C = C_1+C_2=\frac{\varepsilon_0 b[a+x(\varepsilon-1)]}{d}$
+</center>
+
+<br><br>Расчитаем энергию $E=\frac{Q^2}{2C}$ этого конденсатора: 
+
+<br><br><center>
+$E_С=\frac{Q^2d}{2\varepsilon_0 b[a+x(\varepsilon-1)]}$
+</center>
+
+<br><br>Находим $F$ силу через приращение энергии $dE$: 
+
+<br><br><center>
+$dE=F\cdot dx$
+</center>
+<br><center>
+$F=\frac{dE}{dx}$
+</center>
+<br><center>
+$F=-\frac{Q^2d(\varepsilon-1)}{2\varepsilon_0 b[a+x(\varepsilon-1)]^2}$
+</center>
+<br>При этом "$-$" при $F$ показывает, что сила, является втягивающейся 
+<br><br>
 
 		    <h3>
 		    	Ответ: \(F = \frac{Q^{2}d}{2 ε_{0} b} \cdot \frac{ε-1}{[a+x(ε-1)]^{2}}\)
-<h3>
+		    </h3>
+
+				</p>
+			</div>	
+
+		    <hr>
+		    <h3>
+		    	Альтернативное решение:
+		    </h3>
+	        <div class="video-container">
+		        <iframe class="video" src="https://www.youtube.com/embed/naaEdcV9DnY" frameborder="0" allowfullscreen></iframe>
+		    </div>
+		    <h3>
+		    	Ответ: \(F = \frac{Q^{2}d}{2 ε_{0} b} \cdot \frac{ε-1}{[a+x(ε-1)]^{2}}\)
 		    </h3>
 		  </div>
 
