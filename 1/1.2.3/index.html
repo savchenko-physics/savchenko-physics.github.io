@@ -20,10 +20,25 @@
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
+	  <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	  </script>
+
+	  <!-- MathJax configuration -->
+	  <script type="text/x-mathjax-config">
+	  	MathJax.Hub.Config({
+		  extensions: ['tex2jax.js'],
+		  jax: ['input/TeX','output/HTML-CSS'],
+		  tex2jax: {
+		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+		    processEscapes: true,
+		    processClass: 'tex2jax',
+		    ignoreClass: 'html'
+		  },
+		  showProcessingMessages: false,
+		  messageStyle: 'none'
+		});
+	  </script>
 	</head>
 
 	<body style="">
@@ -155,10 +170,27 @@
 		    <h3>
 		    	Решение:
 		    </h3>
+                  <div class="solutions">
+                    
+                     <p class="TxtSolutions">
+                     	В момент времени $t_0$ координаты равнялась $x_1=v_0t_0$.
+                     	На промежутке от $t_0$ до $2t_0$ ускорение постоянно и равно $a=\frac{v_0}{t_0}$. 
+                     	При равноускоренном движении с начальной скоростью $v_0$ с момента времени $t_0$, путь найдем как 
 
-           <div class="solutions">
-		    	<img class="ScreenS" src="1.2.3.png" alt="1.2.3">
-			</div>	
+$$
+x_2 = v_0 (t-t_0)+\frac{a(t-t_0)^2}{2}
+$$   
+
+$$
+x = x_1+x_2
+$$   
+
+$$
+x = v_0 t+\frac{a(t-t_0)^2}{2}
+$$   
+
+                     </p>
+                  </div>
 
 		    <h3>
 		    	Ответ: \(L = v_{0}t + \frac{v_{0} (t − t_{0})^{2}}{2t_{0}}.\)
