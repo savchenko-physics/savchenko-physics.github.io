@@ -106,8 +106,8 @@
                   </h3>
                   <div class="task">
                      <p>                                                         
-                        \(2.3.48.\) На горизонтальной плоскости лежат два бруска массы m1 и m2, соединенных недеформированной пружиной. Определите, какую наименьшую постоянную силу нужно приложить к левому бруску, чтобы сдвинулся и правый,
-если коэффициент трения грузов о плоскость µ.
+                        \(2.3.48^*.\) На горизонтальной плоскости лежат два бруска массы $m_1$ и $m_2$, соединенных недеформированной пружиной. Определите, какую наименьшую постоянную силу нужно приложить к левому бруску, чтобы сдвинулся и правый,
+если коэффициент трения грузов о плоскость $\mu$.
                      </p>
                      <div class="StatementDiv">
                         <img class="Statement" src="statement.png">
@@ -117,11 +117,58 @@
                   <h3>
                      Решение:
                   </h3>
-                  <div class="solutions">
-                     <img class="ScreenS" src="sol.jpg">
+
+                  <div class="solutions" style="padding: 0;">
+                     <img class="ScreenS" src="forces.jpg" style="max-width: 60%;">
                   </div>
+
+                   <div class="solutions" style="padding: 0;">
+                     <p class="TxtSolutions">  
+                        <center>
+                           Силы действующие на два бруска
+                        </center>
+                     </p>
+                  </div>   
+<br>
                   <h3>
-                  Ответ: $F = µg(m_1 + m_2/2)$
+                     "Энергетическое" решение
+                  </h3>
+
+                   <div class="solutions" style="padding: 0;">
+                     <p class="TxtSolutions">  
+                        <center>
+                           Силы действующие на $m_2$:
+                           $F_{тр}=F_{упр}$<br><br>
+                           $kx = \mu m_2 g \Rightarrow x = \frac{\mu m_2 g}{k}$<br><br>
+                           Т.к. сила изменяется от $0$ до некоторого значения $F$, совершённую работу найдем как:<br><br>
+                           $A=\frac{kx^2}{2}+\frac{\mu m_1 gx}{k}$<br><br>
+                           $A=\frac{F_0x}{2}$<br><br>
+                           Откуда: $F = \mu g(m_1 + m_2)$
+                        </center>
+                     </p>
+                  </div>   
+
+<br>
+
+                  <h3>
+                     "Силовой" подход
+                  </h3>
+
+                   <div class="solutions" style="padding: 0;">
+                     <p class="TxtSolutions">  
+                        <center>
+                           Записывая второй закон Ньютона:<br><br>
+                           $m_1a_1=F-\mu m_1 g -kx\;(1)$<br><br>
+                           $m_2a_2=kx-\mu m_2 g\;(2)$<br><br>
+                           Откуда следует, что минимальная сила $F$ будет при отсутствии ускорения<br>($a_1=0,a_2=0$)<br><br>
+                           Подставляя $(1)$ во $(2)$:<br><br>
+                           $\begin{aligned}&F_{\min}=\mu m_{2}g+\mu m_{1}g=\mu g(m_{1}+m_{2})\\.\end{aligned}$
+                        </center>
+                     </p>
+                  </div>   
+
+                  <h3>
+                  Ответ: $F = \mu g(m_1 + m_2)$
                   <h3>
                   </h3>
                </div>
