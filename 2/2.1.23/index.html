@@ -10,13 +10,14 @@
     <meta property="og:image" content="img/logo.png">
     <meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
     <meta name="yandex-verification" content="6cfda41f74038368" />
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-    <link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/fonts.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/banner-styles.css"> -->
+  <link rel="stylesheet" href="../../css/css-latex/style.css" />
     <link rel="icon" href="../../img/logo.png" type="image/png" />
-    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <!-- <script src="../../js/jquery-1.10.1.min.js"></script> -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({
@@ -34,66 +35,19 @@
     </script>
   </head>
   <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
     <div class="container row">
-      <div class="col flash">
-        <header>
-          <h1>Решение задач из Савченко О.Я.</h1>
-        </header>
-      </div>
-      <aside class="col col-lg-3">
-        <nav>
-          <ul class="nav">
-            <li>
-              <a href="../../#1">1.Кинематика</a>
-            </li>
-            <li>
-              <a href="../../#2">2.Динамика</a>
-            </li>
-            <li>
-              <a href="../../#3">3.Колебания</a>
-            </li>
-            <li>
-              <a href="../../#4">4.Гидростатика</a>
-            </li>
-            <li>
-              <a href="../../#5">5.Молекулярная</a>
-            </li>
-            <li>
-              <a href="../../#6">6.Электростатика</a>
-            </li>
-            <li>
-              <a href="../../#7">7.Движение в электрическом поле</a>
-            </li>
-            <li>
-              <a href="../../#8">8.Электрический ток</a>
-            </li>
-            <li>
-              <a href="../../#9">9.Магнитное поле</a>
-            </li>
-            <li>
-              <a href="../../#10">10.Движение в сложных полях</a>
-            </li>
-            <li>
-              <a href="../../#11">11.Электромагнитная индукция</a>
-            </li>
-            <li>
-              <a href="../../#12">12.Электромагнитные волны</a>
-            </li>
-            <li>
-              <a href="../../#13">13.Оптика</a>
-            </li>
-            <li>
-              <a href="../../#14">14.CTO</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
       <div id="main" class="col col-lg-9">
         <div class="row">
           <div class="col caption">
-            <h2>
-              <a href="../">←Назад</a>
-            </h2>
+            <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
           </div>
         </div>
 
@@ -102,39 +56,63 @@
             <h3> Условие: </h3>
             <div class="task">
               <p> \( 2.1.23.\) На тело массы $m$, лежащее на горизонтальной плоскости, действует
-сила $F$ под углом $α$ к горизонту. Коэффициент трения $µ$. Найдите ускорение тела,
+сила $F$ под углом $α$ к горизонту. Коэффициент трения $\mu$. Найдите ускорение тела,
 если оно не отрывается от плоскости. </p>
             </div>
 
-            <hr>
             <h3> Решение: </h3>
-            <center>
-             <div class="StatementDiv"><img class="Statement" src="sol.jpg"></div></center>
+              <center>
+              <figure>
+                <img src="sol.jpg"
+                  loading="lazy" width="250" />
+                <figcaption>
+                  Силы действующие на тело
+                </figcaption>
+              </figure>
+              </center>
 
-        <div class="solutions">
-        <p class="TxtSolutions">   
-          1. Нормальная реакция связи в данном случае
-будет определяться как силой тяжести $mg$, так и
-проекцией на ось $OY$ приложенной силы:<br><br>
-          <center>$N=mg-F \, sın \, \alpha$<br><br>
-          Сила трения определится как:<br><br>
-          <center>$F_{тр} = (mg-F \,sin\, \alpha)$<br><br>
-          2. Основной закон динамики, таким образом. запишется следующим образом:<br><br>
-          <center>$F \, cos \,\alpha = \mu (mg-F \,sin\, \alpha)$<br><br>
-          3. Из уравнения второго закона Ньютона легко определить искомое ускорение<br><br>
-          $a = \frac{1}{m}(F\,cos\,\alpha-\mu mg+F\,sin\,\alpha$<br><br>
-          $a = \frac{F}{m}(cos\,\alpha-\mu \,sin\,\alpha)$<br><br>
+              <div class="solutions">
+                <p>
+                  1. Нормальная реакция связи в данном случае
+                будет определяться как силой тяжести $mg$, так и
+                проекцией на ось $OY$ приложенной силы:
+                </p>
+                <p style="text-align: center;">
+                  $N=mg-F \, sin \, \alpha$
+                </p>   
+                <p>
+                Сила трения определится как:
+                </p>
+                <p style="text-align: center;">
+                  $F_{тр} = (mg-F \,sin\, \alpha)$
+                </p>   
+                <p>
+                2. Основной закон динамики, таким образом. запишется следующим образом:
+                </p>
+                <p style="text-align: center;">
+                  $F \, cos \,\alpha = \mu (mg-F \,sin\, \alpha)$
+                </p>   
+                <p>
+                3. Из уравнения второго закона Ньютона легко определить искомое ускорение
+                </p>
+                <p style="text-align: center;">
+                $a = \frac{1}{m}(F\,cos\,\alpha-\mu mg+F\,sin\,\alpha)$
+                </p>   
+                <p style="text-align: center;">
+                $a = \frac{F}{m}(cos\,\alpha-\mu \,sin\,\alpha)$
+                </p>   
 
+            </div>   
 
-      </div>   
+            <h4> 
+              Ответ: $a = (F/m)(cos \,α + \mu \,sin \, \varphi)$$ − \mu g$, если это выражение больше нуля, иначе $a = 0$.
+            </h4>
 
-            <h3> Ответ: $a = (F/m)(cos \,α + µ \,sin \, \varphi)$$ − µg$, если это выражение больше нуля, иначе $a = 0$.</h3>
-            
+            <br>
+
           </div>
         </div>
-
       </div>
-      <a href="#" class="back-to-top affix"> ↑ наверх </a>
     </div>
     </div>
     <footer class="row container">
@@ -149,25 +127,10 @@
       <div class="col col-lg-6">
         <div class="footer-middle">
           <p>
-            <small> Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br>
-              <i>E = mc <sup>2</sup>
-              </i>. </small>
+            <small> Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br>   
           </p>
         </div>
       </div>
-      <div class="col col-lg-3">
-        <div class="footer-right">
-          <div class="pull-right"></div>
-        </div>
-      </div>
     </footer>
-    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        setTimeout(function() {
-          $('.back-to-top').affix();
-        }, 100);
-      });
-    </script>
   </body>
 </html>
