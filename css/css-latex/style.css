@@ -740,3 +740,11 @@ h5,
 h6 {
   margin-bottom: 0.8rem;
 }
+.columns {
+    display: flex;
+    justify-content: space-around;
+}
+.column {
+    list-style-type: none;
+    padding: 0;
+}

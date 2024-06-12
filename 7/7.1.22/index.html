@@ -7,17 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="content-language" content="en">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
 
   <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
   <meta name="description"
-    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+    content="A website with solutions to physics problems from Savenko Textbook" />
   <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
   <link rel="stylesheet" href="../../css/css-latex/style.css" />
 </head>
@@ -161,10 +156,15 @@
       document.body.classList.toggle('latex-dark')
     })
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script async src="prism/prism.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </body>
 
 </html>
