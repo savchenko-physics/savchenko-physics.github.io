@@ -1,0 +1,36 @@
+{
+  "name": "latex.css",
+  "version": "1.11.0",
+  "description": "A small CSS library to make your website look like a LaTeX document",
+  "main": "./style.min.css",
+  "files": [
+    "dist",
+    "fonts",
+    "lang",
+    "style.css",
+    "style.min.css"
+  ],
+  "scripts": {
+    "prepack": "vite build && cp dist/style.css style.min.css",
+    "build": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentdoerig/latex-css.git"
+  },
+  "keywords": [
+    "latex",
+    "latex-css",
+    "classless-theme",
+    "css"
+  ],
+  "author": "Vincent Dörig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincentdoerig/latex-css/issues"
+  },
+  "homepage": "https://latex.now.sh",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}
