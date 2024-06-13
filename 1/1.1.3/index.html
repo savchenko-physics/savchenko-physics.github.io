@@ -1,262 +1,132 @@
 <html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+  <head>
+    <title>Решебник Савченко</title>
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta http-equiv="content-language" content="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Решебник Савченко" />
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368" />
+  
+  <link rel="stylesheet" href="../../css/css-latex/style.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/png" />
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({
+      extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+        processEscapes: true,
+        processClass: 'tex2jax',
+        ignoreClass: 'html'
+      },
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+    </script>
+  </head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
+    <div class="container row">
+      <div id="main" class="col col-lg-9">
+        <div class="row">
+          <div class="col caption">
+            <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+          </div>
+        </div>
 
-		<script src="../../js/jquery-1.10.1.min.js"></script>
+        <div id="1" class="row odd">
+          <div class="col col-lg-12">
+            <h3> Условие: </h3>
+            <div class="task">
+              <p> \(1.1.3.\) Через открытое окно в комнату влетел жук. Расстояние от жука до потолка менялось со скоростью $1$ м/с, расстояние до стены, противоположной окну, менялось со скоростью $2$ м/с, до боковой стены — со скоростью $2$ м/с. Через $1$ с полета жук попал в угол между потолком и боковой стеной комнаты.  Определите скорость полета жука и место в окне, через которое он влетел в комнату. Высота комнаты $2,5$ м, ширина $4$ м, длина $4$ м. </p>
+            </div>
 
-	  <script type="text/javascript" async
-	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	  </script>
+            <h3> Решение: </h3>
 
-	  <!-- MathJax configuration -->
-	  <script type="text/x-mathjax-config">
-	  	MathJax.Hub.Config({
-		  extensions: ['tex2jax.js'],
-		  jax: ['input/TeX','output/HTML-CSS'],
-		  tex2jax: {
-		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-		    processEscapes: true,
-		    processClass: 'tex2jax',
-		    ignoreClass: 'html'
-		  },
-		  showProcessingMessages: false,
-		  messageStyle: 'none'
-		});
-	  </script>
-	</head>
+            <p>
+              Пусть жук попадает в угол $B$. Известно, что через одну секунду полета жук попал в т. $B$, значит, форточка находится на расстоянии $1$ м от потолка, т. к. по отношению к потолку его скорость изменялась на $1$ м/с.
+            </p>
+            <p>
+              По отношению к боковой стенке его скорость изменялась на $2$ м/с. Следовательно, он влетел на расстоянии $2$ м от боковой стенки. Точка $A$ место влета жука в комнату.
+            </p>
+            <p>
+              Координаты т. $A$ $1$ м от потолка и $2$ м от боковой стенки. Зная изменение скоростей по трем направлениям $XYZ$, найдем скорость полета жука:
+            </p>
+            <p style="text-align: center;">
+             $v = \sqrt{v_x^2 + v_y^2 + v_z^2}, \;(1)$
+            </p>
+            <p>
+              Подставим значения проекций скоростей в $(1)$
+            </p>
+            <p style="text-align: center;">
+             $v = \sqrt{2^2 + 2^2 + 1^2} = 3 (\frac{м}{c})$.
+            </p>
 
-	<body style="">
-		<div class="container row">
-			<div class="col flash">
-		    <header>
-					<h1>Решение задач из Савченко О.Я.</h1>
-				</header>
-			</div>
-			<aside class="col col-lg-3">
-			<nav>
-		    	<ul class="nav">
-
-
-		      <li>
-		  <a href="../../#1">1.Кинематика</a>
-		</li>
-
-
-		      <li>
-		  <a href="../../#2">2.Динамика</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#3">3.Колебания</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#4">4.Гидростатика</a>
-		</li>
-
-
-		            
-		      <li>
-		  <a href="../../#5">5.Молекулярная</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#6">6.Электростатика</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#7">7.Движение в электрическом поле</a>
-		</li>
-
-
-		                  
-					<li>
-			<a href="../../#8">8.Электрический ток</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#9">9.Магнитное поле</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#10">10.Движение в сложных полях</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#11">11.Электромагнитная индукция</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#12">12.Электромагнитные волны</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#13">13.Оптика</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#14">14.CTO</a>
-		</li>
-					
-		        </ul>
-			</nav>
-		</aside>	
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../">←Назад</a>
-					</h2>
-				</div>
-			</div>
-
-
-		<div id="1" class="row odd">
-
-		  <div class="col col-lg-12">
 		    <h3>
-		    	Условие:
+		    	Альтернативное решение:
 		    </h3>
-		  	<div class="task">
-				<p>                                                         
-				\(1.1.3.\) Через открытое окно в комнату влетел жук. Расстояние от жука до потолка менялось со скоростью $1$ м/с, расстояние до стены, противоположной окну, менялось со скоростью $2$ м/с, до боковой стены — со скоростью $2$ м/с. Через $1$ с полета жук попал в угол между потолком и боковой стеной комнаты.  Определите скорость полета жука и место в окне, через которое он влетел в комнату. Высота комнаты $2,5$ м, ширина $4$ м, длина $4$ м.
-				</p>
-			</div>
-		    <hr>
+              <figure>
+                <img src="01.jpg" alt="1.1.3"
+                  loading="lazy" width="100%" />
+              </figure>
+              <figure>
+                <img src="02.jpg" alt="1.1.3"
+                  loading="lazy" width="100%" />
+              </figure>
+
 		    <h3>
-		    	Решение:
+		    	Альтернативное решение:
 		    </h3>
 
-		    <div class="solutions">
-				<p class="TxtSolutions">   
-					Пусть жук попадает в угол $B$. Известно, что через одну секунду полета жук попал в т. $B$, значит, форточка находится на расстоянии $1$ м от потолка, т. к. по отношению к потолку его скорость изменялась на $1$ м/с.
-
-<br><br>По отношению к боковой стенке его скорость изменялась на $2$ м/с. Следовательно, он влетел на расстоянии $2$ м от боковой стенки. Точка $A$ место влета жука в комнату.
-
-<br><br>Координаты т. $A$ $1$м от потолка и $2$м от боковой стенки. Зная изменение скоростей по трем направлениям $XYZ$, найдем скорость полета жука:
-
-<br><br><center>$v = \sqrt{v_x^2 + v_y^2 + v_z^2}$, (1)</center>
-
-<br><br>Подставим значения проекций скоростей в (1)
-
-<br><br><center>$v = \sqrt{2^2 + 2^2 + 1^2} = 3 (\frac{м}{c})$.</center> 
-
-				</p>
-			</div>		
-			<hr>
-		    <h3>
-		    	Альтернативный способ:
-		    </h3>
-		    <div class="solutions">
-		    	<img class="ScreenS" src="01.jpg" alt="1.1.3" >
-			</div>
-		    <div class="solutions">
-		    	<img class="ScreenS" src="02.jpg" alt="1.1.3" >
-			</div>
-			
-		    <hr>
-		    <h3>
-		    	Аналогичное Решение:
-		    </h3>
 	        <div class="video-container">
 		        <iframe class="video" src="https://www.youtube.com/embed/jzRyYIb2-ks" frameborder="0" allowfullscreen></iframe>
 		    </div>
 
-		    <h3>
-		    	Ответ: жук влетел в комнату в т. А, находящейся на расстоянии 1 м от потолка и 2 м от боковой стенки со скоростью 3 м/с
-			
-		    </h3>
+            </div>   
+
+            <h4> 
+		    	Ответ: жук влетел в комнату в т. $А$, находящейся на расстоянии $1$ м от потолка и $2$ м от боковой стенки со скоростью $3$ м/с
+            </h4>
+            <br>
+
 		  </div>
 
 		</div>
 
-
-
-
-		</div>
-			<a href="#" class="back-to-top affix">
-        		↑ наверх
-      		</a>
-		</div>
-		</div>		<footer class="row container">
-						<div class="col col-lg-3">
-							<div class="footer-left">
-								<p>
-									<small>
-										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-6">
-							<div class="footer-middle">
-								<p>
-									<small>
-										Все права принадлежат авторам.<br>
-										Коммерческое использование материалов — с письменного разрешения авторов.<br>
-										astrosander01@gmail.com<br>
-										<i>E = mc<sup>2</sup></i>.
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-3">
-							<div class="footer-right">
-								<div class="pull-right">
-								</div>
-							</div>
-						</div>
-			    </footer>
-
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="row container">
+      <div class="col col-lg-3">
+        <div class="footer-left">
+          <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024 <br>
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="col col-lg-6">
+        <div class="footer-middle">
+          <p>
+            <small> Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br>   
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
