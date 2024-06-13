@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+      
+      <h4>Statement</h4>
+      <p>
+        $7.1.17^*$
+        There are two diametrically opposed holes in a non-conductive thin-walled sphere with an uniformly distributed charge $Q$ which has mass $M$. At the initial istant, the spehere is in rest. Certain particle of mass $m$ and charge $q$ (same sign of $Q$) is moved from infinite with speed $v$ over line that join the holes. Determine the time which particle will be inside the sphere.
+      </p>
+      <h4>Solution</h4>
+       <p class="TxtSolutions">
+        Firstly, we consider the situation before $q$-particle penetrates $Q$-sphere. Since both bodies have equal-sign charges, $q$-particle will move with a deacceleration while $Q$-sphere will accelerate.
+        </p>
+        <p class="TxtSolutions">
+        Applying Energy Conservation Law (from the beginning until $q$-particle reaches $Q$-sphere surface)
+        </p>
+        <center>
+            $\frac{mv^2}{2} = \frac{mv_q^2}{2}+\frac{kQq}{R}+\frac{Mv_Q^2}{2} \;(1)$
+        </center>
+        <p class="TxtSolutions">
+            From Momentum Conservation Law
+        </p>
+        <center>
+            $mv = mv_q + Mv_Q \;(2)$
+        </center>
+        <p class="TxtSolutions">   
+            Inside of $Q$-sphere, there is no electric field, then both bodies have constant velocities while $q$-particle be inside $Q$-sphere (see Figure). The displacement of $q$-particle is
+        </p>
+        <center>
+            <figure>
+              <img src="7.1.17.png"
+                loading="lazy" alt="7.1.17" width="250" />
+              <figcaption>
+                Particle motion inside the sphere
+              </figcaption>
+            </figure>
+            </center>
+        <center>
+            $\Delta S_q = \Delta S_Q+2R = v_q~T \;(3)$
+        </center>
+        <p class="TxtSolutions">
+            And the sphere's displacement is 
+        </p>
+        <center>
+            $\Delta S_Q = v_Q~T \;(4)$
+        </center>
+        <p class="TxtSolutions">   
+            From $(4)$ in $(3)$, and separating $T$
+        </p>
+        <center>
+            $T = \frac{2R}{v_q-v_Q} \;(5)$
+        </center>
+        <p class="TxtSolutions">
+            Separating $v_q$ from $(2)$
+        </p>
+        <center>
+            $v_q = v - \frac{M}{m}v_Q \;(6)$
+        </center>
+        <p class="TxtSolutions">
+            Putting $(6)$ into $(1)$ and developing algebraically
+        </p>
+        <center>
+            $0 = \frac{M}{2}\left(1+\frac{M}{m}\right)v_Q^2-Mv~v_Q + \frac{kQq}{R} \;(7)$
+        </center>
+        <p class="TxtSolutions">
+            $(7)$ is a second-degree equation or quadratic equation in $v_Q$ ($AX^2+BX+C=0$). We can solve this by Discriminant method or General-Solution formula for quadratic equations. The Discriminant is
+        </p>
+        <center>
+            $D = B^2-4AC$
+        </center>
+        <center>
+            $D = M^2v^2-2M\left(1+\frac{M}{m}\right)\frac{kQq}{R}$
+        </center>
+        <p class="TxtSolutions">
+            The solutions are
+        </p>
+        <center>
+            $X = \frac{-B\pm\sqrt{D}}{2A}$
+        </center>
+        <center>
+            $v_Q = \frac{Mv\pm\sqrt{M^2v^2-2M\left(1+\frac{M}{m}\right)\frac{kQq}{R}}}{M\left(1+\frac{M}{m}\right)} \;(8)$
+        </center>
+        <p class="TxtSolutions">
+            Substituting $(6)$ into $(5)$
+        </p>
+        <center>
+            $T = \frac{2R}{v-v_Q\left(1+\frac{M}{m}\right)} \;(9)$
+        </center>
+        <p class="TxtSolutions">
+            Putting $(8)$ into $(9)$
+        </p>
+        <center>
+            $T = \frac{2MR}{\mp\sqrt{M^2v^2-2M\left(1+\frac{M}{m}\right)\frac{kQq}{R}}}$
+        </center>
+        <p class="TxtSolutions">
+            Choosing ``plus'' (+) sign, because time is non-negative, taking $k = 1/(4\pi\epsilon_0)$ and developing
+        </p>
+        <center>
+            $\boxed{T = \frac{2R}{v}\left[1-\frac{qQ(M+m)}{2\pi\epsilon_0mMv^2}\right]^{-\frac{1}{2}}}$
+        </center>
+        <p class="TxtSolutions">
+            This is valid for $\frac{\mu v^2}{2}>\frac{qQ}{4\pi\epsilon_0R}$, where $\mu = \frac{mM}{M+m}$ is the reduced mass.
+        </p>
+        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+          </p>
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
