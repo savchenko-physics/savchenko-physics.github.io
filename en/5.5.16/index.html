@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="../img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="../css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+    <h2>Contents</h2>
+    <ol>
+      <li>
+        <a href="#1" >Kinematics</a>
+        <ol>
+          <li><a href="#1.1">Motion with constant velocity</a></li>
+          <li><a href="#1.2">Variable speed movement</a></li>
+          <li><a href="#1.3">Motion in the field of gravity. Curvilinear motion</a></li>
+          <li><a href="#1.4">Galileo's transformation</a></li>
+          <li><a href="#1.5">Motion with links</a></li>
+        </ol>
+      </li>
+            <li>
+        <a href="#2">Dynamics</a>
+        <ol>
+          <li><a href="#2.1">Newton's laws</a></li>
+          <li><a href="#2.2">Impulse. Center of mass</a></li>
+          <li><a href="#2.3">Kinetic energy. Work. Potential energy</a></li>
+          <li><a href="#2.4">Energy of the system. Energy transfer. Power</a></li>
+          <li><a href="#2.5">Collisions</a></li>
+          <li><a href="#2.6">Gravitational force. Kepler's laws</a></li>
+          <li><a href="#2.7">Rotation of a rigid body</a></li>
+          <li><a href="#2.8">Statics</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#3">Oscillations and Waves</a>
+        <ol>
+          <li><a href="#3.1">Small deviations from equilibrium</a></li>
+          <li><a href="#3.2">Period and frequency of free oscillations</a></li>
+          <li><a href="#3.3">Harmonic motion</a></li>
+          <li><a href="#3.4">Superposition of oscillations</a></li>
+          <li><a href="#3.5">Forced and damped oscillations</a></li>
+          <li><a href="#3.6">Deformations and stresses. Wave speed</a></li>
+          <li><a href="#3.7">Wave propagation</a></li>
+          <li><a href="#3.8">Superposition and reflection of waves</a></li>
+          <li><a href="#3.9">Sound. Acoustic resonators</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#4">Fluid Mechanics</a>
+        <ol>
+          <li><a href="#4.1">Pressure of a fluid</a></li>
+          <li><a href="#4.2">Buoyancy. Archimedes' principle</a></li>
+          <li><a href="#4.3">Motion of an ideal fluid</a></li>
+          <li><a href="#4.4">Flow of a viscous fluid</a></li>
+          <li><a href="#4.5">Surface tension of a liquid</a></li>
+          <li><a href="#4.6">Capillary phenomena</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#5">Molecular Physics</a>
+        <ol>
+          <li><a href="#5.1">Thermal motion of particles</a></li>
+          <li><a href="#5.2">Distribution of gas molecules by speed</a></li>
+          <li><a href="#5.3">Molecular collisions. Transport processes</a></li>
+          <li><a href="#5.4">Rarefied gases. Interaction of molecules with the surface of a solid</a></li>
+          <li><a href="#5.5">Equation of state of an ideal gas</a></li>
+          <li><a href="#5.6">First law of thermodynamics. Heat capacity</a></li>
+          <li><a href="#5.7">Gas effusion</a></li>
+          <li><a href="#5.8">Probability of a thermodynamic state</a></li>
+          <li><a href="#5.9">Second law of thermodynamics</a></li>
+          <li><a href="#5.10">Phase transitions</a></li>
+          <li><a href="#5.11">Thermal radiation</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#6">Electrostatics</a>
+        <ol>
+          <li><a href="#6.1">Coulomb's law. Electric field intensity</a></li>
+          <li><a href="#6.2">Flux of electric field intensity. Gauss's theorem</a></li>
+          <li><a href="#6.3">Electric potential. Conductors in a steady electric field</a></li>
+          <li><a href="#6.4">Capacitors</a></li>
+          <li><a href="#6.5">Electric pressure. Energy of the electric field</a></li>
+          <li><a href="#6.6">Electric field with dielectrics</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#7">Motion of charged particles in an electric field</a>
+        <ol>
+          <li><a href="#7.1">Motion in a steady electric field</a></li>
+          <li><a href="#7.2">Focusing of charged particles</a></li>
+          <li><a href="#7.3">Motion in a variable electric field</a></li>
+          <li><a href="#7.4">Interaction of charged particles</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#8">Electric current</a>
+        <ol>
+          <li><a href="#8.1">Current. Current density. Current in a vacuum</a></li>
+          <li><a href="#8.2">Conductance. Resistance. Sources of EMF</a></li>
+          <li><a href="#8.3">Electrical circuits</a></li>
+          <li><a href="#8.4">Capacitors and nonlinear elements in electrical circuits</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#9">Steady magnetic field</a>
+        <ol>
+          <li><a href="#9.1">Magnetic field induction. Effect of magnetic field on current</a></li>
+          <li><a href="#9.2">Magnetic field of a moving charge. Induction of a linear current</a></li>
+          <li><a href="#9.3">Magnetic field of current distributed over surface or space</a></li>
+          <li><a href="#9.4">Magnetic flux</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#10">Motion of charged particles in complex fields</a>
+        <ol>
+          <li><a href="#10.1">Motion in a uniform magnetic field</a></li>
+          <li><a href="#10.2">Drift motion of particles</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#11">Electromagnetic induction</a>
+        <ol>
+          <li><a href="#11.1">Motion of conductors in a steady magnetic field. Electric motors</a></li>
+          <li><a href="#11.2">Eddy electric field</a></li>
+          <li><a href="#11.3">Mutual inductance. Inductance of conductors. Transformers</a></li>
+          <li><a href="#11.4">AC electrical circuits</a></li>
+          <li><a href="#11.5">Conservation of magnetic flux. Superconductors in a magnetic field</a></li>
+          <li><a href="#11.6">Connection between variable electric and magnetic fields</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#12">Electromagnetic waves</a>
+        <ol>
+          <li><a href="#12.1">Properties, emission, and reflection of electromagnetic waves</a></li>
+          <li><a href="#12.2">Propagation of electromagnetic waves</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#13">Geometrical optics. Photometry. Quantum nature of light</a>
+        <ol>
+          <li><a href="#13.1">Rectilinear propagation and reflection of light</a></li>
+          <li><a href="#13.2">Refraction of light. Lens formula</a></li>
+          <li><a href="#13.3">Optical systems</a></li>
+          <li><a href="#13.4">Photometry</a></li>
+          <li><a href="#13.5">Quantum nature of light</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#14">Special theory of relativity</a>
+        <ol>
+          <li><a href="#14.1">Constancy of the speed of light. Addition of velocities</a></li>
+          <li><a href="#14.2">Time dilation, length contraction in moving systems. Lorentz transformation</a></li>
+          <li><a href="#14.3">Transformation of electric and magnetic fields</a></li>
+          <li><a href="#14.4">Motion of relativistic particles in electric and magnetic fields</a></li>
+          <li><a href="#14.5">Law of conservation of mass and momentum</a></li>
+        </ol>
+      </li>
+    </ol>
+
+
+  <main>
+    <article>
+      <h2 id="1" style="text-align: center;">Chapter 1. Kinematics</h2>
+      <h3 id="1.1" style="text-align: center;">§ 1.1.Motion with constant velocity</h3>
+    <div class="columns">
+        <ul class="column">
+            <li><a href="./1.1.1">1.1.1</a></li>
+            <li><a href="./1.1.1">1.1.2</a></li>
+        </ul>
+    </div>
+      <h3 id="1.2" style="text-align: center;">§ 1.2.Variable speed movement</h3>
+      <h3 id="1.3" style="text-align: center;">§ 1.3.Motion in the field of gravity. Curvilinear motion</h3>
+      <h3 id="1.4" style="text-align: center;">§ 1.4.Galileo's transformation</h3>
+      <h3 id="1.5" style="text-align: center;">§ 1.5.Motion with links</h3>
+
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
