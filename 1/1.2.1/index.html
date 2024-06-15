@@ -1,255 +1,136 @@
+
 <html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+  <head>
+    <title>Решебник Савченко</title>
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta http-equiv="content-language" content="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Решебник Савченко" />
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368" />
+  
+  <link rel="stylesheet" href="../../css/css-latex/style.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/png" />
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({
+      extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+        processEscapes: true,
+        processClass: 'tex2jax',
+        ignoreClass: 'html'
+      },
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+    </script>
+  </head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
+    <div class="container row">
+      <div id="main" class="col col-lg-9">
+        <div class="row">
+          <div class="col caption">
+            <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+          </div>
+        </div>
 
-		<script src="../../js/jquery-1.10.1.min.js"></script>
-
-	  <script type="text/javascript" async
-	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	  </script>
-
-	  <!-- MathJax configuration -->
-	  <script type="text/x-mathjax-config">
-	  	MathJax.Hub.Config({
-		  extensions: ['tex2jax.js'],
-		  jax: ['input/TeX','output/HTML-CSS'],
-		  tex2jax: {
-		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-		    processEscapes: true,
-		    processClass: 'tex2jax',
-		    ignoreClass: 'html'
-		  },
-		  showProcessingMessages: false,
-		  messageStyle: 'none'
-		});
-	  </script>
-	</head>
-
-	<body style="">
-		<div class="container row">
-			<div class="col flash">
-		    <header>
-					<h1>Решение задач из Савченко О.Я.</h1>
-				</header>
-			</div>
-			<aside class="col col-lg-3">
-			<nav>
-		    	<ul class="nav">
-
-
-		      <li>
-		  <a href="../../#1">1.Кинематика</a>
-		</li>
-
-
-		      <li>
-		  <a href="../../#2">2.Динамика</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#3">3.Колебания</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#4">4.Гидростатика</a>
-		</li>
-
-
-		            
-		      <li>
-		  <a href="../../#5">5.Молекулярная</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#6">6.Электростатика</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#7">7.Движение в электрическом поле</a>
-		</li>
-
-
-		                  
-					<li>
-			<a href="../../#8">8.Электрический ток</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#9">9.Магнитное поле</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#10">10.Движение в сложных полях</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#11">11.Электромагнитная индукция</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#12">12.Электромагнитные волны</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#13">13.Оптика</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#14">14.CTO</a>
-		</li>
-					
-		        </ul>
-			</nav>
-		</aside>	
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../">←Назад</a>
-					</h2>
-				</div>
-			</div>
-
-
-		<div id="1" class="row odd">
-
-		  <div class="col col-lg-12">
-		    <h3>
-		    	Условие:
-		    </h3>
-		  	<div class="task">
-				<p>                                                         
+        <div id="1" class="row odd">
+          <div class="col col-lg-12">
+            <h3> Условие: </h3>
+            <div class="task">
+              <p>            
 				\(1.2.1.\)  На рисунке изображена траектория электрона, который дрейфует вдоль плоскости раздела областей с различными магнитными полями. Его траектория состоит из чередующихся полуокружностей радиуса $R$ и $r$. Скорость электрона постоянна по модулю и равна $v$; найдите среднюю скорость электрона за большой промежуток времени.
-				</p>
-				<div class="StatementDiv">
-					<img class="Statement" src="statement.png" alt="6.6.20">
-				</div>
-			</div>
-		    <hr>
-		    <h3>
-		    	Решение:
-		    </h3>
+            </p>
+            </div>
+              <center>
+              <figure>
+                <img src="statement.png" alt="1.2.1"
+                  loading="lazy" width="250" />
+                <figcaption>
+                  К задаче 1.2.1
+                </figcaption>
+              </figure>
+              </center>
 
-		    <div class="solutions">
-				<p class="TxtSolutions">   
+            <h3> Решение: </h3>
+<p>
+  Рассмотрим движение электрона от точки \( A \) до точки \( B \). В этих точках электрон находится в равной «фазе». Последующее движение электрона будет повторяться.
+</p>
 
-Рассмотрим движения электрона от точки $A$ до точки $B$. В этих точках электрон находится в равной «фазе». Последующее движение электрона будет повторяться.
+<p>
+  Перемещение электрона вдоль линии раздела областей
+</p>
+<p style="text-align: center;">
+  \( S = N \cdot (2R - 2r) \).
+</p>
 
+<p>
+  Затраченное время равно сумме
+</p>
+<p style="text-align: center;">
+  \( t = N \cdot \left( \frac{\pi R}{v} + \frac{\pi r}{v} \right) = N \cdot \frac{\pi}{v} \cdot (R + r) \).
+</p>
 
-<br>Перемещение электрона вдоль линии раздела областей
+<p>
+  Средняя скорость электрона за большой промежуток времени
+</p>
+<p style="text-align: center;">
+  \( v_{ср} = \frac{S}{t} = \frac{N \cdot 2(R - r)}{N \cdot \frac{\pi}{v}(R + r)} \),
+</p>
 
-<br><center>$S = N \cdot (2R – 2r)$.</center>
+<p>
+  после преобразования
+</p>
+<p style="text-align: center;">
+  $\fbox{$v_{ср} = \frac{2}{\pi} \cdot v \cdot \frac{R - r}{R + r}$}$
+</p>
 
-<br>Затраченное время равно сумме
+            <h4> 
+		    	Ответ: 
+  \( v_{ср} = \frac{2}{\pi} v \frac{R - r}{R + r} \), направлена по границе раздела
+			 
+            </h4>
+            <br>
 
-<br><center>$t = N \cdot (\frac{\pi R}{v} + \frac{\pi r}{v}) = N \cdot \frac{\pi}{v} \cdot (R + r)$.</center>
-
-<br>Средняя скорость электрона за большой промежуток времени
-
-<br><center>$v_{ср} = \frac{S}{t} = \frac{N \cdot 2(R – r)}{N \cdot \frac{\pi}{v}(R + r)}$,</center>
-
-<br>после преобразования
-
-<br><center>$v_{ср} = \frac{2}{\pi} \cdot v \cdot \frac{R - r}{R + r}$</center>
-
-				</p>
-			</div>		
-
-		    <h3>
-		    	Ответ: $\fbox{$v_{ср} = \frac{2}{\pi} \cdot v \cdot \frac{R - r}{R + r}$,}$направлена по границе раздела
-			
-		    </h3>
 		  </div>
 
 		</div>
 
-
-
-
-		</div>
-			<a href="#" class="back-to-top affix">
-        		↑ наверх
-      		</a>
-		</div>
-		</div>		<footer class="row container">
-						<div class="col col-lg-3">
-							<div class="footer-left">
-								<p>
-									<small>
-										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-6">
-							<div class="footer-middle">
-								<p>
-									<small>
-										Все права принадлежат авторам.<br>
-										Коммерческое использование материалов — с письменного разрешения авторов.<br>
-										astrosander01@gmail.com<br>
-										<i>E = mc<sup>2</sup></i>.
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-3">
-							<div class="footer-right">
-								<div class="pull-right">
-								</div>
-							</div>
-						</div>
-			    </footer>
-
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="row container">
+      <div class="col col-lg-3">
+        <div class="footer-left">
+          <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024 <br>
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="col col-lg-6">
+        <div class="footer-middle">
+          <p>
+            <small> Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br>   
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
