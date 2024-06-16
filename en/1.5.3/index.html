@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+      
+      <h4>Statement</h4>
+      <p>
+        $1.5.3$
+        A wedge has a slope's angle of 30$^\circ$. A vertical rod goes down with velocity $v$ and pushes the wedge. What velocity will develope the wedge?
+      </p>
+      <center>
+        <figure>
+          <img src="statement.png"
+            loading="lazy" alt="1.5.3" width="200" />
+          <figcaption>
+            For problem 1.5.3
+          </figcaption>
+        </figure>
+      </center>
+      <h4>Solution</h4>
+       <p class="TxtSolutions">
+        Firstly, we suppose there is no any friction. For a better understanding of the problem, consider the following figure
+       </p>
+        <center>
+          <figure>
+            <img src="1.5.3.png"
+              loading="lazy" alt="1.5.3" width="200" />
+            <figcaption>
+              Motion of wedge and rod
+            </figcaption>
+          </figure>
+        </center>
+        <p class="TxtSolutions">
+          According to figure
+        </p>
+        <center>
+            $\tan{30^\circ}=\frac{S_r}{S_w}$
+        </center>
+        <p class="TxtSolutions">
+          and this relation is valid for velocities too because the motion is uniform (at constant speed)
+        </p>
+        <center>
+          $\tan{30^\circ}=\frac{v}{v_w}=\frac{\sqrt{3}}{3}$
+        </center>
+        So, separating $v_w$
+        <center>
+          $\boxed{v_w=v\sqrt{3}}$
+        </center>
+        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+          </p>
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
