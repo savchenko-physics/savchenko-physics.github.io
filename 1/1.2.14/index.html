@@ -1,239 +1,145 @@
 <html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+  <head>
+    <title>Решебник Савченко</title>
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta http-equiv="content-language" content="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Решебник Савченко" />
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368" />
+  
+  <link rel="stylesheet" href="../../css/css-latex/style.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/png" />
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({
+      extensions: ['tex2jax.js'],
+      jax: ['input/TeX','output/HTML-CSS'],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+        processEscapes: true,
+        processClass: 'tex2jax',
+        ignoreClass: 'html'
+      },
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+    </script>
+  </head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
+    <div class="container row">
+      <div id="main" class="col col-lg-9">
+        <div class="row">
+          <div class="col caption">
+            <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+          </div>
+        </div>
 
-		<script src="../../js/jquery-1.10.1.min.js"></script>
-	  <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	  </script>
+        <div id="1" class="row odd">
+          <div class="col col-lg-12">
+            <h3> Условие: </h3>
+            <div class="task">
+              <p> 
+				\(1.2.14.\) По графику зависимости ускорения от времени установите скорость
+в моменты времени $4$ и $15\; с$, если в момент времени $1\; с$ скорость равна $3$ м/с.
+              
+ </p>
+               <center>
+              <figure>
+                <img src="statement.png" alt="1.2.14"
+                  loading="lazy" width="250" />
+                <figcaption>
+                  К задаче 1.2.14
+                </figcaption>
+              </figure>
+              </center>
 
-	  <!-- MathJax configuration -->
-	  <script type="text/x-mathjax-config">
-	  	MathJax.Hub.Config({
-		  extensions: ['tex2jax.js'],
-		  jax: ['input/TeX','output/HTML-CSS'],
-		  tex2jax: {
-		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-		    processEscapes: true,
-		    processClass: 'tex2jax',
-		    ignoreClass: 'html'
-		  },
-		  showProcessingMessages: false,
-		  messageStyle: 'none'
-		});
-	  </script>
+            </div>
 
-	</head>
+            <h3> Решение: </h3>
 
-	<body style="">
-		<div class="container row">
-			<div class="col flash">
-		    <header>
-					<h1>Решение задач из Савченко О.Я.</h1>
-				</header>
-			</div>
-			<aside class="col col-lg-3">
-			<nav>
-		    	<ul class="nav">
+            <p> 
+				Ускорение зависит от времени, как:
+            </p>
+            <p class="exp">
+            	$\left\{\begin{matrix}
+a(t) = 0\;м/с^2,\; 0\;c \leq  t \leq  2\;c\\ 
+a(t) = 20t,\; 2\;c \leq  t \leq  5\;c\\ 
+a(t) = 60\;м/с^2,\; 5\;c \leq  t \leq  9\;c\\ 
+a(t) = 60-20(t-9),\; 9\;c \leq  t \leq  12\;c\\ 
+a(t) = 0, t> 12\;c
+\end{matrix}\right.$
+            </p>
+            <p> 
+				Учитывая, что площадь под графиком зависимости ускорения от времени, есть скорость от времени. Тогда скорость зависит от времени, как:
+            </p>
+            <p class="exp">
+            	$\left\{\begin{matrix}
+v(t) = 3\;м/с,\; 0\;c \leq  t \leq  2\;c\\ 
+v(t) = 3+20t^2/2,\; 2\;c \leq  t \leq  5\;c\\ 
+v(t) = 93+60(t-5),\; 5\;c \leq  t \leq  9\;c\\ 
+v(t) = 333 - 20 (t - 9)^2/2 + 60 (t - 9),\; 9\;c \leq  t \leq  12\;c\\ 
+v(t) = 423\;м/с, t> 12\;c
+\end{matrix}\right.$
+            </p>
+            <p> 
+				График данной зависимости представлен ниже:
+            </p>
+               <center>
+              <figure>
+                <img src="Graph.png" alt="1.2.14"
+                  loading="lazy" width="350" />
+                <figcaption>
+                  Зависимость скорости от времени
+                </figcaption>
+              </figure>
+            <p> 
+				Отсюда следует, что при $4$ и $15\;с$ скорость составляет $43$ и $423\;м/с$, соответственно.
+            </p>
 
+            <h4> 
+            	Ответ: $v_1=43\;м/с; \;v_2=423\;м/с.$
+            </h4>
 
-		      <li>
-		  <a href="../../#1">1.Кинематика</a>
-		</li>
+            <br>
 
-
-		      <li>
-		  <a href="../../#2">2.Динамика</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#3">3.Колебания</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#4">4.Гидростатика</a>
-		</li>
-
-
-		            
-		      <li>
-		  <a href="../../#5">5.Молекулярная</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#6">6.Электростатика</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#7">7.Движение в электрическом поле</a>
-		</li>
-
-
-		                  
-					<li>
-			<a href="../../#8">8.Электрический ток</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#9">9.Магнитное поле</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#10">10.Движение в сложных полях</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#11">11.Электромагнитная индукция</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#12">12.Электромагнитные волны</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#13">13.Оптика</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#14">14.CTO</a>
-		</li>
-					
-		        </ul>
-			</nav>
-		</aside>	
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../">←Назад</a>
-					</h2>
-				</div>
-			</div>
-
-
-		<div id="1" class="row odd">
-
-		  <div class="col col-lg-12">
-		    <h3>
-		    	Условие:
-		    </h3>
-		  	<div class="task">
-				<p>                                                         
-				\(1.2.14.\) Мальчик надувает воздушный шарик. При радиусе шарика $10$ см
-скорость увеличения радиуса равна $1$ мм/с. Какой объем воздуха ежесекундно
-выдыхает мальчик?
-				</p>
-			</div>
-		    <hr>
-		    <h3>
-		    	Решение:
-		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/jr30XVEUcbQ?t=980" frameborder="0" allowfullscreen></iframe>
-		    </div>
-
-		    <div class="solutions">
-		    	<img class="ScreenS" src="01.png" >
-			</div>
-		    <div class="solutions">
-		    	<img class="ScreenS" src="02.png" >
-			</div>
-
-		    <h3>
-		    	Ответ: $v_1 = 43$ м/с; $v_2 = 423$ м/с.
-<h3>
-		    </h3>
 		  </div>
 
 		</div>
 
-
-
-
-		</div>
-			<a href="#" class="back-to-top affix">
-        		↑ наверх
-      		</a>
-		</div>
-		</div>		<footer class="row container">
-						<div class="col col-lg-3">
-							<div class="footer-left">
-								<p>
-									<small>
-										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-6">
-							<div class="footer-middle">
-								<p>
-									<small>
-										Все права принадлежат авторам.<br>
-										Коммерческое использование материалов — с письменного разрешения авторов.<br>
-										astrosander01@gmail.com<br>
-										<i>E = mc<sup>2</sup></i>.
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-3">
-							<div class="footer-right">
-								<div class="pull-right">
-								</div>
-							</div>
-						</div>
-			    </footer>
-
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="row container">
+      <div class="col col-lg-3">
+        <div class="footer-left">
+          <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024 <br>
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="col col-lg-6">
+        <div class="footer-middle">
+          <p>
+            <small> Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br>   
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
