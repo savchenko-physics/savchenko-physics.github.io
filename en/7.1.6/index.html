@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+      
+      <h4>Statement</h4>
+      <p>
+        $7.1.6$
+        Particles with mass $m$ and charge $q$ enter in a capacitor of length $l$ under an angle $\alpha$ respect to plate's plane and exit forming an angle $\beta$. Find the initial kinetic energy of particles, if the field intensity inside the capacitor is $E$.
+      </p>
+      <center>
+        <figure>
+          <img src="statement.png"
+            loading="lazy" alt="7.1.6" width="300" />
+          <figcaption>
+            For problem 7.1.6
+          </figcaption>
+        </figure>
+      </center>
+      <h4>Solution</h4>
+      <p class="TxtSolutions">
+        Initial kinetic energy is defined as
+      </p>
+      <center>
+        $K_0 = \frac{mv_0^2}{2} \;(1)$
+      </center>
+       <p class="TxtSolutions">
+        If we apply Newton's Second Law, acceleration can be defined,
+       </p>
+        <center>
+          $a_y = \frac{qE}{m} \;(2)$
+        </center>
+        <p class="TxtSolutions">
+          As there are no forces in horizontal direction, the component of velocity in that direction is unaffected
+        </p>
+        <center>
+            $v_0\cos{\alpha}=v_1\cos{\beta} \;(3)$
+        </center>
+        <p class="TxtSolutions">
+          For the horizontal path until exit's point
+        </p>
+        <center>
+          $l = v_0\cos{\alpha}~t_v \;(4)$
+        </center>
+        <p class="TxtSolutions">
+          The time expended by particles during the path through the capacitor can be found from acceleration definition
+        </p>
+        <center>
+          $\vec{a_y} = \frac{\Delta \vec{v_y}}{\Delta t} = \frac{\vec{v_{1y}}-\vec{v_{0y}}}{t_v}$
+        </center>
+        <center>
+          $a_y = \frac{v_1\sin{\beta}+v_0\sin{\alpha}}{t_v}$
+        </center>
+        <center>
+          $t_v = \frac{v_1\sin{\beta}+v_0\sin{\alpha}}{a_y} \;(5)$
+        </center>
+        <p clas="TxtSolutions">
+          Substituting $v_1$ from $(3)$ into $(5)$ and developing algebraically
+        </p>
+        <center>
+          $t_v = v_0\cos{\alpha}\frac{\tan{\alpha}+\tan{\beta}}{a_y} \;(6)$
+        </center>
+        <p class="TxtSolutions">
+          Putting $(6)$ into $(4)$ and separating $v_0$
+        </p>
+        <center>
+          $v_0^2 = \frac{a_yl}{\cos^2{\alpha}(\tan{\alpha}+\tan{\beta})}$
+        </center>
+        <p class="TxtSolutions">
+          and according to $(2)$,
+        </p>
+        <center>
+          $v_0^2 = \frac{qEl}{m\cos^2{\alpha}(\tan{\alpha}+\tan{\beta})} \;(7)$
+        </center>
+        <p class="=TxtSolutions">
+          Finally, substituting $(7)$ into $(1)$
+        </p>
+        <center>
+          $\boxed{K_0 = \frac{qEl}{2\cos^2{\alpha}(\tan{\alpha}+\tan{\beta})}}$
+        </center>
+        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+          </p>
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
