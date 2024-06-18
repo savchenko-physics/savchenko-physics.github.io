@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+      
+      <h4>Statement</h4>
+      <p>
+        $2.8.4$
+        Through three holes made in a desktop pass threads united by a common nudo. At the free ending of each thread is hanged equal loads. Determine the angles between threads. There is no friction.  
+      </p>
+      <center>
+        <figure>
+          <img src="statement.png"
+            loading="lazy" alt="2.8.4" width="300" />
+          <figcaption>
+            For problem 2.8.4
+          </figcaption>
+        </figure>
+      </center>
+      <h4>Solution</h4>
+      <p class="TxtSolutions">
+        Tension in each thread is the same ($T=mg$). Moreover, note that the absolute value of the sum of two any tensions must be equal to the third one which is also $T$, for maintain the equilibrium. So, consider for example the angle $\gamma$
+      </p>
+      <center>
+        <figure>
+          <img src="draw.png"
+            loading="lazy" alt="2.8.4" width="300" />
+          <figcaption>
+            Top view
+          </figcaption>
+        </figure>
+      </center>
+      <center>
+        $T_R = T = 2T\cos{\frac{\gamma}{2}}$
+      </center>
+       <p class="TxtSolutions">
+        Hence
+       </p>
+        <center>
+          $\cos{\frac{\gamma}{2}} = 0.5$
+        </center>
+        <center>
+          $\gamma = \frac{2\pi}{3} = 120^\circ$
+        </center>
+        <p class="TxtSolutions">
+          But, since the above condition of the sum of two any tensions always is true, the three angles must be equal.
+        </p>
+        <center>
+            $\boxed{\alpha=\beta=\gamma=120^\circ}$
+        </center>
+        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+          </p>
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
