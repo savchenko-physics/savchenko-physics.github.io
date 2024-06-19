@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p> \(1.3.13^{*}.\) Снаряд, вылетев из орудия, попал в точку с координатами $x$ по горизонтали и $y$ по вертикали. Начальная скорость снаряда $v$. Найдите: 
+        </p>
+        <p>
+            а) тангенс угла, образуемого стволом орудия с горизонтом; 
+        </p>
+        <p>
+            б) границу области возможного
+попадания снаряда; 
+        </p>
+        <p>
+            в) наименьшую начальную скорость снаряда, при которой он
+может попасть в точку с координатами $x, \,y$.
+        </p>
+        <p id="hint">
+Указание. При решении воспользуйтесь тригонометрическим тождеством $1/ \cos ^2 \varphi = \tan ^2 \varphi + 1$
+        </p>
+
+        <h3> Решение: </h3>
+        <p>а) Воспользуемся формулой для траектории полета, полученной в <a href="../1.3.6" target="_blank">1.3.6</a>:</p>
+		<p class="exp">
+		$y(x) = x \tan \varphi-\frac{gx^2}{2v^2\cos^2\varphi}$
+		</p>
+        <p>Воспользуемся <a href="#hint">подсказкой</a>,</p>
+        <p class="exp">
+        $y(x) = x \tan \varphi-\frac{gx^2}{2v^2}(1+\tan ^2 \varphi)\;(1)$
+        </p>
+        <p>Откуда выражаем угол $ \varphi$:</p>
+        <p class="exp">
+        $\tan \varphi=\frac{v^2\pm\sqrt{v^4-2gv^2y-g^2x^2}}{gx}$
+        </p>
+        <p>б) Изобразим множество траекторий, меняя угол $\varphi$ от $-\frac{\pi}{2}$ до $\frac{\pi}{2}$:</p>
+           <center>
+          <figure>
+            <img src="graph.png" alt="1.3.13"
+              loading="lazy" width="450" />
+              <figcaption>
+                Траектории движения при разных углах, ложатся на одну кривую
+              </figcaption>
+          </figure>
+          </center>
+        <p>Проанализировав область определения функции $(1)$, подчеркнем, что подкоренное выражение не отрицательное</p>
+        <p class="exp">
+        $v^4-2gv^2y-g^2x^2 \geq 0$
+        </p>
+        <p class="exp">
+        $y \leq \frac{v^2}{2g}-\frac{gx^2}{2v^2}$
+        </p>
+        <p>в) Из $(1)$, получаем:</p>
+        <p class="exp">
+            $v_{x}v_{y}x-\frac{1}{2}gx^{2}=v_{x}^{2}y$
+        </p>
+        <p>Воспользуемся формулой для горизонтальной и вертикальной координат, полученной в <a href="../1.3.6" target="_blank">1.3.6</a>:</p>
+        <p class="exp">
+        $y(t) = vt \cdot \sin{\varphi} - \frac{gt^2}{2}$
+        </p>
+        <p class="exp">
+        $x(t) = vt \cdot \cos{\varphi}$
+        </p>
+        <p>Пусть $\xi=\cos{\varphi}$, </p>
+        <p class="exp">
+            $v_y = v \xi$
+        </p>
+        <p class="exp">
+            $v_x = v \sqrt{1-\xi ^2}$
+        </p>
+        <p>Получаем функцию </p>
+        <p class="exp">
+            $v(\xi)=\frac{\sqrt{g}x}{\sqrt{2 \xi \sqrt{1-\xi ^{2}}x-\xi ^{2}y}} \;(2)$
+        </p>
+        <p>Максимум подкоренного значения соответсвует минимуму функции (2)</p>
+        <p class="exp">
+            $(\sqrt{x^{2}+y^{2}-y})/2 \rightarrow  \max$
+        </p>
+        <p>Минимум функции $(2)$</p>
+        <p class="exp">
+            $\fbox{$v^{2}=\frac{gx}{\sqrt{1+(\frac{y}{x})^{2}}-\frac{y}{x}}$}$
+        </p>
+
+
+        <h4> 
+            Ответ: 
+        </h4>
+        <p>a) $\tan \varphi=\frac{v^2\pm\sqrt{v^4-2gv^2y-g^2x^2}}{gx}.$
+        </p>
+        <p>б) $y=\frac{v^2}{2g}-\frac{gx^2}{2v^2}$
+        </p>
+        <p>в) $v_{\text{мин}}=\sqrt{g(y+\sqrt{x^2+y^2})}$
+        </p>
+        <br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
