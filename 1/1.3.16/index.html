@@ -21,7 +21,7 @@
             extensions: ['tex2jax.js'],
             jax: ['input/TeX', 'output/HTML-CSS'],
             tex2jax: {
-                inlineMath: [['$', '$'], ['\(', '\)']],
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
                 processEscapes: true,
                 processClass: 'tex2jax',
                 ignoreClass: 'html'
@@ -44,37 +44,49 @@
 
         <h3> Условие: </h3>
 
-        <p> $1.3.19^*$. Какую минимальную скорость должен иметь камень, брошенный мальчиком, чтобы он перелетел дом высоты $H$ и длины $L$, если бросок совершается с высоты $h$ и для броска мальчик может выбрать любое место?
+        <p> \(1.3.16^*.\) В трубу длины $l$, наклоненную под углом $\alpha$ к горизонту, влетает шарик с горизонтальной скоростью $v$. Определите время пребывания шарика в трубе, если удары шарика о ее стенки упругие.
+        </p>
+          <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="200" />
+            <figcaption>
+              К задаче 1.3.16
+            </figcaption>
+          </figure>
+          </center>
+
+        <h3> Решение: </h3>
+        <p>a) Найдем условие, при котором соудареня будут отсутсвовать$(x=0)$</p>
+        <p>Из закона сохранения энергии:</p>
+        <p class="exp">
+        $\frac{mv_0^2}{2} = mgl \cdot \sin \alpha$
+        </p>
+        <p class="exp">
+        $v_{0}\leq\frac{\sqrt{2gl\sin \alpha}}{\cos\alpha}$
+        </p>
+        <p>В этом случае пройдет время</p>
+        <p class="exp">
+        $ t = \frac{2v_0}{g} \text{ctg} \alpha$
+        </p>
+        <p>b) Теперь рассмотрим те случаи, когда происходит касание:</p>
+        <p class="exp">
+        $v_{0}>\frac{\sqrt{2gl\sin \alpha}}{\cos\alpha}$
+        </p>
+        <p>Путь между двумя касаниями:</p>
+        <p class="exp">
+        $L=v_{0}\cos\alpha t-\frac{g\sin\alpha t^{2}}{2}$
+        </p>
+        <p>При получении необходимого времени выбираем именно тот, который меньший, т.к. необходимо найти время когда он выйдет</p>
+        <p class="exp">
+            $t=\frac{v_{0}\cos\alpha-\sqrt{v_{0}^{2}\cos^{2}\alpha-2g\sin\alpha L}}{g\sin\alpha}$
         </p>
 
-		<h3> Решение: </h3>
-		<p>Оптимальная траектория, соответствующая минимально возможной скорости броска, должна почти касаться краев дома. Минимум скорости камня в точке бросания соответствует минимальной кинетической энергии камня в точке касания с краем дома.
-		</p>
-		<p>
-		Таким образом, задача сводится к определению минимальной скорости камня в верхней угловой точке дома, достаточно для того, чтобы преодолеть расстояние, равное длине дома $L$ — камень должен в этом месте иметь скорость, направленную под углом $45^{ \circ}$ к горизонту. Скорость камня в этой точке определяется известным соотношением:</p>
-		<p class="exp">
-		$L = \frac{v^{2} \sin 2\alpha }{g}$.
-		</p>
-		<p>С учетом выбранного угла получим </p>
-		<p class="exp">
-			$v^{2} = gL$
-		</p>
-		<p>Скорость в точке броска $u$ найдется из закона сохранения энергии:</p>
-		<p class="exp">
-		$\frac{mu^{2} }{2} + mgh = \frac{mv^{2} }{2} + mgH $
-		</p>
-		<p class="exp">
-		$u=\sqrt{g(2(H-h)+L)}$
-		</p>
-
-        <h3> Альтернативное решение: </h3>
-        <div class="video-container">
-	        <iframe class="video" src="https://www.youtube.com/embed/rYNkzwYR9_c" frameborder="0" allowfullscreen></iframe>
-	    </div>
-
         <h4> 
-            Ответ: $v=\sqrt{g[2(H-h)+L]}$
+            Ответ: 
         </h4>
+        <p>$\begin{aligned}&t=\frac{2v}{g}\operatorname{ctg}\alpha\text{ при }v\cos\alpha<\sqrt{2gl\sin\alpha};\\&t=\frac vg\operatorname{ctg}\alpha\bigg(1-\sqrt{1-\frac{2gl\operatorname{tg}\alpha}{v^2\cos\alpha}}\bigg)\text{ при }v\cos\alpha>\sqrt{2gl\sin\alpha}.\end{aligned}$
+        </p>
         <br>
 
     <footer class="row container">
