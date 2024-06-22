@@ -45,35 +45,69 @@
         <h3> Условие: </h3>
 
         <p>     
-        	$1.4.6^*.$ Буер представляет собой парусные сани. Он может двигаться лишь по линии, по которой направлены его коньки. Ветер дует со скоростью $v$, перпендикулярной направлению движения буера. Парус же составляет $30^{\circ}$ с направлением движения. Какую скорость не может превысить буер при этом ветре?
+        	$1.4.7^*.$ Какой будет продолжительность полета самолета из Новосибирска в Москву и обратно, происходящего по прямой, если в течение всего полета ветер дует под углом $\alpha$ к трассе со скоростью $u$? Скорость самолета относительно воздуха $v$, длина трассы $L$. При каком направлении ветра продолжительность полета максимальна?
+
         </p>
-          <center>
-          <figure>
-            <img src="statement.png"
-              loading="lazy" width="180" />
-            <figcaption>
-                К задаче 1.4.6
-            </figcaption>
-          </figure>
-          </center>
   		<h3> Решение: </h3>
 
       <center>
       <figure>
-        <img src="buer.png"
+        <img src="draw.png"
           loading="lazy" width="200" />
-            <figcaption>
-                Буер - парусные сани
-            </figcaption>
       </figure>
       </center>
-<br>
-        <div class="video-container">
-	        <iframe class="video" src="https://www.youtube.com/embed/kt78w9A1fdg" frameborder="0" allowfullscreen></iframe>
-	    </div>
 
+        <p >
+            Чтобы самолет летел по курсу необходимо, чтобы выполнялось условие
+        </p>
+        <p class="exp">
+             $u \sin \alpha = v \sin \beta$
+        </p>
+        <p >
+            Откуда
+        </p>
+        <p class="exp">
+             $\cos \beta = \sqrt{1 - u^2 \sin ^2 \alpha / v^2}$
+        </p>
+        <p >
+            А полное время туда и обратно
+        </p>
+        <p class="exp">
+             $t_1 = \frac{L}{v \cos \beta + u \cos \alpha}$
+        </p>
+        <p class="exp">
+             $t_2 = \frac{L}{v\cos \beta - u \cos \alpha}$
+        </p>
+        <p >
+            Полное время найдем, как 
+        </p>
+        <p class="exp">
+            $t=t_1+t_2$
+        </p>
+        <p >
+            Подставим значение $\cos \beta$:
+        </p>
+        <p class="exp">
+            $t=\frac{L}{\sqrt{v^2 - u^2 \sin ^2 \alpha } + u \cos \alpha} + \frac{L}{\sqrt{v^2 - u^2 \sin ^2 \alpha} - u \cos \alpha}$
+        </p>
+        <p class="exp">
+            $t=L\frac{\sqrt{v^2 - u^2 \sin ^2 \alpha }+\sqrt{v^2 - u^2 \sin ^2 \alpha} }{(\sqrt{v^2 - u^2 \sin ^2 \alpha} + u \cos \alpha)(\sqrt{v^2 - u^2 \sin ^2 \alpha} - u \cos \alpha)}$
+        </p>
+        <p class="exp">
+            $t=\frac{2L\sqrt{v^2 - u^2 \sin ^2 \alpha }}{(\sqrt{v^2 - u^2 \sin ^2 \alpha} + u \cos \alpha)(\sqrt{v^2 - u^2 \sin ^2 \alpha} - u \cos \alpha)}$
+        </p>
+        <p >
+            Выражаем искомое время:
+        </p>
+        <p class="exp">
+            $\fbox{$t=\frac{2L\sqrt{v^2 - u^2 \sin ^2 \alpha }}{v^{2}-u^{2}}$}$
+        </p>
 
-        <h3> Ответ: $v_{макс} = v \sqrt{3}.$</h3>
+        <h3> Ответ: </h3>
+        <p >
+            $t=\frac{2L\sqrt{v^{2}-u^{2}\operatorname{sin}^{2}\alpha}}{v^{2}-u^{2}}.\textrm{Вдоль трассы}.$
+        </p>
+
         <br>
 
     <footer class="row container">
