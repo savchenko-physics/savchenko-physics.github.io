@@ -45,53 +45,59 @@
         <h3> Условие: </h3>
 
         <p>     
-        	$ 1.5.15.$ Постройте примерный график зависимости скорости точки $B$ от времени, если скорость $v_{a}$ точки $A$ постоянна. Найдите формулу этой зависимости,
-если $x(0) = 0$.
-        </p>
+          $ 1.5.17.$ Бревно, упираясь нижним своим концом в угол между стеной и землей, касается дна грузовика на высоте $H$ от земли. Найдите угловую скорость бревна в зависимости от угла $α$ между ним и горизонталью, если грузовик отъезжает от стены со скоростью $v$.
+      </p>
       <center>
       <figure>
         <img src="statement.png"
           loading="lazy" width="250" />
         <figcaption>
-          К задаче 1.5.15
+          К задаче 1.5.17
         </figcaption>
       </figure>
       </center>
 
-  		<h3> Решение: </h3>
+      <h3> Решение: </h3>
 
+
+    <p>NO: Перед просмотром решения данной задачи, советую ознакомиться с решением <a href="../1.5.16">1.5.16</a></p>
+    <p>В момент времени $t$ автомобиль проедет расстояние путь $vt$ и дно будет иметь горизонатальную координату $x$</p>
+    <p> $$x = vt + H \tan \alpha\;(1)$$ </p>
+    <p>Рассмотрим изменение угла $\alpha = \arctan \frac{H}{x}$ за малый промежуток времени $dt$</p>
+    <p> $$d\alpha = d(\arctan \frac{H}{x})$$ </p>
+    <p> $$d\alpha = \frac{1}{1+\frac{H^2}{x^2}} \frac{H}{x^2}$$ </p>
+    <p> $$d\alpha = dx\frac{H}{x^2+H^2}$$ </p>
+    <p>Учитывая, что $\omega = \frac{d \alpha}{dt}$ и $v = \frac{dx}{dt}$</p>
+    <p> $$\omega = \frac{vH}{x^2+H^2}$$ </p>
+    <p>Подставляем $(1)$</p>
+    <p>  $$\omega = \frac{v}{H(1 +  \tan^2 \alpha)}$$ </p>
+    <p>  $$\fbox{$\omega = \frac{v \sin^2 \alpha}{H}$}$$ </p>
+
+      <h3> Ответ: $\omega = \frac{v \sin^2 \alpha}{H}$</h3>
+
+
+      <h3> Альтернативное решение: </h3>
+      <p>За время $\Delta t$ грузовик отъедет на расстояние</p>
+<p>$$\Delta l=\upsilon \Delta t$$</p>
       <center>
       <figure>
         <img src="draw.png"
-          loading="lazy" width="300" />
+          loading="lazy" width="280" />
         <figcaption>
-          Распределение скоростей на нитях
+          Бревно и грузовик
         </figcaption>
       </figure>
       </center>
-
-
-      <p>NO: Перед просмотром решения данной задачи, советую ознакомиться с решением <a href="../1.5.14">1.5.14</a></p>
-
-		<p>В момент времени $t$ высота, на которую опустилась точка</p>
-		<p class="exp"> $$x = v_A t\;(1)$$ </p>
-		<p>Рассмотрим изменение длины нити за маленький промежуток времени $dt$
-		</p>
-		<p class="exp"> $$dl = \sqrt{L^2 + (x+dx)^2}-\sqrt{L^2 + x^2}$$ </p>
-		<p class="exp"> $$dl = \sqrt{L^2 + x^2}(\sqrt{1 + \frac{2xdx}{L^2 + x^2}}-1)$$ </p>	 	     
-		<p>Воспользуемся формулой для малых величин $(1+x)^\alpha \approx 1+\alpha x$, где $x\rightarrow 0$:</p>
-		<p class="exp"> $$dl = \frac{xdx}{\sqrt{L^2 + x^2}}$$ </p>
-		<p>Учитывая, что $v_B = \frac{dl}{dt}$ и $v_A = \frac{dx}{dt}$</p>
-		<p class="exp"> $$v_B = \frac{x}{\sqrt{L^2 + x^2}} \frac{dx}{dt}$$ </p>
-		<p class="exp"> $$v_B = v_A\frac{x}{\sqrt{L^2 + x^2}}$$ </p>	 	    
-		<p>Подставляем $(1):$ </p> 
-		<p class="exp"> $$\fbox{$v_B = \frac{v_A^2t}{\sqrt{L^2 + v_A^2t^2}}$}$$ </p>	 	    
-		
-
-		<p>NO: Более развернутую и красивую задачу с похожей идеей можно найти в <a href="https://belphol.github.io/books/LongProblemsPart1.pdf" target="_blank">"Очень длинных физических задачах"</a> А.И.Слободянюка(Задача 2)</p>
-
-      
-      <h3> Ответ: $v_B = \frac{v_A^2t}{\sqrt{L^2 + v_A^2t^2}}$</h3>
+      <p>При этом бревно чуть опустится, повернувшись на малый угол $\Delta \alpha$. Если длина дуги поворота $\Delta x$, то по определению радианной меры угла</p>
+<p>$$\Delta \alpha=\frac{\Delta x }{R}$$</p>
+<p>Угловая скорость определяется как</p>
+<p>$$\omega=\frac{\Delta \alpha }{\Delta t }=\frac{\Delta x }{R\Delta t }$$</p>
+<p>Но $\Delta x =\upsilon \Delta t\sin \alpha$.</p>
+<p>$$\omega=\frac{\upsilon \Delta t\sin \alpha }{R\Delta t }=\frac{\upsilon\sin \alpha }{R}$$</p>
+<p>Также можно записать, что</p>
+<p>$$H=R\sin \alpha$$</p>
+<p>С учетом этого</p>
+<p>$$\omega=\frac{\upsilon\sin^2 \alpha}{H}$$</p>
 <br>
 
     <footer class="row container">
