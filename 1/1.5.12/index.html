@@ -45,53 +45,45 @@
         <h3> Условие: </h3>
 
         <p>     
-        	$ 1.5.15.$ Постройте примерный график зависимости скорости точки $B$ от времени, если скорость $v_{a}$ точки $A$ постоянна. Найдите формулу этой зависимости,
-если $x(0) = 0$.
+        	$1.5.12.$ Бусинка может двигаться по кольцу радиуса $R$, подталкиваемая спицей, равномерно вращающейся с угловой скоростью $ω$ в плоскости кольца. Ось вращения спицы находится на кольце. Определите ускорение бусинки.
         </p>
       <center>
       <figure>
         <img src="statement.png"
-          loading="lazy" width="250" />
+          loading="lazy" width="200" />
         <figcaption>
-          К задаче 1.5.15
+          К задаче 1.5.12
         </figcaption>
       </figure>
       </center>
 
   		<h3> Решение: </h3>
 
-      <center>
-      <figure>
-        <img src="draw.png"
-          loading="lazy" width="300" />
-        <figcaption>
-          Распределение скоростей на нитях
-        </figcaption>
-      </figure>
-      </center>
+        <center>
+          <figure>
+            <img src="draw.png"
+              loading="lazy" width="350" />
+            <figcaption>
+                Отображение векторов скоростей
+            </figcaption>
+          </figure>
+        </center>
 
-
-      <p>NO: Перед просмотром решения данной задачи, советую ознакомиться с решением <a href="../1.5.14">1.5.14</a></p>
-
-		<p>В момент времени $t$ высота, на которую опустилась точка</p>
-		<p class="exp"> $x = v_A t\;(1)$ </p>
-		<p>Рассмотрим изменение длины нити за маленький промежуток времени $dt$
-		</p>
-		<p class="exp"> $dl = \sqrt{L^2 + (x+dx)^2}-\sqrt{L^2 + x^2}$ </p>
-		<p class="exp"> $dl = \sqrt{L^2 + x^2}(\sqrt{1 + \frac{2xdx}{L^2 + x^2}}-1)$ </p>	 	     
-		<p>Воспользуемся формулой для малых величин $(1+x)^\alpha \approx 1+\alpha x$, где $x\rightarrow 0$:</p>
-		<p class="exp"> $dl = \frac{xdx}{\sqrt{L^2 + x^2}}$ </p>
-		<p>Учитывая, что $v_B = \frac{dl}{dt}$ и $v_A = \frac{dx}{dt}$</p>
-		<p class="exp"> $v_B = \frac{x}{\sqrt{L^2 + x^2}} \frac{dx}{dt}$ </p>
-		<p class="exp"> $v_B = v_A\frac{x}{\sqrt{L^2 + x^2}}$ </p>	 	    
-		<p>Подставляем $(1):$ </p> 
-		<p class="exp"> $\fbox{$v_B = \frac{v_A^2t}{\sqrt{L^2 + v_A^2t^2}}$}$ </p>	 	    
-		
-
-		<p>NO: Более развернутую и красивую задачу с похожей идеей можно найти в <a href="https://belphol.github.io/books/LongProblemsPart1.pdf" target="_blank">"Очень длинных физических задачах"</a> А.И.Слободянюка(Задача 2)</p>
+      <p>Бусинка будет двигаться вдоль спицы со скоростью $\upsilon_{\parallel}$, и, поскольку спица вращается, то у бусинки будет составляющая скорости, перпендикулярная спице: $\upsilon_{\perp}$</p>
+      <p>Тогда абсолютная скорость $\vec{v}$ в НСО, будет равна векторной сумме $\vec{v}_{отн}$ и $\vec{v}_{кл}$</p>
+      <p class="exp">$\upsilon_{\perp}=\omega r=\omega\cdot 2R\cos\alpha$</p>
+      <p>С другой стороны,</p>
+      <p>Тогда абсолютная скорость $\vec{v}$ в НСО, будет равна векторной сумме $\vec{v}_{отн}$ и $\vec{v}_{кл}$</p>
+      <p class="exp">$\upsilon_{\perp}=\upsilon \cos\alpha$</p>
+      <p>Так как скорость бусинки, движущейся по окружности, направлена перпендикулярно радиусу.</p>
+      <p>Тогда</p>
+      <p class="exp">$\omega\cdot 2R\cos\alpha=\upsilon \cos\alpha$</p>
+      <p class="exp">$\upsilon=2R\omega=\text{const}$</p>
+      <p>Так как скорость по модулю не меняется, то у бусинки есть только нормальное ускорение</p>
+      <p class="exp">$a_n=\frac{\upsilon^2}{R}=\frac{4\omega^2R^2}{R}=4\omega^2R$</p>
 
       
-      <h3> Ответ: $v_B = \frac{v_A^2t}{\sqrt{L^2 + v_A^2t^2}}$</h3>
+      <h3> Ответ: $4\omega^2R$</h3>
 <br>
 
     <footer class="row container">
