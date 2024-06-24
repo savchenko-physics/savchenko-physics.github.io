@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,93 +40,56 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $5.5.16$
-        The gas thermometer consists in two identical containers with volume $V_0$ each one, linked by a tube of length $l$ and cross section $S$. A mercury droplet obstructs the tube. If temperatures of gasses in the volumes are equal, the mercury lies in the center of the tube. The right volume is connected to a thermostat with temperature $T_0$. Scale the thermometer finding the dependence between gas temperature in left volume and the displacement $x$ of mercury respect to equilibrium position.
-      </p>
-      <center>
-        <figure>
-          <img src="statement.png"
-            loading="lazy" alt="5.5.16" width="250" />
-          <figcaption>
-            For problem 5.5.16
-          </figcaption>
-        </figure>
-      </center>
-      <h4>Solution</h4>
-       <p class="TxtSolutions">
-        Let denote left volume as $V_1$ and right one as $V_2$. Applying state equation for each container
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>
+          $5.5.16$
+          The gas thermometer consists in two identical containers with volume $V_0$ each one, linked by a tube of length $l$ and cross section $S$. A mercury droplet obstructs the tube. If temperatures of gasses in the volumes are equal, the mercury lies in the center of the tube. The right volume is connected to a thermostat with temperature $T_0$. Scale the thermometer finding the dependence between gas temperature in left volume and the displacement $x$ of mercury respect to equilibrium position. 
         </p>
         <center>
-          $P_1~V_1 = nRT \;(1)$ 
+          <figure>
+            <img src="statement.png"
+              loading="lazy" alt="5.5.16" width="250" />
+            <figcaption>
+              For problem 5.5.16
+            </figcaption>
+          </figure>
         </center>
-        <center>
-          $P_0~V_2 = nRT_0 \;(2)$ 
-        </center>
-        <p class="TxtSolutions">
-        It is easy to see that
-        </p>
-        <center>
-            $V_1 = V_0+S\frac{l}{2}-Sx \;(3)$
-        </center>
-        <center>
-            $V_2 = V_0+S\frac{l}{2}+Sx \;(4)$
-        </center>
-        <p class="TxtSolutions">
-            If droplet is in equilibrium that means pressure forces due to gasses are equal, so $P_1 = P_0$. Then, dividing $(1)$ and $(2)$
-        </p>
-        <center>
-            $\frac{V_1}{V_2}=\frac{T}{T_0} \;(5)$
-        </center>
-        <p class="TxSolutions">
+
+        <h3>Solution</h3>
+        <p>
+          Let denote left volume as $V_1$ and right one as $V_2$. Applying state equation for each container
+          $$P_1~V_1 = nRT \;(1)$$
+          $$P_0~V_2 = nRT_0 \;(2)$$ 
+          It is easy to see that
+          $$V_1 = V_0+S\frac{l}{2}-Sx \;(3)$$
+          $$V_2 = V_0+S\frac{l}{2}+Sx \;(4)$$
+          If droplet is in equilibrium that means pressure forces due to gasses are equal, so $P_1 = P_0$. Then, dividing $(1)$ and $(2)$
+          $$\frac{V_1}{V_2}=\frac{T}{T_0} \;(5)$$
           Substituting $(3)$ and $(4)$ into $(5)$ and separating $T$
+          $$\boxed{T = T_0~\frac{2V_0+S(l+2x)}{2V_0+S(l-2x)}}$$
+          This is mathematically valid for $0< x <\frac{V_0}{S}+\frac{l}{2}$ but according the physical situation only for $0< x < \frac{l}{2}$.
         </p>
-        <center>
-          $\boxed{T = T_0~\frac{2V_0+S(l+2x)}{2V_0+S(l-2x)}}$
-        </center>
-        <p class="TxtSolutions">   
-            This is mathematically valid for $0< x <\frac{V_0}{S}+\frac{l}{2}$ but according the physical situation only for $0< x < \frac{l}{2}$.
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
         </p>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
-          </p>
-    </article>
-  </main>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>

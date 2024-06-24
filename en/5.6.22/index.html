@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,147 +40,76 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $5.6.22^*$
-        In a rarefied space, a cylindrical container remains vertically, covered at the top by a movable piston of mass $M$. Inside the closed volume, there is a monoatomic gas at temperature $T$ and pressure $P$. The interior cross-section of the cylinder is $S$, the height of volume where gas lies is $H$. The piston is set free and is moved. What maximum speed will develope the piston, if gas is compressed by the piston a) isothermally and b) adiabatically? The acceleration due to gravity is $g$.
-      </p>
-      <center>
-      <figure>
-        <img src="statement.png"
-          loading="lazy" alt="1.1.1" width="150" />
-        <figcaption>
-          For the 5.6.22 problem
-        </figcaption>
-      </figure>
-      </center>
-      <h4>Solution</h4>
-        <p class="TxtSolutions">
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>
+            $5.6.22^*$
+            In a rarefied space, a cylindrical container remains vertically, covered at the top by a movable piston of mass $M$. Inside the closed volume, there is a monoatomic gas at temperature $T$ and pressure $P$. The interior cross-section of the cylinder is $S$, the height of volume where gas lies is $H$. The piston is set free and is moved. What maximum speed will develope the piston, if gas is compressed by the piston a) isothermally and b) adiabatically? The acceleration due to gravity is $g$.
+        </p>
+        <center>
+            <figure>
+            <img src="statement.png"
+              loading="lazy" alt="1.1.1" width="150" />
+            <figcaption>
+              For the 5.6.22 problem
+            </figcaption>
+            </figure>
+        </center>
+
+        <h3>Solution</h3>
+        <p>
             a) From Energy Conservation Law or Kinetic Energy - Work theorem
-        </p>
-        <center>
-            $\frac{Mv^2}{2} = Mg(H-y) + A \;(1)$
-        </center>
-        <p class="TxtSolutions">
+            $$\frac{Mv^2}{2} = Mg(H-y) + A \;(1)$$
             where $A$ is the work done over the piston, equals to work done by gas, in this case (isothermal process) defined by
-        </p>
-        <center>
-            $A = nRT\ln{\frac{Sy}{SH}} = -nRT\ln{\frac{H}{y}} \;(2)$
-        </center>
-        <p class="TxtSolutions">   
+            $$A = nRT\ln{\frac{Sy}{SH}} = -nRT\ln{\frac{H}{y}} \;(2)$$
             Substituting $(2)$ into $(1)$
-        </p>
-        <center>
-            $\frac{Mv^2}{2} = Mg(H-y) - nRT\ln{\frac{H}{y}} \;(3)$
-        </center>
-        <p class="TxtSolutions">
+            $$\frac{Mv^2}{2} = Mg(H-y) - nRT\ln{\frac{H}{y}} \;(3)$$
             From Boyle-Mariotte Law 
-        </p>
-        <center>
-            $PSH = P'Sy \;(4)$
-        </center>
-        <p class="TxtSolutions">   
+            $$PSH = P'Sy \;(4)$$
             Applying state equation to initial state,
-        </p>
-        <center>
-            $PSH = nRT$
-        </center>
-        <center>
-            $n = \frac{PSH}{RT} \;(5)$
-        </center>
-        <p class="TxtSolutions">
+            $$n = \frac{PSH}{RT} \;(5)$$
+            $$PSH = nRT$$
             Applying Newton's Second Law
-        </p>
-        <center>
-            $Mg - P(t)S = M\frac{dv}{dt}$
-        </center>
-        <p class="TxtSolutions">
+            $$Mg - P(t)S = M\frac{dv}{dt}$$
             At the moment of maximum velocity, $dv/dt = 0$ and $P(t) = P'$, hence
-        </p>
-        <center>
-            $Mg = P'S \;(6)$
-        </center>
-        <p class="TxtSolutions">
+            $$Mg = P'S \;(6)$$
             Putting $(6)$ into $(4)$ and separating $y$
-        </p>
-        <center>
-            $y = \frac{PSH}{Mg} \;(7)$
-        </center>
-        <p class="TxtSolutions">
+            $$y = \frac{PSH}{Mg} \;(7)$$
             Substituting $(5)$ and $(7)$ into $(3)$ and separating $v$
-        </p>
-        <center>
-            $\boxed{v = \sqrt{2gH\left(1-\frac{PS}{Mg}+\frac{PS}{Mg}\ln{\frac{PS}{Mg}}\right)}}$
-        </center>
-        <p class="TxtSolutions">
+            $$\boxed{v = \sqrt{2gH\left(1-\frac{PS}{Mg}+\frac{PS}{Mg}\ln{\frac{PS}{Mg}}\right)}}$$
             b) From Poisson's Law
-        </p>
-        <center>
-            $P(SH)^\gamma = P'(Sy)^\gamma \;(8)$
-        </center>
-        <p class="TxtSolutions">
+            $$P(SH)^\gamma = P'(Sy)^\gamma \;(8)$$
             The work done by the gas in an adiabatic process is given by
-        </p>
-        <center>
-            $A = \frac{PSH-P'Sy}{\gamma-1} \;(9)$
-        </center>
-        <p class="TxtSolutions">
+            $$A = \frac{PSH-P'Sy}{\gamma-1} \;(9)$$
             According to $(6)$, we can modify $(8)$ and separating $y$, obtaining
-        </p>
-        <center>
-            $y = H\left(\frac{PS}{Mg}\right)^\frac{1}{\gamma} \;(10)$
-        </center>
-        <p class="TxtSolutions">
+            $$y = H\left(\frac{PS}{Mg}\right)^\frac{1}{\gamma} \;(10)$$
             Putting $(9)$ into $(1)$, and taking account $(6)$,
-        </p>
-        <center>
-            $\frac{Mv^2}{2} = H\left(Mg+\frac{PS}{\gamma-1}\right)-Mgy\left(1+\frac{1}{\gamma-1}\right) \;(11)$
-        </center>
-        <p class="TxtSolutions">
+            <div class="scroll-wrapper">
+                $$\frac{Mv^2}{2} = H\left(Mg+\frac{PS}{\gamma-1}\right)-Mgy\left(1+\frac{1}{\gamma-1}\right) \;(11)$$
+            </div>
             Substituting $(10)$ into $(11)$, since gas is monoatomic ($i = 3$ and $\gamma = 5/3$), and separating $v$
+            $$\boxed{v = \sqrt{2gH\left[1-\frac{5}{2}\left(\frac{PS}{Mg}\right)^\frac{3}{5}+\frac{3}{2}\frac{PS}{Mg}\right]}}$$
         </p>
-        <center>
-            $\boxed{v = \sqrt{2gH\left[1-\frac{5}{2}\left(\frac{PS}{Mg}\right)^\frac{3}{5}+\frac{3}{2}\frac{PS}{Mg}\right]}}$
-        </center>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
-          </p>
-    </article>
-  </main>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>

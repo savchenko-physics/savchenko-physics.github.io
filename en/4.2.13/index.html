@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,127 +40,74 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $4.2.13$
-        Two equal trunks are placed as the figure shows. The lower trunk is linked to the vertical wall by wires that form an angle of 45$^\circ$ with it. The upper trunk is half submerged in water. Find the density of the trunks.   
-      </p>
-      <center>
-        <figure>
-          <img src="statement.png"
-            loading="lazy" alt="4.2.13" width="300" />
-          <figcaption>
-            For problem 4.2.13
-          </figcaption>
-        </figure>
-      </center>
-      <h4>Solution</h4>
-      <p class="TxtSolutions">
-        Let's analyze the following force diagram
-      </p>
-      <center>
-        <figure>
-          <img src="diagram.png"
-            loading="lazy" alt="4.2.13" width="300" />
-          <figcaption>
-            Force diagram for each trunk
-          </figcaption>
-        </figure>
-      </center>
-      <p class ="TxtSolutions">
-        Consider the trunks are perfect wooden cylinders. Applying Newton Second Law for cylinder 1, on $x$-direction,
-      </p>
-      <center>
-        $-N'\cos{45^\circ}+N = 0 \;(1)$
-      </center>
-      and on $y$-axis
-      <center>
-        $mg = \rho_0 g V_s + N'\sin{45^\circ} = \rho_0 g V_{s1} + N'\frac{\sqrt{2}}{2}$
-      </center>
-      <p calss="TxtSolutions">
-        as trunk 1 is half submerged, $V_{s1} = \frac{\pi R^2 L}{2}$ and its mass is $m = \rho V$, so separating $\rho$
-      </p>
-      <center>
-        $\rho = \frac{1}{2}\left(\rho_0+\frac{N'\sqrt{2}}{\pi R^2 L}\right) \;(2)$
-      </center>
-      <p class="TxtSolutions">
-        Applying Newton Second Law for cylinder 2, on $x$-axis
-      </p>
-      <center>
-        $N'\cos{45^\circ}-T\cos{45^\circ}=0$
-      </center>
-      <center>
-        $N' = T \;(3)$
-      </center>
-      <p calss="TxtSolutions">
-        and for $y$-axis
-      </p>
-      <center>
-        $\rho_0 g V_{s2} = T\sin{45^\circ}+N'\sin{45^\circ}+mg$
-      </center>
-      <p class="TxtSolutions">
-        in this case $V_{s2} = \pi R^2 L$ and considering that $\sin{45^\circ}=\cos{45^\circ}=\frac{\sqrt{2}}{2}$,
-      </p>
-      <center>
-        $\rho_0 g \pi R^2 L = (T+N')\frac{\sqrt{2}}{2}+\rho g \pi R^2 L \;(4)$
-      </center>
-      <p class="TxtSolutions">
-        Putting $(3)$ int $(4)$
-      </p>
-      <center>
-        $(\rho_0-\rho)\pi R^2 L g = N' \sqrt{2} \;(5)$
-      </center>
-      <p class="TxtSolutions">
-        Substituting $(5)$ into $(2)$ and developing algebraically
-      </p>
-      <center>
-        $\rho = \frac{2}{3}\rho_0$
-      </center>
-      <p class="TxtSolutions">
-        as the water's density is $\rho_0=1$ g/cm$^3$,
-      </p>
-      <center>
-        $\boxed{\rho=\frac{2}{3}~\rm{g/cm^3}}$
-      </center>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>
+          $4.2.13$
+          Two equal trunks are placed as the figure shows. The lower trunk is linked to the vertical wall by wires that form an angle of 45$^\circ$ with it. The upper trunk is half submerged in water. Find the density of the trunks.   
         </p>
-    </article>
-  </main>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" alt="4.2.13" width="300" />
+            <figcaption>
+              For problem 4.2.13
+            </figcaption>
+          </figure>
+        </center>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
+        <h3>Solution</h3>
+        <p>
+          Let's analyze the following force diagram
+        </p>
+        <center>
+          <figure>
+            <img src="diagram.png"
+              loading="lazy" alt="4.2.13" width="300" />
+            <figcaption>
+              Force diagram for each trunk
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+          Consider the trunks are perfect wooden cylinders. Applying Newton Second Law for cylinder 1, on $x$-direction,
+          $$-N'\cos{45^\circ}+N = 0 \;(1)$$
+          and on $y$-axis
+          $$mg = \rho_0 g V_s + N'\sin{45^\circ} = \rho_0 g V_{s1} + N'\frac{\sqrt{2}}{2}$$
+          as trunk 1 is half submerged, $V_{s1} = \frac{\pi R^2 L}{2}$ and its mass is $m = \rho V$, so separating $\rho$
+          $$\rho = \frac{1}{2}\left(\rho_0+\frac{N'\sqrt{2}}{\pi R^2 L}\right) \;(2)$$
+          Applying Newton Second Law for cylinder 2, on $x$-axis
+          $$N'\cos{45^\circ}-T\cos{45^\circ}=0$$
+          $$N' = T \;(3)$$
+          and for $y$-axis
+          $$\rho_0 g V_{s2} = T\sin{45^\circ}+N'\sin{45^\circ}+mg$$
+          in this case $V_{s2} = \pi R^2 L$ and considering that $\sin{45^\circ}=\cos{45^\circ}=\frac{\sqrt{2}}{2}$,
+          $$\rho_0 g \pi R^2 L = (T+N')\frac{\sqrt{2}}{2}+\rho g \pi R^2 L \;(4)$$
+          Putting $(3)$ int $(4)$
+          $$(\rho_0-\rho)\pi R^2 L g = N' \sqrt{2} \;(5)$$
+          Substituting $(5)$ into $(2)$ and developing algebraically
+          $$\rho = \frac{2}{3}\rho_0$$
+          as the water's density is $\rho_0=1$ g/cm$^3$,
+          $$\boxed{\rho=\frac{2}{3}~\rm{g/cm^3}}$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>
