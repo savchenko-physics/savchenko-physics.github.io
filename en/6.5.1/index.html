@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,11 +40,9 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
       <p>
         $6.5.1$
         a) The surface densities of charges in two planes are $\pm \sigma$. The distance between them is much less than the dimensions of them. What force per unit of surface of plane (electric pressure) will act? 
@@ -42,29 +53,18 @@
       <p class="TxtSolutions">
         c) The field intensity between two parallel planes is 10 000 V/cm, while out of them is null. Find the electric pressure over each plane and the surface density of charge.
       </p>
-      <h4>Solution</h4>
-      <p class="TxtSolutions">
-        a) The absolute value of the electric field created by each plate is $E = \frac{\sigma}{2\varepsilon_0}$, between them is $2E = \frac{\sigma}{\varepsilon_0}$ (superposition). The force that acts over a differential of charge $dq$ is
-      </p>
-      <center>
-        $d\vec{F} = \vec{E}dq = \pm\frac{\sigma}{2\varepsilon_0}dq~\hat{E}$
-      </center>
-      <p calss="TxtSolutions">
-        As $dq = \pm\sigma~dS$,
-      </p>
-      <center>
-        $dF = \frac{\sigma^2~dS}{2\varepsilon_0}$
-      </center>
-      <p class="TxtSolutions">
-        and moving $dS$ to another member of equation,
-      </p>
-      <center>
-        $\boxed{P_e=\frac{dF}{dS}=\frac{\sigma^2}{2\varepsilon_0}}$
-      </center>
-      <p class="TxtSolutions">
-        b) Let's see following figure
-      </p>
-      <center>
+
+        <h3>Solution</h3>
+        <p>
+          a) The absolute value of the electric field created by each plate is $E = \frac{\sigma}{2\varepsilon_0}$, between them is $2E = \frac{\sigma}{\varepsilon_0}$ (superposition). The force that acts over a differential of charge $dq$ is
+          $$d\vec{F} = \vec{E}dq = \pm\frac{\sigma}{2\varepsilon_0}dq~\hat{E}$$
+          As $dq = \pm\sigma~dS$,
+          $$dF = \frac{\sigma^2~dS}{2\varepsilon_0}$$
+          and moving $dS$ to another member of equation,
+          $$\boxed{P_e=\frac{dF}{dS}=\frac{\sigma^2}{2\varepsilon_0}}$$
+          b) Let's see following figure
+        </p>
+        <center>
         <figure>
           <img src="drawb.png"
             loading="lazy" alt="6.5.1" width="300" />
@@ -72,41 +72,21 @@
             Electric field of plates
           </figcaption>
         </figure>
-      </center>
-      <p class="TxtSolutions">
-        According to superposition principle between plates, $\vec{E_1}+\vec{E_2} = \vec{0}$, hence, $\vec{E_1}=-\vec{E_2}$ or $E_1 = E_2 = \frac{\sigma}{2\varepsilon_0}$. So, plates must have charges of same sign (+) or (-). The outside field is
-      </p>
-      <center>
-        $\vec{E} = \vec{E_1} + \vec{E_2}$
-      </center>
-      <center>
-        $E = \frac{\sigma}{\varepsilon_0}$
-      </center>
-      <center>
-        $\boxed{\sigma = \varepsilon_0 E} \;(1)$
-      </center>
-      <p class="TxtSolutions">
-        The force that acts over an element of charge $dq$ in a plate is $dF_i = E_i~dq$ (i =1,2), but $E_i = \frac{E}{2}$ so,
-      </p>
-      <center>
-        $dF = \frac{E}{2}dq = \frac{E}{2}\sigma~dS$
-      </center>
-      <p class=" TxtSolutions">
-        Hence,
-      </p>
-      <center>
-        $P_e = \frac{dF}{dS} = \frac{\sigma E}{2} \;(2)$
-      </center> 
-      <p class="TxtSolutions">
-        Putting $(1)$ into $(2)$
-      </p>
-      <center>
-        $\boxed{P_e = \frac{\varepsilon_0~E^2}{2}}$
-      </center>
-      <p class="TxtSolutions">
-        c) See following figure
-      </p>
-      <center>
+        </center>
+        <p>
+          According to superposition principle between plates, $\vec{E_1}+\vec{E_2} = \vec{0}$, hence, $\vec{E_1}=-\vec{E_2}$ or $E_1 = E_2 = \frac{\sigma}{2\varepsilon_0}$. So, plates must have charges of same sign (+) or (-). The outside field is
+          $$\vec{E} = \vec{E_1} + \vec{E_2}$$
+          $E = \frac{\sigma}{\varepsilon_0}$
+          $$\boxed{\sigma = \varepsilon_0 E} \;(1)$$
+          The force that acts over an element of charge $dq$ in a plate is $dF_i = E_i~dq$ (i =1,2), but $E_i = \frac{E}{2}$ so,
+          $$dF = \frac{E}{2}dq = \frac{E}{2}\sigma~dS$$
+          Hence,
+          $$P_e = \frac{dF}{dS} = \frac{\sigma E}{2} \;(2)$$
+          Putting $(1)$ into $(2)$
+          $$\boxed{P_e = \frac{\varepsilon_0~E^2}{2}}$$
+          c) See following figure
+        </p>
+        <center>
         <figure>
           <img src="drawc.png"
             loading="lazy" alt="6.5.1" width="300" />
@@ -114,63 +94,36 @@
             Electric field of plates
           </figcaption>
         </figure>
-      </center>
-      <p class="TxtSolutions">
-        Superposition of electric fields must be zero outside of capacitor, so $\vec{E_1} = -\vec{E_2}$, so plates must have opposed signs. Inside is valid that $\vec{E_1} = \vec{E_2}$ so,
-      </p>
-      <center>
-        $\vec{E} = 2\vec{E_1} = 2\vec{E_2}$
-      </center>
-      <center>
-        $E = \frac{\sigma}{\varepsilon_0}$
-      </center>
-      <p class="TxtSolutions">
-        with $\varepsilon_0$=8.85$\times$10$^{-12}$ F/m
-      </p>
-      <center>
-        $\boxed{\sigma = \varepsilon_0~E = 8.85\times10^{-6}~\rm{C/m^2}=8.85~\rm{\mu C/m^2}} \;(4)$
-      </center>
-      <p class="TxtSolutions">
-        Since $P_e = \frac{\sigma^2}{2\varepsilon_0}$ and According $(4)$
-      </p>
-      <center>
-        $\boxed{P_e = \frac{\varepsilon_0~E^2}{2}=4.425~\rm{Pa}}$
-      </center>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
+        </center>
+        <p>
+          Superposition of electric fields must be zero outside of capacitor, so $\vec{E_1} = -\vec{E_2}$, so plates must have opposed signs. Inside is valid that $\vec{E_1} = \vec{E_2}$ so,
+          $$\vec{E} = 2\vec{E_1} = 2\vec{E_2}$$
+          $$E = \frac{\sigma}{\varepsilon_0}$$
+          with $\varepsilon_0$=8.85$\times$10$^{-12}$ F/m
+          <div class="scroll-wrapper">
+            $$\boxed{\sigma = \varepsilon_0~E = 8.85\times10^{-6}~\rm{C/m^2}=8.85~\rm{\mu C/m^2}} \;(4)$$
+          </div>
+          Since $P_e = \frac{\sigma^2}{2\varepsilon_0}$ and According $(4)$
+          $$\boxed{P_e = \frac{\varepsilon_0~E^2}{2}=4.425~\rm{Pa}}$$
         </p>
-    </article>
-  </main>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>

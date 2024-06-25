@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,75 +40,41 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $1.1.2.$ A radar determines the coordinates of a flying airplane by measuring the angle between the direction to the North Pole and the direction to the airplane and the distance from the radar to the airplane. At some point in time, the position of the airplane was determined by the coordinates: angle $\alpha_1 = 44^{\circ}$, distance $R_1 = 100\;km$. At a time interval of $5\;s$ after this moment, the coordinates of the airplane on the radar: angle $\alpha_2 = 46^{\circ}$, distance $R_2 = 100\;km$. In a Cartesian coordinate system with the $y$-axis pointing north and with radar at the origin, represent the position of the airplane at both moments of time; determine the modulus and direction of its velocity. Count the angle in a clockwise direction. 
-      </p>
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>     
+          $1.1.2.$ A radar determines the coordinates of a flying airplane by measuring the angle between the direction to the North Pole and the direction to the airplane and the distance from the radar to the airplane. At some point in time, the position of the airplane was determined by the coordinates: angle $\alpha_1 = 44^{\circ}$, distance $R_1 = 100\;km$. At a time interval of $5\;s$ after this moment, the coordinates of the airplane on the radar: angle $\alpha_2 = 46^{\circ}$, distance $R_2 = 100\;km$. In a Cartesian coordinate system with the $y$-axis pointing north and with radar at the origin, represent the position of the airplane at both moments of time; determine the modulus and direction of its velocity. Count the angle in a clockwise direction. 
+        </p>
+
       <h4>Solution</h4>
-        <p class="TxtSolutions">
+
+      <p>
           $O_1$ is the initial position of the airplane. $O_2$ is the final position of the airplane. In time $t$ the airplane will fly the distance:
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $S = v_0 \cdot t$
-        </p>
-        <p class="TxtSolutions">
+          $$S = v_0 \cdot t$$
           We find the distance $S$ from the isosceles triangle $AO_1O_2$, where the angle $O_1AO_2 = 2^{\circ}$. Then
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $S = 2R \cdot sin1^{\circ}$,
-        </p>
-        <p class="TxtSolutions">
+          $$S = 2R \cdot sin1^{\circ}$$
           Where $R_1=R_2=R$
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $v_0 \cdot t = 2R \cdot sin1^{\circ}$,
-        </p>
-        <p class="TxtSolutions">
+          $$v_0 \cdot t = 2R \cdot sin1^{\circ}$$
           Desired speed
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $v_0 = \frac{2R \cdot sin1^{\circ}}{t}$,
-        </p>
-        <p class="TxtSolutions">
+          $$v_0 = \frac{2R \cdot sin1^{\circ}}{t}$$
           At small angle $sin\alpha \approx \alpha$ expressed in radians, i.e. $1^{\circ} = \frac{\pi}{180}$
+
+          $$\boxed{v_0 = \frac{2 \cdot 10^5 \cdot \pi}{5 \cdot 180} = 698\;m/s.}$$
+
         </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\boxed{v_0 = \frac{2 \cdot 10^5 \cdot \pi}{5 \cdot 180} = 698\;m/s.}$
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
         </p>
-    </article>
-  </main>
-
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
-
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</body>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>

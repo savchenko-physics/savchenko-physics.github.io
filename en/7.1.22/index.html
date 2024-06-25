@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,145 +40,87 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $7.1.22^*.$
-        Find the frequency of small oscillations of the mathematical pendulum relative to its lower equilibrium position, if a charge $Q$ is fixed directly under the equilibrium position of the ball at a distance $h$ from it. Length of the thread $l$, mass of the ball $m$, charge $q$.
-      </p>
-      <center>
-      <figure>
-        <img src="statement.png"
-          loading="lazy" alt="Mountain landscape" width="150" />
-        <figcaption>
-          For the 7.1.22 problem
-        </figcaption>
-      </figure>
-      </center>
-      <h4>Solution</h4>
-      <center>
-      <figure>
-        <img src="drawing.png"
-          loading="lazy" alt="Mountain landscape" width="250" />
-        <figcaption>
-          Forces acting on pendulum.
-        </figcaption>
-      </figure>
-      </center>
-              <p class="TxtSolutions">
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+          $7.1.22^*.$
+          Find the frequency of small oscillations of the mathematical pendulum relative to its lower equilibrium position, if a charge $Q$ is fixed directly under the equilibrium position of the ball at a distance $h$ from it. Length of the thread $l$, mass of the ball $m$, charge $q$.
+        </p>
+        <center>
+        <figure>
+          <img src="statement.png"
+            loading="lazy" alt="Mountain landscape" width="150" />
+          <figcaption>
+            For the 7.1.22 problem
+          </figcaption>
+        </figure>
+        </center>
+
+        <h3>Solution</h3>
+        <center>
+          <figure>
+          <img src="drawing.png"
+            loading="lazy" alt="Mountain landscape" width="250" />
+          <figcaption>
+            Forces acting on pendulum.
+          </figcaption>
+          </figure>
+        </center>
+        <p>
           Applying Newton's Second Law:
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $mg\sin{\theta}-\frac{kqQ}{\left[h+l(1-\cos\theta)\right]^2+l^2\sin^2{\theta}}\sin{(\beta+\theta)} $$= m\frac{dv}{dt} \; (1)$
-        </p>
-        <p class="TxtSolutions">
+          <div class="scroll-wrapper">
+          $$mg\sin{\theta}-\frac{kqQ}{\left[h+l(1-\cos\theta)\right]^2+l^2\sin^2{\theta}}\sin{(\beta+\theta)} = m\frac{dv}{dt} \; (1)$$
+          </div>
           where,
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\tan{\beta} = \frac{l\sin{\theta}}{h+l\left(1-\cos\theta\right)} \; (2)$
-        </p>
-        <p class="TxtSolutions">   
+          $$\tan{\beta} = \frac{l\sin{\theta}}{h+l\left(1-\cos\theta\right)} \; (2)$$
           and, it is known that
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\sin{(\beta+\theta)} = \sin{\beta}\cos{\theta}+\cos{\beta}\sin{\theta}$
-        </p>
-        <p class="TxtSolutions">   
+          $$\sin{(\beta+\theta)} = \sin{\beta}\cos{\theta}+\cos{\beta}\sin{\theta}$$
           as $\theta$ is small (small oscillations), $\sin{\theta}\approx\theta$ and $\cos{\theta}\approx1-\theta^2/2$, then
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\sin{(\beta+\theta)} = \sin{\beta}\left(1-\frac{\theta^2}{2}\right)+\theta\cos{\beta} \label{E3} \; (3)$
-        </p>
-        <p class="TxtSolutions">   
+          $$\sin{(\beta+\theta)} = \sin{\beta}\left(1-\frac{\theta^2}{2}\right)+\theta\cos{\beta} \label{E3} \; (3)$$
           Modifying $(2)$,
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\tan{\beta} = \frac{l\theta}{h+\frac{l\theta^2}{2}} \; (4)$
-        </p>
-        <p class="TxtSolutions">   
+          $$\tan{\beta} = \frac{l\theta}{h+\frac{l\theta^2}{2}} \; (4)$$
           Substituting $(3)$ and $(4)$ into $(1)$ and taking account $\sin{\theta}\approx\theta$
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $mg\theta-\frac{kqQ}{\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2}\left[\sin{\beta}\left(1-\frac{\theta^2}{2}\right)+\theta\cos{\beta}\right] = m\frac{dv}{dt} \label{NSLmod}$
-        </p>
-        <p class="TxtSolutions">   
-          Since angular acceleration is related to lineal acceleration according $dv/dt = \ddot{\theta}l$, dividing all equation by $ml$ and take out $\cos{\beta}$ from second term of left side, it is obtained
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\frac{g}{l}\theta-\frac{kqQ\cos{\beta}}{ml\left[\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2\right]}\left[\left(1-\frac{\theta^2}{2}\right)\tan{\beta}+\theta\right] = \ddot{\theta} \label{NEq} \; (5)$
-        </p>
-        <p class="TxtSolutions">   
+          <div class="scroll-wrapper">
+          $$mg\theta-\frac{kqQ}{\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2}\left[\sin{\beta}\left(1-\frac{\theta^2}{2}\right)+\theta\cos{\beta}\right] = m\frac{dv}{dt} \label{NSLmod}$$
+          </div>
+          Since angular acceleration is related to lineal acceleration according $dv/dt = \ddot{\theta}l$, dividing all equation by $ml$ and take out $\cos{\beta}$ from second term of left side, it is obtained          
+          <div class="scroll-wrapper">
+            $$\frac{g}{l}\theta-\frac{kqQ\cos{\beta}}{ml\left[\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2\right]}\left[\left(1-\frac{\theta^2}{2}\right)\tan{\beta}+\theta\right] = \ddot{\theta} \label{NEq} \; (5)$$
+          </div>
           Graphically it can be seen that, with cosine and sine approximations applied,
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\cos{\beta} = \frac{h+\frac{l\theta^2}{2}}{\sqrt{\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2}}$
-        </p>
-        <p class="TxtSolutions">   
+          $$\cos{\beta} = \frac{h+\frac{l\theta^2}{2}}{\sqrt{\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2}}$$
           Putting $(4)$ and $(6)$ into $(5)$ and developing algebraically
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\frac{g}{l}\theta-\frac{kqQ}{ml}\frac{h}{\left[\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2\right]^{\frac{3}{2}}}\left[\left(1+\frac{l}{h+\frac{l\theta^2}{2}}\right)\theta-\frac{l\theta^3}{2h+l\theta^2}\right] = \ddot{\theta}$
-        </p>
-        <p class="TxtSolutions">   
+          <div class="scroll-wrapper">
+            $$\frac{g}{l}\theta-\frac{kqQ}{ml}\frac{h}{\left[\left(h+\frac{l\theta^2}{2}\right)^2+l^2\theta^2\right]^{\frac{3}{2}}}\left[\left(1+\frac{l}{h+\frac{l\theta^2}{2}}\right)\theta-\frac{l\theta^3}{2h+l\theta^2}\right] = \ddot{\theta}$$
+          </div>
           Since there are small oscillations, $\theta\rightarrow0$, but terms $\theta^2$ and $\theta^3$ tend to zero faster than $\theta$, so they are negligible respect to $\theta$.
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\left[\frac{g}{l}-\frac{kqQ\left(l+h\right)}{mh^3l}\right]\theta = \ddot{\theta}$
-        </p>
-        <p class="TxtSolutions">   
+          $$\left[\frac{g}{l}-\frac{kqQ\left(l+h\right)}{mh^3l}\right]\theta = \ddot{\theta}$$
           as $k = \frac{1}{4\pi\epsilon_0}$,
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\left[\frac{g}{l}-\frac{qQ\left(l+h\right)}{4\pi\epsilon_0mh^3l}\right]\theta = \ddot{\theta}$
-        </p>
-        <p class="TxtSolutions">   
+          $$\left[\frac{g}{l}-\frac{qQ\left(l+h\right)}{4\pi\epsilon_0mh^3l}\right]\theta = \ddot{\theta}$$
           Finally,
-        </p>
-        <p class="TxtSolutions" style="text-align: center;">   
-          $\boxed{\omega = \sqrt{\frac{g}{l}-\frac{qQ\left(h+l\right)}{4\pi\epsilon_0mh^3l}}}$
-        </p>
-        <p class="TxtSolutions">   
+          $$\boxed{\omega = \sqrt{\frac{g}{l}-\frac{qQ\left(h+l\right)}{4\pi\epsilon_0mh^3l}}}$$
           valid for the condition $\frac{qQ(h+l)}{4\pi\epsilon_0h^3} < mg$
         </p>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
           BSc. Luis Daniel Fernández Quintana<br>
           Physics Department (FCNE)<br>
           Universidad de Oriente, Cuba<br>
         </p>
 
-    </article>
-  </main>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>

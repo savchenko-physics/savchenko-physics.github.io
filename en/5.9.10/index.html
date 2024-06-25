@@ -1,25 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="content-language" content="en">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
-
-  <title>Savchenko Solutions</title>
-  <meta property="og:image" content="img/logo.png">
-  <meta property="og:title" content="Savchenko Solutions"/>
-  <meta name="description"
-    content="A website with solutions to physics problems from Savenko Textbook" />
-  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
-  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
-  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
 </head>
-
-<body id="top">
-  <header>
+  <body style="">
+      <header style="text-align:center;">
     <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
@@ -27,15 +40,14 @@
     </p>
   </header>
 
-  <main>
-    <article>
-      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
-      
-      <h4>Statement</h4>
-      <p>
-        $5.9.10^*$
-        Find the efficience of cycles shown in following figures, if as power agent it is taken a monoatomic ideal gas.
-      </p>
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>
+          $5.9.10^*$
+          Find the efficience of cycles shown in following figures, if as power agent it is taken a monoatomic ideal gas.
+        </p>
       <center>
         <figure>
           <img src="statement.png"
@@ -45,95 +57,38 @@
           </figcaption>
         </figure>
       </center>
-      <h4>Solution</h4>
-       <p class="TxtSolutions">
-        a) Let enumerate the states from 1 to 4 in clockwise sense starting in the coordinate $(P_1,V_1)$. The efficience is defined as
-       </p>
-       <center>
-        $\eta = 1-\frac{|Q_c|}{Q_h}=1-\frac{|Q_{34}|}{Q_{12}} \;(1)$
-       </center>
-       <p class="TxtSolutions">
-        where $Q_{34}$ is the heat released by gas (cold reservoir) and $Q_{12}$ is the heat absorbed by gas (hot reservoir), while $Q_{23}$ and $Q_{41}$ are zero (adiabatic processes). Since $3-4$ is an isochoric process,
-       </p>
-       <center>
-        $Q_{34}=\Delta U_{34} = nC_v\left(T_4-T_3\right) \;(2)$
-       </center>
-        <p class="TxtSolutions">
+
+        <h3>Solution</h3>
+        <p>
+          a) Let enumerate the states from 1 to 4 in clockwise sense starting in the coordinate $(P_1,V_1)$. The efficience is defined as
+          $$\eta = 1-\frac{|Q_c|}{Q_h}=1-\frac{|Q_{34}|}{Q_{12}} \;(1)$$
+          where $Q_{34}$ is the heat released by gas (cold reservoir) and $Q_{12}$ is the heat absorbed by gas (hot reservoir), while $Q_{23}$ and $Q_{41}$ are zero (adiabatic processes). Since $3-4$ is an isochoric process,
+          $$Q_{34}=\Delta U_{34} = nC_v\left(T_4-T_3\right) \;(2)$$
           From Poisson Law
-        </p>
-        <center>
-            $P_1V_1^\gamma = P_4V_2^\gamma$
-        </center>
-        <p class="TxtSolutions">
+          $$P_1V_1^\gamma = P_4V_2^\gamma$$
           and the state 4 is characterized by
-        </p>
-        <center>
-          $P_4V_2=nRT_4$
-        </center>
-        <p class="TxtSolutions">
+          $$P_4V_2=nRT_4$$
           So, separating $P_4$ and putting it into above Poisson law
-        </p>
-        <center>
-          $T_4 = \frac{P_1V_1^\gamma}{nRV_2^{\gamma-1}} \;(3)$
-        </center>
-        <p class="TxtSolutions">
+          $$T_4 = \frac{P_1V_1^\gamma}{nRV_2^{\gamma-1}} \;(3)$$
           Proceeding similarly, $T_3$ can be found. Applying Poisson Law for process $2-3$,
-        </p>
-        <center>
-          $P_2V_1^\gamma=P_3V_2^\gamma$
-        </center>
-        <p class="TxtSolutions">
+          $$P_2V_1^\gamma=P_3V_2^\gamma$$
           State equation for state 3 is
-        </p>
-        <center>
-          $P_3V_2=nRT_3$
-        </center>
-        <p class="TxtSolutions">
+          $$P_3V_2=nRT_3$$
           Separating $P_3$ and substituting into respective Poisson Law
-        </p>
-        <center>
-          $T_3 = \frac{P_2V_1^\gamma}{nRV_2^{\gamma-1}} \;(4)$
-        </center>
-        <p class="TxtSolutions">
+          $$T_3 = \frac{P_2V_1^\gamma}{nRV_2^{\gamma-1}} \;(4)$$
           Substituting $(3)$ and $(4)$ into $(2)$, and as $C_v=iR/2$
-        </p>
-        <center>
-          $Q_{34} = \frac{i}{2}\frac{V_1^\gamma}{V_2^{\gamma-1}}\left(P_1-P_2\right) \;(5)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{34} = \frac{i}{2}\frac{V_1^\gamma}{V_2^{\gamma-1}}\left(P_1-P_2\right) \;(5)$$
           For the process $1-2$
-        </p>
-        <center>
-          $Q_{12}=\Delta U_{12} = nC_v\left(T_2-T_1\right)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{12}=\Delta U_{12} = nC_v\left(T_2-T_1\right)$$
           Taking account the state equations for states 1 and 2, temperatures can be found,
-        </p>
-        <center>
-          $Q_{12}=nC_v\left(\frac{P_2V_1}{nR}-\frac{P_1V_1}{nR}\right)$
-        </center>
-        <center>
-          $Q_{12}=\frac{i}{2}V_1\left(P_2-P_1\right) \;(6)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{12}=nC_v\left(\frac{P_2V_1}{nR}-\frac{P_1V_1}{nR}\right)$$
+          $$Q_{12}=\frac{i}{2}V_1\left(P_2-P_1\right) \;(6)$$
           Putting $(5)$ and $(6)$ into $(1)$
-        </p>
-        <center>
-          $\eta = 1-\left(\frac{V_1}{V_2}\right)^{\gamma-1}$
-        </center>
-        <p class="TxtSolutions">
+          $$\eta = 1-\left(\frac{V_1}{V_2}\right)^{\gamma-1}$$
           Since $\gamma=C_p/C_v=1+2/i$ and $i=3$ (monoatomic gas),
-        </p>
-        <center>
-          $\boxed{\eta = 1-\left(\frac{V_1}{V_2}\right)^{\frac{2}{3}}}$
-        </center>
-        <p class="TxtSolutions">
+          $$\boxed{\eta = 1-\left(\frac{V_1}{V_2}\right)^{\frac{2}{3}}}$$
           b) Let enumerate again the states following a clockwise way, this time starting in coordinate $(P_1,T_1)$. The efficience is
-        </p>
-        <center>
-          $\eta = 1-\frac{|Q_c|}{Q_h} \;(I)$
-        </center>
-        <p class="TxtSolutions">
+          $$\eta = 1-\frac{|Q_c|}{Q_h} \;(I)$$
           For identifying correctly the reservoirs, let's see the following graph corresponding to the cycle in a $P$ vs $V$ plot.
         </p>
         <center>
@@ -145,113 +100,50 @@
             </figcaption>
           </figure>
         </center>
-        <p class="TxtSolutions">
+        <p>
           The hot reservoir is defined as
-        </p>
-        <center>
-          $Q_h = Q_{23} + Q_{34} \;(II)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_h = Q_{23} + Q_{34} \;(II)$$
           and cold one
-        </p>
-        <center>
-          $Q_c = Q_{12} + Q_{41} \;(III)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_c = Q_{12} + Q_{41} \;(III)$$
           Process $2-3$ is isobaric, then
-        </p>
-        <center>
-          $Q_{23}=nC_p\left(T_2-T_1\right) \;(IV)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{23}=nC_p\left(T_2-T_1\right) \;(IV)$$
           Process $3-4$ is isothermal, so
-        </p>
-        <center>
-          $Q_{34} = A_{34} = nRT_2\ln{\frac{V_4}{V_3}}$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{34} = A_{34} = nRT_2\ln{\frac{V_4}{V_3}}$$
           Since $V=nRT/P$ according state equation
-        </p>
-        <center>
-          $Q_{34} = nRT_2\ln{\frac{P_2}{P_1}} \;(V)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{34} = nRT_2\ln{\frac{P_2}{P_1}} \;(V)$$
           Substituting $(IV)$ and $(V)$ into $(II)$and taking account that $C_p=(i+2)R/2$
-        </p>
-        <center>
-          $Q_h = \frac{i+2}{2}nR\left(T_2-T_1\right)+nRT_2\ln{\frac{P_2}{P_1}} \;(VI)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_h = \frac{i+2}{2}nR\left(T_2-T_1\right)+nRT_2\ln{\frac{P_2}{P_1}} \;(VI)$$
           Process $1-2$ is isothermal, so
-        </p>
-        <center>
-          $Q_{12}=A_{12}=nRT_1\ln{\frac{V_2}{V_1}}$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{12}=A_{12}=nRT_1\ln{\frac{V_2}{V_1}}$$
           and newly, taking account state equation
-        </p>
-        <center>
-          $Q_{12}=A_{12}=nRT_1\ln{\frac{P_1}{P_2} \;(VII)}$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{12}=A_{12}=nRT_1\ln{\frac{P_1}{P_2} \;(VII)}$$
           Finally, process $4-1$ is isobaric
-        </p>
-        <center>
-          $Q_{14} = nC_p\left(T_1-T_2\right) \;(VIII)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_{14} = nC_p\left(T_1-T_2\right) \;(VIII)$$
           Substituting $(VII)$ and $(VIII)$ into $(III)$
-        </p>
-        <center>
-          $Q_c = nRT_1\ln{\frac{P_1}{P_2}}+\frac{i+2}{2}nR\left(T_1-T_2\right) \;(IX)$
-        </center>
-        <p class="TxtSolutions">
+          $$Q_c = nRT_1\ln{\frac{P_1}{P_2}}+\frac{i+2}{2}nR\left(T_1-T_2\right) \;(IX)$$
           Substituting $(VI)$ and $(IX)$ into $(I)$ and developing algebraically
-        </p>
-        <center>
-          $\eta = \frac{2\left(T_2-T_1\right)\ln{\frac{P_2}{P_1}}}{(i+2)\left(T_2-T_1\right)+2T_2\ln{\frac{P_2}{P_1}}}$
-        </center>
-        <p class="TxtSolutions">
+          $$\eta = \frac{2\left(T_2-T_1\right)\ln{\frac{P_2}{P_1}}}{(i+2)\left(T_2-T_1\right)+2T_2\ln{\frac{P_2}{P_1}}}$$
           Since gas is monoatomic, $i = 3$, hence
+          $$\boxed{\eta = \frac{2\left(T_2-T_1\right)\ln{\frac{P_2}{P_1}}}{5\left(T_2-T_1\right)+2T_2\ln{\frac{P_2}{P_1}}}}$$
         </p>
-        <center>
-          $\boxed{\eta = \frac{2\left(T_2-T_1\right)\ln{\frac{P_2}{P_1}}}{5\left(T_2-T_1\right)+2T_2\ln{\frac{P_2}{P_1}}}}$
-        </center>
-        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
-          </p>
-    </article>
-  </main>
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'],],
-      },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DDMB38YMLD');
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-</body>
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
 </html>
