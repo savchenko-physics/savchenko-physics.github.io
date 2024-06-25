@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-language" content="en">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMB38YMLD"></script>
+
+  <title>Savchenko Solutions</title>
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Savchenko Solutions"/>
+  <meta name="description"
+    content="A website with solutions to physics problems from Savenko Textbook" />
+  <meta name="keywords" content="physics, olympiads, ipho, savchenko" />
+  <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css" />
+  <link rel="icon" type="image/x-icon" href="https://savchenko-physics.github.io/img/favicon.ico">
+</head>
+
+<body id="top">
+  <header>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+  <main>
+    <article>
+      <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+      
+      <h4>Statement</h4>
+      <p>
+        $8.3.15^*$
+        The attenuator is a voltage divider, the circuit of which is shown in the figure. What should be the resistances $R_1$ and $R_2$ so that at each subsequent resistance $R_1$  the voltage is ten times less than at the previous one?
+      </p>
+      <center>
+        <figure>
+          <img src="statement.png"
+            loading="lazy" alt="8.3.15" width="300" />
+          <figcaption>
+            For problem 8.3.15
+          </figcaption>
+        </figure>
+      </center>
+      <h4>Solution</h4>
+      <p class="TxtSolutions">
+        Let's consider the following figure
+      </p>
+      <center>
+        <figure>
+          <img src="draw.png"
+            loading="lazy" alt="8.3.15" width="450" />
+          <figcaption>
+            Circuit analysis
+          </figcaption>
+        </figure>
+      </center>
+      <p class ="TxtSolutions">
+        Applying Kirchhoff Second Law (Loop's law). For loop $I$
+      </p>
+      <center>
+        $-i_{11}R_1-i_{22}R_2+i_{21}R_2=0$
+      </center>
+      <center>
+        $-i_{11}R_1+R_2(i_{21}-i_{22})=0 \;(1)$
+      </center>
+      <p class="TxtSolutions">
+        As $i_{11}R_1 = 10 i_{12}R_1$, that is, $i_{1n} = 10 i_{1(n+1)}$, hence 
+      </p>
+      <center>
+        $i_{1n} = \frac{i_{11}}{10^{n-1}} \;\forall~n\geq2 \;(2)$
+      </center>
+      <p calss="TxtSolutions">
+        For loop $II$ and according $(2)$
+      </p>
+      <center>
+        $-i_{N+1}(R_1+r)+i_{2N}R_2=0$
+      </center>
+      <center>
+        $-\frac{i_{11}}{10^{N-1}}(R_1+r)+i_{2N}R_2=0 \;(3)$
+      </center>
+      <p class="TxtSolutions">
+        For subsequent bifurcations (applying Kirchhoff First Law)
+      </p>
+      <center>
+        $i_{11} = i_{12}+i_{22}$
+      </center>
+      <center>
+        $i_{22} = i_{11}-i_{12}$
+      </center>
+      <p class="TxtSolutions">
+        So,
+      </p>
+      <center>
+        $i_{2n} = i_{1(n-1)-i_{1n}} \;\forall~n\geq2 \;(4)$
+      </center>
+      <p calss="TxtSolutions">
+        According $(2)$, let's modify $(4)$
+      </p>
+      <center>
+        $i_{2n} = \frac{i_{11}}{10^{n-2}}-\frac{i_{11}}{10^{n-1}}$
+      </center>
+      <center>
+        $i_{2n} = \frac{9i_{11}}{10^{n-1}} \;(5)$
+      </center>
+      <p class="TxtSolutions">
+        According $(5)$ into $(3)$
+      </p>
+      <center>
+        $9R_2 = R_1+r \;(6)$
+      </center>
+      <p class="TxtSolutions">
+        According $(5)$, from $(1)$
+      </p>
+      <center>
+        $R_1 = \frac{81}{10} R_2 \;(7)$
+      </center>
+      <p class="TxtSolutions">
+        Finally, solving the equation system formed by $(6)$ and $(7)$, it is obtained
+      </p>
+      <center>
+        $\boxed{R_1 = 9r}$
+      </center>
+      <p class="TxtSolutions">
+        and,
+      </p>
+      <center>
+        $\boxed{R_2 = \frac{10}{9}r}$
+      </center>
+      </p>
+        <p class="TxtSolutions" style="text-align: right; font-style: italic; font-size: 14;">   
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+        </p>
+    </article>
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DDMB38YMLD');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
