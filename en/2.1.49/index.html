@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-language" content="ru">
-    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-    <meta name="description" content="Решение задачника Савенко О.Я.">
-    <meta property="og:title" content="Решебник Савченко">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>Решебник Савченко</title>
-    <link rel="stylesheet" href="../../css/css-latex/style.css">
-    <link rel="icon" href="../../img/logo.png" type="image/png">
-    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -33,50 +33,51 @@
 </head>
   <body style="">
       <header style="text-align:center;">
-    <h2>Решение задач из Савченко О.Я.</h2>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
       October 2023
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
 
-        <h3> Условие: </h3>
+        <h3> Statement </h3>
 
-        <p>     
-         $2.1.49^*.$ К свободному концу нити, прикрепленной к стенке и переброшенной через ролик, подвешен груз. Ролик закреплен на бруске массы $m_0$, который может скользить по горизонтальной плоскости без трения. В начальный момент нить с грузом отклоняют от вертикали на угол $α$ и затем отпускают. Определите ускорение бруска, если угол, образованный нитью с вертикалью, не меняется при движении системы. Чему равна масса груза?
-       </p>
+        <p>
+          $2.1.49$
+          A load is suspended from the free end of the thread attached to the wall and thrown over the roller. The roller is fixed on a bar of mass $m_0$, which can slide along a horizontal plane without friction. At the initial moment, the thread with the load is deflected from the vertical by an angle α and then released. Determine the acceleration of the bar if the angle formed by the thread with the vertical does not change during the movement of the system. What is the weight of the cargo?
+
+        </p>
         <center>
           <figure>
             <img src="statement.png"
-              loading="lazy" width="230" />
+              loading="lazy"  width="230" />
             <figcaption>
-               К задаче 2.1.49
+              For problem 2.1.49
             </figcaption>
           </figure>
         </center>
 
-      <h3> Решение: </h3>
+        <h3>Solution</h3>
         <center>
           <figure>
             <img src="sol.png"
               loading="lazy" width="400" />
             <figcaption>
-               Силы действующие на систему
+              Forces acting on the system
             </figcaption>
           </figure>
         </center>
-
         <p>
-          Применим второй закон Ньютона:
+          Newton's second law of motion:
         $$OX: \;T - T \sin \alpha = m_0 a_{0x} $$
         $$ T \sin \alpha = m_{a1x} $$
 
         $$OY: \;N - mg - T \cos \alpha = m_0 a_{0y} = 0 $$
         $$ T \cos \alpha - mg = m_{a1y} $$
         $$ \tan \alpha = \frac{x_0 - x_1}{y_0 - y_1} $$
-        Учитывая $\alpha = \text{const}$
+        Since $\alpha = \text{const}$
         <div class="scroll-wrapper">
         $$
         \frac{d}{dt} \left( \tan \alpha \right) = \frac{\left( \frac{dx_0}{dt} - \frac{dx_1}{dt} \right)(y_0 - y_1) - \left( \frac{dy_0}{dt} - \frac{dy_1}{dt} \right)(x_0 - x_1)}{(y_0 - y_1)^2} = 0 
@@ -97,12 +98,12 @@
         (a_{0x} - a_{1x})(y_0 - y_1) = (a_{0y} - a_{1y})(x_0 - x_1)
         $$
         $$ \tan \alpha (a_{0y} - a_{1y}) = a_{0x} - a_{1x}$$
-        Из (1)
+        From (1)
         $$a_{0y} = 0$$
         $$ -\tan \alpha\, a_{1y} = a_{0x} - a_{1x} $$
-        Длина веревки:
+        Length of the rope:
         $$ L = x_w - x_0 + \frac{y_0 - y_1}{\cos \alpha} $$
-        Т.к. нить нерастяжима
+        Since the rope is inextensible
         <div class="scroll-wrapper">
         $$ \frac{d^2 L}{dt^2} = -\frac{d^2 x_0}{dt^2} + \frac{1}{\cos \alpha} \left( \frac{d^2 y_0}{dt^2} - \frac{d^2 y_1}{dt^2} \right) = 0 $$
       </div>
@@ -110,19 +111,19 @@
         <div class="scroll-wrapper">
         $$ \left( \frac{d^2 x_0}{dt^2} = a_{0x}, \frac{d^2 y_0}{dt^2} = a_{0y}, \frac{d^2 y_1}{dt^2} = a_{1y} \right) $$</div>
         $$ a_{0x} \cdot \cos \alpha = a_{0y} - a_{1y}$$ 
-        Из $(1)$: $a_{0y} = 0$
+        From $(1)$: $a_{0y} = 0$
         $$ a_{0x} \cos \alpha = -a_{1y} $$
-        Разделив уравнения из (1):
+        By dividing the equations from (1):
         <div class="scroll-wrapper">
         $$ \frac{T \sin \alpha}{T \cos \alpha} = \frac{m a_{1x}}{m (g + a_{1y})} \to \tan \alpha (g + a_{1y}) = a_{1x} $$</div>
         $$ \tan \alpha a_{1y} = a_{1x} - g \tan \alpha$$ 
-        и используя (4) 
+        and using (4) 
         $$\boxed{a_{0x} = g \tan \alpha }$$
-        Разделив уравнения из (1):
+        By dividing the equations from (1):
 
         $$
         \frac{T(1 - \sin \alpha)}{T \cos \alpha} = \frac{M}{m} \cdot \frac{a_{0x}}{g + a_{1y}}$$
-        Обратите внимание, что:
+        Note that:
         $$a_{1y} = -g \sin \alpha$$
         
         $$ \frac{1 - \sin \alpha}{\cos \alpha}  \frac{M}{m} = \frac{g \tan \alpha}{g - g \sin \alpha} \to m = \frac{M \sin \alpha}{(1 - \sin \alpha)^2} $$
@@ -130,31 +131,16 @@
 
         </p>
       <p style="text-align: right; font-style: italic; font-size: 16;">physicshub</p>
-
-
-         <h3> Ответ: </h3>
-         <p>
-         	$$a = g \tan α$$ 
-         	$$m = m_0 \frac{sin α}{(1 − sin α)^2}$$
-         </p>
-
-
-		<h3> Альтернативное решение: </h3>
-
-		<div class="video-container">
-		  <iframe class="video" src="https://www.youtube.com/embed/97Px6WD98Nk" frameborder="0" allowfullscreen></iframe>
-		</div>
-
+        
 
 
     <footer class="row container">
-        <br>
-
+      <br>
         <p>
-            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
         </p>
         <p>
-            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
         </p>
     </footer>
   </body>
