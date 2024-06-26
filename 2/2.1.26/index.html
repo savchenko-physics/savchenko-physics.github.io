@@ -1,239 +1,211 @@
-<html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+<!DOCTYPE html>
+<html lang="ru">
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
 
-		<script src="../../js/jquery-1.10.1.min.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	  	<script id="MathJax-script" async
-          		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	  	</script>
-	</head>
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
 
-	<body style="">
-		<div class="container row">
-			<div class="col flash">
-		    <header>
-					<h1>Решение задач из Савченко О.Я.</h1>
-				</header>
-			</div>
-			<aside class="col col-lg-3">
-			<nav>
-		    	<ul class="nav">
+        <h3> Условие: </h3>
 
+        <p>     
+         $2.1.26^*.$ По деревянным сходням, образующим угол $\alpha$ с горизонтом, втаскивают за привязанную к нему веревку ящик. Коэффициент трения ящика о сходни $\mu$. Под каким углом к горизонту следует тянуть веревку, чтобы с наименьшим усилием втащить ящик?
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="250" />
+            <figcaption>
+                К задаче 2.1.26
+            </figcaption>
+          </figure>
+        </center>
 
-		      <li>
-		  <a href="../../#1">1.Кинематика</a>
-		</li>
+      <h3> Решение: </h3>
 
+        <center>
+          <figure>
+            <img src="phys11917.png" 
+              loading="lazy" width="250" />
+            <figcaption>
+              Схема задачи
+            </figcaption>
+          </figure>
+        </center>
 
-		      <li>
-		  <a href="../../#2">2.Динамика</a>
-		</li>
+		<p>Рассмотрим силы, действующие на ящик (рис.). Это - сила тяжести $ m \vec{g} $, сила натяжения веревки $ \vec{F} $, сила реакции соударения $ \vec{N} $ и сила трения $ \vec{F}_{тр} $, величина которой $ \vec{F}_{тр} = \mu N $. Спроктируем все силы на направление вдоль схождения и перпендикулярно к ним и запишем соответственные уравнения движения.</p>
 
+		<p>Так как ящик не перемещается в направлении, перпендикулярном схождению, то сумма проекций сил на это направление должна быть равна нулю, то есть</p>
 
-		            
+		\[
+		N + F \sin ( \beta - \alpha) - mg \cos \alpha = 0, \tag{1}
+		\]
 
-		      <li>
-		  <a href="../../#3">3.Колебания</a>
-		</li>
+		<p>Вдоль схождения ящик движется с ускорением $ a $ (в частном случае при равномерном движении $ a = 0 $), поэтому сумма проекций сил должна быть равна $ ma $:</p>
 
+		\[
+		F \cos( \beta - \alpha) - mg \sin \alpha - \mu N = ma. \tag{2}
+		\]
 
-		            
+		<p>Из уравнений (1) и (2) получаем:</p>
 
-		      <li>
-		  <a href="../../#4">4.Гидростатика</a>
-		</li>
+		\[
+		F = \frac{ma + mg ( \sin \alpha + \mu \cos \alpha)}{ \cos ( \beta - \alpha) + \mu \sin ( \beta - \alpha) }. \tag{3}
+		\]
 
+		<p>В полученное выражение для силы $ F $ угол $ \beta $ входит только знаменатель. Следовательно, величина силы $ F $ будет минимальной при таком значении угла $ \beta $, при котором знаменатель в формуле (3) максимален, то есть максимальна величина</p>
 
-		            
-		      <li>
-		  <a href="../../#5">5.Молекулярная</a>
-		</li>
+		\[
+		\cos ( \beta - \alpha) + \mu \sin ( \beta - \alpha).
+		\]
 
+		<p>Сделаем некоторые преобразования. Представим коэффициент трения $ \mu $ как тангенс некоторого угла $ \gamma $:</p>
 
-		                  
-		      <li>
-		  <a href="../../#6">6.Электростатика</a>
-		</li>
+		\[
+		\tan \gamma = \mu; \quad \gamma = \arctan \mu;
+		\]
 
+		\[
+		\sin \gamma = \frac{ \mu}{ \sqrt{1 + \mu^{2} } }; \quad \cos \gamma = \frac{1}{ \sqrt{1 + \mu^{2} } }.
+		\]
 
-		                  
-		      <li>
-		  <a href="../../#7">7.Движение в электрическом поле</a>
-		</li>
+		<p>Тогда можно записать:</p>
 
+		\[
+		\cos ( \beta - \alpha) + \mu \sin ( \beta - \alpha)  = \sqrt{1 + \mu^{2} } \cos ( \beta - \alpha - \gamma).
+		\]
 
-		                  
-					<li>
-			<a href="../../#8">8.Электрический ток</a>
-		</li>
+		<p>Последнее выражение максимально и равно</p>
 
+		\[
+		\sqrt{1 + \mu^{2}} \quad \text{при} \quad \beta - \alpha - \gamma = 0, \quad \text{то есть при} \quad \beta = \alpha + \gamma = \alpha + \arctan \mu. \tag{4}
+		\]
 
-					
-					<li>
-			<a href="../../#9">9.Магнитное поле</a>
-		</li>
+		<p>При таком значении угла $ \beta $ и минимальна сила $ F $. Причем, если ящик движется равномерно ($ a = 0 $), то</p>
 
+		\[
+		F_{min} = \frac{mg( \sin \alpha + \mu \cos \alpha) }{ \sqrt{1 + \mu^{2} } }.
+		\]
 
-					
-					<li>
-			<a href="../../#10">10.Движение в сложных полях</a>
-		</li>
+		<p>а при движении с ускорением $ a $</p>
 
+		\[
+		F_{min} = \frac{ma + mg ( \sin \alpha + \mu \cos \alpha ) }{ \sqrt{1 + \mu^{2} } }.
+		\]
 
-					
-					<li>
-			<a href="../../#11">11.Электромагнитная индукция</a>
-		</li>
+		<p>
 
+		Однако, это решение верно не для любого ускорения. Так как направление силы $ \vec{F} $ не зависит от $a$, а абсолютная величина силы $ \vec{F} $ увеличивается с увеличением ускорения, то при некотором значении ускорения $ a = a_0 $ сила $ \vec{F} $ станет такой, что ее составляющая $ F \sin (\beta - \alpha) $, перпендикулярная к наклонной плоскости, будет равна по абсолютной величине составляющей силы тяжести $ mg \cos \alpha $. При этом обратится в нуль как сила $ \vec{N} $, так и сила $ \vec{F}_{тр} $. В дальнейшем (при $ a > a_0 $) для того чтобы ящик не оторвался от полозьев, направление силы $ \vec{F} $ должно меняться с увеличением ускорения так, чтобы составляющая силы $ \vec{F} $, перпендикулярная к наклонной плоскости, оставалась равной составляющей силы тяжести, то есть
+		\[ F \sin (\beta - \alpha) = mg \cos \alpha \]
 
-					
-					<li>
-			<a href="../../#12">12.Электромагнитные волны</a>
-		</li>
+		Для составляющих этих сил, параллельных наклонной плоскости, можно записать
+		\[ F \cos (\beta - \alpha) - mg \sin \alpha = ma \]
 
+		Из двух последних равенств найдем
+		\[ \tan (\beta - \alpha) = \frac{g \cos \alpha}{g \sin \alpha + a} \]
 
-					
-					<li>
-			<a href="../../#13">13.Оптика</a>
-		</li>
+		откуда
+		\[ \beta = \alpha + \arctan \frac{g \cos \alpha}{g \sin \alpha + a} \]
 
+		Величину $ a_0 $ можно найти из тех соображений, что при $ a = a_0 $ значение угла $ \beta $ из (4) и (5) совпадают:
+		\[ \alpha + \arctan \frac{g \cos \alpha}{g \sin \alpha + a_0 } = \alpha + \arctan \mu \]
 
-					
-					<li>
-			<a href="../../#14">14.CTO</a>
-		</li>
-					
-		        </ul>
-			</nav>
-		</aside>	
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../">←Назад</a>
-					</h2>
-				</div>
-			</div>
+		откуда
+		\[ a_0 = g \left( \frac{\cos \alpha}{\mu} - \sin \alpha \right) \]
 
+		Итак, при $ a \leq a_0 $ (следовательно, и при равномерном движении тоже)
+		\[ \beta = \alpha + \arctan \mu \]
 
-		<div id="1" class="row odd">
+		При $ a > a_0 $
+		\[ \beta = \alpha + \arctan \frac{g \cos \alpha}{g \sin \alpha + a} \]
 
-		  <div class="col col-lg-12">
-		    <h3>
-		    	Условие:
-		    </h3>
-		  	<div class="task">
-				<p>                                                         
-				\(2.1.26^{∗}.\) По деревянным сходням, образующим угол \(α\) с горизонтом, втаскивают за привязанную к нему веревку ящик. Коэффициент трения ящика о сходни \(µ\). Под каким углом к горизонту следует тянуть веревку, чтобы с наименьшим
-усилием втащить ящик?
-				</p>
-				<div class="StatementDiv">
-					<img class="Statement" src="statement.png">
-				</div>
-			</div>
-		    <hr>
-		    <h3>
-		    	Решение:
-		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/Tw35KFitW-k" frameborder="0" allowfullscreen></iframe>
-		    </div>
-		    	
+		Мы решили задачу. Однако, приведем еще одно решение. Это - красивое геометрическое решение.
 
-		    <div class="solutions">
-		    	<img class="ScreenS" src="00.png">
-			</div>
+		При равномерном движении вдоль склонней сумма всех сил должна быть равна нулю. Заменим силы $ \vec{N} $ и $ \vec{F}_{тр} $ их равнодействующей $ \vec{Q} = \vec{N} + \vec{F}_{тр} $ (рис.) и будем складывать силы $ \vec{Q}, \vec{F} $ и $ m \vec{g} $. Они должны образовать замкнутый треугольник.
 
-		    <div class="solutions">
-		    	<img class="ScreenS" src="01.png">
-			</div>
+		Заменим, что направление силы $ \vec{Q} $ составляет с перпендикуляром к наклонной плоскости угол $ \delta $ такой, что
+		\[ \tan \delta = \frac{F_{тр}}{N} = \frac{\mu N}{N} = \mu \]
+		</p>
 
-		    <div class="solutions">
-		    	<img class="ScreenS" src="02.png">
-			</div>	
+        <center>
+          <figure>
+            <img src="phys11917-1.png" 
+              loading="lazy" width="250" />
+          </figure>
+        </center>
+		<p>
+		Таким образом, при изменении величины и направления силы $ \vec{F} $ направление силы $ \vec{Q} $ остается неизменным. Следовательно, абсолютная величина силы $ \vec{F} $ будет минимальна, если он перпендикулярен к вектору $ \vec{Q} $ (рис.). (так как величина и направление вектора $ m \vec{g} $ неизменны), то минимальная сила будет равна:
 
-		    <div class="solutions">
-		    	<img class="ScreenS" src="03.png">
-			</div>	
+		\[ F_{\min} = mg \sin \alpha + mg \mu \cos \alpha = mg (\sin \alpha + \mu \cos \alpha) \]
 
-		    <div class="solutions">
-		    	<img class="ScreenS" src="04.png">
-			</div>	
+		Таким образом, величина минимальной силы, необходимой для подъема ящика с ускорением $ a \leq a_0 $ равна
+		\[ F_{\min} = mg (\sin \alpha + \mu \cos \alpha) \]
 
-		    <h3>
-		    	Ответ: \(β = α + arctg \, \mu \)
-<h3>
-		    </h3>
-		  </div>
-
+		Если ускорение $ a > a_0 $, то для минимальной силы $ \vec{F} $, направленной под углом $ \beta $ к горизонтали, имеем:
+		\[ \beta = \alpha + \arctan \frac{g \cos \alpha}{g \sin \alpha + a} \]</p>
 		</div>
 
+        <h3>
+            Ответ: 
+        </h3>
+        <p>
+          $$β = α + \arctan \mu$$
+         </p>
+      <p style="text-align: right; font-style: italic; font-size: 16;"><a href="https://earthz.ru/solves/Zadacha-po-fizike-11917">earthz.ru</a></p>
 
+	    <h3>
+	    	Альтернативное решение:
+	    </h3>
+        <div class="video-container">
+	        <iframe class="video" src="https://www.youtube.com/embed/Tw35KFitW-k" frameborder="0" allowfullscreen></iframe>
+	    </div>
+         
+    <footer class="row container">
+        <br>
 
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
-		</div>
-			<a href="#" class="back-to-top affix">
-        		↑ наверх
-      		</a>
-		</div>
-		</div>		<footer class="row container">
-						<div class="col col-lg-3">
-							<div class="footer-left">
-								<p>
-									<small>
-										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-6">
-							<div class="footer-middle">
-								<p>
-									<small>
-										Все права принадлежат авторам.<br>
-										Коммерческое использование материалов — с письменного разрешения авторов.<br>
-										astrosander01@gmail.com<br>
-										<i>E = mc<sup>2</sup></i>.
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-3">
-							<div class="footer-right">
-								<div class="pull-right">
-								</div>
-							</div>
-						</div>
-			    </footer>
-
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
 </html>

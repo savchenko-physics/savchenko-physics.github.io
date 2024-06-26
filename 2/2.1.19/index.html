@@ -1,233 +1,150 @@
-<html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+<!DOCTYPE html>
+<html lang="ru">
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" media="screen and (max-width: 769px)" type="text/css" href="../../css/StyleMobile.css">
-		<link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="../../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="../../css/banner-styles.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
 
-		<script src="../../js/jquery-1.10.1.min.js"></script>
-	  <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	  </script>
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
 
-	  <!-- MathJax configuration -->
-	  <script type="text/x-mathjax-config">
-	  	MathJax.Hub.Config({
-		  extensions: ['tex2jax.js'],
-		  jax: ['input/TeX','output/HTML-CSS'],
-		  tex2jax: {
-		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-		    processEscapes: true,
-		    processClass: 'tex2jax',
-		    ignoreClass: 'html'
-		  },
-		  showProcessingMessages: false,
-		  messageStyle: 'none'
-		});
-	  </script>
+        <h3> Условие: </h3>
 
-	</head>
+        <p>     
+         $2.1.19.$ Если нажимать пальцем на шариковую ручку, опирающуюся на твердую поверхность, одновременно наклоняя ее, то, пока ручка образует малый угол с перпендикуляром к поверхности, она будет послушно следовать за пальцем руки. Как только угол наклона ручки превысит некоторое максимальное значение $α_{max}$, она выскользнет из-под пальца, как бы сильно или слабо ни нажимать на нее. Поэкспериментируйте сами и оцените коэффициент трения между шариком ручки и поверхностью, на которую она опирается.
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="140" />
+            <figcaption>
+                К задаче 2.1.19
+            </figcaption>
+          </figure>
+        </center>
 
-	<body style="">
-		<div class="container row">
-			<div class="col flash">
-		    <header>
-					<h1>Решение задач из Савченко О.Я.</h1>
-				</header>
-			</div>
-			<aside class="col col-lg-3">
-			<nav>
-		    	<ul class="nav">
+      <h3> Решение: </h3>
 
+        <p>
+        	Проведём наглядный экспиремент, поставь ручку на лист бумаги и будем медленно отводить в сторону
+        </p>
+        <br>
+        <center>
+          <figure>
+            <img src="demo.gif"
+              loading="lazy" width="350" />
+            <figcaption>
+            	Демонстрация падения ручки
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+        	В некоторый момент ручка уйдет в противоположную сторону и выскальзывает из под руки
+        </p>
+        <br>
+        <center>
+          <figure>
+            <img src="draw.png"
+              loading="lazy" width="250" />
+            <figcaption>
+            	Ручка в критическом состоянии
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+        	С помощью специальной программы, определим угол наклона ручки в этот момент
+        </p>
+        <br>
+        <center>
+          <figure>
+            <img src="angle.jpg"
+              loading="lazy" width="450" />
+            <figcaption>
+            	Измерение критического угла
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+        	Получилось 
+        	$$\boxed{\alpha = 7^{\circ}}$$
+        	Отобразим силы действующие на ручку
+        </p>
+        <br>
+        <center>
+          <figure>
+            <img src="draw1.png"
+              loading="lazy" width="180" />
+            <figcaption>
+            	Силы действующие на ручку
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+        	Т.к. сила трения является силой трения покоя
+        	$$F_{тр} = \mu N$$
+        	Запишем условие равновесия в критический момент
+        	$$\left\{\begin{matrix}
+			\mu N = F \sin \alpha\\ 
+			N = F \cos \alpha
+			\end{matrix}\right.$$
+			Откуда
+			$$\boxed{\mu = \tan \alpha}$$
+			Подставляем эксперементальные данные
+			$$\mu = \tan 7^{\circ} = 0.12$$
 
-		      <li>
-		  <a href="../../#1">1.Кинематика</a>
-		</li>
+        </p>
+<!-- 
+         <h3>
+            Альтернативное решение:
+         </h3>
+        <div class="video-container">
+	        <iframe class="video" src="https://www.youtube.com/embed/4yUz7Kllvco" frameborder="0" allowfullscreen></iframe>
+	    </div>
+ -->
+    <footer class="row container">
+        <br>
 
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
 
-		      <li>
-		  <a href="../../#2">2.Динамика</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#3">3.Колебания</a>
-		</li>
-
-
-		            
-
-		      <li>
-		  <a href="../../#4">4.Гидростатика</a>
-		</li>
-
-
-		            
-		      <li>
-		  <a href="../../#5">5.Молекулярная</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#6">6.Электростатика</a>
-		</li>
-
-
-		                  
-		      <li>
-		  <a href="../../#7">7.Движение в электрическом поле</a>
-		</li>
-
-
-		                  
-					<li>
-			<a href="../../#8">8.Электрический ток</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#9">9.Магнитное поле</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#10">10.Движение в сложных полях</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#11">11.Электромагнитная индукция</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#12">12.Электромагнитные волны</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#13">13.Оптика</a>
-		</li>
-
-
-					
-					<li>
-			<a href="../../#14">14.CTO</a>
-		</li>
-					
-		        </ul>
-			</nav>
-		</aside>	
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../">←Назад</a>
-					</h2>
-				</div>
-			</div>
-
-
-		<div id="1" class="row odd">
-
-		  <div class="col col-lg-12">
-		    <h3>
-		    	Условие:
-		    </h3>
-		  	<div class="task">
-				<p>                                                         
-				\(2.1.19.\) Если нажимать пальцем на шариковую ручку, опирающуюся на твердую поверхность, одновременно наклоняя ее, то, пока ручка образует малый угол
-с перпендикуляром к поверхности, она будет послушно следовать за пальцем руки. Как только угол наклона ручки превысит некоторое максимальное значение $α_{max}$, она выскользнет из-под пальца, как бы сильно или слабо ни нажимать
-на нее. Поэкспериментируйте сами и оцените коэффициент трения между шариком ручки и поверхностью, на которую она опирается.
-
-				</p>
-				<div class="StatementDiv">
-					<img class="Statement" src="statement.png" alt="1.1.5">
-				</div>
-			</div>
-		    <hr>
-		    <h3>
-		    	Решение:
-		    </h3>
-	        <div class="video-container">
-		        <iframe class="video" src="https://www.youtube.com/embed/4yUz7Kllvco" frameborder="0" allowfullscreen></iframe>
-		    </div>
-		    	
-		    </h3>
-		  </div>
-
-		</div>
-
-
-
-
-		</div>
-			<a href="#" class="back-to-top affix">
-        		↑ наверх
-      		</a>
-		</div>
-		</div>		<footer class="row container">
-						<div class="col col-lg-3">
-							<div class="footer-left">
-								<p>
-									<small>
-										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-6">
-							<div class="footer-middle">
-								<p>
-									<small>
-										Все права принадлежат авторам.<br>
-										Коммерческое использование материалов — с письменного разрешения авторов.<br>
-										astrosander01@gmail.com<br>
-										<i>E = mc<sup>2</sup></i>.
-									</small>
-								</p>
-							</div>
-						</div>
-						<div class="col col-lg-3">
-							<div class="footer-right">
-								<div class="pull-right">
-								</div>
-							</div>
-						</div>
-			    </footer>
-
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
 </html>
