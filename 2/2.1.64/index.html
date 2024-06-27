@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        })
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+         $2.1.64.$ С какой максимальной скоростью может ехать по горизонтальной плоскости мотоциклист, описывая круг радиуса $R$, если коэффициент трения равен $\mu$? На какой угол от вертикали он должен при этом отклониться? Во сколько раз увеличится максимально допустимая скорость мотоциклиста при движении по наклонному треку с углом наклона $α$ к горизонту по сравнению с максимально допустимой скоростью при движении по горизонтальному треку при том же радиусе поворота и том же коэффициенте трения?
+       </p>
+
+      <h3> Решение: </h3>
+        <center>
+          <figure>
+            <img src="draw1.png"
+              loading="lazy" width="350" />
+            <figcaption>
+               Силы действующие на мотоцикл
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+        Изобразим силы, действующие на мотоцикл (см. рис. верхний), и запишем второй закон Ньютона
+        $$\vec{N} + m\vec{g} + \vec{F}_{\text{тр}} = m\vec{a}.$$
+        </p>
+
+        <p>
+        В проекции на оси:
+        $$Ox: \quad F_{\text{тр}} = ma;$$
+        $$Oy: \quad N - mg = 0.$$
+        </p>
+
+        <p>
+        Учитывая, что при движении по окружности $ a = \frac{v^2}{R} $, сила трения равна $ F_{\text{тр}} = \mu N $, 
+        получаем, что максимальная скорость движения мотоциклиста равна
+        $$\boxed{v = \sqrt{\mu g R}}$$
+        </p>
+      <br>
+        <center>
+          <figure>
+            <img src="draw2.png"
+              loading="lazy" width="350" />
+            <figcaption>
+               Силы действующие на мотоцикл при повороте
+            </figcaption>
+          </figure>
+        </center>
+
+        <p>
+        При повороте мотоциклист отклоняется к центру окружности на некоторый угол (см. рис. нижний). Тогда по второму закону Ньютона
+        $$\vec{N} + m\vec{g} = m\vec{a}$$
+        $$Ox: \quad N \sin \beta = ma;$$
+        $$Oy: \quad N \cos \beta = mg.$$
+        </p>
+
+        <p>
+        Откуда
+        $$\tan \beta = \frac{a}{g} = \frac{\mu g}{g}$$
+        $$\boxed{\beta = \arctan \mu}$$
+        </p>
+      <br>
+        <center>
+          <figure>
+            <img src="draw3.png"
+              loading="lazy" width="180" />
+          </figure>
+        </center>
+
+        <p>
+        Рассмотрим движение велосипедиста по горизонтальному треку (рис.). 
+    </p>
+    <p>На велосипедиста действуют: сила тяжести $m \vec{g}$ и нормальная составляющая силы реакции опоры $\vec{N}$. 
+    </p>
+    <p>Центростремительное ускорение велосипедиста может сообщить здесь только сила трения покоя, направленная по радиусу окружности к центру $О$ и возникающая в том случае, когда велосипедист наклоняется к центру окружности. 
+    </p>
+    <p>Равнодействующая сил $\vec{N}$ и $\vec{F}_{тр} \Rightarrow \vec{F} = \vec{F}_{тр} + \vec{N}$ проходит через центр тяжести велосипедиста, и в противном случае существовал бы опрокидывающий момент сил. 
+    </p>
+    <p>По второму закону Ньютона для проекции на радиальное направление X $F_{тр} = ma_{n} = m \frac{v^{2}}{R}$, где $v$ - скорость движения велосипедиста. 
+    </p>
+    <p>Так как сила трения покоя $F_{тр} \leq \mu N = \mu mg$, то получаем неравенство 
+        $$m \frac{v^{2}}{R} \leq \mu mg$$
+        $$v^{2} \leq \mu gR \Rightarrow v \leq \sqrt{\mu gR}$$ 
+        максимальное значение скорости на горизонтальном треке $v_{1} = \sqrt{\mu gR}$.
+        </p>
+      <br>
+        <center>
+          <figure>
+            <img src="draw4.png"
+              loading="lazy" width="180" />
+          </figure>
+        </center>
+        <p>
+        Рассмотрим движение велосипедиста по наклонному треку. Действующие на него силы изображены на рис. ($\vec{F}$ - равнодействующая сил реакции опоры $\vec{N}$ и силы трения покоя $\vec{F}_{тр}$). По второму закону Ньютона для проекций на оси X и Y:
+    </p>
+    <p>
+        по оси Y $N \cos \alpha - F_{тр} \sin \alpha - mg = 0$ (1)
+    </p>
+    <p>
+        по оси X $N \sin \alpha + F_{тр} \cos \alpha = ma_{n}$ (2), где $a_{n} = \frac{v^{2}}{R}$
+    </p>
+    <p>
+        ($v$ - скорость движения по наклонному треку). Перепишем систему в виде:
+
+        $$\begin{cases} N \cos \alpha - F_{тр} \sin \alpha = mg, (1') \\ N \sin \alpha + F_{тр} \cos \alpha = m \frac{v^{2}}{R} (2'). \end{cases}$$
+    </p>
+    <p>
+        Выразим из этой системы $N$ и $F_{тр}$. Для этого умножим уравнение $l'$ на $\cos \alpha$, а уравнение $(2')$ - на $\sin \alpha$:
+        $$\begin{cases} N \cos^{2} \alpha - F_{тр} \sin \alpha = mg \cos \alpha, \\ N \sin^{2} \alpha + F_{тр} \cos \alpha \sin \alpha = m \frac{v^{2}}{R} \sin \alpha. \end{cases}$$
+    </p>
+    <p>
+        После сложения получим 
+        $$N(\cos^{2} \alpha + \sin^{2} \alpha ) = mg \cos \alpha + m \frac{v^{2}}{R} $$
+        $$N = m \left ( g \cos \alpha + \frac{v^{2}}{R} \right )$$
+    </p>
+    <p>
+        Умножим $(1')$ на $\sin \alpha$, а $(2')$ - на $\cos \alpha$, тогда
+
+        $$\begin{cases} N \cos^{2} \alpha - F_{тр} \sin \alpha = mg \cos \alpha, \\ N \sin^{2} \alpha + F_{тр} \cos \alpha \sin \alpha = m \frac{v^{2}}{R} \sin \alpha. \end{cases}$$
+    </p>
+    <p>
+        После вычислений найдем 
+        $$F_{тр} = \left ( \frac{v^{2}}{R} - g \sin \alpha \right )$$
+        Так как $F_{тр}$ - сила трения покоя, то 
+        $$F_{тр} \leq \mu N \Rightarrow m \left ( \frac{v^{2}}{R} \cos \alpha - g \sin \alpha \right ) \leq \mu m \left ( g \cos \alpha + \frac{v^{2}}{R} \sin \alpha \right )$$
+        $$ \frac{v^{2}}{R} ( \cos \alpha - \mu \sin \alpha) \leq g ( \mu \cos \alpha + \sin \alpha)$$
+        Разделим обе части на $\cos \alpha$ (из условия $\cos \alpha > 0$).
+
+        $$\frac{v^{2}}{R} (1 - \mu tg \alpha ) \leq g( \mu + tg \alpha)$$
+    </p>
+    <p>
+        Если $(1 - \mu tg \alpha) > 0$, то $v^{2} \leq \frac{gR( \mu + tg \alpha)}{1 - \mu tg \alpha}$, или $v \leq \sqrt{ \frac{gR( \mu + tg \alpha)}{1 - \mu tg \alpha}}$
+    </p>
+    <p>Значит максимальная скорость при движении по наклонному треку 
+        $$v_{2} = \sqrt{ \frac{gR ( \mu + tg \alpha)}{1 - \mu tg \alpha}}$$
+    </p>
+    <p>
+        Отношение 
+        $$\boxed{\frac{v_{2}}{v_{1}} =  \sqrt{ \frac{ \mu + tg \alpha}{ \mu (1 - tg \alpha)}}}$$
+        </p>
+      <p style="text-align: right; font-style: italic; font-size: 16;"><a href="https://earthz.ru/solves/Zadacha-po-fizike-3048">earthz.ru</a></p>
+         <h3> Ответ: </h3>
+         <p>
+         	$$v=\sqrt{\mu gR}$$
+            $$\beta=\arctan \mu$$
+            $$\frac{u}{v}=\sqrt{\frac{\mu+\operatorname{tg}\alpha}{\mu(1-\mu\operatorname{tg}\alpha)}}$$
+         </p>
+	
+
+    <footer class="row container">
+    <br>
+    <p>
+
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
