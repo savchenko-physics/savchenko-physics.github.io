@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.5.34^*.$ Частица массы $m$ с импульсом $p$ распадается на две одинаковые частицы. Каков максимальный угол разлета вторичных частиц, если при распаде выделяется энергия $E$?
+        </p>
+
+  		<h3> Решение: </h3>
+      <p>
+        В системе центра масс этот распад выглядит так: начальное тело массой $m_1+m_2$ неподвижно, частица 1 и частица 2 разлетаются в противоположные стороны, так как векторная сумма импульсов должна дать 0: (импульсы в центре масс обозначаю индексом с)
+        $$
+        \vec p_{1c}+\vec p_{2c}=m_1\vec v_{1c}+m_2\vec v_{2c}=0\Rightarrow m_1v_{1c}=m_2v_{2c}
+        $$
+    </p>
+    <center>
+      <figure>
+        <img src="draw1.png"
+          loading="lazy" width="250" />
+      </figure>
+    </center>
+    <p>
+        А теперь нужно использовать условие максимальности угла. Сначала учтем, что скорость тела 1 в изначальной системе отсчета: (можно рассматривать и вектор скорости первого тела - разницы нет)
+        $$
+        \vec v_1=\vec v_{1c}+\vec v
+        $$
+        Построим треугольник векторов: (угол $\alpha_2$ как известно - угол между вектором скорости начального тела и второго тела в изначальной системе)
+        </p>
+    <center>
+      <figure>
+        <img src="draw2.png"
+          loading="lazy" width="250" />
+      </figure>
+    </center>
+    <p>
+        Вектор $\vec v_1$ должен являться касательной к окружности (условие максимальности угла), по радиусу которого направлен вектор $\vec v_{1c}$:
+        </p>
+    <center>
+      <figure>
+        <img src="draw3.png"
+          loading="lazy" width="250" />
+      </figure>
+    </center>
+    <p>
+        Отсюда ясно, что
+        <div class="scroll-wrapper">
+        $$
+        v_{1c}=v\sin\alpha_1\Rightarrow v_{2c}=\left (\frac{m_1}{m_2}\right)v_{1c}=\left (\frac{m_1}{m_2}\right)v\sin\alpha_1
+        $$
+    </div>
+        Разность энергий:
+        $$
+        \Delta E=E'-E_0
+        $$
+        Так как в системе центра начальное тело массой $m_1+m_2$ неподвижно, то $E_0=0\Rightarrow\Delta E=E'$
+        $$
+        E'=\frac{m_1v_{1c}^2}{2}+\frac{m_2c_{2c}^2}{2}$$
+        $$E'=\frac{m_1(v\sin\alpha_1)^2}{2}+\frac{m_1^2(v\sin\alpha_1)^2}{2m_2}$$
+        $$E'=\frac{m_1(v\sin\alpha_1)^2}{2}\left(1+\frac{m_1}{m_2}\right)
+        $$
+        $E'$ можно выразить и через $v_2$: (надо повторить то, что было сделано выше, только со вторым телом)
+        $$
+        E'=\frac{m_2(v\sin\alpha_2)^2}{2}\left(1+\frac{m_2}{m_1}\right)
+        $$
+        Отсюда приравняв эти два выражения для конечной энергии в системе центра можно получить связь между углами и массами тел:
+        $$
+        \frac{\sin\alpha_1}{\sin \alpha_2}=\frac{m_2}{m_1}
+        $$
+        Дальше воспользоваться тем, что начальная энергия в изначальной системе задана и прийти к конечному ответу:
+        $$
+        K=\frac{(m_1+m_2)v^2}{2} \Rightarrow \Delta E=E'=K\sin\alpha_1\sin\alpha_2
+        $$
+      </p>
+	    <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>$\cos\alpha=(p^2-2mE)/(p^2+2mE)$, если $2mE< p^2$
+        </p>
+        <p>
+            $\alpha=\pi/2,$ если $2mE>p^2$</p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

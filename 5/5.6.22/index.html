@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$5.6.22^*.$ В откачанном пространстве вертикально стоит цилиндрический сосуд, перекрытый сверху подвижным поршнем массы $M$. Под поршнем находится одноатомный газ при температуре $T$ и давлении $P$. Внутреннее сечение цилиндра $S$, высота той части сосуда, внутри которой находится газ, $H$. Поршень отпустили. Он начал двигаться. Чему равна максимальная скорость, развиваемая поршнем, если газ сжимается изотермически? адиабатически?
+
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="180" />
+            <figcaption>
+                К задаче 5.6.22
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+        <p>
+            a) Из закона сохранения энергии или теоремы о кинетической энергии и работе
+            $$\frac{Mv^2}{2} = Mg(H-y) + A \;(1)$$
+            где $A$ - работа, совершенная над поршнем, равная работе, совершенной газом, которая в данном случае (изотермический процесс) определяется как
+            $$A = nRT\ln{\frac{Sy}{SH}} = -nRT\ln{\frac{H}{y}} \;(2)$$
+            Подставляя $(2)$ в $(1)$
+            $$\frac{Mv^2}{2} = Mg(H-y) - nRT\ln{\frac{H}{y}} \;(3)$$
+            Из закона Бойля-Мариотта 
+            $$PSH = P'Sy \;(4)$$
+            Применение уравнения состояния к начальному состоянию,
+            $$n = \frac{PSH}{RT} \;(5)$$
+            $$PSH = nRT$$
+            Применение второго закона Ньютона
+            $$Mg - P(t)S = M\frac{dv}{dt}$$
+            В момент максимальной скорости $dv/dt = 0$ и $P(t) = P'$, следовательно
+            $$Mg = P'S \;(6)$$
+            Подставляя $(6)$ в $(4)$ и выражая $y$
+            $$y = \frac{PSH}{Mg} \;(7)$$
+            Подставляя $(5)$ и $(7)$ в $(3)$ и выделяя $v$
+            $$\boxed{v = \sqrt{2gH\left(1-\frac{PS}{Mg}+\frac{PS}{Mg}\ln{\frac{PS}{Mg}}\right)}}$$
+            b) Из закона Пуассона
+            $$P(SH)^\gamma = P'(Sy)^\gamma \;(8)$$
+            Работа, совершаемая газом при адиабатическом процессе, равна
+            $$A = \frac{PSH-P'Sy}{\gamma-1} \;(9)$$
+            Согласно $(6)$, мы можем модифицировать $(8)$ и выразить $y$, получив
+            $$y = H\left(\frac{PS}{Mg}\right)^\frac{1}{\gamma} \;(10)$$
+            Подставляем $(9)$ в $(1)$ и учитываем $(6)$,
+            <div class="scroll-wrapper">
+                $$\frac{Mv^2}{2} = H\left(Mg+\frac{PS}{\gamma-1}\right)-Mgy\left(1+\frac{1}{\gamma-1}\right) \;(11)$$
+            </div>
+            Подставляя $(10)$ в $(11)$, поскольку газ одноатомный ($i = 3$ и $\gamma = 5/3$), и отделяя $v$
+            $$\boxed{v = \sqrt{2gH\left[1-\frac{5}{2}\left(\frac{PS}{Mg}\right)^\frac{3}{5}+\frac{3}{2}\frac{PS}{Mg}\right]}}$$
+        </p>
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
