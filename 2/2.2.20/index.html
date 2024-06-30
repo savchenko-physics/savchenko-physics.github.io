@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.2.20.$ Где находится центр масс: однородного прута, согнутого посередине под прямым углом? однородной треугольной пластинки? гардеробного номерка в виде диска с круглым отверстием?
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="120" />
+            <figcaption>
+                К задаче 2.2.20
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+        <p>
+            a) Найдем центр масс прямого угла
+        </p>
+        <center>
+          <figure>
+            <img src="draw.png"
+              loading="lazy" width="180" />
+            <figcaption>
+                Центр масс прямого угла
+            </figcaption>
+          </figure>
+        </center>
+      <p>
+        Центр масс будет отстаять от вершины угла по вертикали и горизантали на
+        $$x_c =y_c = \frac{L}{4}$$
+        Откуда расстояние до вершины угла 
+        $$l = L \frac{\sqrt{2}}{4}$$
+      </p>
+        <p>
+            b) Перейдем к равностороннему треугольнику
+        </p>
+
+        <center>
+          <figure>
+            <img src="draw1.png"
+              loading="lazy" width="175" />
+            <figcaption>
+                Центр масс равностороннего треугольника
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+            Центр масс будет отстаять от каждой стороны на величину
+            $$x_c = \frac{0 \cdot \frac{m}{3} + \frac{l}{6}\frac{\sqrt{3}}{2}\cdot \frac{m}{3}\cdot 2}{m}$$
+            $$x_c = \frac{l}{6\sqrt{3}}$$
+            И эта точка будет являться <a href="https://en.wikipedia.org/wiki/Centroid" target="_blank">центроидом</a> треугольника
+        </p>
+        <p>
+            c) Чтобы найти центр масс номерка, представим номерок как суперпозицию диска с поверхностной плотностью $\sigma$ на которого наложили диск с отрицательной плотностью $-\sigma$
+        </p>
+        <center>
+          <figure>
+            <img src="draw2.png"
+              loading="lazy" width="250" />
+            <figcaption>
+                Центр масс номерка
+            </figcaption>
+          </figure>
+        </center>
+        <p>
+            Найдем расстояния центра масс от центра номерка
+            $$x_c = \frac{0 \cdot \sigma R^2 - d \sigma r^2}{\sigma R^2 - \sigma r^2}$$
+            Таким образом, расстояние на котором будет находиться центр масс номерка
+            $$l = d \frac{r^2}{R^2 - r^2}$$
+        </p>
+      
+        <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>На биссектрисе угла на расстоянии $l = L \sqrt{2}/4$, где $L$ — длина половины прута; 
+        </p>
+        <p>
+            в точке пересечения медиан; 
+        </p>
+        <p>
+            на прямой, соединяющей центры диска и отверстия, на расстоянии $l = dr^2/(R^2 − r^2)$ от центра диска.
+        </p>
+        <br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
