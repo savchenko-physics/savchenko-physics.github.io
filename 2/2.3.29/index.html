@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.3.29^*.$ Бусинка массы $m$ скользит по вертикально расположенному волнообразному участку гладкой проволоки. Длина волны много меньше длины участка и много больше размеров бусинки, а длина проволоки на участке в $k$ раз больше его протяженности. С какой средней силой действует бусинка на этот участок проволоки?
+        </p>
+
+  		<h3> Решение: </h3>
+
+        <p>
+            Под "средней силой" будем понимать среднюю вертикальную составляющую силы (средняя горизонтальная равна нулю). Усреднение понималось в том смысле, что именно такая сила вызывала бы видимое равноускоренное падение по вертикали (наблюдаемое "с большого расстояния", т.е. с усреднением по витку проволоки).
+        </p>
+        <p>
+            С ростом скорости изменение ускорения на витке будет всё меньше и меньше по сравнению со средней по витку скоростью. И поскольку проволока очень длинная, можно считать, что падение всё-таки в среднем равноускоренное.
+        </p>
+        <p>
+            Так вот: если $\Delta s$ — длина витка проволоки, $v$ — средняя на данном витке скорость (вдоль проволоки), $\Delta v$ — полное изменение скорости при прохождении всего витка, $\Delta t$ — время прохождения этого витка и $\Delta y$ — расстояние между концами витка по вертикали, то $\Delta s = v \Delta t$ и (по закону сохранения энергии) $\frac{1}{2} (\Delta v)^2 = g \Delta y$. А это — ровно те же дифференциальные уравнения, что и задающие скольжение вдоль наклонной плоскости длины $S$ с перепадом высот $Y$ (равными длине и высоте проволоки соответственно). Отсюда и результат.
+        </p>
+        <p>
+            Они наверняка имели в виду проекцию не на вертикальную плоскость, а просто на вертикальную ось. Тогда случай со спиралью просто тривиален. А с неспиралью получается то же самое, но после усреднения по периоду проволоки. И, кстати, спираль они не имели в виду совершенно точно: спираль — она не "волнообразна".
+        </p>
+
+	    <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>$$F = mg \frac{k^2-1}{k^2}$$</p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
