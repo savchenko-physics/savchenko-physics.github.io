@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.2.33^*.$ Внутри сферы радиуса $R$ со скоростью $v$ движется частица массы $m$, упруго ударяясь о ее стенки. Скорость частицы образует угол $α$ с радиусом, проведенным в точку удара. Какова по модулю средняя сила, действующая со стороны стенок сферы на частицу? Какова средняя сила, действующая на единицу площади сферы, если в единице объема содержится $N$ таких частиц? Частицы между собой не сталкиваются.
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="130" />
+            <figcaption>
+                К задаче 2.2.33
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+      <p>
+        Импульс, который передает частица найдем как
+        $$dp = 2mv\cos \alpha$$ 
+        Путь, который пройдет частица между двумя последовательными ударами
+        $$x = 2R\cos \alpha$$
+        Таким образом время между двумя последовательными ударами
+        $$dt = \frac{x}{v} = \frac{2R\cos \alpha}{v}$$
+        Запишем второй закон Ньютона в импульсной форме
+        $$F = \frac{dp}{dt} = 2mv\cos \alpha \frac{v}{2R\cos \alpha}$$ 
+        $$\boxed{F = \frac{mv^2}{R}}$$
+        Количество частиц в единице объема обозначим за $N$, тогда количество частиц в сфере радиуса $R$ составляет
+        $$n = \frac{4}{3} \pi r^3 N  \quad\text{(1)}$$
+        Общая сила действующая на стенки сферы:
+        $$F = n\frac{mv^2}{R}  \quad\text{(2)}$$ 
+        А давление по определию - сила, действующая на единицу площади
+        $$
+        p = \frac{F}{4\pi R^2}
+        $$
+        Подставляем $\text{(1)}$ и $\text{(2)}$
+        $$
+        p = \frac{4}{3} \pi r^3 N \frac{mv^2}{4\pi R^3}
+        $$
+        $$\boxed{p = \frac{Nmv^2}{3}}$$
+      </p>
+	    <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>$$F = \frac{mv^2}{R}$$ 
+        $$p = F/S = \frac{Nmv^2}{3}$$</p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

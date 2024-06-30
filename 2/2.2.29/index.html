@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.2.29^*.$ Обезьяна массы $m$ уравновешена противовесом на блоке $A$. Блок $A$ уравновешен грузом массы $2m$ на блоке $B$. Система неподвижна. Как будет двигаться груз, если обезьяна начнет равномерно выбирать веревку со скоростью $u$ относительно себя? Массой блоков и трением пренебречь.
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="120" />
+            <figcaption>
+                К задаче 2.2.29
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+        <p>
+          Второй закон Ньютона для оси y:
+          $$
+          \begin{cases}
+              2T - 2mg = 2ma_{1y} \\
+              T - mg = ma_{2y} \\
+              T - mg = ma_{3y}
+          \end{cases}
+          $$
+          Из этих трех уравнений следует, что:
+          $$
+          a_1 = a_{2y} = a_{3y}$$
+          $$\quad \int_0^{v_{1y}} dv_{1y} = \int_0^{v_{2y}} dv_{2y} = \int_0^{v_{3y}} dv_{3y}$$
+          $$v_{1y} = v_{2y} = v_{3y}
+          $$
+          Длины двух веревок:
+          $$
+          \begin{cases}
+              L_1 = 2y_b - y_1 - y_a \\
+              L_2 = 2y_A - y_2 - y_k
+          \end{cases}
+          $$
+          Взяв производную от длины каната по времени, мы получим эти зависимости:
+          $$
+          \begin{cases}
+              0 = 2v_{by} - v_{1y} - v_{Ay} \\
+              0 = 2v_{Ay} - v_{2y} - v_{ky}
+          \end{cases}
+          $$
+          Из формулы сложения скоростей:
+          $$
+          \vec{v} = \vec{v}^\prime + \vec{u}$$
+        Из условия задачи
+        $$v_{ky} = v_{3y} + u_y$$
+        </p>
+        <p>
+          В конечном счете:
+          $$
+          v_{1y} = -v_Ay \quad (v_{by} = 0)$$
+          $$
+          2v_{1y} + v_{2y} + v_{ky} = 0$$
+          $$
+          2v_{1y} + v_{2y} + v_{3y} + u_y = 0
+          $$
+          $$
+          4v_{1y} = -u_y$$
+          $$
+          v_{1y} = -\frac{u_y}{4}
+          $$
+      </p>
+        <h4>
+            Ответ: 
+        </h4>
+        <p>Со скоростью $u/4$ вверх</p>
+        <h3> Альтернавное решение: </h3>
+      <p>
+  Решение через импульс. 
+</p>
+<p>
+  Сначала разбираемся со скоростью обезьяны относительно блока $ A $: т.к. массы одинаковы, то из симметрии следует, что скорости груза $ m $ и обезьяны равны, т.е. они равны $ v/2 $. На самом деле это верно только в том случае, если обезьяна начала ползти из положения равновесия, что, видимо, подразумевается в задаче.
+</p>
+
+<p>
+  Пусть теперь скорость груза $ 2m $ равна $ v $ и направлена вверх. Тогда скорость точки $ A $ относительно потолка равна $ v $ и направлена вниз, и скорости обезьяны и груза $ m $ относительно потолка равны $ v/2 - v $. Т.к. силы, действующие на блок $ A $ и груз $ 2m $ одинаковы, то и изменение импульса с двух сторон блока в одно и то же, следовательно
+  $$ 2m \cdot v = 2 \left[ \frac{m(v/2 - v)}{2} \right], $$
+  откуда получаем $ v = \frac{4}{3} g $.
+</p>
+
+<p>
+  Вторую часть задачи можно провести по-другому. Заметим, что центр масс системы "обезьяна-блок A-груз 2m" движется вверх со скоростью $ v/2 $. Фактически, заменив эту систему воображаемой обезьяной массы $ 2m $, ползущей вверх со скоростью $ v/2 $ мы сведём задачу к первой части. Из этого, повторяя рассуждения о симметрии, получим сразу ответ $ v = \frac{4}{3} g $.
+</p>
+        <h3> Альтернавное решение: </h3>
+
+        <div class="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/BuEBU8T4LE8" frameborder="0" allowfullscreen></iframe>
+        </div>  
+
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

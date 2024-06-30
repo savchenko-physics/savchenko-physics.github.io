@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$2.2.32^*.$ В цилиндре под поршнем массы $M$ прыгают, упруго ударяясь о поршень и дно цилиндра, $N$ шариков массы $m$ каждый. Сила тяжести, действующая на поршень, уравновешена ударами шариков. Расстояние между дном цилиндра и поршнем равно $h$. Полная энергия каждого шарика одинакова. На какую высоту будут подскакивать шарики, если поршень быстро убрать? $N \gg 1$.
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="230" />
+            <figcaption>
+                К задаче 2.2.32
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+      <p style="font-style: italic;">
+        NO: Эта задача была в одном из туров отборочных испытаний в Национальную сборную Республики Беларусь на Международную Физическую Олимпиаду
+      </p>
+      <p>
+        Поршень не падает, потому что импульс, который передают ударяющиеся каждые $\Delta t$ секунд шарики, компенсирует силу тяжести, действующую на поршень
+        $$Mg = N \frac{dp}{dt} \quad\text{(1)}$$
+        Т.к. удар абсолютно упругий, скорость шарика по модулю при ударе сохраняется, а по направлению меняется на противоположную
+        $$dp = m(v - (-v)) = 2mv \quad\text{(2)}$$
+        Время между двумя последовательными соударениями одного шарика $\Delta t$ найдем из кинематических соображений
+        $$v_0t - \frac{gt^2}{2} = H \quad\text{(3)}$$
+        $$v_0 - gt = v \quad\text{(4)}$$
+        $$v= \sqrt{v_0^2 - 2gh} \quad\text{(5)}$$ 
+        Из $\text{(3)}$ выразим $t$
+        $$t = \frac{v_0 - \sqrt{v^2_0-2gh}}{g} \quad\text{(6)}$$
+        Перепишем $\text{(1)}$ 
+        $$Mg = N \frac{2m\sqrt{v_0^2 - 2gh}}{2\frac{v_0 - \sqrt{v^2_0-2gh}}{g}} \quad\text{(7)}$$
+        $$M(v_0 - \sqrt{v^2_0-2gh}) = N m\sqrt{v_0^2 - 2gh} \quad\text{(5)}$$
+        $$Mv_0 = (M+N m)\sqrt{v_0^2 - 2gh} \quad\text{(8)}$$
+        Возводим обе части в квадрат
+        $$M^2v_0^2 = (M+N m)^2(v_0^2 - 2gh) \quad\text{(9)}$$
+        Откуда находим скорость:
+        $$v_0 = \sqrt{2gh\frac{(M+Nm)^2}{Nm(Nm+2M)}} \quad\text{(10)}$$
+        Из закона сохранения энергии, шарик запущенный со скоростью $v_0$ с поверхности земли достигнет максиму своего полета на высоте
+        $$H=\frac{v_0^2}{2g} \quad\text{(11)}$$
+        $$\boxed{H=h\frac{(M+Nm)^2}{Nm(Nm+2M)}} \quad\text{(12)}$$
+
+      </p>
+	    <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>$$H=h\frac{(M+Nm)^2}{Nm(Nm+2M)}$$</p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
