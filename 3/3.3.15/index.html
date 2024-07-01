@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Решение задачника Савенко О.Я.">
+    <meta property="og:title" content="Решебник Савченко">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Сайт с решениями задач из сборника задач Савенко О.Я.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Решебник Савченко</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Решение задач из Савченко О.Я.</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие: </h3>
+
+        <p>     
+        	$3.3.15^*.$ Стрелок пытается попасть в диск радиуса $R$, который колеблется гармонически так быстро, что стрелок не может за ним уследить. Тогда он целится в центр области движения диска. С какой вероятностью стрелок попадет в диск, если амплитуда колебаний диска $a \gg R$? Если $A = 2R$? Увеличится ли вероятность попадания, если стрелок будет целиться в точку на расстоянии $R$ от края области?
+        </p>
+        <center>
+          <figure>
+            <img src="statement.png"
+              loading="lazy" width="180" />
+            <figcaption>
+                К задаче 3.3.15
+            </figcaption>
+          </figure>
+        </center>
+
+  		<h3> Решение: </h3>
+
+        <p>
+            Перед просмотр решения рекомендую посмотреть решение задачи с похожим условием <a href="../../1/1.1.23" target="_blank">1.1.23</a>
+        </p>
+
+
+              <center>
+              <figure>
+                <img src="animation.gif" alt="1.1.23"
+                  loading="lazy" width="300" />
+                <figcaption>
+                  Движение мешени
+                </figcaption>
+              </figure>
+              </center>
+
+              <p>
+                $\text{a) }$Гармоническое движение мишени описывается уравнением
+                $$x(t) = a \cos \omega t$$
+                При этом период колебаний равен
+                $$T = \frac{2\pi}{\omega}$$
+                Время за которое проходит цетр диска диапазон $[0; R]$ найдем как
+                $$a \sin \omega t = R$$
+                $$\sin \omega t = \frac{R}{a}$$
+                Учитывая $a \gg R$, пользуемся приближением $\sin x \approx x$
+                $$\omega t = \frac{R}{a}$$
+                Откуда $t$
+                $$t = \frac{R}{\omega a}$$
+                Аналогично, время за которое проходит цетр диска диапазон $[-R; 0]$ равно
+                $$t = \frac{R}{\omega a}$$
+                Тогда, время за которое проходит цетр диска диапазон $[-R; R]$ составляет
+                $$t = \frac{2R}{\omega a}$$
+                Так как за время $T$ полного колебания, мишень проходит центр дважды, время в течении которого стрелок может попасть в мишень за промежуток $T$
+                $$\tau = \frac{4R}{\omega a}$$
+                Отсюда вероятность попадания
+                $$w = \frac{\tau}{T} = \frac{4R}{\omega a} \frac{\omega}{2\pi}$$
+                $$\boxed{w = \frac{2R}{πa}}$$
+                $\text{b) }$Если $a = 2R$, то время за которое проходит цетр диска диапазон $[0; R]$ найдем как
+                $$2R \sin \omega t = R$$
+                $$\sin \omega t = \frac{1}{2}$$
+                $$t = \frac{\pi}{6\omega}$$
+                Так как за время $T$ полного колебания, мишень проходит центр дважды, время в течении которого стрелок может попасть в мишень за промежуток $T$
+                $$\tau = 4t = \frac{4\pi}{6 \omega}$$
+                Отсюда вероятность попадания
+                $$w = \frac{\tau}{T} = \frac{2\pi}{3 \omega} \frac{\omega}{2\pi}$$
+                $$\boxed{w=\frac{1}{3}}$$
+                Приближаяся к краю, скорость мишень уменьшается, соответственно увеличивается время, которое ее "видит" охотник, откуда и увеличивается вероятность попадания
+              </p>
+
+	    <h4>
+	    	Ответ: 
+	    </h4>
+	    <p>$w = 2R/(πA)$ при $A \gg R$
+        </p>
+        <p>
+        $w = 1/3$ при $A = 2R$. Увеличится.</p>
+<br>
+
+    <footer class="row container">
+        <p>
+            <small> © <strong>Решебник Савченко О.Я.</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
