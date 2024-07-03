@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+
+        <p>
+          $2.8.1$
+          The figure shows structures that hold a load weighing 10 kg. The cables are represented by thin lines, the rod is represented by a double line. Determine the tension force of the cables for case a and the force acting on the rod from the side of the cable thrown over it for case b.      
+        </p>
+        <center>
+            <figure>
+              <img src="statement.png"
+                loading="lazy" alt="2.8.1" width="400" />
+              <figcaption>
+                For problem 2.8.1
+              </figcaption>
+            </figure>
+          </center>
+        <h3>Solution</h3>
+        <p>
+          Let's consider the following figure
+        </p>
+        <center>
+            <figure>
+              <img src="draw.png"
+                loading="lazy" alt="2.8.1" width="500" />
+              <figcaption>
+                Force analysis
+              </figcaption>
+            </figure>
+          </center>
+        <p>
+          $a$. Applying Newton Second Law for $x$-direction
+          $$T_2~\cos{30^\circ}-T_1~\cos{30^\circ}=0$$
+          $$T_1=T_2 \;(1)$$
+          for $y$-direction
+          $$(T_1+T_2)~\sin{30^\circ} = mg \;(2)$$
+          Let be $T_1=T_2=T$, so, bak to $(2)$
+          $$2T~\sin{30^\circ}=mg$$
+          $$T = \frac{mg}{2~\sin{30^\circ}} = mg = \boxed{98~\rm{N}}$$
+          $b$. According figure,
+          $$F^2 = T^2+T^2 = 2T^2$$
+          We consider the same tension $T$ because we suppose the threads are unextensible.
+          $$F = \sqrt{2}~T \;(3)$$
+          Applying Newton Second Law
+          $$T = mg \;(4)$$
+          Putting $(4)$ into $(3)$
+          $$F = \sqrt{2}~mg = \boxed{138~\rm{N}}$$
+          Note: Calculations are made considering $g$ = 9.8 N/kg and $\sqrt{2}$ = 1.41.
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
