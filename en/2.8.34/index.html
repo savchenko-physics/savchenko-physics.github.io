@@ -45,41 +45,59 @@
         <h3> Statement </h3>
 
         <p>
-          $2.8.4$
-          Through three holes made in a desktop pass threads united by a common knot. At the free ending of each thread is hanged equal loads. Determine the angles between threads. There is no friction.  
+          $2.8.34$
+          The staircase rests on a vertical wall and floor. At what values of the angle between the ladder and the floor can it stand if the coefficients of friction of the ladder on the floor and on the wall are equal to $\mu_1$ and $\mu_2$, respectively?  
         </p>
         <center>
           <figure>
             <img src="statement.png"
-              loading="lazy" alt="2.8.4" width="200" />
+              loading="lazy" alt="2.8.34" width="300" />
             <figcaption>
-              For problem 2.8.4
+              For problem 2.8.34
             </figcaption>
           </figure>
         </center>
 
         <h3>Solution</h3>
         <p>
-          Tension in each thread is the same ($T=mg$). Moreover, note that the absolute value of the sum of two any tensions must be equal to the third one which is also $T$ and be directed in opposed sense for maintain the equilibrium. So, consider for example the angle $\gamma$
+          See the following figure...
         </p>
         
         <center>
           <figure>
             <img src="draw.png"
-              loading="lazy" alt="2.8.4" width="300" />
+              loading="lazy" alt="2.8.34" width="350" />
             <figcaption>
-              Top view
+              Force analysis
             </figcaption>
           </figure>
         </center>
 
         <p>
-          $$T_R = T = 2T\cos{\frac{\gamma}{2}}$$
-          Hence
-          $$\cos{\frac{\gamma}{2}} = 0.5$$
-          $$\gamma = \frac{2\pi}{3} = 120^\circ$$
-          But, since the above condition of the sum of two any tensions always is true, the three angles must be equal.
-          $$\boxed{\alpha=\beta=\gamma=120^\circ}$$
+            Let's consider the Newton Second Law for both axis. Firstly, for $x$-axis,
+            $$N_1+f_r_2 = mg$$
+            $$N_1+\mu_2 N_2 = mg \;(1)$$
+
+            For $y$-axis,
+            $$N_2 = f_r_1$$
+            $$N_2 = \mu_1 N_1 \;(2)$$
+
+            Substituting $(2)$ into $(2)$:
+            $$N_1 (1+\mu_1 \mu_2) = mg \;(3)$$
+
+            Applying Newton Second Law for the rotation about the pivot point,
+            $$\sum \vec{\tau} = \vec{0}$$
+            $$-mg\frac{l}{2}\sin{\frac{\pi}{2}-\alpha}+N_1 l\sin{\frac{\pi}{2}+\alpha}-f_r_1 l \sin{\pi-\alpha} = 0$$
+            
+            where $l$ is the staircase's length. Now, for avoiding that staircase slides over ground $\sum \tau \leq 0$, then
+            $$-mg\frac{l}{2}\sin{\frac{\pi}{2}-\alpha}+N_1 l\sin{\frac{\pi}{2}+\alpha}-f_r_1 l \sin{\pi-\alpha} \leq 0$$
+            $$-mg\frac{l}{2}\sin{\frac{\pi}{2}-\alpha}+N_1 l\sin{\frac{\pi}{2}+\alpha}-\mu_1 N_1 l \sin{\pi-\alpha} \leq 0$$
+
+            Developing the above expression,
+            $$mg \geq 2N_1(1-\mu_1 \tan{\alpha}) \;(4)$$
+
+            Putting $(3)$ into $(4)$, and separating $\tan{\alpha}$ term,
+            $$\boxed{\tan{\alpha} \geq \frac{1-\mu_1 \mu_2}{2 \mu_1}}$$
         </p>
 
           <p style="text-align: right; font-style: italic; font-size: 14;">   
