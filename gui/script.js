@@ -70,7 +70,7 @@ function generateHtmlContent() {
   </header>
 
         <h3 id="back-link"><a href="../">$\\leftarrow$Back</a></h3>
-    `+generateBasement()+`
+    ${generateBasement()}
 
     <footer class="row container">
       <br>
@@ -103,15 +103,17 @@ function generateBasement() {
     const htmlContent = `
         <h3> Statement </h3>
         <p>
-          \\(`+area1+`.\\) `+area2+`
+            $${area1}.$ ${area2}
         </p>
 
         <h3>Solution</h3>
-        <p>`+area3+`
+        <p>
+            ${area3}
         </p>
 
         <h4>Answer</h4>
-        <p>`+area4+`
+        <p>
+            ${area4}
         </p>
 `;
 
@@ -136,10 +138,10 @@ function handleDrop(event) {
 `${textarea.value.substring(0, dropPosition)}
 <center>
   <figure>
-    <img src="statement.png"
+    <img src="${filePath}"
       loading="lazy"  width="230" />
     <figcaption>
-      For problem 2.1.49
+      For problem ${document.getElementById('area1').value}
     </figcaption>
   </figure>
 </center>${textarea.value.substring(dropPosition)}`;
