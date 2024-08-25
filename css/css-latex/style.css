@@ -764,3 +764,29 @@ h6 {
 .exp{
   text-align: center;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the link */
+    left: 50%;
+    margin-left: -150px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-style: italic;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.95;
+}
