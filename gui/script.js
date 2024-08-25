@@ -89,7 +89,7 @@ function generateHtmlContent() {
         '<style>body { background-color: black; color: white; }' +
         '</style></head>' +
         '<body><pre>' + 
-        htmlContent.replace(/</g, '&lt;').replace(/>/g, '&gt;') + 
+        htmlContent.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\\)/g, "$").replace(/\\\(/g, '$').replace(/>/g, '&gt;') + 
         '</pre></body></html>');
 }
 
