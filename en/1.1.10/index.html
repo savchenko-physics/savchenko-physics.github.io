@@ -44,14 +44,14 @@
     
         <h3> Statement </h3>
         <p>
-            $1.1.4.$ Three microphones located on the same straight line at points $A$, $B$, $C$ recorded successively at the moments $t_A > t_B > t_C$ the sound of an explosion that occurred at point $O$, which lies on the segment $AC$. Find the length of the segment $AO$ if $AB = BC = L$. At what point in time did the explosion occur?
+            $1.1.10^*.$ A bus is driving along a straight highway at constant speed $v$. You have noticed the bus when it was at some point $A$. From what area near the highway can you catch up with this bus if your running speed is $u < v$? Draw this area for $u = v/2$.
 
 <center>
   <figure>
     <img src="statement.png"
       loading="lazy"  width="230" />
     <figcaption>
-      For problem 1.1.4
+      For problem $1.1.10^*$
     </figcaption>
   </figure>
 </center>
@@ -59,38 +59,54 @@
 
         <h3>Solution</h3>
         <p>
-                        <p>
-              1. Let us introduce the following variables
+            
+             <center>
+            <figure>
+              <img src="1.1.10.png" alt="1.1.10"
+                loading="lazy" width="200" />
+              <figcaption>
+                Chasing a bus
+              </figcaption>
+            </figure>
+            </center>
+
+            <p>
+              1. Let the bus is at point $A$, and the catching up person starts from point $B$ and runs perpendicular to the roadway $AC$. Let us introduce the notations: $AC = L, BC = h, AB = s.$
+            </p>
+               <center>
+            <figure>
+              <img src="sol.png" alt="1.1.10"
+                loading="lazy" width="200" />
+              <figcaption>
+                The plane bounded by $\alpha$
+              </figcaption>
+            </figure>
+            </center>
+            
+            <p>
+              2. From right-angled triangle $ABC$ we have
+            </p>
+            <p style="text-align: center;">
+             $$L = s \cdot cos \frac{\alpha}{2}\text{ и }h = s \cdot sin \frac{\alpha}{2}$$
             </p>
             <p>
-             $$x_B=L-x$$
+              3. Travel time of bus $t_1$ and passenger $t_2$ before meeting at point $C$
+            </p>
+            <p style="text-align: center;">
+             ${t}_{1}=\frac{{L}}{{v}}=\frac{{s}\cos(\alpha/2)}{{v}};\quad{t}_{2}=\frac{{h}}{{u}}=\frac{{s}\sin(\alpha/2)}{{u}}$
             </p>
             <p>
-             $$t_A=t_B+\Delta t$$
+              where from
             </p>
-            <p>
-              2. Time of flight of $\gamma$-quantum to counters
+            <p style="text-align: center;">
+            $$\fbox{$\alpha = 2 \cdot \text{arcsin} \frac{u}{v}$}$$
             </p>
-            <p>
-             $$t_B+\Delta t=\frac{x}{c}$$
-            </p>
-            <p>
-             $$t_B=\frac{L-x}{c}$$
-            </p>
-            <p>
-              3. Solving the equations together, we obtain
-            </p>
-            <p>
-             $$\frac{L-x}{c} + \Delta t = \frac{x}{c}$$
-            </p>
-            <p>
-             $$x= \frac{L+c\Delta t}{2}=1.15\,м$$
-            </p>
+
         </p>
 
         <h4>Answer</h4>
         <p>
-            At a distance $1.15\, \text{m}$ from the microphone $A$
+            From the region bounded by the angle $α = 2 \, \text{arcsin}(u/v)$ with vertex at the point $A$, bisected by the motorway
         </p>
 
 

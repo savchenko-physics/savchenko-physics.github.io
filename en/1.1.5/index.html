@@ -44,54 +44,81 @@
     
         <h3> Statement </h3>
         <p>
-            $1.1.4.$ Three microphones located on the same straight line at points $A$, $B$, $C$ recorded successively at the moments $t_A > t_B > t_C$ the sound of an explosion that occurred at point $O$, which lies on the segment $AC$. Find the length of the segment $AO$ if $AB = BC = L$. At what point in time did the explosion occur?
-
+            $1.1.5^*.$ Three microphones located on the same straight line at points $A$, $B$, $C$ recorded successively at the moments $t_A > t_B > t_C$ the sound of an explosion that occurred at point $O$, which lies on the segment $AC$. Find the length of the segment $AO$ if $AB = BC = L$. At what point in time did the explosion occur?
 <center>
   <figure>
     <img src="statement.png"
       loading="lazy"  width="230" />
     <figcaption>
-      For problem 1.1.4
+      For problem 1.1.5
     </figcaption>
   </figure>
 </center>
         </p>
-
         <h3>Solution</h3>
         <p>
-                        <p>
-              1. Let us introduce the following variables
-            </p>
-            <p>
-             $$x_B=L-x$$
-            </p>
-            <p>
-             $$t_A=t_B+\Delta t$$
-            </p>
-            <p>
-              2. Time of flight of $\gamma$-quantum to counters
-            </p>
-            <p>
-             $$t_B+\Delta t=\frac{x}{c}$$
-            </p>
-            <p>
-             $$t_B=\frac{L-x}{c}$$
-            </p>
-            <p>
-              3. Solving the equations together, we obtain
-            </p>
-            <p>
-             $$\frac{L-x}{c} + \Delta t = \frac{x}{c}$$
-            </p>
-            <p>
-             $$x= \frac{L+c\Delta t}{2}=1.15\,м$$
-            </p>
+            
+<p class="TxtSolutions">   
+    Let the explosion occurred at time $t_0$, then the time of signal registration at point $A$ is equal to:<br>
+</p>
+    $$t_A = t_0 + \frac{L + x}{c}, \, (1)$$
+<p class="TxtSolutions">
+where $x = BO$.<br><br>
+Similar to point $B$<br>
+</p>
+<p style="text-align: center;">
+    $$t_B = t_0 + \frac{x}{c}, \,(2)$$
+</p>
+<p class="TxtSolutions">
+For point $C$<br>
+</p>
+<p style="text-align: center;">
+    $$t_C = t_0 + \frac{L - x}{c}, \,(3)$$
+</p>
+<p class="TxtSolutions">
+Let's subtract the second equation from the first equation:<br>
+</p>
+<p style="text-align: center;">
+    $$t_A – t_B = \frac{L}{c}. \,(4)$$
+</p>
+<p class="TxtSolutions">
+And from the first equation we subtract the third equation<br>
+</p>
+<p style="text-align: center;">
+    $$t_A – t_C = \frac{2x}{c}. \,(5)$$
+</p>
+<p class="TxtSolutions">
+From equation $(4)$ let's express $c = \frac{L}{t_A – t_B}$, а из $(5)$ $x = \frac{t_A – t_C}{2} \cdot c$. Then the required distance<br>
+</p>
+<p style="text-align: center;">
+    $$AO = L + x = L + \frac{t_A – t_C}{2}\frac{L}{t_A – t_B}$$
+</p>
+<p class="TxtSolutions">
+After the transformation<br>
+</p>
+<p style="text-align: center;">
+    $$AO = \frac{3t_A – 2t_B – t_C}{2(t_A – t_B)} \cdot L. \, (6)$$
+</p>
+<p class="TxtSolutions">
+                    To determine the moment of time at which the explosion occurred, we substitute in the expression<br>
+</p>
+<p style="text-align: center;">
+    $$t_A = t_0 + \frac{L + x}{c}, \; c = \frac{L}{t_A – t_B}$$
+$$\frac{t_A – t_C}{2} = \frac{x}{c}$$
+</p>
+<p class="TxtSolutions">
+                    after transformations<br>
+</p>
+<p style="text-align: center;">
+    $$t_0 = t_B - \frac{1}{2} \cdot (t_A – t_C)$$
+</p>
         </p>
 
         <h4>Answer</h4>
         <p>
-            At a distance $1.15\, \text{m}$ from the microphone $A$
+            $$AO = \frac{3t_A – 2t_B – t_C}{2(t_A – t_B)} \cdot L, \; t_0 = t_B - \frac{1}{2} \cdot (t_A – t_C)$$
         </p>
+
 
 
     <footer class="row container">

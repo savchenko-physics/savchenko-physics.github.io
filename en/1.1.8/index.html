@@ -44,14 +44,13 @@
     
         <h3> Statement </h3>
         <p>
-            $1.1.4.$ Three microphones located on the same straight line at points $A$, $B$, $C$ recorded successively at the moments $t_A > t_B > t_C$ the sound of an explosion that occurred at point $O$, which lies on the segment $AC$. Find the length of the segment $AO$ if $AB = BC = L$. At what point in time did the explosion occur?
-
+            $1.1.8.$ The conveyor belt has speed $w$. Above the belt moves a machine, throwing $\nu$ balls per unit time. The balls stick to the belt. A ball counter with a photocell counts only the balls that have passed directly under it. How many balls will the counter count in a unit of time if the speed of the machine is $v < w$, the speed of the counter is  $u < w$?
 <center>
   <figure>
     <img src="statement.png"
       loading="lazy"  width="230" />
     <figcaption>
-      For problem 1.1.4
+      For problem 1.1.8
     </figcaption>
   </figure>
 </center>
@@ -59,38 +58,35 @@
 
         <h3>Solution</h3>
         <p>
-                        <p>
-              1. Let us introduce the following variables
+            <p>
+              1. If the automaton and the counter are at rest, T.e. $v=u=0$, then the counter will register $N_0$, balls during the time $\Delta t$.
+            </p>
+            <p style="text-align: center;">
+             $$N_0 = \nu \Delta t$$
             </p>
             <p>
-             $$x_B=L-x$$
+              2. If the automaton is at rest ($v = 0$) and the counter is moving with speed $u$, the number of registered particles is
+            </p>
+            <p style="text-align: center;">
+             $$N_1 = \nu \frac{w-u}{w+v} \Delta t$$
             </p>
             <p>
-             $$t_A=t_B+\Delta t$$
+              3. When the automaton and the counter move, the number of particles during the time $\Delta t$ is defined as
+            </p>
+            <p style="text-align: center;">
+             $$N_2 = \nu \frac{w-u}{w-v} \Delta t$$
             </p>
             <p>
-              2. Time of flight of $\gamma$-quantum to counters
+              per unit of time
             </p>
-            <p>
-             $$t_B+\Delta t=\frac{x}{c}$$
-            </p>
-            <p>
-             $$t_B=\frac{L-x}{c}$$
-            </p>
-            <p>
-              3. Solving the equations together, we obtain
-            </p>
-            <p>
-             $$\frac{L-x}{c} + \Delta t = \frac{x}{c}$$
-            </p>
-            <p>
-             $$x= \frac{L+c\Delta t}{2}=1.15\,м$$
+            <p style="text-align: center;">
+             $$n = \nu \frac{w-u}{w-v}$$
             </p>
         </p>
 
         <h4>Answer</h4>
         <p>
-            At a distance $1.15\, \text{m}$ from the microphone $A$
+            $${ν}' = ν\frac{w − u}{w − v}$$
         </p>
 
 

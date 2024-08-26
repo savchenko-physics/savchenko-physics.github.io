@@ -136,6 +136,7 @@ function handleDrop(event) {
 
         textarea.value = 
 `${textarea.value.substring(0, dropPosition)}
+</p>
 <center>
   <figure>
     <img src="${filePath}"
@@ -144,7 +145,8 @@ function handleDrop(event) {
       For problem ${document.getElementById('area1').value}
     </figcaption>
   </figure>
-</center>${textarea.value.substring(dropPosition)}`;
+</center>
+<p>${textarea.value.substring(dropPosition)}`;
     }
 }
 

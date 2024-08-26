@@ -44,53 +44,55 @@
     
         <h3> Statement </h3>
         <p>
-            $1.1.4.$ Three microphones located on the same straight line at points $A$, $B$, $C$ recorded successively at the moments $t_A > t_B > t_C$ the sound of an explosion that occurred at point $O$, which lies on the segment $AC$. Find the length of the segment $AO$ if $AB = BC = L$. At what point in time did the explosion occur?
-
-<center>
-  <figure>
-    <img src="statement.png"
-      loading="lazy"  width="230" />
-    <figcaption>
-      For problem 1.1.4
-    </figcaption>
-  </figure>
-</center>
+            $1.1.7.$ A submarine diving vertically and uniformly emits sound pulses of duration $\tau_0$. The duration of the pulse reflected from the bottom is $\tau$. The speed of sound in water is $c$. At what speed does the submarine dive?
         </p>
 
         <h3>Solution</h3>
         <p>
-                        <p>
-              1. Let us introduce the following variables
+                          <p>
+              Let's consider what the change of signal duration is related to. For this purpose, it is convenient to pass from the signal duration to its length. 
             </p>
-            <p>
-             $$x_B=L-x$$
+              <p>
+              Let the signal emitted by the sonar on the boat have the form shown in the figure, i.e. its intensity jumps from zero to some value at time $t$, remains constant during time $\tau_{0}$ and again jumps to zero at time $t + \tau_{0}$. 
             </p>
-            <p>
-             $$t_A=t_B+\Delta t$$
+              <p>
+              If the boat is stationary, the extent of the radiated signal (the distance between the leading and trailing edges) is $l_{0} = V \tau_{0}$. If the boat is sinking, the extent of the signal becomes smaller. 
             </p>
-            <p>
-              2. Time of flight of $\gamma$-quantum to counters
+              <p>
+              Indeed, let $AC = u \tau_{0}$, where $u$ is the submergence velocity of the boat. 
             </p>
-            <p>
-             $$t_B+\Delta t=\frac{x}{c}$$
+              <p>
+              The leading edge of the signal will move to point $B$ in time $\tau_{0}$, having travelled a distance $l_{0}$. 
             </p>
-            <p>
-             $$t_B=\frac{L-x}{c}$$
+              <p>
+              Hence, the signal length is equal to 
             </p>
-            <p>
-              3. Solving the equations together, we obtain
+            <p style="text-align: center;">
+              $$l_{1} = BC = ( V - u ) \tau_{0}$$
             </p>
-            <p>
-             $$\frac{L-x}{c} + \Delta t = \frac{x}{c}$$
+              <p>
+              This signal reaches the bottom, discharges from it without changing its extent, and travels towards the boat.
             </p>
-            <p>
-             $$x= \frac{L+c\Delta t}{2}=1.15\,м$$
+              <p>
+              At some point in time, the leading edge of the signal will align with the boat.  
+            </p>
+              <p>
+              The rear front of the signal continues to move with velocity $V + u$ relative to the boat, therefore, the duration of the signal received on the boat is equal to
+            </p>
+            <p style="text-align: center;">
+$$\tau = \frac{l_{1} }{V + u} = \frac{(V - u) \tau_{0} }{V + u}$$
+            </p>
+              <p>
+              From here
+            </p>
+              <p style="text-align: center;">
+              $$u = V \frac{ \tau_{0} - \tau }{ \tau_{0} + \tau }$$
             </p>
         </p>
 
         <h4>Answer</h4>
         <p>
-            At a distance $1.15\, \text{m}$ from the microphone $A$
+            $$v = c(\tau _{0} − τ)/(\tau _{0} + τ)$$
         </p>
 
 
