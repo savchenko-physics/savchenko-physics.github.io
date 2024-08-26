@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $1.1.11^*.$ A supersonic airplane is flying horizontally. Two microphones on the same vertical at a distance $l$ from each other register the arrival of sound from an airplane flying over the microphones with a time lag $\Delta t$. The speed of sound in air is $c$. What is the speed of the plane?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+                  <center>
+        <figure>
+          <img src="1.1.11.png"
+            loading="lazy" alt="1.1.11" width="250" />
+        </figure>
+      </center>
+              <p>
+                1. The more the aircraft exceeds the speed of sound, the smaller the value of $AD$, T.e. $v \sim 1/AD$.
+            </p>
+              <p>
+                2. If the aeroplane is travelling at sonic speed $v = s$, then $AD = AB = L$, in which case triangle
+$ADB$ is equilateral, or            
+</p>
+            <p style="text-align: center;">
+              $$v = c \frac{AB}{AD} = c \frac{L}{AD} \; (1)$$
+            </p>
+              <p>
+                3. Let's define the elements of the triangle $ADB$
+            </p>
+            <p style="text-align: center;">
+              $$DB = c \cdot \Delta t\text{; }AD = \sqrt{L^2 - DB^2} \; (2)$$
+            </p>
+              <p>
+                4. Substituting $(2)$ into equation $(1)$, we obtain
+            </p>
+            <p style="text-align: center;">
+              $${v}=\frac{{cL}}{\sqrt{{L}^{2}-{c}^{2}\Delta{t}^{2}}}.$$
+            </p>
+
+            <p>
+              <i>NO: This problem is related to the Mach wave phenomenon. This phenomenon was written about in the journal ‘Quantum’. <a href="http://kvant.mccme.ru/pdf/2010/2010-03.pdf" target="_blank">2010-03.pdf</a> </i>(42 стр.)
+            </p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+                          $$v = cl/\sqrt{l^{2}-{c}^{2}{∆t}^{2}}$$
+
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

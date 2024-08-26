@@ -142,7 +142,7 @@ function handleDrop(event) {
     <img src="${filePath}"
       loading="lazy"  width="230" />
     <figcaption>
-      For problem ${document.getElementById('area1').value}
+      For problem $${document.getElementById('area1').value}$
     </figcaption>
   </figure>
 </center>
