@@ -69,7 +69,7 @@ function generateHtmlContent() {
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../">$\\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Back</a></h3>
     ${generateBasement()}
 
     <footer class="row container">
@@ -93,6 +93,11 @@ function generateHtmlContent() {
         '</pre></body></html>');
 }
 
+function getFirstTwoSegments(input) {
+  const segments = input.split('.');
+  
+  return segments.slice(0, 2).join('.');
+}
 
 function generateBasement() {
     const area1 = document.getElementById('area1').value;

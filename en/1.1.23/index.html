@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#1.1">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $1.1.23^*.$ The shooter tries to hit a disk of radius $R$, which moves from one wall to another at constant modulo velocity so fast that it cannot be tracked. Draw a graph of the probability of hitting the disk as a function of the distance between the aiming point and the left wall.
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $1.1.23^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+The shots are fired at height $R$ from the floor perpendicular to the direction of motion of the disc. At what point is the least and most probable shot? What is their value? Consider the cases $L > 4R$, $4R > L > 2R$, where $L$ is the distance between the walls.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+              <center>
+              <figure>
+                <img src="animation.gif" alt="1.1.23"
+                  loading="lazy" width="300" />
+                <figcaption>
+                  Wheels moving
+                </figcaption>
+              </figure>
+              </center>
+
+              <p>
+                When the target is moving, a bystander is less likely to see the target from the edge, as it stays there for a shorter period of time.
+              </p>
+              <p>
+                Thus, the maximum probability will be observed on the interval:
+              </p>
+              <p style="text-align: center;">
+                $$\left\{\begin{matrix}
+0 \leq  x <  2R\\ 
+L-2R <  x \leq  L
+\end{matrix}\right.$$
+              </p>
+              <p>
+                Since the velocity of the target is constant, and finding the target in the range $2R \leq x \leq L-2R$ is equally likely, the probability of finding it in this range is equal to the ratio of the diameter to the length of this range: $\frac{2R}{L-2R}$.
+              </p>
+              <p>
+                Graphs corresponding to these modes:
+              </p>
+
+              <center>
+              <figure>
+                <img id="sol" src="sol.png" alt="1.1.23"
+                  loading="lazy" width="350" />
+                <figcaption>
+                  Probability of a hit as a function of aiming distance 
+                </figcaption>
+              </figure>
+              </center>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            <a href="#sol">See Fig.</a> Zero at the walls. The largest at any place at a distance from the walls,
+greater than $2R$, and equal to $2R/(L-2R)$ at $L > 4R$; at any place at a distance from the walls greater than $L - 2R$, and equal to one at $4R > L > 2R$.
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
