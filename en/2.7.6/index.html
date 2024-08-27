@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.7">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.7.6.$ A thin-walled cylinder of radius $R$ was spun up to an angular velocity $\omega$ and placed in a corner, as shown in the figure. The coefficient of friction between the corner walls and the cylinder is $\mu$. How many revolutions will the cylinder make before it comes to a complete stop?
+
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="180" />
+    <figcaption>
+      For problem $2.7.6$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+</p>
+<center>
+  <figure>
+    <img src="draw1.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Forces acting on the cylinder
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Conditions of equilibrium:
+$$\left\{\begin{matrix}
+O'X\text{: }F_{fr2} = N_1 \\
+O'Y\text{: }F_{fr1}+N_2 = mg \\
+\end{matrix}\right.$$
+From where
+$$\left\{\begin{matrix}
+\mu N_2=N_1 \\
+\mu N_1+N_2=mg \\
+\end{matrix}\right.$$
+Let's find friction force
+$$F_{fr}=F_{fr1}+F_{fr2}$$
+$$F_{fr}=\mu (N_1+N_2)=\mu N_2(1+\mu)$$
+
+Considering, $mg = N_2(1+\mu ^2)$:
+$$N=\frac{mg}{1+\mu ^2}$$
+
+According to rotational motion dynamics, the sum of moments of external forces can be written as
+$$M=I\varepsilon = mR^2=F_{fr} R$$
+From where, absolute value of angular acceleration is found as 
+$$\varepsilon = \frac{M}{I} = \frac{F_{fr}}{mR}$$
+$$\varepsilon = \frac{\mu(1+\mu)N_2 }{mR}$$
+$$\varepsilon = \frac{\mu(1+\mu)}{1+\mu ^2} \frac{g}{R}$$
+The angle by which the cylinder will rotate to the moment of total stop is
+$$\varphi=\frac{\omega ^2t}{2\varepsilon}$$
+Until the total stop, the cylinder will make $N$ total turnovers
+$$\varphi=2\pi N$$
+From where 
+$$N=\frac{\omega ^2t}{4\pi \varepsilon}$$
+$$\boxed{N=\frac{1+\mu^{2}}{4\pi \mu(1+\mu)}\frac{\omega^{2}R}{g}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$N=\omega^{2}R(1+\mu^{2})/[4\pi g\mu(1+\mu)]$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Yuldashev Ulugbek<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
