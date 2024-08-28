@@ -5,7 +5,8 @@ areas.forEach(areaId => {
         const latexCode = this.value;
         const outputElement = document.getElementById('output');
         
-        outputElement.innerHTML = generateBasement();
+        outputElement.innerHTML = `
+        ${generateBasement()}<br><br><br>`;
 
         MathJax.typesetPromise([outputElement]).catch((err) => console.log(err.message));
     });

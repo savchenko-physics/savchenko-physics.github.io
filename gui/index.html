@@ -38,18 +38,25 @@
              <div class="windowShort" id="window2" style="height: 80%;">
                 <textarea id="area3" placeholder="Solution"></textarea>
              </div>
-             <div class="windowShort" id="window2" style="height: 10%;">
+             <div class="windowShort" id="window2" style="height: 9.5%;">
                 <textarea id="area4" placeholder="Answer"></textarea>
              </div>
           </div>
        </div>
        <div class="right-side" >
-          <div class="window" id="window3" style="height:100;">
+<!--           <div class="window" id="window3" style="position: relative; height: 100%;">
              <p id="output">Compiled LaTeX will appear here...</p>
-             <div id="viewRawCode" class="bottomButton">
+             <div id="viewRawCode" style="position: absolute; bottom: 0; width: 100%;">
                 <button onclick="printHTMLCode()" style="">View raw code</button>
              </div>
-          </div>
+          </div> -->
+         <div class="window" id="window3" style="position: relative; height: 99%;">
+            <p id="output">Compiled LaTeX will appear here...</p>
+            <div id="viewRawCode" class="bottomButton">
+               <button onclick="printHTMLCode()">View raw code</button>
+            </div>
+         </div>
+
        </div>
     </div>
 
