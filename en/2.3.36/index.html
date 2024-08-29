@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.3">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.3.36^*.$ The path length of a particle of mass $m$ is proportional to its initial momentum if the force braking the particle is proportional to its velocity (see the previous problem). Make sure of this and for a given $\alpha (l = \alpha p)$, find the work of the braking force on the path $x$ for a particle with mass $m$ and initial momentum $p$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Let's make sure that $F \sim v$!
+$$dA = Fdx \\$$
+$$dE = \frac{P dP}{m} \\$$
+Hence
+$$\frac{mv^2}{2} = \frac{P^2}{2m} \\$$
+Find the small increment of energy $E$
+$$d(E) = d\left(\frac{P^2}{2m}\right) = \frac{P dP}{m} = \frac{PdP}{m} \\$$
+From the law of conservation of energy, this energy has completely gone into doing work $A$:
+$$dA = dE \\$$
+$$Fdx = \frac{P dP}{m} \\$$
+$$dx = \alpha dP \Rightarrow l = \alpha P \\$$
+$$\frac{dP}{dx} = \frac{1}{\alpha} \\$$
+$$F = \frac{\alpha P}{m \alpha^2} = \frac{v P}{\alpha} \Rightarrow F \sim v$$
+That's what we had to prove!
+</p><p>
+The work of force $F$ on a small interval $dx$ is found as
+$$dA = Fdx = \frac{P}{m \alpha^2}x dx - \frac{P}{m \alpha} dx \\$$
+And the total work could be found as a sum of all $dA$ all along the way
+$$\int_0^A dA = \int_0^x \frac{x dx}{m \alpha^2} - \int_0^x \frac{P dx}{m \alpha} \\$$
+$$\boxed{A = \frac{x^2}{2m \alpha^2} - \frac{Px}{m \alpha}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$A = \frac{x^2}{2m \alpha^2} - \frac{Px}{m \alpha}$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

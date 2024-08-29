@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.2.42.$ With what force does the cobra press on the ground when it is preparing to jump, rises vertically upwards at a constant speed $v$? The mass of the snake is $m$, its length is $l$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+</p>
+<center>
+  <figure>
+    <img src="2.2.42.jpg"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Forces acting on cobra
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Let's consider small part of cobra with the length $\Delta x$ and mass $\Delta m$:
+\begin{equation*}
+\Delta P = \Delta m \cdot v
+\end{equation*}
+Since the snake is homogeneous
+\begin{equation*}
+\Delta m = \frac{m}{L} \cdot \Delta x
+\end{equation*}
+
+By newton's second law:
+\begin{equation*}
+F=\frac{\Delta P}{\Delta t} = \frac{\Delta m}{\Delta t} \cdot v
+\end{equation*}
+
+$$F = \frac{m}{L} \cdot \frac{\Delta x}{\Delta t} \cdot v = \frac{mv^2}{L}$$
+
+By definition of speed
+\begin{equation*}
+\frac{\Delta x}{\Delta t} = v
+\end{equation*}
+
+Whence the force associated with the acceleration of the centre of mass
+\begin{equation*}
+F = \frac{\Delta P}{\Delta t} = \frac{mv^2}{L}
+\end{equation*}
+
+Let's take everything together and find the support reaction force
+\begin{equation*}
+N = mg + \frac{mv^2}{L} = m\left(g + \frac{v^2}{L}\right)
+\end{equation*}
+
+\begin{equation*}
+\boxed{N = m\left(g + \frac{v^2}{L}\right)}
+\end{equation*}
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$N = m\left(g + \frac{v^2}{L}\right)$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
