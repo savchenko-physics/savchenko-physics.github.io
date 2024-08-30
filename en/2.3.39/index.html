@@ -40,85 +40,59 @@
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../#2.3">$\leftarrow$Back</a></h3>
     
         <h3> Statement </h3>
         <p>
-            $2.2.34.$ Two trolleys of mass $M$ each move in parallel with the initial speeds $v_1$ and $v_2$ ($\vec{v}_2 > \vec{v}_1$). A load of mass $m$, which initially lay on the first trolley, is transferred to the second trolley with almost zero speed relative to this trolley. Then, with almost zero speed relative to the second trolley, it is transferred back to the first one. What will be the speed difference of the trolleys after $N$ such transfers of cargo back and forth? Try to explain qualitatively the viscous friction that occurs when gas layers slip relative to each other.
-
-</p>
-<center>
-  <figure>
-    <img src="statement.png"
-      loading="lazy"  width="250" />
-    <figcaption>
-      For problem $2.2.34$
-    </figcaption>
-  </figure>
-</center>
-<p>
+            $2.3.39.$ One research institute decided to use an expression for the potential energy of point charges in the form $U' = \frac{kqQ}{r} - \frac{kqQ}{R}$, where $R$ is a constant distance set once and for all. Will using $U'$ instead of $U = \frac{kqQ}{r}$ affect the results of particle motion calculations?
         </p>
 
         <h3>Solution</h3>
         <p>
-            From first to second:
-
-$$m v_1 + M v_2 = (M + m) u_2$$
-
-$$
-u_2 = \frac{m v_1 + M v_2}{M + m}
-$$
-
-$$P_x = \text{const!}$$
-
-Second to first:
-
-$$
-M v_1 + m u_2 = (M + m) u_1
+            $$
+u = \frac{kqQ}{r}
 $$
 
 $$
-u_1 = \frac{M v_1 + m u_2}{M + m}
-$$
-
-About the change:
-
-$$
-\Delta u = u_1 - u_2
+u' = \frac{kqQ}{r} - \frac{kqQ}{R}
 $$
 
 $$
-u_1 > u_2
+R = \text{const}
 $$
 
 $$
-\Delta u = \left(\frac{M}{M + m}\right)^2 (v_1 - v_2)
+(u_x)' = p
 $$
 
 $$
-\kappa = \left(\frac{M}{M + m}\right)^2
+(u')' = - \frac{kqQ}{r^2} \, dr
 $$
 
 $$
-\Delta v = v_1 - v_2
+(u')' = - \frac{kqQ}{r^2} \, dr
 $$
 
 $$
-\Delta u_N = \kappa^N \Delta v
+(\text{const})' = 0 \Rightarrow (R)' = 0
 $$
 
 $$
-\Delta u_N = \left(\frac{M}{M + m}\right)^{2N} (v_1 - v_2)
+(u')' = (u')'!
 $$
 
 $$
-\boxed{|\Delta u_N| = \left(\frac{M}{M + m}\right)^{2N} (v_2 - v_1)}
+u = u'!
+$$
+
+$$
+\text{No, it won't!}
 $$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$\left(\frac{M}{M+m}\right)^{2N}(v_2-v_1).$$
+            No.
         </p>
         
         <p style="text-align: right; font-style: italic; font-size: 14;">   
