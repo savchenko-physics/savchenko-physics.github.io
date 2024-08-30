@@ -40,19 +40,18 @@
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../#2.3">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
     
         <h3> Statement </h3>
         <p>
-            $2.3.44.$ An unstretched rubber cord of length $2l$ is attached to the walls by its ends. A weight of mass $m$ was attached to the middle of the cord, which was then released without a push. When vibrations occur, the greatest distance to which the load is lowered is $x_0$. What is the stiffness of this cord?
-
+            $2.2.44^*.$ A rope thrown over a smooth nail is dragged at a speed of $v$ through the gap. The friction force in the slot $F$, the mass of the rope length unit $\rho$. Determine the force exerted on the nail if the rope sections on opposite sides of the nail form an angle $\alpha$. At what speed will the rope move away from the nail?
 </p>
 <center>
   <figure>
     <img src="statement.png"
-      loading="lazy"  width="300" />
+      loading="lazy"  width="150" />
     <figcaption>
-      For problem $2.3.44$
+      For problem $2.2.44^*$
     </figcaption>
   </figure>
 </center>
@@ -61,41 +60,94 @@
 
         <h3>Solution</h3>
         <p>
-            
-</p>
+            </p>
 <center>
   <figure>
-    <img src="2.3.44.jpg"
-      loading="lazy"  width="300" />
+    <img src="draw1.jpg"
+      loading="lazy"  width="180" />
     <figcaption>
-      Geometry of the problem
+      Forces acting on the system
     </figcaption>
   </figure>
 </center>
 <p>
-Potential energy of the weight:
-$$E_p = -mgx_0 $$
-Potential energy of rubber cord
-$$E_p' = k' \frac{(\sqrt{l^2 + x_0^2} - l)^2}{2}$$
-From the law of conservation of energy, the total energy of the system must equal zero
-$$E = 0 = E_p + E_p' + E_p'$$
-It follows from the figure that the stretching of the cord is
-$$\Delta L = \sqrt{l^2 + x_0^2} - l$$
 
-Since we now consider them as separate springs, cords, we use superposition:
-$$\frac{1}{k} = \frac{1}{k'} + \frac{1}{k'} \implies k' = 2k $$
-From where stiffness of the cord could be found as
-$$mgx_0 = \frac{2 \cdot 2k \cdot \left(\sqrt{l^2 + x_0^2} - l \right)^2}{2}$$
+$$
+\rho = \frac{m}{l} = \frac{\Delta m}{\Delta l} 
+$$
 
-$$\boxed{k = \frac{mgx_0}{2 \cdot \left( \sqrt{l^2 + x_0^2} - l \right)^2}}$$
+$$\cos\left(\frac{\alpha}{2}\right) = \sqrt{\frac{1+\cos\alpha}{2}}$$
+
+</p>
+<center>
+  <figure>
+    <img src="draw2.jpg"
+      loading="lazy"  width="130" />
+    <figcaption>
+      For problem $2.2.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+For the thread to be stretched at a constant speed $\vec{v}$, there must be a force on the first half that is modulo the frictional force $\vec{F}$:
+
+$$F'^2=F^2+F^2-2F^2\cos(\pi-\alpha)$$
+$$F'=F\sqrt{2(1+\cos\alpha)}$$
+$$F'=2F\cos\frac{\alpha}{2}$$
+
+
+</p>
+<center>
+  <figure>
+    <img src="draw3.jpg"
+      loading="lazy"  width="130" />
+    <figcaption>
+      For problem $2.2.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Similiarly,
+
+$$p'^2=p^2+p^2-2p^2\cos(\pi-\alpha)$$
+$$p'=p\sqrt{2(1+\cos\alpha)}$$
+$$p'=2p\cos\frac{\alpha}{2}$$
+
+By definition of momentum
+
+$$p=\Delta m v$$
+
+From where, considering that $p'$ and $F'$ acts against $Ox$
+
+$$p'=-2\Delta m v\cos\frac{\alpha}{2}$$
+$$F'=-2F\cos\frac{\alpha}{2}$$
+Let's write Newton's second law
+$$\sum \vec{F}=0$$
+$$N-F'-p''=0$$
+$$N-2F\cos\frac{\alpha}{2}+2\Delta m v\cos\frac{\alpha}{2}=0$$
+From where we obtain the force $\vec{N}$
+
+$$N=2\cos\frac{\alpha}{2}(\frac{-\Delta m v}{\Delta t}+F)$$
+By definition of density
+$$\Delta m = \rho \Delta x$$
+By definition of speed
+$$ v = \frac{\Delta x}{\Delta t}$$
+$$ N = 2F\cos\frac{\alpha}{2} - 2\rho v^2\cos\frac{\alpha}{2}$$
+$$ \boxed{N = 2\cos\frac{\alpha}{2} (F -\rho v^2)}$$
+When the rope comes off
+$$N\leq0$$
+$$F-\rho v^2\leq0$$
+$${F\leq \rho v^2}$$
+From where we finally get
+$$\boxed{v \geq \sqrt{\frac{F}{\rho}}}$$
+$$p''=\frac{p'}{\Delta t}$$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$k = \frac{mgx_0}{2 \cdot \left( \sqrt{l^2 + x_0^2} - l \right)^2}$$
-        </p>
-        <p style="text-align: right; font-style: italic; font-size: 14;">   
-          Almaskhan Arsen<br>
+            $$N=2(F-\rho v^2)\cos\frac\alpha2;\text{ при }v\geqslant\sqrt{F/\rho}.$$
         </p>
 
 
