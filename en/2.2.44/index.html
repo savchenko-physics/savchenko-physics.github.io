@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.2.44^*.$ A rope thrown over a smooth nail is dragged at a speed of $v$ through the gap. The friction force in the slot $F$, the mass of the rope length unit $\rho$. Determine the force exerted on the nail if the rope sections on opposite sides of the nail form an angle $\alpha$. At what speed will the rope move away from the nail?
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="150" />
+    <figcaption>
+      For problem $2.2.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            </p>
+<center>
+  <figure>
+    <img src="draw1.jpg"
+      loading="lazy"  width="180" />
+    <figcaption>
+      Forces acting on the system
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+$$
+\rho = \frac{m}{l} = \frac{\Delta m}{\Delta l} 
+$$
+
+$$\cos\left(\frac{\alpha}{2}\right) = \sqrt{\frac{1+\cos\alpha}{2}}$$
+
+</p>
+<center>
+  <figure>
+    <img src="draw2.jpg"
+      loading="lazy"  width="130" />
+    <figcaption>
+      For problem $2.2.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+For the thread to be stretched at a constant speed $\vec{v}$, there must be a force on the first half that is modulo the frictional force $\vec{F}$:
+
+$$F'^2=F^2+F^2-2F^2\cos(\pi-\alpha)$$
+$$F'=F\sqrt{2(1+\cos\alpha)}$$
+$$F'=2F\cos\frac{\alpha}{2}$$
+
+
+</p>
+<center>
+  <figure>
+    <img src="draw3.jpg"
+      loading="lazy"  width="130" />
+    <figcaption>
+      For problem $2.2.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Similiarly,
+
+$$p'^2=p^2+p^2-2p^2\cos(\pi-\alpha)$$
+$$p'=p\sqrt{2(1+\cos\alpha)}$$
+$$p'=2p\cos\frac{\alpha}{2}$$
+
+By definition of momentum
+
+$$p=\Delta m v$$
+
+From where, considering that $p'$ and $F'$ acts against $Ox$
+
+$$p'=-2\Delta m v\cos\frac{\alpha}{2}$$
+$$F'=-2F\cos\frac{\alpha}{2}$$
+Let's write Newton's second law
+$$\sum \vec{F}=0$$
+$$N-F'-p''=0$$
+$$N-2F\cos\frac{\alpha}{2}+2\Delta m v\cos\frac{\alpha}{2}=0$$
+From where we obtain the force $\vec{N}$
+
+$$N=2\cos\frac{\alpha}{2}(\frac{-\Delta m v}{\Delta t}+F)$$
+By definition of density
+$$\Delta m = \rho \Delta x$$
+By definition of speed
+$$ v = \frac{\Delta x}{\Delta t}$$
+$$ N = 2F\cos\frac{\alpha}{2} - 2\rho v^2\cos\frac{\alpha}{2}$$
+$$ \boxed{N = 2\cos\frac{\alpha}{2} (F -\rho v^2)}$$
+When the rope comes off
+$$N\leq0$$
+$$F-\rho v^2\leq0$$
+$${F\leq \rho v^2}$$
+From where we finally get
+$$\boxed{v \geq \sqrt{\frac{F}{\rho}}}$$
+$$p''=\frac{p'}{\Delta t}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$N=2(F-\rho v^2)\cos\frac\alpha2;\text{ при }v\geqslant\sqrt{F/\rho}.$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
