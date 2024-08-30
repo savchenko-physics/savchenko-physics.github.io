@@ -40,11 +40,11 @@
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../#2.3">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
     
         <h3> Statement </h3>
         <p>
-            $2.3.35.$ A particle of mass $m$ flies into a region where it is affected by a braking force that depends only on the distance between the particle and the boundary of the region. Find this dependence if the depth of penetration of a particle into the braking region is proportional to its initial momentum: $l = \alpha p$.
+            $2.2.37.$ Determine the thrust force of an air-jet engine of an airplane flying at a speed of $V$. The mass consumption of fuel and air entering the engine is equal to $\mu_1$ and $\mu_2$, respectively. Velocity of combustion products relative to the aircraft at the engine exit $u$.
         </p>
 
         <h3>Solution</h3>
@@ -53,30 +53,69 @@
 </p>
 <center>
   <figure>
-    <img src="2.3.35.jpg"
-      loading="lazy"  width="270" />
+    <img src="2.2.37.jpg"
+      loading="lazy"  width="250" />
     <figcaption>
-      
+      Reference frame relative to the earth
     </figcaption>
   </figure>
 </center>
 <p>
-The work done by the force $F$ when the particle moves $dl$
-$$F dl = dA \quad (1)$$
-From the law of conservation of energy
-$$ \quad \frac{m u^2}{2} = \frac{p^2}{2m}$$
-Considering a small increment of energy 
-$$dE = \frac{d(p^2)}{2m} = \frac{p dp}{m} \quad (2)$$
-$$ \quad dA = dE \Rightarrow F dl = \frac{p dp}{m} \\$$
-$$ \quad F = \frac{p}{m} \frac{dp}{dl} = \frac{p}{m} \frac{1}{\alpha} = \frac{1}{m} \frac{l}{\alpha} \frac{1}{\alpha} = \frac{l}{m \alpha^2}  \quad (*)$$
-From where
-$$ \quad \frac{dp}{dl} = \frac{1}{\alpha} , \quad p = \frac{l}{\alpha} \\$$
-$$ \quad \boxed{F = \frac{l}{m \alpha^2}}$$
+
+\begin{equation*}
+\Delta p_x = ((\mu_1 + \mu_2)u - \mu_2 v) \Delta t
+\end{equation*}
+
+From the condition:
+$$
+u_{\text{rel}} = u, \quad v_{\text{rel}} = 0 
+$$
+
+Write the vector sum for the relative velocities
+$$
+\vec{v}_{\text{rel}} = \vec{0} - \vec{v}
+$$
+
+$$
+v_{\text{rel} \, x} = -v_x 
+$$
+
+$$
++v_{\text{rel}} = -(-v) = v
+$$
+
+Find the change in momentum over a soapy time interval
+
+\begin{equation*}
+\Delta p_x = \left( \mu_1 u + \mu_2 (u - v) \right) \Delta t
+\end{equation*}
+
+Let's use Newton's second law in impulse form
+
+\begin{equation*}
+F_x = \frac{\Delta p_x}{\Delta t} = \mu_1 u + \mu_2 (u - v)
+\end{equation*}
+
+By definition of mass consumption
+
+$$
+m_1 = \mu_1 \Delta t, \quad m_2 = \mu_2 \Delta t
+$$
+
+According to Newton's third law, these forces are equal to
+
+\begin{equation*}
+T = -F_x
+\end{equation*}
+From where the required thrust force
+$$
+\boxed{|T| = \mu_1 u + \mu_2 (u - v)}
+$$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$F={l}/{(m \alpha^2)}$$
+            $$F = \mu_2 (u - v) + \mu_1 u$$
         </p>
         <p style="text-align: right; font-style: italic; font-size: 14;">   
           Almaskhan Arsen<br>
