@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.4">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.4.20^*.$ A dog of mass m is tied with a leash of length $L$ to a sledge of mass $M > m$. At the initial moment, the dog is next to the sled. What is the greatest distance a dog can move the sledge in one jerk, if the coefficients of friction of the dog's paws and the sled runners on the horizontal surface are the same?
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="180" />
+    <figcaption>
+      For problem $2.4.20^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            The dog pulls the sled, performing work equal to 
+\[
+A = \int_0^L F \, ds
+\]
+Where:
+\[
+F = \mu mg
+\]
+So we get:
+\[
+A = \mu mg L
+\]
+According to the work-energy theorem, we know that:
+\[
+A = \Delta K = \frac{mv^2}{2}
+\]
+After the dog has run a distance $L$, the leash tethered to the sled will stretch. This scenario can be analyzed as an inelastic collision.
+\[
+mv = (M + m)u
+\]
+In this scenario, the work done against the frictional force represents the energy lost by the system, which results in the deceleration of the sled-dog system. This loss of kinetic energy can be quantified using the work-energy principle:
+\[
+\frac{(M + m) u^2}{2} = \mu (M - m) g x
+\]
+From there we can derive:
+\[
+x = \frac{(M + m) u^2}{2 \mu g (M - m)}
+\]
+
+We already know, that:
+\[
+u = \frac{m}{M + m}v
+\]
+
+Finally:
+\[
+\boxed{x = \frac{m^2}{M^2 - m^2}L}
+\]
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$x = \frac{m^2}{M^2 - m^2}L$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          physicshub<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
