@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.3">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.3.30.$ Determine the force exerted on the vertical wall by the falling dumbbell when the dumbbell axis is at an angle $\alpha$ with the horizon. The dumbbell starts moving from a vertical position without initial velocity. Mass of each dumbbell ball $m$.
+
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="130" />
+    <figcaption>
+      For problem $2.3.30$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+</p>
+<center>
+  <figure>
+    <img src="draw.jpg"
+      loading="lazy"  width="280" />
+    <figcaption>
+      Forces acting on the system
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Along the axis $OZ_\parallel$ "The Two-Ball System":
+</p><p>
+Centripetal acceleration associated with circular rotation:
+$$a=\frac{v^2}{R}$$
+From the Newton's second law:
+$$\frac{mv^2}{R}=2mg\sin\alpha-N_x\cos\alpha-N_y\sin\alpha$$
+Law of Conservation of Energy
+$$mgR=mgh+\frac{mv^2}{2}$$
+$$h=R\sin\alpha$$
+$$\frac{mv^2}{R}=2mg(1-\sin\alpha)$$
+$$N_y\sin\alpha+N_x\cos\alpha=(4\sin\alpha-2)mg$$
+Along the axis $OZ_\perp$ "The Ball System":
+$$N_y\cos\alpha=N_x\sin\alpha+mg\cos\alpha$$
+$$N_y=mg+N_x\tan\alpha$$
+$$mg\sin\alpha\cos\alpha+N_x\sin^2\alpha+N_x\cos^2\alpha=2mg(2\sin\alpha-2)\cos\alpha$$
+$$\frac{N_x}{mg}=4\sin\alpha\cos\alpha-2\cos\alpha-\sin\alpha\cos\alpha$$
+$$\boxed{N_x=(3\sin\alpha-2)\cos\alpha \cdot mg}$$
+When $N_x \leq0$, the shoe will break away from the vertical wall and will no longer act on it:
+$$N_x=0$$
+Condition of detachment:
+$$(3\sin\alpha-2)\cos\alpha \leq0$$
+$$3\sin\alpha-2\leq0 \Leftrightarrow \boxed{\sin\alpha\leqslant2/3}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F=mg\cos\alpha(3\sin\alpha-2)\mathrm{~with~}\sin\alpha\geqslant2/3;$$
+$$F=0\mathrm{~with~}\sin\alpha\leqslant2/3.$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
