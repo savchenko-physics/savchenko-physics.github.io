@@ -2,7 +2,7 @@ import os
 import csv
 
 current_directory = os.getcwd().replace("src", "en")
-MaxColumns = 2
+MaxColumns = 3
 def column_len(problems_number):
     ans = [problems_number // MaxColumns]*MaxColumns
     for i in range(problems_number % MaxColumns):
@@ -22,13 +22,13 @@ def PrimeDistribution(problems_list):
         return ""
 
     problems_html = """
-        <ul class="column">"""
+            <ul class="column">"""
     for problem in problems_list:
         problems_html += f"""
-            <li><a href="./{problem}">{problem}</a></li>"""
+                <li><a href="./{problem}">{problem}</a></li>"""
     problems_html+="""
-        </ul>
-            """
+            </ul>
+        """
     return problems_html
 
 def ProblemsDistribution(problems_list):
@@ -135,7 +135,7 @@ for index, chapter in enumerate(existed_problems):
         continue
 
     BaseHtml = BaseHtml+f"""
-    <h2 id="{index}" style="text-align: center;">Chapter {index}. {chapters[index-1]}</h2>
+        <h2 id="{index}" style="text-align: center;">Chapter {index}. {chapters[index-1]}</h2>
       """
 
     for index1, section in enumerate(chapter):
@@ -146,10 +146,9 @@ for index, chapter in enumerate(existed_problems):
         for index2, i in enumerate(sections):
             if i[0] == FullName:
                 BaseHtml = BaseHtml+f"""
-        <h3 id="{FullName}" style="text-align: center;">§ {i[0]}.{i[1]}</h3>
-                <div class="columns">
-                  {ProblemsDistribution(section)}
-              </div>"""
+        <h3 id="{FullName}" style="text-align: center;">§ {i[0]}. {i[1]}</h3>
+        <div class="columns">{ProblemsDistribution(section)}</div>
+        """
                 break
     
 BaseHtml += """
