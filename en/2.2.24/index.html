@@ -5,13 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
-    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="The largest dataset of solutions of 'Savchenko. Problems in Physics'. Savchenko’s Problems in General Physics is widely used to prepare for olympiads and it is a useful tool to
-master and sharpen your skills and techniques in comptetitive problem solving. Some of these problems were a source
-of inspiration for Jaan Kalda’s handouts and to some NBPhO problems. You may find problems from old IPhO
-papers.">
-    <meta name="author" content="Aliaksandr Melnichenka">
-    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
     <meta property="og:title" content="Savchenko Solutions">
     <meta property="og:image" content="img/logo.png">
     <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
@@ -38,7 +33,7 @@ papers.">
 </head>
   <body style="">
       <header style="text-align:center;">
-    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <h2>Solutions of Savchenko Physics Textbook</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
       October 2023
@@ -50,20 +45,63 @@ papers.">
         <h3> Statement </h3>
 
         <p>
-          $2.2.24$
-          A load is suspended from the free end of the thread attached to the wall and thrown over the roller. The roller is fixed on a bar of mass $m_0$, which can slide along a horizontal plane without friction. At the initial moment, the thread with the load is deflected from the vertical by an angle $α$ and then released. Determine the acceleration of the bar if the angle formed by the thread with the vertical does not change during the movement of the system. What is the weight of the cargo?
+          $2.2.24^*$
+          Two bodies of mass $m_1$ and $m_2$ are connected by a stretched thread of length $l$ and move along a smooth horizontal surface. At some point in time, it turned out that the first body is stationary, and the velocity of the second body, equal to $v$, is perpendicular to the thread. Determine the tension force of the thread.
         </p>
         <center>
           <figure>
             <img src="statement.png"
               loading="lazy"  width="230" />
             <figcaption>
-              For problem 2.2.24
+              For problem $2.2.24^*$
             </figcaption>
           </figure>
         </center>
 
         <h3>Solution</h3>
+        <p>
+            </p>
+<center>
+  <figure>
+    <img src="draw4.png"
+      loading="lazy"  width="170" />
+    <figcaption>
+      Forces acting on the system
+    </figcaption>
+  </figure>
+</center>
+<p>
+Since point $1$ is at rest, it follows that the forces acting on it are compensated
+$$\vec{F}_{c1}=-\vec{T}_{1}$$
+$$T_1=m_1\omega ^2 x$$
+Where distance $x$ between point $1$ and center of mass
+$$x=l\frac{m_2}{m_1+m_2}$$
+</p>
+<center>
+  <figure>
+    <img src="draw3.png"
+      loading="lazy"  width="170" />
+    <figcaption>
+      Direction of forces and velocity of the centre of mass
+    </figcaption>
+  </figure>
+</center>
+<p>
+Since point $1$ is at rest, the motion is around it. Then the angular velocity of rotation is found through the velocity $v$ of the point $2$ 
+$$\omega = \frac{v}{l}$$
+Now, substitute all of this into the expression for $T_1$
+$$T_1=m_1\frac{v^2}{l^2} \cdot l\frac{m_2}{m_1+m_2}$$
+$$T_1=\frac{m_1m_2v^2}{(m_1+m_2)l}$$
+According to Newton's third law, since the thread is weightless, the absolute value of tension force of the thread at point $1$ and point $2$ are equal.
+$$T_1=T_2=T$$
+$$\boxed{T=\frac{m_1m_2}{m_1+m_2}\frac{v^2}{l}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F=\frac{m_1m_2v^2}{(m_1+m_2)l}$$
+        </p>
+        <h3>Alternative solution</h3>
         <center>
           <figure>
             <img src="draw1.png"
