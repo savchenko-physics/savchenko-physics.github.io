@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#7.1">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $7.1.12^*.$ Determine what the accelerating potential difference $V$ should be in order for the electrons to follow the path shown in the figure. Radii of cylindrical capacitor plates $R_1$ and $R_2$. Potential difference between the plates $V_0$.
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $7.1.12^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Gauss theorem
+$$\oint_{2\pi r}E\,dl=\frac{q}{\varepsilon_0}\Rightarrow E=\frac{q}{2\pi \varepsilon_0 r}$$
+Let's write down the small change of the electrostatic field and then integrate it
+$$dU=E \,dr\Rightarrow \int dU=\int E \,dr$$
+Integrate from $R_1$ to $R_2$
+$$U_0=\frac{q}{2\pi \varepsilon_0 r}\int_{R_1}^{R_2}\frac{dr}{r}=\frac{q}{2\pi \varepsilon_0 r}\ln\frac{R_2}{R_1}$$
+Law of conservation of energy
+$$\frac{mv^2}{2}=eU$$
+$$e\frac{q}{2\pi \varepsilon_0 \frac{R_1+R_2}{2}}=\frac{mv^2}{(\frac{R_1+R_2}{2})}$$
+From where we get
+$$\frac{q}{2\pi \varepsilon_0}=\frac{mv^2}{e}$$
+Substituting the previously obtained values
+$$\frac{U_0}{\ln\frac{R_2}{R_1}}=\frac{2eU}{e}$$
+From where
+$$U=\frac{U_0}{2\ln\frac{R_2}{R_1}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$V=(V_0/2)/\ln(R_2/R_1)$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Yuldashev Ulugbek<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
