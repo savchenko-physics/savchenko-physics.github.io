@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A water jet boat moves in calm water. Force of water resistance to boat movement $F = k v^2$ . The speed of the ejected water relative to the boat $u$. Determine the steady-state speed of the boat, if the cross-section of the flow of water captured by the engine is $S$, the water density is $\rho$.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A water jet boat moves in calm water. Force of water resistance to boat movement $F = k v^2$ . The speed of the ejected water relative to the boat $u$. Determine the steady-state speed of the boat, if the cross-section of the flow of water captured by the engine is $S$, the water density is $\rho$.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A water jet boat moves in calm water. Force of water resistance to boat movement $F = k v^2$ . The speed of the ejected water relative to the boat $u$. Determine the steady-state speed of the boat, if the cross-section of the flow of water captured by the engine is $S$, the water density is $\rho$.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A water jet boat moves in calm water. Force of water resistance to boat movement $F = k v^2$ . The speed of the ejected water relative to the boat $u$. Determine the steady-state speed of the boat, if the cross-section of the flow of water captured by the engine is $S$, the water density is $\rho$.</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.2">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.2.38.$ A water jet boat moves in calm water. Force of water resistance to boat movement $F = k v^2$ . The speed of the ejected water relative to the boat $u$. Determine the steady-state speed of the boat, if the cross-section of the flow of water captured by the engine is $S$, the water density is $\rho$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            </p>
+<center>
+  <figure>
+    <img src="draw.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $2.2.38$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Since in steady-state mode remains unchanged, by Newton's first law, the thrust force is compensated by the drag force
+$$F_\text{resistance}=F_\text{traction}$$
+
+During the time $dt$ the mass $dm$ of escaping water is:
+$$dm=\rho S v\,dt$$
+In this case, relative to the Non-inertial Reference Frame, the water flies out with a velocity $u-v$.
+</p><p>
+Hence the momentum $dp$ of mass $dm$
+$$dp=\rho S v(u-v)\,dt$$
+The force of water thrust, we find through the change of momentum
+$$F=\frac{dp}{dt}=\rho S v(u-v)$$
+Let's substitute and rewrite the equilibrium condition
+$$\rho S v(u-v)=k v^2$$
+From where
+$$\boxed{v=u \frac{\rho S}{\rho S+k}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v=\rho Su/(\rho S+k)$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
