@@ -9,7 +9,7 @@ base_path = '.'  # You can change this to your desired base path
 current_folder = 'C:\\Users\\melnichenkaa\\OneDrive - Berea College\\Documents\\GitHub\\savchenko-physics.github.io\\en\\'  
 for year in range(start_year, end_year + 1):
 
-    folder_name = f"{current_folder}7.3.{year}"
+    folder_name = f"{current_folder}2.5.{year}"
     folder_path = os.path.join(base_path, folder_name)
     
     # Create the folder if it doesn't exist
