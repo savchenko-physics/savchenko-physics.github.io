@@ -1,77 +1,77 @@
-1.1,Motion with constant velocity
-1.2,Variable speed movement
-1.3,Motion in the field of gravity. Curvilinear motion
-1.4,Galileo's transformation
-1.5,Motion with links
+1.1,Constant-speed motion
+1.2,Variable-speed motion
+1.3,Motion in gravity field. Curvilinear motion
+1.4,Galileo's transformations
+1.5,Motion with constraints
 2.1,Newton's laws
-2.2,Impulse. Center of mass
+2.2,Momentum. Center of mass
 2.3,Kinetic energy. Work. Potential energy
-2.4,Energy of the system. Energy transfer. Power
+2.4,Energy of a system. Energy transfer. Power
 2.5,Collisions
 2.6,Gravitational force. Kepler's laws
-2.7,Rotation of a rigid body
+2.7,Rotation of a solid body
 2.8,Statics
 3.1,Small deviations from equilibrium
 3.2,Period and frequency of free oscillations
 3.3,Harmonic motion
-3.4,Superposition of oscillations
+3.4,The superposition of oscillations
 3.5,Forced and damped oscillations
-3.6,Deformations and stresses. Wave speed
+3.6,Strain and stress. Wave's speed
 3.7,Wave propagation
-3.8,Superposition and reflection of waves
+3.8,Overlapping and reflection of waves
 3.9,Sound. Acoustic resonators
-4.1,Pressure of a fluid
-4.2,Buoyancy. Archimedes' principle
-4.3,Motion of an ideal fluid
-4.4,Flow of a viscous fluid
-4.5,Surface tension of a liquid
+4.1,Fluid Pressure
+4.2,Swimming. Archimedes' law
+4.3,The motion of an ideal fluid
+4.4,Viscous fluid flow
+4.5,Fluid surface tension
 4.6,Capillary phenomena
 5.1,Thermal motion of particles
-5.2,Distribution of gas molecules by speed
-5.3,Molecular collisions. Transport processes
-5.4,Rarefied gases. Interaction of molecules with the surface of a solid
+5.2,Distribution of gas molecules by velocity
+5.3,Collisions of molecules. Transfer processes
+5.4,Rare gases. Interaction of molecules with the surface of a solid body
 5.5,Equation of state of an ideal gas
-5.6,First law of thermodynamics. Heat capacity
-5.7,Gas effusion
-5.8,Probability of a thermodynamic state
-5.9,Second law of thermodynamics
+5.6,First Law of Thermodynamics. Heat capacity
+5.7,Gas flow
+5.8,Probability of a thermodynamical state
+5.9,Second Law of Thermodynamics
 5.1,Phase transitions
 5.11,Thermal radiation
-6.1,Coulomb's law. Electric field intensity
-6.2,Flux of electric field intensity. Gauss's theorem
-6.3,Electric potential. Conductors in a steady electric field
+6.1,Coulomb's law. Electric field
+6.2,The flux of the electric field. Gauss's theorem
+6.3,The potential of an electric field. Conductors in a constant electric field
 6.4,Capacitors
-6.5,Electric pressure. Energy of the electric field
-6.6,Electric field with dielectrics
-7.1,Motion in a steady electric field
-7.2,Focusing of charged particles
-7.3,Motion in a variable electric field
+6.5,Electrical pressure. The energy of an electric field
+6.6,The electric field in the presence of a dielectric
+7.1,Movement in a constant electric field
+7.2,Focusing charged particles
+7.3,Motion in an alternating electric field
 7.4,Interaction of charged particles
-8.1,Current. Current density. Current in a vacuum
-8.2,Conductance. Resistance. Sources of EMF
-8.3,Electrical circuits
-8.4,Capacitors and nonlinear elements in electrical circuits
-9.1,Magnetic field induction. Effect of magnetic field on current
-9.2,Magnetic field of a moving charge. Induction of a linear current
-9.3,Magnetic field of current distributed over surface or space
+8.1,Current. Current density. Current in vacuum
+8.2,Conductivity. Resistance. Sources of electromotive force
+8.3,Electric circuits
+8.4,Capacitors and non-linear elements in electrical circuits
+9.1,Induction of the magnetic field. The effect of a magnetic field on a current
+9.2,The magnetic field of a moving charge. Induction of the magnetic field from a linear current
+9.3,The magnetic field from a current distributed over a surface of space
 9.4,Magnetic flux
-10.1,Motion in a uniform magnetic field
+10.1,Motion in a homogeneous magnetic field
 10.2,Drift motion of particles
-11.1,Motion of conductors in a steady magnetic field. Electric motors
-11.2,Eddy electric field
+11.1,The motion of conductors in a constant magnetic field. Electric motors
+11.2,Vortex electric field
 11.3,Mutual inductance. Inductance of conductors. Transformers
 11.4,AC electrical circuits
-11.5,Conservation of magnetic flux. Superconductors in a magnetic field
-11.6,Connection between variable electric and magnetic fields
-12.1,Properties
+11.5,Magnetic flux conservation. Superconductors in magnetic field
+11.6,Relation of an alternating electric field to a magnetic field
+12.1,"Properties, emission and reflection of electromagnetic waves"
 12.2,Propagation of electromagnetic waves
 13.1,Rectilinear propagation and reflection of light
-13.2,Refraction of light. Lens formula
+13.2,Refraction of light. The lens formula
 13.3,Optical systems
 13.4,Photometry
-13.5,Quantum nature of light
-14.1,Constancy of the speed of light. Addition of velocities
-14.2,Time dilation
-14.3,Transformation of electric and magnetic fields
+13.5,The quantum nature of light
+14.1,The constancy of the light speed. Velocity addition
+14.2,"The slowing down of time, the reduction in the size of bodies in motion. The Lorentz Transformations"
+14.3,The transformation of electric and magnetic fields
 14.4,Motion of relativistic particles in electric and magnetic fields
-14.5,Law of conservation of mass and momentum
+14.5,Conservation of mass and momentum
