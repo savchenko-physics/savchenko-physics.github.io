@@ -63,7 +63,7 @@ function generateHtmlContent() {
 </head>
   <body style="">
       <header style="text-align:center;">
-    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <h2>Solutions of Savchenko Problems in Physics</h2>
     <p class="author">
       Aliaksandr Melnichenka <br/>
       October 2023

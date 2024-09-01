@@ -18,7 +18,7 @@ def find_and_replace(file_path, old_word, new_word):
         # Use regular expression to find and replace the word
         # modified_content = re.sub(r'\b' + re.escape(old_word) + r'\b', new_word, content)
         
-        new_word = '<a href="../#'+extract_number_from_path(file_path)+'">←Назад</a>'
+        # new_word = '<a href="../#'+extract_number_from_path(file_path)+'">←Назад</a>'
         print(file_path, new_word)
         modified_content = content.replace(old_word, new_word)
 
@@ -41,11 +41,11 @@ def find_pdfs(directory='.'):
     return pdf_files
 
 
-current_folder = 'C:\\Users\\melnichenkaa\\OneDrive - Berea College\\Documents\\GitHub\\savchenko-physics.github.io\\'  # Change this to the desired folder path
+current_folder = 'C:\\Users\\melnichenkaa\\OneDrive - Berea College\\Documents\\GitHub\\savchenko-physics.github.io\\en'  # Change this to the desired folder path
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = '<a href="../">←Назад</a>'
-new_word = '<a href="../">←Назад</a>'
+old_word = '<h2>Solutions of Savchenko Physics Textbook</h2>'
+new_word = '<h2>Solutions of Savchenko Problems in Physics</h2>'
 
 
 for pdf_file in pdf_files_list:
