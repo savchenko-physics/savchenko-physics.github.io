@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>
+    <link rel="stylesheet" href="https://savchenko-physics.github.io/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenko-physics.github.io/img/logo.png" type="image/png">
+    <script src="https://savchenko-physics.github.io/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Physics Textbook</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#7.3">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $7.3.9^*.$ A thin electron beam accelerated by the potential difference $V$ enters a flat capacitor parallel to its plates. Determine the angular spread of electrons if a voltage $V_0$ sin wt is applied to the capacitor plates. The distance between the plates of the capacitor $d$ is much smaller than its length $l$.
+
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $7.3.9^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+</p>
+<center>
+  <figure>
+    <img src="draw.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Trajectory of a particle in an electric field
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+From the drawing
+$$\tan \alpha = \frac{v_y}{v_x}$$
+Law of conservation of energy
+$$\frac{mv^2_x}{2}=eU$$
+From where
+$$v_x=\sqrt{\frac{2eU}{m}}$$
+Force $\vec{F}$ acting on the particle:
+$$F=eU=e\frac{U_0}{d}\sin\omega t$$
+Second Newton's Laws
+$$ma=\frac{eU_0}{d}\sin\omega t$$
+By the definition of acceleration $a = \frac{dv}{dt}$
+$$\frac{dv}{dt}=\frac{eU_0}{md}\sin\omega t$$
+Let's regroup and integrate
+$$\int _0^{v_y}dv=\frac{eU_0}{md}\int_0^t\sin\omega t\,dt$$
+$$v_y=\frac{eU_0}{md\omega}(1-\cos\omega t)$$
+Time for which the particle will move horizontally by the value $l$
+$$t=\frac{l}{v_x}=l\sqrt{\frac{m}{2eU}}$$
+Find the angle of velocity to the horizontal
+$$\tan\theta = \frac{v_y}{v_x}=\frac{eU_0}{m\omega d}\sqrt{\frac{m}{2eU}} \left( 1-\cos\omega l \sqrt{\frac{m}{2eU}}\right)$$
+Whence the angle $\angle \theta$
+$$\boxed{\theta=\operatorname{arctg} \left( \frac{U_0}{\omega d}\sqrt{\frac{e}{2mU}} \bigg[ 1-\cos\omega l \sqrt{\frac{m}{2eU}}\bigg] \right)}$$
+A little extra. Given that $d \ll l$ we can use the approximation $\tan x \approx x$
+$${\theta= \frac{U_0}{\omega d}\sqrt{\frac{e}{2mU}} \bigg[ 1-\cos\omega l \sqrt{\frac{m}{2eU}}\bigg] }$$
+Find the required scattering angle
+$${\Delta \alpha=2\theta= \frac{U_0}{\omega d}\sqrt{\frac{2e}{mU}} \bigg[ 1-\cos\omega l \sqrt{\frac{m}{2eU}}\bigg] }$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$\Delta\alpha=\pm\operatorname{arctg}\bigg\{\frac{V_{0}}{d\omega}\sqrt{\frac{2e}{m_{e}V}}\bigg[1-\operatorname{cos}\bigg(\omega l\sqrt{\frac{m_{e}}{2eV}}\bigg)\bigg]\bigg\}$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          Lutfulloyev Shukurullo<br>
+          Yuldashev Ulugbek<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
