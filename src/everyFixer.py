@@ -44,8 +44,31 @@ def find_pdfs(directory='.'):
 current_folder = 'C:\\Users\\melnichenkaa\\OneDrive - Berea College\\Documents\\GitHub\\savchenko-physics.github.io\\en'  # Change this to the desired folder path
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = '<h2>Solutions of Savchenko Physics Textbook</h2>'
-new_word = '<h2>Solutions of Savchenko Problems in Physics</h2>'
+new_word = """    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The largest dataset of solutions of 'Savchenko. Problems in Physics'. Savchenko’s Problems in General Physics is widely used to prepare for olympiads and it is a useful tool to
+master and sharpen your skills and techniques in comptetitive problem solving. Some of these problems were a source
+of inspiration for Jaan Kalda’s handouts and to some NBPhO problems. You may find problems from old IPhO
+papers.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>"""
+old_word = """    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="solutions, savchenko, physics problems, olympiad physics, physics book">
+    <meta name="description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Savchenko Solutions</title>"""
 
 
 for pdf_file in pdf_files_list:
