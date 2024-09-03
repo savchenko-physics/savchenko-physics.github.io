@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Two touching each other globular blocks of mass m and radius r each move in a circular orbit around a planet of mass M. The centers of the boulders are located at the same radius, the distance from their point of contact to the center of planet R. With what force does one block press on another? At what radius of the orbit will the mutual attraction of the lumps cease to hold them together? The radius of the planet is R_0 \gg r. Take the density of the boulders to be equal to the average density of the planet.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Two touching each other globular blocks of mass m and radius r each move in a circular orbit around a planet of mass M. The centers of the boulders are located at the same radius, the distance from their point of contact to the center of planet R. With what force does one block press on another? At what radius of the orbit will the mutual attraction of the lumps cease to hold them together? The radius of the planet is R_0 \gg r. Take the density of the boulders to be equal to the average density of the planet.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Two touching each other globular blocks of mass m and radius r each move in a circular orbit around a planet of mass M. The centers of the boulders are located at the same radius, the distance from their point of contact to the center of planet R. With what force does one block press on another? At what radius of the orbit will the mutual attraction of the lumps cease to hold them together? The radius of the planet is R_0 \gg r. Take the density of the boulders to be equal to the average density of the planet.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Two touching each other globular blocks of mass m and radius r each move in a circular orbit around a planet of mass M. The centers of the boulders are located at the same radius, the distance from their point of contact to the center of planet R. With what force does one block press on another? At what radius of the orbit will the mutual attraction of the lumps cease to hold them together? The radius of the planet is R_0 \gg r. Take the density of the boulders to be equal to the average density of the planet.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.6">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $2.6.52^*.$ Two touching each other globular blocks of mass $m$ and radius $r$ each move in a circular orbit around a planet of mass $M$. The centers of the boulders are located at the same radius, the distance from their point of contact to the center of planet $R$. With what force does one block press on another? At what radius of the orbit will the mutual attraction of the lumps cease to hold them together? The radius of the planet is $R_0 \gg r$. Take the density of the boulders to be equal to the average density of the planet.
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $2.6.52^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+</p>
+<center>
+  <figure>
+    <img src="draw.png"
+      loading="lazy"  width="250" />
+    <figcaption>
+      Forces acting on the system
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Newton's second law for two bodies:
+$$\left\{\begin{matrix}
+F_1+N-F_0=m\omega^2(R-r) \\
+F_1-N+F_0=m\omega^2(R+r)
+\end{matrix}\right.$$
+Dividing one equation by the other, we get
+$$\frac{F_1+N-F_0}{F_1-N+F_0}=\frac{R-r}{R+r}$$
+Transforming the obtained expression, we obtain
+$$N=F_0-\frac{F_1(R+r)-F_2(R-r)}{2R}$$
+The forces of gravitational attraction of the clumps between themselves and the planet
+$$\left\{\begin{matrix}
+F_0=G\frac{m^2}{4r^2}\\ 
+F_1=G\frac{mM}{(R-r)^2} \\
+F_2=G\frac{mM}{(R+r)^2}
+\end{matrix}\right.$$
+Substituting into the expression for $\vec{N}$
+$$N=G\frac{m^2}{4r^2}-\frac{GmM}{2R}\left(\frac{R+r}{(R-r)^2}-\frac{R-r}{(R+r)^2}\right)$$
+After mathematical transformations we obtain
+$$\boxed{N=G\frac{m^2}{4r^2}-\frac{GmM}{R}\frac{3R^2r+r^3}{(R^2-r^2)^2}}$$
+The mutual attraction will stop binding them together at the moment when the force $N$ becomes equal to $0$
+$$G\frac{m^2}{4r^2}-\frac{GmM}{R}\frac{3R^2r+r^3}{(R^2-r^2)^2}=0$$
+After some minor adjustments
+$$\frac{m}{M}=\frac{4r^3}{R}\frac{3R^2+r^2}{(R^2-r^2)^2} \quad (1)$$
+Let's write an expression for the relation between mass $m$ and $M$ and density $\rho$
+$$\left\{\begin{matrix}
+m=\rho\cdot \frac{4}{3}\pi r^3\\
+M=\rho\cdot \frac{4}{3}\pi R_0^3
+\end{matrix}\right.$$
+Dividing one equation by the other, we get
+$$\frac{m}{M}=\frac{r^3}{R_0^3}$$
+Let's put the obtained expression in $(1)$
+$$\frac{r^3}{R_0^3}=\frac{4r^3}{R}\frac{3R^2+r^2}{(R^2-r^2)^2}$$
+Given that $r \ll R$, we can neglect the summands of order $r^2$
+$$\frac{r^3}{R_0^3}=\frac{4r^3}{R}\cdot\frac{3R^2}{R^4}$$
+From where we get expressing $R$ through $R_0$
+$$\boxed{R=\sqrt[3]{12} R_0}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$N=\frac{G m^2}{4r^2}-\frac{G mM(3R^2r+r^3)}{R(R^2-r^2)^2};\quad R=\sqrt[3]{12} R_0$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
