@@ -43,8 +43,7 @@ def find_pdfs(directory='.'):
                 pdf_files.append(os.path.join(root, file))
     return pdf_files
 
-
-current_folder = 'C:\\Users\\melnichenkaa\\OneDrive - Berea College\\Documents\\GitHub\\savchenko-physics.github.io'  # Change this to the desired folder path
+current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
 new_word = """savchenkosolutions.com"""
