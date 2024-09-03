@@ -36,14 +36,14 @@ function generateHtmlContent() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="${area2}">
+    <meta name="description" content="${removeImageSection(area2)}">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="${area2}">
+    <meta property="og:title" content="${removeImageSection(area2)}">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="${area2}">
+    <meta property="og:description" content="${removeImageSection(area2)}">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>${area2}</title>
+    <title>${removeImageSection(area2)}</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -100,6 +100,13 @@ function getFirstTwoSegments(input) {
   const segments = input.split('.');
   
   return segments.slice(0, 2).join('.');
+}
+
+function removeImageSection(inputString) {
+  const imageSectionRegex = /<\/p>[\s\S]*?<p>/g;
+  const cleanedString = inputString.replace(imageSectionRegex, '');
+
+  return cleanedString.replace(/\n/g, '').replace(/\$/g, '');
 }
 
 function generateBasement() {
