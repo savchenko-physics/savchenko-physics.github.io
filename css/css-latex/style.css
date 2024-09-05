@@ -185,7 +185,7 @@ body {
   font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
   line-height: 1.8;
 
-  max-width: 80ch;
+/*  max-width: 80ch;*/
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0 auto;
@@ -539,7 +539,16 @@ dl dd {
   font-variant-caps: small-caps;
   text-align: center;
 }
-
+.description {
+  margin: auto;
+  padding: 0.9rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+/*  text-align: center;*/
+  max-width:620px; 
+}
 /* Sidenotes */
 
 .sidenote {
@@ -793,4 +802,35 @@ h6 {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 0.95;
+}
+
+.margin-main{
+  margin-left: 0px;
+}
+.pinned-container{
+  display: none;
+}
+@media (min-width: 1024px){
+  .pinned-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100vh;
+      background-color: hsl(210, 20%, 95%);
+      border-right: 1px solid hsl(210, 20%, 90%); 
+      padding: 20px;
+      box-sizing: border-box; 
+
+      display: block;
+  }
+
+  .pinned-container h2, .pinned-container p {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+  .margin-main{
+    margin-left: 320px;
+  }
+
 }
