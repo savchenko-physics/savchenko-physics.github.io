@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Migrating fish, having accumulated a reserve of fat in the sea, enter the estuaries of rivers. They do not feed in fresh water, so it is important for them to reach the spawning grounds in the upper reaches of the river with the least weight loss. The consumption of fat for maintaining the basic metabolism in the fish's body per unit of time is N, and the additional consumption of bv^2 is spent on movement at a speed of v. How fast should the fish move so that the fat consumption on the way to the spawning area is minimal? (Pisces can sense this speed perfectly.)">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Migrating fish, having accumulated a reserve of fat in the sea, enter the estuaries of rivers. They do not feed in fresh water, so it is important for them to reach the spawning grounds in the upper reaches of the river with the least weight loss. The consumption of fat for maintaining the basic metabolism in the fish's body per unit of time is N, and the additional consumption of bv^2 is spent on movement at a speed of v. How fast should the fish move so that the fat consumption on the way to the spawning area is minimal? (Pisces can sense this speed perfectly.)">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Migrating fish, having accumulated a reserve of fat in the sea, enter the estuaries of rivers. They do not feed in fresh water, so it is important for them to reach the spawning grounds in the upper reaches of the river with the least weight loss. The consumption of fat for maintaining the basic metabolism in the fish's body per unit of time is N, and the additional consumption of bv^2 is spent on movement at a speed of v. How fast should the fish move so that the fat consumption on the way to the spawning area is minimal? (Pisces can sense this speed perfectly.)">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Migrating fish, having accumulated a reserve of fat in the sea, enter the estuaries of rivers. They do not feed in fresh water, so it is important for them to reach the spawning grounds in the upper reaches of the river with the least weight loss. The consumption of fat for maintaining the basic metabolism in the fish's body per unit of time is N, and the additional consumption of bv^2 is spent on movement at a speed of v. How fast should the fish move so that the fat consumption on the way to the spawning area is minimal? (Pisces can sense this speed perfectly.)</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#1.2">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $1.2.9.$ Migrating fish, having accumulated a reserve of fat in the sea, enter the estuaries of rivers. They do not feed in fresh water, so it is important for them to reach the spawning grounds in the upper reaches of the river with the least weight loss. The consumption of fat for maintaining the basic metabolism in the fish's body per unit of time is $N$, and the additional consumption of $bv^2$ is spent on movement at a speed of $v$. How fast should the fish move so that the fat consumption on the way to the spawning area is minimal? (Pisces can sense this speed perfectly.)
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <p>
+Time of fish movement at constant speed
+</p>
+<p style="text-align: center;">
+$$t = \frac{L}{v}$$
+</p>
+<p>
+Flow rate for time $t$
+</p>
+<p style="text-align: center;">
+$$W = N\frac{L}{v} + bvL$$
+</p>
+<p>
+We find the optimal flow rate as the derivative of the function $W(t)$
+</p>
+<p style="text-align: center;">
+$$\frac{dW}{dv} = -N\frac{L}{v^2} + bL$$
+</p>
+<p>
+Which is consistent with 
+</p>
+<p style="text-align: center;">
+$v^2 = N/b$
+</p>
+<p>
+From where
+</p>
+<p style="text-align: center;">
+$v = \sqrt{N/b}$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v = \sqrt{La}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
