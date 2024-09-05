@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="a. In a conical vessel, the water level rises at a constant rate v_0. How does the rate of water entering a vessel through a tube of section s depend on time? At time zero, the vessel is empty.b. A jet of oil hitting the surface of the water spreads over it in a round spot of thickness h. How does the speed of movement of the spot boundary depend on time, if the volume of oil q enters per unit of time? At the initial time, the spot radius is zero.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="a. In a conical vessel, the water level rises at a constant rate v_0. How does the rate of water entering a vessel through a tube of section s depend on time? At time zero, the vessel is empty.b. A jet of oil hitting the surface of the water spreads over it in a round spot of thickness h. How does the speed of movement of the spot boundary depend on time, if the volume of oil q enters per unit of time? At the initial time, the spot radius is zero.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="a. In a conical vessel, the water level rises at a constant rate v_0. How does the rate of water entering a vessel through a tube of section s depend on time? At time zero, the vessel is empty.b. A jet of oil hitting the surface of the water spreads over it in a round spot of thickness h. How does the speed of movement of the spot boundary depend on time, if the volume of oil q enters per unit of time? At the initial time, the spot radius is zero.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>a. In a conical vessel, the water level rises at a constant rate v_0. How does the rate of water entering a vessel through a tube of section s depend on time? At time zero, the vessel is empty.b. A jet of oil hitting the surface of the water spreads over it in a round spot of thickness h. How does the speed of movement of the spot boundary depend on time, if the volume of oil q enters per unit of time? At the initial time, the spot radius is zero.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#1.2">$\leftarrow$Back</a></h3>
+    
+        <h3> Statement </h3>
+        <p>
+            $1.2.11.$ a. In a conical vessel, the water level rises at a constant rate $v_0$. How does the rate of water entering a vessel through a tube of section $s$ depend on time? At time zero, the vessel is empty.
+</p>
+
+            <p>
+b. A jet of oil hitting the surface of the water spreads over it in a round spot of thickness $h$. How does the speed of movement of the spot boundary depend on time, if the volume of oil $q$ enters per unit of time? At the initial time, the spot radius is zero.
+
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="160" />
+    <figcaption>
+      For problem $1.2.11$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            
+              <center>
+              <figure>
+                <img src="drawing1.png"
+                  loading="lazy" width="200" />
+                <figcaption>
+                  Cone vessel
+                </figcaption>
+              </figure>
+              </center>
+
+$a)$ By time $t$, the water level will be $v_0t$. And the rate of change of volume will be equal to:
+$$\frac{dV}{dt} = \frac{\pi r(t)^2 dx}{dt}$$
+Where $dx$ is the change in water level:
+
+$$\frac{dV}{dt} = \pi r(t)^2 v_0$$
+
+From Geometry, 
+$$r(t) = v_0 t \cdot tg(\alpha)$$
+
+By definition, the velocity of incoming water is equal to 
+$$v = \frac{dV}{sdt}$$
+
+Substituting the previous expressions: 
+$$v = {\pi v_0^3 t^2 \cdot tg^2(\alpha)}/s$$
+
+$b)$ For a small time interval $dt$, the volume changes by 
+$$dV = q dt$$
+
+Also the volume increment can be written as 
+$$dV = 2\pi r dr \cdot h $$
+
+Thus:
+
+$$ q dt = 2\pi r dr \cdot h$$
+
+Considering $v = \frac{dr}{dt}$,
+$$ \fbox{$v = \frac{q}{2\pi r h}$}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v=\frac{\pi v_0^3t^2\operatorname{tg}^2\alpha}{s}$$
+$$v=\frac{1}{2}\sqrt{\frac{q}{\pi ht}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
