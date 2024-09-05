@@ -754,7 +754,7 @@ h6 {
     display: flex;            
     justify-content: flex-start;
     justify-content: center;
-    gap: 100px;               
+    gap: 80px;               
 }
 
 .column {
@@ -832,6 +832,9 @@ h6 {
   }
   .margin-main{
     margin-left: 320px;
+  }
+  .columns {
+    gap: 110px;             
   }
 
 }
