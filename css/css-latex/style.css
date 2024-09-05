@@ -185,7 +185,7 @@ body {
   font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
   line-height: 1.8;
 
-/*  max-width: 80ch;*/
+  max-width: 80ch;
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0 auto;
