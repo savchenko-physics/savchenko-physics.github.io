@@ -88,33 +88,59 @@ papers.">
           Aliaksandr Melnichenka <br/>
           October 2023
         </p>
-        <h2 style="text-align: center;">📜<a href="https://savchenkosolutions.com/en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
-        <h3 style="text-align: center;"><a href="https://savchenkosolutions.com/">Решения на русском</a></h3>
+        <h2 style="text-align: center; margin-top: 0.9rem; "><a href="https://savchenkosolutions.com/en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
         <h3 style="text-align:center; margin: 0;">
-            A beta version of the solutions book has become 
-            <a href="https://savchenkosolutions.com/en/solutions.pdf" class="tooltip" target="_blank">available
-                <span class="tooltiptext">Stefan Nicov, Aliaksandr Melnichenka et al.</span>
-            </a>
+            Beta version of <a href="https://savchenkosolutions.com/en/solutions.pdf" class="tooltip" target="_blank">Savchenko Solutions <span class="tooltiptext">Stefan Nicov, Aliaksandr Melnichenka et al.</span> </a>
         </h3>
+        <h4 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/">Решения на русском</a></h3>
+        
 
         <p class="description">
         The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics Olympiads of different levels. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions on Latex. In total, 650+ solutions have been published, out of 2023 problems. In 2023, the project was launched, which is actively developing and if you want to participate in its development - astrosander01@gmail.com.
+        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions on Latex. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to contact.
         </p>
     </header>
 
 
-    <div class="pinned-container">
-        <ol style="list-style-type:none; padding: 0;">
-            <h2>Contents</h2>"""
+    <div class="pinned-container" id="pinned-container">
+        <ol style="list-style-type:none; padding: 0;margin: 0;">
+            <li><a href="#1">Kinematics</a></li>
+            <li><a href="#2">Dynamics</a></li>
+            <li><a href="#3">Oscillations and Waves</a></li>
+            <li><a href="#4">Fluid Mechanics</a></li>
+            <li><a href="#5">Molecular Physics</a></li>
+            <li><a href="#6">Electrostatics</a></li>
+            <li><a href="#7">Particles in an electric field</a></li>
+            <li><a href="#8">Electric current</a></li>
+            <li><a href="#9">Constant magnetic field</a></li>
+            <li><a href="#10">Particles in complex fields</a></li>
+            <li><a href="#11">Electromagnetic induction</a></li>
+            <li><a href="#12">Electromagnetic waves</a></li>
+            <li><a href="#13">Optics. Quantum physics</a></li>
+            <li><a href="#14">Special theory of relativity</a></li>
+        </ol>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var pinnedContainer = document.getElementById('pinned-container');
+            
+            if (window.scrollY > 300) {
+                pinnedContainer.classList.add('visible');
+                pinnedContainer.classList.remove('hover-disabled');
+            } else {
+                pinnedContainer.classList.remove('visible');
+                pinnedContainer.classList.add('hover-disabled');
+            }
+        });
+    </script>"""
 chapters = []
 with open("database/chapters.csv") as file:
     reader = csv.reader(file)
 
     for index, row in enumerate(reader):
-        dsa = f"""
-            <li><a href="#{row[0]}">{row[1]}</a></li>"""
-        BaseHtml = BaseHtml+dsa
+        # dsa = f"""
+        #     <li><a href="#{row[0]}">{row[1]}</a></li>"""
+        # BaseHtml = BaseHtml+dsa
         chapters.append(row[1])
 
 sections = []
