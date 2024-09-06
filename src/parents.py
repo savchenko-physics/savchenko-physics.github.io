@@ -21,8 +21,7 @@ def PrimeDistribution(problems_list):
     if not len(problems_list):
         return ""
 
-    problems_html = """
-            <ul class="column">"""
+    problems_html = """<ul class="column">"""
     for problem in problems_list:
         problems_html += f"""
                 <li><a href="./{problem}">{problem}</a></li>"""
@@ -114,10 +113,7 @@ with open("database/chapters.csv") as file:
 
     for index, row in enumerate(reader):
         dsa = f"""
-        <li>
-            <a href="#{row[0]}">{row[1]}</a>
-        </li>
-        """
+            <li><a href="#{row[0]}">{row[1]}</a></li>"""
         BaseHtml = BaseHtml+dsa
         chapters.append(row[1])
 
@@ -129,11 +125,11 @@ with open("database/sections.csv") as file:
         sections.append(row)
 
 BaseHtml = BaseHtml+"""
-    </ol>
+        </ol>
     </div>
 
 
-  <main>
+<main>
     <article class="margin-main">"""
 
 for problem in existed_folders():
@@ -166,7 +162,7 @@ for index, chapter in enumerate(existed_problems):
 BaseHtml += """
           </div>
     </article>
-  </main>
+</main>
 
   <script>
     MathJax = {
