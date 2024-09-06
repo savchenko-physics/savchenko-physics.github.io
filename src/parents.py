@@ -9,8 +9,9 @@ def column_len(problems_number):
         ans[i]+=1
     return ans
 
+
 def existed_folders():
-    folders = [f for f in os.listdir(current_directory) if os.path.isdir(os.path.join(current_directory, f))]
+    folders = [f for f in os.listdir(current_directory) if os.path.isdir(os.path.join(current_directory, f)) and "." in f]
     return sorted(folders, key=lambda x: list(map(int, x.split('.'))))
 
 def split_numbers(input_string):
@@ -96,8 +97,8 @@ papers.">
         
 
         <p class="description">
-        The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics Olympiads of different levels. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions on Latex. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to <a href="mailto: astrosander01@gmail.com" target="_blank">contact</a>.
+        The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics olympiads in post-soviet countries. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
+        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions of <a href="about">different authors</a>. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to <a href="mailto: astrosander01@gmail.com" target="_blank">contact</a>.
         </p>
     </header>
 
