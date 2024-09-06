@@ -81,7 +81,7 @@ papers.">
     </script>
 </head>
 
-<body style="max-width: 1024px;" id="top">
+<body id="top">
     <header class = "margin-main" style="text-align:center;">
         <h2>Solutions of Savchenko Problems in Physics</h2>
         <p class="author">
@@ -97,7 +97,7 @@ papers.">
 
         <p class="description">
         The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics Olympiads of different levels. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions on Latex. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to contact.
+        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions on Latex. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to <a href="mailto: astrosander01@gmail.com" target="_blank">contact</a>.
         </p>
     </header>
 
@@ -216,7 +216,15 @@ BaseHtml += """
     gtag('config', 'G-DDMB38YMLD');
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
 </body>
 
 </html>
