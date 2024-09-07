@@ -231,7 +231,5 @@ BaseHtml += """
 </html>
 """
 
-with open(f"{current_directory}\\index.html", "w", encoding="UTF-8") as file:
-    file.write(BaseHtml)
 with open(f"{current_directory.replace("\\en", "")}\\index.html", "w", encoding="UTF-8") as file:
     file.write(BaseHtml)
