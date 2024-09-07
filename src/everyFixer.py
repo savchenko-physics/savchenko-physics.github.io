@@ -43,11 +43,11 @@ def find_pdfs(directory='.'):
                 pdf_files.append(os.path.join(root, file))
     return pdf_files
 
-current_folder = os.getcwd().replace("src", "\\")
+current_folder = os.getcwd().replace("src", "")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """<a href="../../"""
-new_word = """<a href="../../ru/"""
+old_word = """<h3 id="back-link"><a href="../"""
+new_word = """<h3 id="back-link"><a href="../../"""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)
