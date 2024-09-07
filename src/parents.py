@@ -93,7 +93,7 @@ papers.">
         <h3 style="text-align:center; margin: 0;">
             Beta version of <a href="https://savchenkosolutions.com/en/solutions.pdf" class="tooltip" target="_blank">Savchenko Solutions <span class="tooltiptext">Stefan Nicov, Aliaksandr Melnichenka et al.</span> </a>
         </h3>
-        <h4 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/">Решения на русском</a></h3>
+        <h4 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/ru">Решения на русском</a></h3>
         
 
         <p class="description">
@@ -232,4 +232,6 @@ BaseHtml += """
 """
 
 with open(f"{current_directory}\\index.html", "w", encoding="UTF-8") as file:
+    file.write(BaseHtml)
+with open(f"{current_directory.replace("\\en", "")}\\index.html", "w", encoding="UTF-8") as file:
     file.write(BaseHtml)
