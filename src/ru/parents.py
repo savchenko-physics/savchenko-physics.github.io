@@ -1,8 +1,8 @@
 import os
 import csv
 
-current_directory = os.getcwd().replace("src", "en")
-print(current_directory)
+current_directory = os.getcwd().replace("src\\ru", "")
+
 MaxColumns = 3
 def column_len(problems_number):
     ans = [problems_number // MaxColumns]*MaxColumns
@@ -11,8 +11,8 @@ def column_len(problems_number):
     return ans
 
 
-def existed_folders():
-    folders = [f for f in os.listdir(current_directory) if os.path.isdir(os.path.join(current_directory, f)) and "." in f]
+def existed_folders(directory):
+    folders = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f)) and "." in f]
     return sorted(folders, key=lambda x: list(map(int, x.split('.'))))
 
 def split_numbers(input_string):
@@ -25,8 +25,9 @@ def PrimeDistribution(problems_list):
 
     problems_html = """<ul class="column">"""
     for problem in problems_list:
+        print(problem)
         problems_html += f"""
-                <li><a href="en/{problem}">{problem}</a></li>"""
+                <li><a href="../{problem.split('.')[0]}/{problem}">{problem}</a></li>"""
     problems_html+="""
             </ul>
         """
@@ -45,24 +46,21 @@ def ProblemsDistribution(problems_list):
 existed_problems = [[[] for _ in range(15)] for _ in range(15)]
 
 BaseHtml = """<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-language" content="en">
-    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="The largest dataset of solutions of 'Savchenko. Problems in Physics'. Savchenko’s Problems in General Physics is widely used to prepare for olympiads and it is a useful tool to
-master and sharpen your skills and techniques in comptetitive problem solving. Some of these problems were a source
-of inspiration for Jaan Kalda’s handouts and to some NBPhO problems. You may find problems from old IPhO
-papers.">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="Решение Савченко по физике, Задачи Савченко по физике, задачи по физике, подготовка к олимпиадам по физике, Международная Физическая Олимпиада">
+    <meta name="description" content=" Самая большая база данных решений «Савченко. Задачи по физике». Задачи Савченко по общей физике широко используются для подготовки к олимпиадам и являются полезным пособием, позволяющим освоения и оттачивания навыков и приемов решения компететных задач. Некоторые из этих задач послужили источником вдохновения для раздаточных материалов Яана Калды и для некоторых задач NBPhO. Вы можете найти задачи из старых статей IPhO из старых работ IPhO.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="Savchenko Solutions">
+    <meta property="og:title" content="Решение Савченко О.Я.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
+    <meta property="og:description" content="Решение задач по физике Савченко О.Я.">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>Savchenko Solutions</title>
+    <title>Решение Савченко О.Я.</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -85,41 +83,38 @@ papers.">
 
 <body id="top">
     <header class = "margin-main" style="text-align:center;">
-        <h2>Solutions of Savchenko Problems in Physics</h2>
+        <h2>Решение задач из Савченко О.Я.</h2>
         <p class="author">
           Aliaksandr Melnichenka <br/>
           October 2023
         </p>
-        <h2 style="text-align: center; margin-top: 0.9rem; "><a href="https://savchenkosolutions.com/en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
-        <h3 style="text-align:center; margin: 0;">
-            Beta version of <a href="https://savchenkosolutions.com/en/solutions.pdf" class="tooltip" target="_blank">Savchenko Solutions <span class="tooltiptext">Stefan Nicov, Aliaksandr Melnichenka et al.</span> </a>
-        </h3>
-        <h4 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/ru">Решения на русском</a></h3>
+        <h2 style="text-align: center; margin-top: 0.9rem; "><a href="../savchenko.pdf" target="_blank">Условия задач</a></h2>
+        <h3 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/">English solutions</a></h3>
         
 
         <p class="description">
-        The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics olympiads in post-soviet countries. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions of <a href="https://savchenkosolutions.com/about">different authors</a>. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to <a href="mailto: astrosander01@gmail.com" target="_blank">contact</a>.
+        Сборник задач по физике под редакцией О.Я. Савченко - один из самых популярных ресурсов для подготовки к олимпиадам по физике в странах постсоветского пространства. За более чем 30 лет, прошедших с момента его первого издания, не было создано ни одного полного руководства по решению задач из него.<br>
+        На этом сайте вы можете наблюдать попытку создания первого решебника этого сборника с оформлением решений <a href="https://savchenkosolutions.com/ru/about">разных авторов</a>. Всего было опубликовано 650+ решений из 2,023 задач. В 2023 году был запущен проект, который активно развивается на русском и английском языках. Если хотите поучаствовать, пишите <a href="mailto: astrosander01@gmail.com" target="_blank">astrosander01@gmail.com</a>.
         </p>
     </header>
 
 
     <div class="pinned-container" id="pinned-container">
         <ol style="list-style-type:none; padding: 0;margin: 0;">
-            <li><a href="#1">Kinematics</a></li>
-            <li><a href="#2">Dynamics</a></li>
-            <li><a href="#3">Oscillations and Waves</a></li>
-            <li><a href="#4">Fluid Mechanics</a></li>
-            <li><a href="#5">Molecular Physics</a></li>
-            <li><a href="#6">Electrostatics</a></li>
-            <li><a href="#7">Particles in an electric field</a></li>
-            <li><a href="#8">Electric current</a></li>
-            <li><a href="#9">Constant magnetic field</a></li>
-            <li><a href="#10">Particles in complex fields</a></li>
-            <li><a href="#11">Electromagnetic induction</a></li>
-            <li><a href="#12">Electromagnetic waves</a></li>
-            <li><a href="#13">Optics. Quantum physics</a></li>
-            <li><a href="#14">Special theory of relativity</a></li>
+            <li><a href="#1">Кинематика</a></li>
+            <li><a href="#2">Динамика</a></li>
+            <li><a href="#3">Колебания и волны</a></li>
+            <li><a href="#4">Механика жидкости</a></li>
+            <li><a href="#5">Молекулярная физика</a></li>
+            <li><a href="#6">Электростатика</a></li>
+            <li><a href="#7">Электрическое поле</a></li>
+            <li><a href="#8">Электрический ток</a></li>
+            <li><a href="#9">Магнетизм</a></li>
+            <li><a href="#10">Сложные поля</a></li>
+            <li><a href="#11">Э/м индукция</a></li>
+            <li><a href="#12">Электромагнитные волны</a></li>
+            <li><a href="#13">Оптика</a></li>
+            <li><a href="#14">СТО</a></li>
         </ol>
     </div>
     <script type="text/javascript">
@@ -136,7 +131,7 @@ papers.">
         });
     </script>"""
 chapters = []
-with open("database/chapters.csv") as file:
+with open("database/chapters.csv", encoding="UTF-8") as file:
     reader = csv.reader(file)
 
     for index, row in enumerate(reader):
@@ -146,7 +141,7 @@ with open("database/chapters.csv") as file:
         chapters.append(row[1])
 
 sections = []
-with open("database/sections.csv") as file:
+with open("database/sections.csv", encoding="UTF-8") as file:
     reader = csv.reader(file)
 
     for row in reader:
@@ -160,18 +155,20 @@ BaseHtml = BaseHtml+"""
 <main>
     <article class="margin-main">"""
 
-for problem in existed_folders():
-    chapter = int(problem.split('.')[0])
-    section = int(problem.split('.')[1])
+for i in range(1,14):
+    directory=current_directory+str(i)
+    for problem in existed_folders(directory):
+        chapter = int(problem.split('.')[0])
+        section = int(problem.split('.')[1])
 
-    existed_problems[chapter][section].append(problem)
+        existed_problems[chapter][section].append(problem)
 
 for index, chapter in enumerate(existed_problems):
     if all(not sublist for sublist in chapter):
         continue
 
     BaseHtml = BaseHtml+f"""
-        <h2 id="{index}" style="text-align: center;">Chapter {index}. {chapters[index-1]}</h2>
+        <h2 id="{index}" style="text-align: center;">Глава {index}. {chapters[index-1]}</h2>
       """
 
     for index1, section in enumerate(chapter):
@@ -180,6 +177,7 @@ for index, chapter in enumerate(existed_problems):
         FullName = f"{index}.{index1}"
 
         for index2, i in enumerate(sections):
+
             if i[0] == FullName:
                 BaseHtml = BaseHtml+f"""
         <h3 id="{FullName}" style="text-align: center;">§ {i[0]}. {i[1]}</h3>
@@ -232,5 +230,5 @@ BaseHtml += """
 </html>
 """
 
-with open(f"{current_directory.replace("\\en", "")}\\index.html", "w", encoding="UTF-8") as file:
+with open(f"{current_directory}\\ru\\index.html", "w", encoding="UTF-8") as file:
     file.write(BaseHtml)
