@@ -29,8 +29,9 @@ def find_and_replace(file_path, old_word, new_word):
             content = file.read()
         print("\n\n")
         print(file_path)
-        old_word=f"""<a href="../#{get_nth_number(file_path, 3)}">←Назад</a>"""
-        new_word = f"""<a href="../../ru#{get_nth_number(file_path, 2)}.{get_nth_number(file_path, 3)}">←Назад</a>"""
+
+        old_word=f"""<h3 id="back-link"><a href="../#{get_nth_number(file_path, 3)}">$\leftarrow$Назад</a></h3>"""
+        new_word=f"""<h3 id="back-link"><a href="../../ru#{get_nth_number(file_path, 2)}.{get_nth_number(file_path, 3)}">$\leftarrow$Назад</a></h3>"""
         print(old_word)
         # Use regular expression to find and replace the word
         # modified_content = re.sub(r'\b' + re.escape(old_word) + r'\b', new_word, content)
