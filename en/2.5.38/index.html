@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="In one straight line on a smooth horizontal plane with equal intervals there are bars of mass m each. A constant horizontal force F is applied to the first of the bars. Determine the speed of the bars before and immediately after the nth impact. Consider the speed limit value for n tending to infinity, if the width of the gaps between the bars is l. The blows of the bars are absolutely inelastic.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="In one straight line on a smooth horizontal plane with equal intervals there are bars of mass m each. A constant horizontal force F is applied to the first of the bars. Determine the speed of the bars before and immediately after the nth impact. Consider the speed limit value for n tending to infinity, if the width of the gaps between the bars is l. The blows of the bars are absolutely inelastic.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="In one straight line on a smooth horizontal plane with equal intervals there are bars of mass m each. A constant horizontal force F is applied to the first of the bars. Determine the speed of the bars before and immediately after the nth impact. Consider the speed limit value for n tending to infinity, if the width of the gaps between the bars is l. The blows of the bars are absolutely inelastic.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>In one straight line on a smooth horizontal plane with equal intervals there are bars of mass m each. A constant horizontal force F is applied to the first of the bars. Determine the speed of the bars before and immediately after the nth impact. Consider the speed limit value for n tending to infinity, if the width of the gaps between the bars is l. The blows of the bars are absolutely inelastic.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../#2.5">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.5.38^*.$ In one straight line on a smooth horizontal plane with equal intervals there are bars of mass $m$ each. A constant horizontal force $F$ is applied to the first of the bars. Determine the speed of the bars before and immediately after the nth impact. Consider the speed limit value for $n$ tending to infinity, if the width of the gaps between the bars is $l$. The blows of the bars are absolutely inelastic.
+
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="280" />
+    <figcaption>
+      For problem $2.5.38^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Let's consider 1st and 2nd collision
+<br>
+<b>First collision</b>:
+<br>
+From the law of conservation of energy
+$$v_1^2=2a_1l$$
+Considering Newton's 2nd law
+$$v_1^2=\frac{2Fl}{m}$$
+Where $v_1$ is the velocity before the collision
+<br>
+Law of conservation of momentum
+$$mv_1=2mv_1'$$
+$$v_1=\sqrt{\frac{Fl}{2m}}\quad\text{(1)}$$
+<b>Second collision</b>:<br>
+From the law of conservation of energy
+$$v_2^2=v_1^2+2a_2l$$
+Likewise, considering $a_2=\frac{F}{2m}$:
+$$v_2^2=\frac{Fl}{2m}+\frac{Fl}{m}=\frac{3Fl}{2m}$$
+$$v_2=\sqrt{\frac{3Fl}{2m}}\quad\text{(2)}$$
+Where $v_2$ is the velocity after the collision
+<br>
+From $v_1$ and $v_2$, we can see that the velocity index is the same as the coefficient in front of the mass and $\text{index}+1$ at the top
+<br>
+Thus leading to the following recurrence relation
+$$\boxed{v_n=\sqrt{\frac{El}{m}\left( 1+ \frac{1}{n} \right)}}\quad\text{(3)}$$
+Where $v_n$ is the velocity before the $n^\text{th}$ collision
+<br>
+Law of conservation of momentum of the $n^\text{th}$ collision
+$$v_nmn=u_nm(n+1)$$
+$${u_n=\frac{1}{1+\frac{1}{n}}v_n}$$
+Substituting into the expression $\text{(3)}$:
+$$\boxed{u_n=\sqrt{\frac{Fl}{m\left(1+\frac{1}{n}\right)}}}$$
+When $n\to\infty$, $\frac{1}{n}\to0$:
+$$\lim_{n\to\infty}\frac{1}{n}=0$$
+Whence it follows that the velocity $u_n$ after $n^\text{th}$ collision, where $n\to\infty$, will be equal to
+$$\boxed{u_n=\lim_{n\to\infty}\sqrt{\frac{Fl}{m\left(1+\frac{1}{n}\right)}}=\sqrt{\frac{Fl}{m}}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v_n=\sqrt{\frac{Fl}{m}(1+1/n)}$$
+$$u_n=\sqrt{\frac{Fl}{m(1+1/n)}}$$
+$$v_n\to\sqrt{\frac{Fl}{m}}\text{ with }n\to\infty.$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
