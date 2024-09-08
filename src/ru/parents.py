@@ -25,7 +25,6 @@ def PrimeDistribution(problems_list):
 
     problems_html = """<ul class="column">"""
     for problem in problems_list:
-        print(problem)
         problems_html += f"""
                 <li><a href="../{problem.split('.')[0]}/{problem}">{problem}</a></li>"""
     problems_html+="""
@@ -94,7 +93,7 @@ BaseHtml = """<!DOCTYPE html>
 
         <p class="description">
         Сборник задач по физике под редакцией О.Я. Савченко - один из самых популярных ресурсов для подготовки к олимпиадам по физике в странах постсоветского пространства. За более чем 30 лет, прошедших с момента его первого издания, не было создано ни одного полного руководства по решению задач из него.<br>
-        На этом сайте вы можете наблюдать попытку создания первого решебника этого сборника с оформлением решений <a href="https://savchenkosolutions.com/ru/about">разных авторов</a>. Всего было опубликовано 650+ решений из 2,023 задач. В 2023 году был запущен проект, который активно развивается на русском и английском языках. Если хотите поучаствовать, пишите <a href="mailto: astrosander01@gmail.com" target="_blank">astrosander01@gmail.com</a>.
+        На этом сайте вы можете наблюдать попытку создания первого решебника этого сборника с оформлением решений <a href="https://savchenkosolutions.com/ru/about">разных авторов</a>. Всего было опубликовано 650+ решений из 2,023 задач. В 2023 году был запущен проект, который активно развивается на русском и английском языках. Если хотите поучаствовать, пишите <a href="mailto: aliaksandr@savchenkosolutions.com" target="_blank">aliaksandr@savchenkosolutions.com</a>.
         </p>
     </header>
 
