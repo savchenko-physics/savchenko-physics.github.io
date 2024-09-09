@@ -9,7 +9,7 @@ base_path = '.'  # You can change this to your desired base path
 current_folder = os.getcwd().replace("src", "en\\")
 for year in range(start_year, end_year + 1):
 
-    folder_name = f"{current_folder}5.6.{year}"
+    folder_name = f"{current_folder}4.2.{year}"
     folder_path = os.path.join(base_path, folder_name)
     
     # Create the folder if it doesn't exist
