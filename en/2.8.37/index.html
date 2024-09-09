@@ -52,7 +52,7 @@
 <center>
   <figure>
     <img src="statement.png"
-      loading="lazy"  width="230" />
+      loading="lazy"  width="200" />
     <figcaption>
       For problem $2.8.37^*$
     </figcaption>
@@ -63,40 +63,39 @@
 
         <h3>Solution</h3>
         <p>
-            
-</p>
 <center>
   <figure>
-    <img src="2.8.37.jpg"
+    <img src="2.8.37.png"
       loading="lazy"  width="300" />
     <figcaption>
-      Geometry of the problem
+    Direction of the torque of the rotational force
     </figcaption>
   </figure>
 </center>
-<p>
-From the geometry of the problem
-$$\left\{\begin{matrix}
-\frac{h}{R} = \cos\alpha \\
-\frac{u}{v} = \cos\alpha
-\end{matrix}\right.$$
-Considering the relationship between velocity $u$ and angular velocity $\omega$
-$$\left\{\begin{matrix}
-\frac{h}{R} = \frac{u}{v} \\
-u=\omega R
-\end{matrix}\right.$$
-From where
-$$\boxed{\omega=\frac{hv}{R^2}}$$
+      </p>
+      <p>
+      In order for the wheel to move it is necessary that a moment of force associated with the frictional force from drive belts is transmitted, which is directed along the axis of rotation.
         </p>
+
+      <p>
+      Thus, the momentum will make an angle with velocity $v$ equal to $\pi-\alpha$
+        </p>
+      <p>
+          Projecting onto the linear rotation speed of the wheel:
+          $$u=v\cos(\frac{\pi}{2}-\alpha)=v\sin\alpha\quad(1)$$
+          From the drawing
+          $$\sin\alpha = \frac{h}{R}$$
+          Substituting into $(1)$
+          $$u=v \frac{h}{R}$$
+          From where we find the linear velocity, given that the wheel is circular
+          $$\boxed{\omega=\frac{u}{R}=v \frac{h}{R^2}}$$
+        </p>
+
 
         <h4>Answer</h4>
         <p>
             $$\omega=\frac{hv}{R^2}$$
         </p>
-        <p style="text-align: right; font-style: italic; font-size: 14;">   
-          Yuldashev Ulugbek<br>
-        </p>
-
 
     <footer class="row container">
       <br>
