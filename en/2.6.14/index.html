@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="Potential energy of electrostatic interaction of point charges q and Q located at a distance r from each other, U = \frac{kqQ}{r}. Find the electrostatic force. Which charges have repulsion and which have attraction?">
+    <meta name="description" content="Two stars of mass m_1 and m_2 form a binary system with a constant distance between the stars R. What is the period of rotation of the stars around the common center of mass?">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="Potential energy of electrostatic interaction of point charges q and Q located at a distance r from each other, U = \frac{kqQ}{r}. Find the electrostatic force. Which charges have repulsion and which have attraction?">
+    <meta property="og:title" content="Two stars of mass m_1 and m_2 form a binary system with a constant distance between the stars R. What is the period of rotation of the stars around the common center of mass?">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="Potential energy of electrostatic interaction of point charges q and Q located at a distance r from each other, U = \frac{kqQ}{r}. Find the electrostatic force. Which charges have repulsion and which have attraction?">
+    <meta property="og:description" content="Two stars of mass m_1 and m_2 form a binary system with a constant distance between the stars R. What is the period of rotation of the stars around the common center of mass?">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>Potential energy of electrostatic interaction of point charges q and Q located at a distance r from each other, U = \frac{kqQ}{r}. Find the electrostatic force. Which charges have repulsion and which have attraction?</title>
+    <title>Two stars of mass m_1 and m_2 form a binary system with a constant distance between the stars R. What is the period of rotation of the stars around the common center of mass?</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -42,26 +42,21 @@
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../../#2.3">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../../#2.6">$\leftarrow$Back</a></h3>
 
         <h3> Statement </h3>
         <p>
-            $2.3.38.$ Potential energy of electrostatic interaction of point charges $q$ and $Q$ located at a distance $r$ from each other, $U = \frac{kqQ}{r}$. Find the electrostatic force. Which charges have repulsion and which have attraction?
+            $2.6.14^*.$ Two stars of mass $m_1$ and $m_2$ form a binary system with a constant distance between the stars $R$. What is the period of rotation of the stars around the common center of mass?
         </p>
 
         <h3>Solution</h3>
         <p>
-            Let us find the derivative of the potential energy of interaction by distance
-$$\frac{dU}{dr}=\left(\frac{kqQ}{r}\right)'$$
-$$dU=-\frac{kqQ}{r^2}dr\quad(1)$$
-Also by the law of conservation of energy, the change in that energy is equal to the work to be done
-$$dU=dA\Rightarrow dU=-Fdr\quad(2)$$
-<i>NO: The larger $r$ is, the smaller $F$ is</i>
+
 </p>
 <center>
   <figure>
     <img src="draw.png"
-      loading="lazy"  width="270" />
+      loading="lazy"  width="260" />
     <figcaption>
       Forces acting on the system
     </figcaption>
@@ -69,22 +64,34 @@ $$dU=dA\Rightarrow dU=-Fdr\quad(2)$$
 </center>
 <p>
 
-According to Newton's third law
-$$\vec{F}_1=-\vec{F}_2=F$$
-Substituting $(2)$ into $(1)$ leads to
-$$-\frac{kqQ}{r^2}dr=-Fdr$$
-$$\boxed{F=\frac{kqQ}{r^2}}$$
-When $qQ > 0$ — repulsion, when $qQ < 0$ — attraction.
+The position of the center of mass (point $O$) could be found as
+$$R_1=R\frac{m_2}{m_1+m_2}$$
+$$R_2=R-R_1=R\frac{m_1}{m_1+m_2}$$
+Since the bodies are stationary, their accelerations are equal, and therefore, according to Newton's first law, the sum of external forces is zero
+$$F_{c1}=F_{21} \quad F_{c2}=F_{12}\quad(1)$$
+By definition of centripetal acceleration
+$$F_{c1}=m_1\omega_1^2R_1\quad(2.1)$$
+$$F_{c2}=m_2\omega_2^2R_2\quad(2.2)$$
+Since the body $m_1$ and $m_2$ rotate along the same straight line
+$$\omega_1=\omega_2=\omega$$
+On the other hand, the force of their gravitational attraction is equal to
+$$F_{12}=F_{21}=G\frac{m_1m_2}{R^2}\quad(4)$$
+Given $(2)$, we equate $(1)$ and $(3)$
+$$G\frac{m_1m_2}{R^2}=m_1\omega^2R\frac{m_2}{m_1+m_2}$$
+From where
+$$\omega=\sqrt{\frac{G(m_1+m_2)}{R^3}}$$
+Whence the circulation period is equal to
+$$\boxed{T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{R^3}{G(m_1+m_2)}}}$$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$F=\frac{kqQ}{r^2}$$
+            $$T=2\pi\sqrt{R^3/\gamma(m_1+m_2)}$$
         </p>
+      
         <p style="text-align: right; font-style: italic; font-size: 14;">
           Almaskhan Arsen<br>
         </p>
-
 
     <footer class="row container">
       <br>
