@@ -1,0 +1,1 @@
+when qQ > 0 — repulsion, when qQ < 0 — attraction.

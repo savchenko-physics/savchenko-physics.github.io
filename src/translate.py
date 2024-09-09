@@ -33,14 +33,14 @@ def read_from_file(filename):
         return f.read()
 
 # Import the Russian text from a .txt file
-input_filename = "../../../../Desktop/russia.txt"  # Replace with your actual file path
+input_filename = "database/russian.txt"  # Replace with your actual file path
 russian_text = read_from_file(input_filename)
 
 # Translate the text
 translated_text = translate_russian_to_english(russian_text)
 
 # Save the translated text to an English text file
-output_filename = "../../../../Desktop/translated_text.txt"
+output_filename = "database/translated_text.txt"
 save_to_file(translated_text, output_filename)
 
 print(f"Translation completed and saved to '{output_filename}'.")
