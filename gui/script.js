@@ -72,7 +72,7 @@ function generateHtmlContent() {
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../../#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Back</a></h3>
     ${generateBasement()}
 
     <footer class="row container">
@@ -135,22 +135,38 @@ function generateBasement() {
     return (htmlContent);
 }
 
-function handleDragOver(event) {
-    event.preventDefault(); // Prevent default behavior to allow drop
-}
-
 function handleDrop(event) {
     event.preventDefault();
-    
+
     const textarea = event.target;
     const dropPosition = textarea.selectionStart;
+    const droppedData = event.dataTransfer.getData('text/plain');
 
-    if (event.dataTransfer.files.length > 0) {
+    // Check if a URL is dropped
+    if (droppedData.startsWith('http') && droppedData.match(/\.(jpeg|jpg|png|gif)$/i)) {
+        const imageUrl = droppedData;
+
+        textarea.value =
+        `${textarea.value.substring(0, dropPosition)}
+</p>
+<center>
+  <figure>
+    <img src="${imageUrl}"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $${document.getElementById('area1').value}$
+    </figcaption>
+  </figure>
+</center>
+<p>${textarea.value.substring(dropPosition)}`;
+        
+    } else if (event.dataTransfer.files.length > 0) {
+        // Handle local files
         const file = event.dataTransfer.files[0];
         const filePath = file.path || file.name;
 
-        textarea.value = 
-`${textarea.value.substring(0, dropPosition)}
+        textarea.value =
+        `${textarea.value.substring(0, dropPosition)}
 </p>
 <center>
   <figure>
@@ -163,6 +179,9 @@ function handleDrop(event) {
 </center>
 <p>${textarea.value.substring(dropPosition)}`;
     }
+}
+function handleDragOver(event) {
+    event.preventDefault(); // Prevent default behavior to allow drop
 }
 
 ['area2', 'area3'].forEach(id => {
