@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The bottom face of a regular tetrahedron with edge a, completely immersed in a liquid of density \rho, is at depth h. Determine the force exerted by the liquid on the side edge of the tetrahedron if the atmospheric pressure is P. ">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The bottom face of a regular tetrahedron with edge a, completely immersed in a liquid of density \rho, is at depth h. Determine the force exerted by the liquid on the side edge of the tetrahedron if the atmospheric pressure is P. ">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The bottom face of a regular tetrahedron with edge a, completely immersed in a liquid of density \rho, is at depth h. Determine the force exerted by the liquid on the side edge of the tetrahedron if the atmospheric pressure is P. ">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The bottom face of a regular tetrahedron with edge a, completely immersed in a liquid of density \rho, is at depth h. Determine the force exerted by the liquid on the side edge of the tetrahedron if the atmospheric pressure is P. </title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#4.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $4.1.12^*.$ The bottom face of a regular tetrahedron with edge $a$, completely immersed in a liquid of density $\rho$, is at depth $h$. Determine the force exerted by the liquid on the side edge of the tetrahedron if the atmospheric pressure is $P$.
+</p>
+<center>
+  <figure>
+    <img src="4.1.12.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $4.1.12^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="4.1.12_1.png"
+      loading="lazy"  width="210" />
+    <figcaption>
+      Geometry of the problem
+    </figcaption>
+  </figure>
+</center>
+<p>
+From the drawing, we could obtain the following expressions
+$$l=a\sin(60^{\circ}) = \frac{\sqrt{3}}{2}a$$
+Height of the center of mass above the base of the tetrahedron
+$$h_0=\frac{H}{3}$$
+
+</p>
+<center>
+  <figure>
+    <img src="4.1.12_2.png"
+      loading="lazy"  width="250" />
+    <figcaption>
+      A close look at the base of the pyramid
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+After a close look at the basement of the tetrahedron, we could obtain the base area
+$$S=\frac{\sqrt{3}}{4}a^2$$
+On the other hand, Pythagoras' theorem
+$$H^2=l^2-x^2=\frac{2}{3}a^2$$
+Whence the height of the tetrahedron is equal to
+$$H=\sqrt{\frac{2}{3}}a$$
+Since the center of mass of the pyramid is located at the point $O'$, it is known that the pyramid its height above the base is
+$$OO' = h_0 = \frac{1}{3}\sqrt{\frac{2}{3}}a$$
+In this case, the pressure difference between the surface of the water and the level of the center of mass is
+$$p_0=\rho g (h-h_0)=\rho g \left(h-\frac{1}{3}\sqrt{\frac{2}{3}}a\right)$$
+Hence, the force acting on the side of the pyramid (force due to water pressure):
+$$F_0 = p_0S = \rho ga^2\left(\frac{\sqrt{3}}{4}h - \frac{\sqrt{2}}{12}a \right)$$
+After mathematical transformations
+$$F_0 = \frac{\rho g a^2}{12}\left(3\sqrt{3}h - \sqrt{2}a \right)$$
+Force acting on the side of the pyramid (force due to water pressure and atmospheric pressure)
+$$F=pS+F_0 = \frac{\sqrt{3}}{4}a^2p+F_0$$
+$$\boxed{F_0 = \frac{\rho g a^2}{12}\left(3\sqrt{3}h - \sqrt{2}a \right) + \frac{\sqrt{3}}{4} pa^2}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F =\frac{1}{12}\rho ga^2(3\sqrt{3} h-\sqrt{2} a)+\frac{1}{4}Pa^2\sqrt{3}$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> aliaksandr@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
