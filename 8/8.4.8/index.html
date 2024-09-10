@@ -12,7 +12,7 @@
 		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
 		<meta name="yandex-verification" content="6cfda41f74038368" />
 
-		<link rel="stylesheet" type="text/css" href="https://savchenkosolutions.com/css/css-latex/style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/css-latex/style.css">
 		<link rel="icon" href="../../img/logo.png" type="image/png" />
 
 		<script src="../../js/jquery-1.10.1.min.js"></script>
@@ -67,14 +67,14 @@
 		    </h3>
 		  	<div class="task">
 				<p>                                                         
-				\(8.4.8.\) Диод имеет вольт-амперную характеристику, изображенную на рисунке. При напряжении V0 диод открывается. Конденсатор вначале не заряжен.
+				\(8.4.8.\) Диод имеет вольт-амперную характеристику, изображенную на рисунке. При напряжении $V_0$ диод открывается. Конденсатор вначале не заряжен.
 Какое количество теплоты выделится на сопротивлении после замыкания ключа?
 				</p>
 				
 			</div>
 
-				<div class="StatementDiv" >
-					<img class="Statement" src="statement.png" style="max-width:350;">
+				<div style="">
+					<img class="Statement" src="8.4.8.png">
 				</div>
 		    <hr>
 		    <h3>
@@ -84,21 +84,27 @@
 		    <div class="solutions">
 				<p class="TxtSolutions">  
 					Рассмотрим случай, когда ЭДС батареи $\mathcal{E} > U_{0}$. Пусть сразу после замыка ния ключа ток в цепи равен $I_0$. Закон Ома для замкнутой цепи в этом случае будет иметь вид $\mathcal{E} = U_{0} + I_{0}R$, откуда $I_{0} = \frac{ \mathcal{E} - U_{0}}{R}$. Появившийся ток в цепи начнет заряжать конденсатор но по мере зарядки ток будет уменьшаться, и при напряжении на конденсаторе, равном $\mathcal{E} - U_{0}$, ток в цепи прекратится. Это будет новое стационарное состояние: ток $I=0$, а заряд на конденсаторе<br><br>
-					$q = C( \mathcal{E} - U_{0} )$<br><br>
-					За время зарядки конденсатора батарея совершит работу <br><br>
-					$A = C( \mathcal{E} - U_{0}) \mathcal{E}$<br><br>
+					$$q = C( \mathcal{E} - U_{0} )$$
+					За время зарядки конденсатора батарея совершит работу
+					$$A = C( \mathcal{E} - U_{0}) \mathcal{E}$$
 					Часть этой работы пойдет на работу по преодолению разности потенциалов $U_0$ внутреннею электрического поля диода: <br><br>
-					$A_{д} = qU_{0} = C( \mathcal{E} - U_{0})U_{0}$. <br><br>
-					Вторая часть работы перейдет в энергию, запасенную конденсатором:<br><br>
-					$W_{к} = \frac{q^{2} }{2C} = \frac{C( \mathcal{E} - U_{0} )^{2} }{2}$. <br><br>
-					И наконец, оставшаяся часть работы выделится в виде тепла в резисторе: <br><br>
-					$Q = A - A_{д} - W_{к} $$= С( \mathcal{E} - U_{0} ) \mathcal{E} - C( \mathcal{E} - U_{0} )U_{0} - \frac{C ( \mathcal{E} - U_{0})^{2}  }{2} $$= C( \mathcal{E} - U_{0} ) \left ( \mathcal{E} - U_{0} - \frac{ \mathcal{E} - U_{0}  }{2} \right ) $$= \frac{C ( \mathcal{E} - U_{0} )^{2} }{2}$
+					$$A_{д} = qU_{0} = C( \mathcal{E} - U_{0})U_{0}$$
+					Вторая часть работы перейдет в энергию, запасенную конденсатором:
+					$$W_{к} = \frac{q^{2} }{2C} = \frac{C( \mathcal{E} - U_{0} )^{2} }{2}$$
+					И наконец, оставшаяся часть работы выделится в виде тепла в резисторе:
+					$$Q = A - A_{д} - W_{к} $$
+					$$Q = C( \mathcal{E} - U_{0} ) \mathcal{E} - C( \mathcal{E} - U_{0} )U_{0} - \frac{C ( \mathcal{E} - U_{0})^{2}  }{2}$$
+					После перегрупировки
+					$$Q = C( \mathcal{E} - U_{0} ) \left ( \mathcal{E} - U_{0} - \frac{ \mathcal{E} - U_{0}  }{2} \right ) = \frac{C ( \mathcal{E} - U_{0} )^{2} }{2}$$
 				</p>
 			</div>	
 
 		    <h3>
-		    	Ответ: <img class="Statement" src="ans.png" >
+		    	Ответ:
 		    </h3>
+			  <p>
+				  $$W=C({E}-V_0)^2/2, \mathcal{E}>V_0;\quad W=0, \mathcal{E} < V_0$$
+			  </p>
 		  </div>
 
 		</div>
