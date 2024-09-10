@@ -221,7 +221,7 @@ BaseHtml += """
             <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
         </p>
         <p>
-            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> astrosander01@gmail.com <br></small>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> aliaksandr@savchenkosolutions.com <br></small>
         </p>
     </footer>
 </body>

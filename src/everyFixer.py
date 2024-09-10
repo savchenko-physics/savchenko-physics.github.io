@@ -49,8 +49,44 @@ def find_pdfs(directory='.'):
 current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """x<html>"""
-new_word = """<html>"""
+old_word = """<footer class="row container">
+						<div class="col col-lg-3">
+							<div class="footer-left">
+								<p>
+									<small>
+										© <strong>Решебник Савченко О.Я.</strong>, &nbsp;&nbsp;&nbsp; 2023-2024<br>
+									</small>
+								</p>
+							</div>
+						</div>
+						<div class="col col-lg-6">
+							<div class="footer-middle">
+								<p>
+									<small>
+										Все права принадлежат авторам.<br>
+										Коммерческое использование материалов — с письменного разрешения авторов.<br>
+										aliaksandr@savchenkosolutions.com<br>
+										<i>E = mc<sup>2</sup></i>.
+									</small>
+								</p>
+							</div>
+						</div>
+						<div class="col col-lg-3">
+							<div class="footer-right">
+								<div class="pull-right">
+								</div>
+							</div>
+						</div>
+			    </footer>"""
+new_word = """    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> aliaksandr@savchenkosolutions.com <br></small>
+        </p>
+    </footer>"""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)
