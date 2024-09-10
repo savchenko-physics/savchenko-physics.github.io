@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The Molniya-1 communications satellite has a perigee over the southern hemisphere of the Earth at an altitude of about 500 km, and an apogee at an altitude of about 40,000 km over the northern hemisphere. What is the ratio of the angular velocities of rotation of this satellite at perigee and apogee?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The Molniya-1 communications satellite has a perigee over the southern hemisphere of the Earth at an altitude of about 500 km, and an apogee at an altitude of about 40,000 km over the northern hemisphere. What is the ratio of the angular velocities of rotation of this satellite at perigee and apogee?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The Molniya-1 communications satellite has a perigee over the southern hemisphere of the Earth at an altitude of about 500 km, and an apogee at an altitude of about 40,000 km over the northern hemisphere. What is the ratio of the angular velocities of rotation of this satellite at perigee and apogee?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The Molniya-1 communications satellite has a perigee over the southern hemisphere of the Earth at an altitude of about 500 km, and an apogee at an altitude of about 40,000 km over the northern hemisphere. What is the ratio of the angular velocities of rotation of this satellite at perigee and apogee?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.6">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.6.37.$ The Molniya-1 communications satellite has a perigee over the southern hemisphere of the Earth at an altitude of about $500$ km, and an apogee at an altitude of about $40,000$ km over the northern hemisphere. What is the ratio of the angular velocities of rotation of this satellite at perigee and apogee?
+</p>
+<center>
+  <figure>
+    <img src="2.6.37.png"
+      loading="lazy"  width="140" />
+    <figcaption>
+      For problem $2.6.37$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.6.37_1.png"
+      loading="lazy"  width="300" />
+    <figcaption>
+      Sattelite at apogee and perigee
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Law of energy preservation
+$$\frac{mv^2_a}{2}-G\frac{mM}{R_a}=\frac{mv^2_p}{2}-G\frac{mM}{R_p}\quad (1)$$
+Conservation of angular momentum
+$$mv_aR_a=mv_pR_p$$
+From where velocity at closest position to the planet, at perigee
+$$v_p=v_a\frac{R_a}{R_p}\quad (2)$$
+Let's substitute value of $v_p$ to $(1)$:
+$$\frac{v_a^2}{2} = \frac{GMR_p}{R_a(R_a+R_p)}$$
+From where, we could value of the velocity at farthest position to the planet, at apogee
+$$v_a=\sqrt{\frac{2GMR_p}{(R_a+R_p)R_a}}$$
+Considering dependence $v_p(v_a)$ from $(2)$, we obtain
+$$v_p=\sqrt{\frac{2GMR_a}{(R_a+R_p)R_p}}$$
+By definition of angular velocity
+$$\omega_a = \frac{v_a}{R_a}=\sqrt{\frac{2GMR_p}{(R_a+R_p)R_a^3}}$$
+$$\omega_p = \frac{v_p}{R_p}=\sqrt{\frac{2GMR_a}{(R_a+R_p)R_p^3}}$$
+The desired relationship could be found by dividing one equation on another
+$$\xi = \frac{\omega_p}{\omega_a} = \frac{R_a^2}{R_p^2}\quad (3)$$
+Considering the radius of the Earth
+$$R_a=R_a'+R_e$$
+$$R_p=R_p'+R_e$$
+After substituting into $(3)$, we are getting
+$$\boxed{\xi = \frac{(49400\text{ km})^2}{(6900\text{ km})^2} \approx 45}$$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$\frac{\omega_p}{\omega_a}\approx 45$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> aliaksandr@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
