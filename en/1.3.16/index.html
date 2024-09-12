@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A ball flies into a tube of length l, inclined at an angle \alpha to the horizon, with a horizontal velocity v. Determine the time of the ball's stay in the pipe, if the ball hits its walls elastic.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A ball flies into a tube of length l, inclined at an angle \alpha to the horizon, with a horizontal velocity v. Determine the time of the ball's stay in the pipe, if the ball hits its walls elastic.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A ball flies into a tube of length l, inclined at an angle \alpha to the horizon, with a horizontal velocity v. Determine the time of the ball's stay in the pipe, if the ball hits its walls elastic.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A ball flies into a tube of length l, inclined at an angle \alpha to the horizon, with a horizontal velocity v. Determine the time of the ball's stay in the pipe, if the ball hits its walls elastic.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#1.3">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $1.3.16^*.$ A ball flies into a tube of length $l$, inclined at an angle $\alpha$ to the horizon, with a horizontal velocity $v$. Determine the time of the ball's stay in the pipe, if the ball hits its walls elastic.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/1/1.3.16/statement.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $1.3.16^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <p>a) Find the condition under which there will be no collisions$(x=0)$</p>
+<p>From the law of conservation of energy:</p>
+<p class="exp">
+$$ \frac{mv_0^2}{2} = mgl \cdot \sin \alpha $$
+</p>
+        <p class="exp">
+$$ v_{0}\leq\frac{\sqrt{2gl\sin \alpha}}{\cos\alpha} $$
+</p>
+<p>In this case, time will pass</p>
+<p class="exp">
+$$  t = \frac{2v_0}{g} \text{ctg} \alpha $$
+</p>
+<p>b) Now let's look at those cases when touching occurs:</p>
+<p class="exp">
+$$ v_{0}>\frac{\sqrt{2gl\sin \alpha}}{\cos\alpha} $$
+</p>
+<p>Path between two touches:</p>
+<p class="exp">
+$$ L=v_{0}\cos\alpha t-\frac{g\sin\alpha t^{2}}{2} $$
+</p>
+<p>When we receive the required time, we choose the one that is smaller, because we need to find the time when it will come out</p>
+<p class="exp">
+$$ t=\frac{v_{0}\cos\alpha-\sqrt{v_{0}^{2}\cos^{2}\alpha-2g\sin\alpha L}}{g\sin\alpha} $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $\begin{aligned}&t=\frac{2v}{g}\operatorname{ctg}\alpha\text{ with }v\cos\alpha<\sqrt{2gl\sin\alpha};\\&t=\frac vg\operatorname{ctg}\alpha\bigg(1-\sqrt{1-\frac{2gl\operatorname{tg}\alpha}{v^2\cos\alpha}}\bigg)\text{ with }v\cos\alpha>\sqrt{2gl\sin\alpha}.\end{aligned}$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> aliaksandr@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
