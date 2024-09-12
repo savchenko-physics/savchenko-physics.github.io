@@ -12,8 +12,18 @@ def column_len(problems_number):
 
 
 def existed_folders(directory):
-    folders = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f)) and "." in f]
-    return sorted(folders, key=lambda x: list(map(int, x.split('.'))))
+    def safe_key(name):
+        parts = name.split('.')
+        try:
+            return [int(part) for part in parts if part.isdigit()]
+        except ValueError:
+            return name
+
+    folders = [f for f in os.listdir(directory)
+               if os.path.isdir(os.path.join(directory, f))
+               and os.path.exists(os.path.join(directory, f, 'index.html'))]
+
+    return sorted(folders, key=safe_key)
 
 def split_numbers(input_string):
     numbers = input_string.split('.')
@@ -25,7 +35,14 @@ def PrimeDistribution(problems_list):
 
     problems_html = """<ul class="column">"""
     for problem in problems_list:
-        problems_html += f"""
+        chapter = int(problem.split('.')[0])
+        section = int(problem.split('.')[1])
+
+        if problem in english_problems[chapter][section]:
+            problems_html += f"""
+                <li><a style="color: hsla(240, 100%, 33%, 1);" target="_blank"href="../en/{problem}">{problem}</a></li>"""
+        else:
+            problems_html += f"""
                 <li><a href="../{problem.split('.')[0]}/{problem}">{problem}</a></li>"""
     problems_html+="""
             </ul>
@@ -43,6 +60,25 @@ def ProblemsDistribution(problems_list):
     return problems_html
 
 existed_problems = [[[] for _ in range(15)] for _ in range(15)]
+english_problems = [[[] for _ in range(15)] for _ in range(15)]
+
+def load_english():
+    en_directory = f"{current_directory}\\en"
+    # print(en_directory)
+    for problem in existed_folders(en_directory):
+        if problem.count('.') != 2:
+            continue
+
+        print(problem)
+        chapter = int(problem.split('.')[0])
+        section = int(problem.split('.')[1])
+
+        if problem not in existed_problems[chapter][section]:
+            existed_problems[chapter][section].append(problem)
+            english_problems[chapter][section].append(problem)
+            # existed_problems[chapter][section].sort()
+            existed_problems[chapter][section] = sorted(existed_problems[chapter][section], key=lambda s: list(map(int, s.split('.'))))
+
 
 BaseHtml = """<!DOCTYPE html>
 <html lang="ru">
@@ -161,6 +197,8 @@ for i in range(1,14):
         section = int(problem.split('.')[1])
 
         existed_problems[chapter][section].append(problem)
+
+load_english()
 
 for index, chapter in enumerate(existed_problems):
     if all(not sublist for sublist in chapter):
