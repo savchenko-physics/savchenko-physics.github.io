@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="A wedge has a slope's angle of 30^\circ. A vertical rod goes down with velocity v and pushes the wedge. What velocity will develope the wedge?">
+    <meta name="description" content="A coin is placed on a wedge with an angle \alpha. With what minimum acceleration should the wedge move along the horizontal plane so that the coin falls freely down?">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="A wedge has a slope's angle of 30^\circ. A vertical rod goes down with velocity v and pushes the wedge. What velocity will develope the wedge?">
+    <meta property="og:title" content="A coin is placed on a wedge with an angle \alpha. With what minimum acceleration should the wedge move along the horizontal plane so that the coin falls freely down?">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="A wedge has a slope's angle of 30^\circ. A vertical rod goes down with velocity v and pushes the wedge. What velocity will develope the wedge?">
+    <meta property="og:description" content="A coin is placed on a wedge with an angle \alpha. With what minimum acceleration should the wedge move along the horizontal plane so that the coin falls freely down?">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>A wedge has a slope's angle of 30^\circ. A vertical rod goes down with velocity v and pushes the wedge. What velocity will develope the wedge?</title>
+    <title>A coin is placed on a wedge with an angle \alpha. With what minimum acceleration should the wedge move along the horizontal plane so that the coin falls freely down?</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -45,48 +45,39 @@
         <h3 id="back-link"><a href="../../#1.5">$\leftarrow$Back</a></h3>
 
         <h3> Statement </h3>
-
         <p>
-          $1.5.3$
-          A wedge has a slope's angle of 30$^\circ$. A vertical rod goes down with velocity $v$ and pushes the wedge. What velocity will develope the wedge?
+            $1.5.4.$ A coin is placed on a wedge with an angle $\alpha$. With what minimum acceleration should the wedge move along the horizontal plane so that the coin falls freely down?
         </p>
-        <center>
-          <figure>
-            <img src="statement.png"
-              loading="lazy" alt="1.5.3" width="200" />
-            <figcaption>
-              For problem 1.5.3
-            </figcaption>
-          </figure>
-        </center>
 
         <h3>Solution</h3>
-
-       <p>
-        Firstly, we suppose there is no any friction. For a better understanding of the problem, consider the following figure
-       </p>
-
-        <center><figure><img
-          src="1.5.3.png" loading="lazy" alt="1.5.3" width="200" />
-            <figcaption>
-              Motion of wedge and rod
-            </figcaption>
-          </figure></center>
-
         <p>
-          According to figure
-          $$\tan{30^\circ}=\frac{S_r}{S_w}$$
-          and this relation is valid for velocities too because the motion is uniform (at constant speed)
-          $$\tan{30^\circ}=\frac{v}{v_w}=\frac{\sqrt{3}}{3}$$
-          So, separating $v_w$
-          $$\boxed{v_w=v\sqrt{3}}$$
-        </center>
+            <p>During the time interval $t$, the coin changed its horizontal and vertical coordinates to $x$ and $y$, respectively</p>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/1/1.5.4/draw.png"
+loading="lazy" width="250" />
+<figcaption>
+Coin movement during the time interval $t$
+</figcaption>
+</figure>
+</center>
+<p>Considering the horizontal acceleration $a$ and the acceleration of gravity $g$, we find $x$ and $y$</p>
+<p class="exp">
+$$ x = \frac{at^2}{2} $$
+</p>
+      <p class="exp">
+$$ y = \frac{gt^2}{2} $$
+</p>
+<p>Considering that the body did not come off the wedge</p>
+<p class="exp">$$y = x \tan \alpha $$</p>
+<p>From where</p>
+<p class="exp">$$\fbox{$a = g \text{ ctg} \alpha $}$$</p>
+        </p>
 
-        <p style="text-align: right; font-style: italic; font-size: 14;">
-            BSc. Luis Daniel Fernández Quintana<br>
-            Physics Department (FCNE)<br>
-            Universidad de Oriente, Cuba<br>
-          </p>
+        <h4>Answer</h4>
+        <p>
+            $$a = g \text{ ctg} \alpha $$
+        </p>
 
 
     <footer class="row container">

@@ -1,55 +1,8 @@
-\section*{Solution:}
-The process will occur in two stages. At first, friction will prevent the piston from moving, and the gas will gradually heat up, and the pressure will increase \textbf{isochorically}. Then, as soon as we reach the threshold pressure, the piston will begin to move uniformly and the process will become \textbf{isobaric}.
+<p>a) If the distances between two points are constant, then if we project the velocity of point $A$ onto line $AB$, then the projection of the velocity of point $B$ onto line $AB$ is exactly the same</p>
+<p class="exp">$\fbox{$u_{AB} = v/\sqrt{2}$}$</p>
 
-Let's consider the first process ($V = const$):
-$$ 
-d(pV) = d(\nu RT)
- $$
-Let us integrate the equation from $p_0$ to the threshold pressure $p$:
-$$ 
-\int_{p_0}^{p} V d\varphi = \int_{T_0}^{T} \nu R dT
- $$
-
-$$ 
-(p - p_0)V = \nu R(T - T_0)
- $$
-Since the process is isochoric, then $V = V_0 = \frac{\nu RT_0}{p_0}$. And considering that the piston is stationary, $p = p_0 + \frac{F}{S}$. Substituting $V$ and $p$, we get:
-$$ 
-\frac{F}{S} \cdot \frac{T_0}{p_0} = T - T_0
- $$
-Let's write down the 1st law of thermodynamics, taking into account that $dA = 0$:
-$$ 
-dQ = dU = c \cdot dT \rightarrow Q = c(T - T_0)
- $$
-
-$$ 
-T = T_0 + \frac{Q}{c} \quad \text{при} \quad Q \leq \frac{cT_0 F}{p_0 S}
- $$
-Let's consider the second process ($p = const$):
-$$ 
-d(pV) = d(\nu RT)
- $$
-
-$$ 
-p dV = \nu R dT
- $$
-Now the piston has begun to move uniformly. According to the condition, half of the heat released by the piston friction against the cylinder walls goes into the gas. Let's find this heat:
-$$ 
-Q_F = F \cdot dx = F \cdot \frac{dV}{S} = \frac{F \nu R}{pS} dT
- $$
-Let's write down the 1st law of thermodynamics:
-$$ 
-dQ + \frac{dQ_F}{2} = dA + dU
- $$
-
-$$ 
-\int_0^Q dQ = \int_{T_0}^{T} \left( \nu R + c - \frac{F \nu R}{2pS} \right) dT
- $$
-After integration, we get:
-$$ 
-Q = \left( \nu R + c - \frac{F \nu R}{2pS} \right) \cdot (T - T_0)
- $$
-From this expression we find $T$:
-$$ 
-T = \frac{Q + cT_0 + RT_0 \left( 1 + \frac{F}{2p_0 S} \right)}{c \left( 1 + \frac{F}{p_0 S} \right) + R \left( 1 + \frac{F}{2p_0 S} \right)} \cdot (1 + \frac{F}{p_0 S}) \quad \text{при} \quad Q \geq \frac{cT_0 F}{p_0 S}
- $$
+<p>б) The velocities of $A$ and $B$ are the same because either the body does not rotate, or its rotation occurs around line $AB$. </p>
+<p>The fact that the velocity of point $C$ has a different value indicates that its velocity $\vec u$ is made up of the velocity $\vec v$ in the plane of the figure and $\vec u_1$ perpendicular to the plane.</a>
+<p class="exp">$\vec{u}_1+\vec{v} = \vec{u}$</p>
+<p>From where</a>
+<p class="exp">$\fbox{$u_1 = \sqrt{u^2 - v^2}$}$</p>
