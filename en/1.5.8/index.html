@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Plot the trajectories of the points of the wheel rolling without slipping on the rail. Consider cases where the points are at a distance from the wheel axis: r > R, r = R, r < R. Find the acceleration of these points if the wheel axis is moving at a constant speed v. Find the radius of curvature of the trajectory of a point located in the highest and lowest positions at a distance r \ne R from the wheel axis.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Plot the trajectories of the points of the wheel rolling without slipping on the rail. Consider cases where the points are at a distance from the wheel axis: r > R, r = R, r < R. Find the acceleration of these points if the wheel axis is moving at a constant speed v. Find the radius of curvature of the trajectory of a point located in the highest and lowest positions at a distance r \ne R from the wheel axis.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Plot the trajectories of the points of the wheel rolling without slipping on the rail. Consider cases where the points are at a distance from the wheel axis: r > R, r = R, r < R. Find the acceleration of these points if the wheel axis is moving at a constant speed v. Find the radius of curvature of the trajectory of a point located in the highest and lowest positions at a distance r \ne R from the wheel axis.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Plot the trajectories of the points of the wheel rolling without slipping on the rail. Consider cases where the points are at a distance from the wheel axis: r > R, r = R, r < R. Find the acceleration of these points if the wheel axis is moving at a constant speed v. Find the radius of curvature of the trajectory of a point located in the highest and lowest positions at a distance r \ne R from the wheel axis.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#1.5">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $1.5.8.$ Plot the trajectories of the points of the wheel rolling without slipping on the rail. Consider cases where the points are at a distance from the wheel axis: $r > R$, $r = R$, $r < R$. Find the acceleration of these points if the wheel axis is moving at a constant speed $v$. Find the radius of curvature of the trajectory of a point located in the highest and lowest positions at a distance $r \ne R$ from the wheel axis.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/1/1.5.8/Cycloid_animated_.gif"
+loading="lazy" width="500" />
+<figcaption>
+Cycloid - the sum of translational and rotational motion
+</figcaption>
+</figure>
+</center>
+
+<p>In this case, the motion of the points is the sum of the translational velocity of the wheel center and the rotational velocity relative to this center, and the acceleration of the point is calculated using the usual formula for centripetal acceleration
+</p>
+
+<p class="exp">$$\fbox{$a = \omega ^2 r = (v^2/R^2)r$}$$</p>
+
+<p>For the case of $r< R$, taking into account both rotational and translational motion, a point located at a distance of $r$ at the top point of its trajectory has a speed of </p>
+<p class="exp">
+$$ u = \omega r + v = v(1 + \frac{r}{R}) $$
+</p>
+<p>Knowing the acceleration $a$ and the velocity $u$ at a given point, we find its radius of curvature</p>
+<p class="exp">
+$$ r = \frac{u^2}{a} $$
+</p>
+    <p class="exp">
+$$ \fbox{$r = \frac{(R+r)^2}{r}$} $$
+</p>
+<p>For better understanding, I offer an illustration of the movement:</p>
+<div class="video-container">
+<iframe class="video" src='https://www.youtube.com/embed/XgqOLWkicFc' frameborder="0" allowfullscreen></iframe>
+</div>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$a=(v^2/R^2)r; r_{in}=(R+r)^2/r, r_{out}=(R-r)^2/r$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> aliaksandr@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
