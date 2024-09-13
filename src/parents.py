@@ -99,7 +99,7 @@ papers.">
 
         <p class="description">
         The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics olympiads in post-soviet countries. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions of <a href="https://savchenkosolutions.com/about">different authors</a>. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to email <a href="mailto: aliaksandr@savchenkosolutions.com" target="_blank">aliaksandr@savchenkosolutions.com</a>.
+        On this site, you can observe an attempt to create the first wizard of this collection with the design of solutions of <a href="https://savchenkosolutions.com/about">different authors</a>. In total, 650+ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing on Russian and English. If you'd like to contribute, feel free to email <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
         </p>
     </header>
 
@@ -224,7 +224,7 @@ BaseHtml += """
             <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
         </p>
         <p>
-            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> aliaksandr@savchenkosolutions.com <br></small>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
         </p>
     </footer>
 </body>
