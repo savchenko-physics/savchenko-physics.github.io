@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A body of mass m falls from a height h onto a spring of stiffness k and length l standing vertically on the floor. Determine the maximum pressure on the floor. Explain why this force increases as the spring stiffness increases.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A body of mass m falls from a height h onto a spring of stiffness k and length l standing vertically on the floor. Determine the maximum pressure on the floor. Explain why this force increases as the spring stiffness increases.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A body of mass m falls from a height h onto a spring of stiffness k and length l standing vertically on the floor. Determine the maximum pressure on the floor. Explain why this force increases as the spring stiffness increases.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A body of mass m falls from a height h onto a spring of stiffness k and length l standing vertically on the floor. Determine the maximum pressure on the floor. Explain why this force increases as the spring stiffness increases.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.3">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.3.45.$ A body of mass $m$ falls from a height $h$ onto a spring of stiffness $k$ and length $l$ standing vertically on the floor. Determine the maximum pressure on the floor. Explain why this force increases as the spring stiffness increases.
+</p>
+<center>
+  <figure>
+    <img src="2.3.45.png"
+      loading="lazy"  width="170" />
+    <figcaption>
+      For problem $2.3.45$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.3.45_1.png"
+      loading="lazy"  width="320" />
+    <figcaption>
+      Compression of the spring under the force of the weight's gravity
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Conservation of kinetic and potential energies
+$$mgh = \frac{mv^2}{2} + mgH + \frac{k(l-H)^2}{2}$$
+Since at a finite instant of time, the body stops $(v=0)$
+$$mgh=mg(l-\Delta x)+\frac{k\Delta x^2}{2}\quad (1)$$
+From the drawing
+$$H=l-\Delta x$$
+Let's substitute into $(1)$
+$$\frac{k\Delta x^2}{2}-mg\Delta x-mg(h-l)=0$$
+Solve as a quadratic equation
+$$\Delta x = \frac{mg}{k}\left(1\pm\sqrt{1+\frac{2k\cdot(h-l)}{mg}}\right)$$
+As $\Delta x$ must be positive, we keep only the plus solution
+$$\Delta x = \frac{mg}{k}\left(1+\sqrt{1+\frac{2k\cdot(h-l)}{mg}}\right)$$
+Since at the bottom point, there are no forces other than the support reaction force $N$ and spring elasticity force $k\Delta x$, and at the bottom position the acceleration is zero ($a=0$) and the forces are compensated, the condition of equilibrium on the vertical axis has the form
+$$F_y:~N=k\cdot \Delta x$$
+Whence we obtain the maximum force of pressure on the floor, which is equal to the force with which the support acts on the load, according to Newton's third law
+$$\boxed{F=mg\left(1+\sqrt{1+\frac{2k\cdot(h-l)}{mg}}\right)}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F=mg\left(1+\sqrt{1+2k(h-l)/(mg)}\right)$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
