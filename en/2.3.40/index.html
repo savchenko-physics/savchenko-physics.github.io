@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Potential energy of interaction of a particle with a fixed point source U = V (\frac{l^2}{r^2} - \frac{2l}{r}), where r is the distance between the particle and the source, V and l are positive constants having the dimension of energy and distance, respectively. In what region does the rectilinear motion of a particle occur, if the total energy of the system is equal to E?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Potential energy of interaction of a particle with a fixed point source U = V (\frac{l^2}{r^2} - \frac{2l}{r}), where r is the distance between the particle and the source, V and l are positive constants having the dimension of energy and distance, respectively. In what region does the rectilinear motion of a particle occur, if the total energy of the system is equal to E?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Potential energy of interaction of a particle with a fixed point source U = V (\frac{l^2}{r^2} - \frac{2l}{r}), where r is the distance between the particle and the source, V and l are positive constants having the dimension of energy and distance, respectively. In what region does the rectilinear motion of a particle occur, if the total energy of the system is equal to E?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Potential energy of interaction of a particle with a fixed point source U = V (\frac{l^2}{r^2} - \frac{2l}{r}), where r is the distance between the particle and the source, V and l are positive constants having the dimension of energy and distance, respectively. In what region does the rectilinear motion of a particle occur, if the total energy of the system is equal to E?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.3">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.3.40.$ Potential energy of interaction of a particle with a fixed point source $U = V (\frac{l^2}{r^2} - \frac{2l}{r})$, where $r$ is the distance between the particle and the source, $V$ and $l$ are positive constants having the dimension of energy and distance, respectively. In what region does the rectilinear motion of a particle occur, if the total energy of the system is equal to $E$?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.3.40.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Let us consider the case where the system (the second particle) starts moving at a distance $r$ from the first particle.</p><p>
+Since this is the beginning of the movement, the kinetic energy of the first and second particles tends to zero.
+$$E_{k1}\to\infty;\quad E_{k2}\to\infty$$
+From where the total energy would be equal to the potential energy
+$$E=E_p$$
+Substituting expression from the statement
+$$\frac{E}{V}=\frac{l^2}{r^2}-\frac{2l}{r}$$
+Transforming it into a quadratic equation
+$$Er^2+2Vlr-Vl^2=0$$
+Let's solve it
+$$r_{1,2}=l\frac VE\left(-1\pm\sqrt{1+E/V}\right)$$
+Since the distance is not less than zero, we choose a positive sign for $E>0$
+$$r\geq fl\frac VE\left(\sqrt{1+E/V}-1\right)$$
+For $E<0$ it will be in the range between $r_1$ and $r_2$
+$$l\frac VE\left(-1-\sqrt{1+E/V}\right)\leq r\leq l\frac VE\left(-1+\sqrt{1+E/V}\right)$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            With $E>0$ area of motion $r\geqslant l\frac VE\left(-1+\sqrt{1+E/V}\right)$</p><p>
+if $E<0$ area of motion, $r$ between $r_{1,2}=l\frac VE\left(-1\pm\sqrt{1+E/V}\right)$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
