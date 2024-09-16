@@ -51,12 +51,14 @@
                 <button onclick="printHTMLCode()" style="">View raw code</button>
              </div>
           </div> -->
-         <div class="window" id="window3" style="position: relative; height: 99%;">
-            <p id="output">Compiled LaTeX will appear here...</p>
-            <div id="viewRawCode" class="bottomButton">
-               <button onclick="printHTMLCode()">View raw code</button>
+            <div class="pageWrapper" style="position: relative; max-height: 99vh;">
+                <div class="window" id="window3" style="position: relative; min-height: 98vh; max-height: 98vh; overflow-y: auto; overflow-x: hidden; padding:15px;">
+                    <p id="output">Compiled LaTeX will appear here...</p>
+                </div>
+                    <div id="viewRawCode" class="bottomButton" style="align-self: flex-end;">
+                        <button onclick="printHTMLCode()">View raw code</button>
+                    </div>
             </div>
-         </div>
 
        </div>
     </div>
