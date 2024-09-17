@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="To test the equipment in zero-gravity conditions, the container is thrown up by a pneumatic piston device located at the bottom of the evacuated shaft. The piston acts on the container for a time \Delta t with a force F = nmg, where m is the mass of the container with the equipment. How long will it take for the container to fall to the bottom of the mine? How long does the zero-gravity state last for the equipment, if \Delta t = 0.04 s, and n = 125?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="To test the equipment in zero-gravity conditions, the container is thrown up by a pneumatic piston device located at the bottom of the evacuated shaft. The piston acts on the container for a time \Delta t with a force F = nmg, where m is the mass of the container with the equipment. How long will it take for the container to fall to the bottom of the mine? How long does the zero-gravity state last for the equipment, if \Delta t = 0.04 s, and n = 125?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="To test the equipment in zero-gravity conditions, the container is thrown up by a pneumatic piston device located at the bottom of the evacuated shaft. The piston acts on the container for a time \Delta t with a force F = nmg, where m is the mass of the container with the equipment. How long will it take for the container to fall to the bottom of the mine? How long does the zero-gravity state last for the equipment, if \Delta t = 0.04 s, and n = 125?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>To test the equipment in zero-gravity conditions, the container is thrown up by a pneumatic piston device located at the bottom of the evacuated shaft. The piston acts on the container for a time \Delta t with a force F = nmg, where m is the mass of the container with the equipment. How long will it take for the container to fall to the bottom of the mine? How long does the zero-gravity state last for the equipment, if \Delta t = 0.04 s, and n = 125?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.9.$ To test the equipment in zero-gravity conditions, the container is thrown up by a pneumatic piston device located at the bottom of the evacuated shaft. The piston acts on the container for a time $\Delta t$ with a force $F = nmg$, where $m$ is the mass of the container with the equipment. How long will it take for the container to fall to the bottom of the mine? How long does the zero-gravity state last for the equipment, if $\Delta t = 0.04$ s, and $n = 125$?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <p>
+1. The container's movement can be divided into three sections: in the acceleration section $OA$. the piston exerts a force $F = nmg$, which accelerates the container to the speed $v_0$; in the second section $AB$ the container moves like a body thrown vertically upwards, in the third section, after stopping, the container with the equipment will freely fall to the bottom of the shaft.
+</p>
+<p>
+2. Let us write the equation of the fundamental law of dynamics for the acceleration section, which, in combination with the kinematic conditions of uniformly accelerated motion, allows us to determine the values ​​$y_1$, $t_1$ and $v_0$
+$$ nmg-mg = ma  $$
+
+$$ a = g(n-1) = 1240 \,m/s^2 $$
+
+$$ V_0 = a \Delta t = g(n-1) \Delta t = 50 \,m/s $$
+
+$$ y_1 = \frac{a\Delta t^2}{2} = \frac{g (n-1)\Delta t^2}{2} = 2 \,m $$
+3. Let us determine the time of lifting the container from point $A$ to point $B$ and the value $y_2$
+$$ t_2 = \frac{v_0}{g} = (n-1) \Delta t = 5\,c $$
+
+$$ y_2 = v_0 t_2 - \frac{gt_2^2}{2}  $$
+
+$$ y_2= g(n-1)^2 \Delta t^2 - \frac{g}{2}(n-1)^2 \Delta t^2 $$
+4. Thus, the container will stop when it reaches a height of:
+$$ y_3=y_2+y_1 = \frac{g(n-1) \Delta t^2}{2} +\frac{g(n-1)^2 \Delta t^2}{2} $$
+5. Time of container fall from height $y_3$
+$$ t_3 = \sqrt{\frac{2 y_3}{g}} = \Delta t \sqrt{n(n-1)} = 5 \,s $$
+6. The time the container with the equipment stays in the “airless” space
+$$ t=\Delta t + t_2 + t_3  $$
+
+$$ t= \Delta t [1 + (n-1) + \sqrt{n(n-1)}]  $$
+
+$$ t = \Delta t [n + \sqrt{n(n-1)}]=10 \,s $$
+7. The equipment in the container will experience a state of weightlessness for a period of time
+$$ t_н =10 \,s $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$t = n\Delta t(1 + \sqrt{1 − 1/n}) \text{; }t_н ≈ 10 \,s$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
