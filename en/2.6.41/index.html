@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Two probes are launched from an orbital station moving at a speed of u in a circular orbit around the planet. The initial velocity of the probes relative to the planet is v (\sqrt{2} u > v > u). One probe moves in the direction of the planet's radius; the initial velocity of the other probe is perpendicular to its radius. Find the ratio of the maximum possible distances from the probes to the center of the planet.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Two probes are launched from an orbital station moving at a speed of u in a circular orbit around the planet. The initial velocity of the probes relative to the planet is v (\sqrt{2} u > v > u). One probe moves in the direction of the planet's radius; the initial velocity of the other probe is perpendicular to its radius. Find the ratio of the maximum possible distances from the probes to the center of the planet.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Two probes are launched from an orbital station moving at a speed of u in a circular orbit around the planet. The initial velocity of the probes relative to the planet is v (\sqrt{2} u > v > u). One probe moves in the direction of the planet's radius; the initial velocity of the other probe is perpendicular to its radius. Find the ratio of the maximum possible distances from the probes to the center of the planet.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Two probes are launched from an orbital station moving at a speed of u in a circular orbit around the planet. The initial velocity of the probes relative to the planet is v (\sqrt{2} u > v > u). One probe moves in the direction of the planet's radius; the initial velocity of the other probe is perpendicular to its radius. Find the ratio of the maximum possible distances from the probes to the center of the planet.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.6">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.6.41^*.$ Two probes are launched from an orbital station moving at a speed of $u$ in a circular orbit around the planet. The initial velocity of the probes relative to the planet is $v$ ($\sqrt{2} u > v > u$). One probe moves in the direction of the planet's radius; the initial velocity of the other probe is perpendicular to its radius. Find the ratio of the maximum possible distances from the probes to the center of the planet.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Let's consider two cases:</p><p>
+1) Velocity $\vec{v}$ in radial direction:</p><p>
+For this case, let's consider preservation of energy
+$$\frac{mv^2}{2}-\frac{GmM}{R_0}=\frac{m{v'}^2}{2}-\frac{GmM}{R_1}$$
+Analyzing the components, when $v'\to 0,$ $R_1$ tends to the maximum value $R_1 \to R_\text{1max}$
+$$\frac{mv^2}{2} - \frac{GmM}{R_0} =  - \frac{GmM}{R_\text{1max}}$$
+
+$$\frac{1}{2}v^2 = GM \left( \frac{1}{R_0} - \frac{1}{R_\text{1max}} \right) $$
+2) The velocity $v$ is perpendicular to the radius</p><p>
+From Kepler's first law, the orbit will be an ellipse
+</p>
+<center>
+  <figure>
+    <img src="2.6.41_1.png"
+      loading="lazy"  width="300" />
+    <figcaption>
+      Elliptical orbit
+    </figcaption>
+  </figure>
+</center>
+<p>
+    <i>$R_0$ - radius of circular orbit<br>
+$R_1$ - maximum orbit at radial velocity<br>
+$R_2$ - maximum orbit at perpendicular velocity</i></p><p>
+
+Similarly, the preservation of energy
+$$\frac{mv^2}{2}-\frac{GmM}{R_0}=\frac{m{v'}^2}{2}-\frac{GmM}{R_\text{2max}}\quad(1)$$
+Conservation of angular momentum
+$$mvR_0=m{v'}R_\text{2max}$$
+From where
+$$v'=v\frac{R_0}{R_\text{2max}}\quad(2)$$
+Substituting $(2)$ into $(1)$
+$$\frac{v^2}{2}\left(1+\frac{R_0}{R_\text{2max}}\right) = GM \frac{1}{R_0}$$
+Now, let's consider circular motion:</p><p>
+Given the centripetal acceleration $a=\frac{u^2}{R_0}$, the presence of rotational motion of which causes centrifugal force, compensating gravitational force, in the equilibrium condition.
+$$\frac{mu^2}{R_0}=\frac{GmM}{R_0^2} \Leftrightarrow \frac{GM}{R_0}=u^2$$
+Substituting into the final formulae of motion
+$$\frac{1}{2}v^2=u^2\left(1+\frac{R_0}{R_\text{1max}}\right)$$
+$$\frac{1}{2}v^2\left(1+\frac{R_0}{R_\text{2max}}\right)=u^2$$
+Transforming the obtained expressions
+$$R_0=R_\text{1max}\cdot\left(1-\frac{1}{2}\frac{v^2}{u^2}\right)=R_\text{2max}\cdot\left(2\frac{u^2}{v^2}-1\right)$$
+$$R_\text{1max}\cdot \frac{2u^2-v^2}{2u^2} = R_\text{2max}\cdot \frac{2u^2-v^2}{v^2}$$
+From where we express the ratio of the maximum possible distances from the probes to the center of the planet
+$$\boxed{\frac{R_\text{1max}}{R_\text{2max}}=\frac{2u^2}{v^2}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$R_1/R_2=2u^2/v^2$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
