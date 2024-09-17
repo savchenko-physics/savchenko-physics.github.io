@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The rod rests its ends on the sides of a right angle. The upper end of the rod is lifted at a speed of v. Find how the speed of its lower end depends on time. Take the moment when the upper end is at the top of the corner as the beginning of the time reference. Rod length L.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The rod rests its ends on the sides of a right angle. The upper end of the rod is lifted at a speed of v. Find how the speed of its lower end depends on time. Take the moment when the upper end is at the top of the corner as the beginning of the time reference. Rod length L.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The rod rests its ends on the sides of a right angle. The upper end of the rod is lifted at a speed of v. Find how the speed of its lower end depends on time. Take the moment when the upper end is at the top of the corner as the beginning of the time reference. Rod length L.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The rod rests its ends on the sides of a right angle. The upper end of the rod is lifted at a speed of v. Find how the speed of its lower end depends on time. Take the moment when the upper end is at the top of the corner as the beginning of the time reference. Rod length L.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#1.5">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $1.5.16.$ The rod rests its ends on the sides of a right angle. The upper end of the rod is lifted at a speed of $v$. Find how the speed of its lower end depends on time. Take the moment when the upper end is at the top of the corner as the beginning of the time reference. Rod length $L$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/1/1.5.16/statement.png"
+      loading="lazy"  width="180" />
+    <figcaption>
+      For problem $1.5.16$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/1/1.5.16/draw.png"
+loading="lazy" width="240" />
+<figcaption>
+Distribution of rod end velocities
+</figcaption>
+</figure>
+</center>
+
+<p>NO: Before viewing the solution to this problem, I recommend that you familiarize yourself with the solution to <a href="../1.5.14">1.5.14</a> and <a href="../1.5.15">1.5.15</a></p>
+<p>At time $t$, the height to which the upper end has risen</p>
+<p>
+$$ y = v t\;(1) $$
+</p>
+<p>Consider the change in coordinate $x = \sqrt{L^2-y^2}$ over a small period of time $dt$</p>
+<p>
+$$ dx = \frac{ydy}{\sqrt{L^2 - y^2}} $$
+</p>
+<p>Considering that $v = \frac{dy}{dt}$ and $v_A = \frac{dx}{dt}$</p>
+<p>
+$$ v_A = \frac{vy}{\sqrt{L^2 - y^2}} $$
+</p>
+<p>Substitute $(1)$</p>
+<p>
+$$ \fbox{$v_A = \frac{v^2t}{\sqrt{L^2 - v^2t^2}}$} $$
+</p>
+
+<h3> Alternative solution: </h3>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/1/1.5.16/draw1.png"
+loading="lazy" width="240" />
+<figcaption>
+Velocity distribution of the rod ends
+</figcaption>
+</figure>
+</center>
+
+<p>The coordinate of the upper end can be found as</p>
+<p>
+$$ y=\upsilon t $$
+</p>
+<p>The projections of the velocities of both ends onto the direction of the rod are:</p>
+<p>
+$$ \upsilon \cos\alpha=u\cos(90^{\circ}-\alpha) $$
+</p>
+      <p>
+$$ \upsilon \cos\alpha=u\sin\alpha $$
+</p>
+      <p>
+$$ u=\upsilon \operatorname{ctg}\alpha=\upsilon\frac{y}{x} $$
+</p>
+<p>By the Pythagorean theorem</p>
+<p>
+$$ x^2+y^2=L^2 $$
+</p>
+      <p>
+$$ x=\sqrt{L^2-y^2}=\sqrt{L^2-\upsilon^2t^2} $$
+</p>
+<p>Since the velocity $u$ is directed against the $x$ axis, then</p>
+<p>
+$$ x’=-u $$
+</p>
+      <p>
+$$ u=-\frac{\frac{1}{2}\cdot 2t\cdot (-\upsilon^2)}{\sqrt{L^2-\upsilon^2t^2}} $$
+</p>
+      <p>
+$$ u=\frac{t\cdot \upsilon^2}{\sqrt{L^2-\upsilon^2t^2}} $$
+</p>
+<p> </p>
+<p>If you connect the center of the rod with the vertex of the right angle, then this segment will be the median of the right triangle and will be equal to half the length of the hypotenuse. It turns out that the center of the rod moves along a circle with the center at point $O$.</p>
+<p> </p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v_A = \frac{v^2t}{\sqrt{L^2 - v^2t^2}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

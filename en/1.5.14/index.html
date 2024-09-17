@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Four turtles are located at the vertices of a square with side a. They start moving simultaneously at a constant modulo velocity v. Each turtle moves clockwise in the direction of its neighbor. Where will the turtles meet and after what time?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Four turtles are located at the vertices of a square with side a. They start moving simultaneously at a constant modulo velocity v. Each turtle moves clockwise in the direction of its neighbor. Where will the turtles meet and after what time?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Four turtles are located at the vertices of a square with side a. They start moving simultaneously at a constant modulo velocity v. Each turtle moves clockwise in the direction of its neighbor. Where will the turtles meet and after what time?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Four turtles are located at the vertices of a square with side a. They start moving simultaneously at a constant modulo velocity v. Each turtle moves clockwise in the direction of its neighbor. Where will the turtles meet and after what time?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#1.5">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $1.5.14^*.$ Four turtles are located at the vertices of a square with side $a$. They start moving simultaneously at a constant modulo velocity $v$. Each turtle moves clockwise in the direction of its neighbor. Where will the turtles meet and after what time?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/1/1.5.14/draw.png"
+      loading="lazy"  width="150" />
+  </figure>
+</center>
+<p>
+<p>Consider the change in the coordinates of the turtles over a short period of time $dt$</p>
+
+<p>Over time $dt$ the distance between neighboring turtles changed from $a$ to $a'$</p>
+
+<p>Express $a'$ using the Pythagorean theorem</p>
+$$ a' = \sqrt{(a-dx)^2 - d^2x} $$
+<p>Considering the smallness of the value $dx$</p>
+$$ a' = \sqrt{a^2 - 2a\, dx} $$
+
+$$ a' = a\sqrt{1 - \frac{2dx}{a}} $$
+<p>We will use the formula for small quantities $(1+x)^\alpha \approx 1+\alpha x$, where $x\rightarrow 0$:</p>
+$$ a' = a - dx $$
+<p>Thus, the increment of the coordinate $a$ is</p>
+$$ da = a' - a = dx $$
+<p>Hence, the rate of change of distance between the turtles is</p>
+$$ u = \frac{da}{dt} = -\frac{dx}{dt}=-v $$
+<p>From this it follows that after $a=0$, after a period of time</p>
+$$ t = a/v $$
+<p>From the symmetry of the problem, it follows that all turtles will go the same way and end up in the center of the square.</p>
+
+<p>NO: It would be interesting to know what would happen if it were not a square? If there were not $4$ turtles, but $n$ ones? A more detailed version of the problem can be found in <a href="https://belphol.github.io/books/LongProblemsPart1.pdf" target="_blank">"Very Long Physics Problems"</a> by A.I. Slobodyanyuk (Problem 1)</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            <p>At the center of the square after time $t = a/v$.</p>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
