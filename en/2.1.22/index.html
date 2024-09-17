@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The belt lift forms an angle \alpha with the horizon. With what maximum acceleration can a box be lifted on such a lift, if the coefficient of friction is equal to \mu? The tape doesn't bend.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The belt lift forms an angle \alpha with the horizon. With what maximum acceleration can a box be lifted on such a lift, if the coefficient of friction is equal to \mu? The tape doesn't bend.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The belt lift forms an angle \alpha with the horizon. With what maximum acceleration can a box be lifted on such a lift, if the coefficient of friction is equal to \mu? The tape doesn't bend.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The belt lift forms an angle \alpha with the horizon. With what maximum acceleration can a box be lifted on such a lift, if the coefficient of friction is equal to \mu? The tape doesn't bend.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.22.$ After what time will the velocity of a body that has been sent up an inclined plane with velocity $v$ be equal to $v$ again? Coefficient of friction $\mu$, the angle between the plane and the horizon $\alpha$, $tg \alpha > \mu$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.22/sol.png"
+loading="lazy" width="350" />
+<figcaption>
+Forces acting on the body
+</figcaption>
+</figure>
+</center>
+
+<p>
+The body on the inclined plane is under the action of three forces: the force of gravity $\vec{F}_{1} = m \vec{g}$, the force of friction $\vec{F}_{2} = - \mu mg$ and the normal reaction of the constraint $\vec{N}$, however, when further considering the motion, the normal reaction can be ignored, since its projection onto the horizontal axis along which the body moves is equal to zero.
+</p>
+<p>
+The equation of Newton's second law in projection onto the OX axis when the body moves upward in vector form is written as follows
+$$ \vec{F}_{1} + \vec{F}_{2} = m \vec{a} $$
+Let us determine the projections of the acting forces on the OX axis and write down the equation of Newton's second law
+$$ F_{1x} = mg \sin \alpha, F_{2x} = \mu mg \cos \alpha $$
+
+$$ \mu mg \cos \alpha + mg \sin \alpha = ma $$
+We divide both parts of the last equation by the mass $m$ and express the magnitude of the acceleration
+$$ a = g( \sin \alpha + \mu \cos \alpha ) $$
+The time of the body's upward movement $t_1$ is determined from the condition that the speed at the end of the ascent is equal to zero
+$$ 0 = v_{0} - at \Rightarrow t_{1} = \frac{v_{0} }{a} = \frac{v_{0} }{g ( \sin \alpha + \mu \cos \alpha ) } $$
+The downward motion of the body corresponds to the equation
+$$ mg \sin \alpha - \mu mg \cos \alpha = ma $$
+
+$$ a = g( \sin \alpha - \mu \cos \alpha ) $$
+The speed will become equal to $v_0$ only at the end of the descent, because the law of conservation of energy has not been repealed, therefore
+$$ \frac{dv}{dt} = g( \sin \alpha + \mu \cos \alpha  ) $$
+
+$$ \int_{0}^{v_{0} } dv = g( \sin \alpha + \mu \cos \alpha ) = \int_{0}^{t_{2} } dt $$
+
+$$ t_{2} = \frac{v_{0} }{g ( \sin \alpha + \mu \cos \alpha  ) } $$
+The required time will be determined as the sum $t = t_{1} + t_{2}$
+$$ \boxed{t = \frac{2v_{0} \sin \alpha }{g( \sin^{2} \alpha - \mu^{2} \cos^{2} \alpha )}} $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$t = \frac{2v_{0} \sin \alpha }{g( \sin^{2} \alpha - \mu^{2} \cos^{2} \alpha )}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

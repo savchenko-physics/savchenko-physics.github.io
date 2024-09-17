@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A body of mass m_1 lies on a board of mass m_2 located on a smooth horizontal plane. Coefficient of friction between the body and the board \mu.a. What force should be applied to the board so that the body slides off it? How long will it take for a body to slide if a force F_0 is applied to the board and the length of the board is l?b. With what acceleration do the body and board move if the force F_0 acts on the body of mass m_1?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A body of mass m_1 lies on a board of mass m_2 located on a smooth horizontal plane. Coefficient of friction between the body and the board \mu.a. What force should be applied to the board so that the body slides off it? How long will it take for a body to slide if a force F_0 is applied to the board and the length of the board is l?b. With what acceleration do the body and board move if the force F_0 acts on the body of mass m_1?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A body of mass m_1 lies on a board of mass m_2 located on a smooth horizontal plane. Coefficient of friction between the body and the board \mu.a. What force should be applied to the board so that the body slides off it? How long will it take for a body to slide if a force F_0 is applied to the board and the length of the board is l?b. With what acceleration do the body and board move if the force F_0 acts on the body of mass m_1?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A body of mass m_1 lies on a board of mass m_2 located on a smooth horizontal plane. Coefficient of friction between the body and the board \mu.a. What force should be applied to the board so that the body slides off it? How long will it take for a body to slide if a force F_0 is applied to the board and the length of the board is l?b. With what acceleration do the body and board move if the force F_0 acts on the body of mass m_1?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.30^*.$ A body of mass $m_1$ lies on a board of mass $m_2$ located on a smooth horizontal plane. Coefficient of friction between the body and the board $\mu$.
+</p><p>
+
+a. What force should be applied to the board so that the body slides off it? How long will it take for a body to slide if a force $F_0$ is applied to the board and the length of the board is $l$?
+</p><p>
+b. With what acceleration do the body and board move if the force $F_0$ acts on the body of mass $m_1$?</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.30/statement.png"
+      loading="lazy"  width="250" />
+    <figcaption>
+      For problem $2.1.30^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <p>
+$a)$ For a body to start sliding, the applied force must exceed the friction force. When determining the magnitude of the friction force, it is necessary to take into account that, in accordance with Newton's third law, the body acts on the board, and the board on the body, so a double friction force will be exerted
+$$ F_t = \mu g (m_1 + m_2) $$
+Condition for starting movement:
+$$ \boxed{F > \mu g (m_1 + m_2)} $$
+To determine the sliding time, we use kinematic equations:
+$$ l = \frac{a t^2}{2} \Rightarrow t = \sqrt{\frac{2L}{a}} $$
+The acceleration a when a constant force $F_0$ acts along the board is determined from the equation of Newton's second law in projection onto the direction of motion:
+$$ F_0 - F_t = m_1 a $$
+
+$$ a = \frac{F_0 - \mu g (m_1 + m_2)}{m_1} $$
+Sliding time:
+$$ \boxed{t = \sqrt{\frac{2 L m_1}{F_0 - \mu g (m_1 + m_2)}}} $$
+</p>
+<p>
+$б)$ The body is acted upon by two external forces $F_0$ and the friction force $F_{tr}$. Let us write down Newton's second law for the body
+$$ m_1a_1 = F_0 - F_{тр} $$
+Considering that
+$$ F_{тр} = \mu N = \mu m_1 g $$
+
+$$ m_1a_1 = F_0 - \mu m_1 g $$
+Where $a_1$ we find as
+$$ \boxed{a_1 = \frac{F_0 - \mu m_1 g}{m_1}} $$
+Meanwhile, of the external forces, only the friction force with the block acts on the board
+</p>
+<p>
+Then Newton's second law for the board
+$$ m_2a_2 = \mu m_1 g $$
+We express $a_2$
+$$ \boxed{a_{2}=\mu g\frac{m_{1}}{m_{2}}} $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+                      $$\text{a. } F>\mu(m_{2}+m_{1})g\text{, }t=\sqrt{\frac{2lm_{2}}{F_{0}-\mu(m_{2}+m_{1})g}}$$
+          $$\text{b. } a_{1}=\frac{F_{0}-\mu m_{1}g}{m_{1}}\text{, }a_{2}=\mu g\frac{m_{1}}{m_{2}}.$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

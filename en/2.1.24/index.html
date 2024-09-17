@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The cylinder slides along the chute, which has the form of a dihedral angle with the solution \alpha. The edge of a dihedral angle is inclined at an angle \beta to the horizon. The planes of a dihedral angle form identical angles with the horizon. Determine the acceleration of the cylinder. Coefficient of friction between the cylinder and the chute surface \mu.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The cylinder slides along the chute, which has the form of a dihedral angle with the solution \alpha. The edge of a dihedral angle is inclined at an angle \beta to the horizon. The planes of a dihedral angle form identical angles with the horizon. Determine the acceleration of the cylinder. Coefficient of friction between the cylinder and the chute surface \mu.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The cylinder slides along the chute, which has the form of a dihedral angle with the solution \alpha. The edge of a dihedral angle is inclined at an angle \beta to the horizon. The planes of a dihedral angle form identical angles with the horizon. Determine the acceleration of the cylinder. Coefficient of friction between the cylinder and the chute surface \mu.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The cylinder slides along the chute, which has the form of a dihedral angle with the solution \alpha. The edge of a dihedral angle is inclined at an angle \beta to the horizon. The planes of a dihedral angle form identical angles with the horizon. Determine the acceleration of the cylinder. Coefficient of friction between the cylinder and the chute surface \mu.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.24.$ The cylinder slides along the chute, which has the form of a dihedral angle with the solution $\alpha$. The edge of a dihedral angle is inclined at an angle $\beta$ to the horizon. The planes of a dihedral angle form identical angles with the horizon. Determine the acceleration of the cylinder. Coefficient of friction between the cylinder and the chute surface $\mu$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.24/statement.png"
+      loading="lazy"  width="280" />
+    <figcaption>
+      For problem $2.1.24$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.24/sol2.png" id="picture_a"
+loading="lazy" width="280" />
+<figcaption>
+a) Side view
+</figcaption>
+</figure>
+</center>
+
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.24/sol1.png" id="picture_b"
+loading="lazy" width="280" />
+<figcaption>
+б) End view
+</figcaption>
+</figure>
+</center>
+
+<p>
+Forces acting on the cylinder: gravity $\vec{F}_{т} = m \vec{g}$ two forces of normal reaction of the faces of the dihedral angle $\vec{N}_{1}$ and $\vec{N}_{2}$, two forces of friction of the cylinder on the faces $\vec{f}_{fr1}$ and $\vec{f}_{fr2}$ (<a href="#picture_a">see pictures</a>).
+Since the cylinder has axial symmetry and the planes of the dihedral angle are symmetrical with respect to the vertical
+$$ | \vec{N}_{1} | = | \vec{N}_{2} | = N $$
+
+$$ \vec{f}_{fr1}| = | \vec{f}_{fr2} | = f_{fr} $$
+According to the Coulomb-Amonton law $f_{tr} = \mu N$.
+</p>
+<p>
+The fundamental law of dynamics for a cylinder is
+$$ m \vec{a} = m \vec{g} + \vec{N}_{1} + \vec{N}_{2} + \vec{f}_{fr1} + \vec{f}_{fr2} $$
+Since the cylinder is stationary in the plane of the section perpendicular to the edge of the dihedral angle, then projecting this equation onto the axis perpendicular to the edge, we obtain (<a href="#picture_b">see figure b</a>)
+$$ 2N \sin \frac{ \alpha}{2} = mg \cos \beta $$
+In projection onto the edge (axis $OX$) the dynamic equation for the cylinder is written as
+$$ ma_{x} = mg \sin \beta - 2N \mu $$
+</p>
+<p>
+Substituting $N$ here, we find the acceleration of the cylinder
+$$ a_{x} = g \left ( \sin \beta - \frac{ \mu \cos \beta}{ \sin \alpha / 2} \right ) $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+                      $$a=g\left(\operatorname{sin}\beta-\frac{\mu\operatorname{cos}\beta}{\operatorname{sin}(\alpha/2)}\right)\text{ with }\mu\leqslant\operatorname{tg}\beta\operatorname{sin}\frac{\alpha}{2};$$
+          $$a=0\text{ with }\mu\geqslant\operatorname{tg}\beta\operatorname{sin}\frac{\alpha}{2}.$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

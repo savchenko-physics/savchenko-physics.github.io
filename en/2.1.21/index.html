@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="The body of mass m is attached to two consecutive springs of stiffness k_1 and k_2. A constant force F is applied to the free end of the spring chain. What is the total elongation of the springs, if the vibrations have already stopped?">
+    <meta name="description" content="A bar of mass m is placed on the horizontal board. The board is slowly tilted. Determine the dependence of the friction force acting on the bar on the angle of inclination of the board \alpha. Coefficient of friction \mu.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="The body of mass m is attached to two consecutive springs of stiffness k_1 and k_2. A constant force F is applied to the free end of the spring chain. What is the total elongation of the springs, if the vibrations have already stopped?">
+    <meta property="og:title" content="A bar of mass m is placed on the horizontal board. The board is slowly tilted. Determine the dependence of the friction force acting on the bar on the angle of inclination of the board \alpha. Coefficient of friction \mu.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="The body of mass m is attached to two consecutive springs of stiffness k_1 and k_2. A constant force F is applied to the free end of the spring chain. What is the total elongation of the springs, if the vibrations have already stopped?">
+    <meta property="og:description" content="A bar of mass m is placed on the horizontal board. The board is slowly tilted. Determine the dependence of the friction force acting on the bar on the angle of inclination of the board \alpha. Coefficient of friction \mu.">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>The body of mass m is attached to two consecutive springs of stiffness k_1 and k_2. A constant force F is applied to the free end of the spring chain. What is the total elongation of the springs, if the vibrations have already stopped?</title>
+    <title>A bar of mass m is placed on the horizontal board. The board is slowly tilted. Determine the dependence of the friction force acting on the bar on the angle of inclination of the board \alpha. Coefficient of friction \mu.</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -46,14 +46,14 @@
 
         <h3> Statement </h3>
         <p>
-            $2.1.17.$ A light magnet with a hook on a vertical steel plate remains stationary as long as the weight suspended from it does not exceed $m_0$ in mass. What is the magnetic force if the coefficient of friction of the magnet on steel is equal to $\mu$? With what acceleration does the magnetic suspension slide, if the mass of the load is $m > m_0$?
+            $2.1.21.$ The belt lift forms an angle $\alpha$ with the horizon. With what maximum acceleration can a box be lifted on such a lift, if the coefficient of friction is equal to $\mu$? The tape doesn't bend.
 </p>
 <center>
   <figure>
-    <img src="https://savchenkosolutions.com/2/2.1.17/statement.png"
-      loading="lazy"  width="120" />
+    <img src="https://savchenkosolutions.com/2/2.1.21/statement.png"
+      loading="lazy"  width="180" />
     <figcaption>
-      For problem $2.1.17$
+      For problem $2.1.21$
     </figcaption>
   </figure>
 </center>
@@ -64,30 +64,28 @@
         <p>
             <center>
 <figure>
-<img src="https://savchenkosolutions.com/2/2.1.17/sol.png"
-loading="lazy" width="250" />
+<img src="https://savchenkosolutions.com/2/2.1.21/sol.png"
+loading="lazy" width="180" />
 <figcaption>
-Forces acting on a magnet
+Forces acting on the box
 </figcaption>
 </figure>
 </center>
 
 <p>
-1. The body can be considered as free if the connections are replaced by their reactions. The friction force in this case is caused by the action of the magnetic force, i.e.
-$$ F_{fr} = \mu F_m $$
-2. The condition of mass equilibrium, in this case, will take place when the magnitudes of gravity and friction are equal.
-$$ m_0 g = \mu F_m\Rightarrow \boxed{F_m = \frac{gm_0}{\mu}} $$
-3. When the body starts moving at $m > m_0$, then the equation of Newton's second law becomes valid, which in projection onto the $y$ axis will be written as follows
-$$ mg - m_0 g = ma $$
+1. By discarding the constraints imposed on the box and replacing them with reactions, we can consider it as a free body capable of moving along the $OX$ axis. The friction force in this case is directed toward acceleration, i.e. against the possible movement of the box.
+</p>
+<p>
+2. The equation of Newton's second law allows us to determine the maximum value of acceleration
+$$ \mu mg \cos \alpha-mg \sin \alpha \leq ma $$
 
-$$ \boxed{a = g \frac{m - m_0}{m}} $$
+$$ \boxed{a \leq g (\mu \cos \alpha-\sin \alpha)} $$
 </p>
         </p>
 
         <h4>Answer</h4>
         <p>
-                     $$F = m_0g/\mu ;$$
-         $$a = g(m − m_0)/m$$
+            $$a_{max} = g(\mu \cos \alpha − \sin \alpha)$$
         </p>
 
 
