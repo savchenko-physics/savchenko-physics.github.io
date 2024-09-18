@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A satellite moves around a planet of mass M in an ellipse with semi-major and minor axes a and b. Determine the area that the radius vector drawn from the center of the planet to the satellite "sweeps" per unit time. Find the period of rotation of the satellite.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A satellite moves around a planet of mass M in an ellipse with semi-major and minor axes a and b. Determine the area that the radius vector drawn from the center of the planet to the satellite "sweeps" per unit time. Find the period of rotation of the satellite.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A satellite moves around a planet of mass M in an ellipse with semi-major and minor axes a and b. Determine the area that the radius vector drawn from the center of the planet to the satellite "sweeps" per unit time. Find the period of rotation of the satellite.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A satellite moves around a planet of mass M in an ellipse with semi-major and minor axes a and b. Determine the area that the radius vector drawn from the center of the planet to the satellite "sweeps" per unit time. Find the period of rotation of the satellite.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.6">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.6.46^*.$ A satellite moves around a planet of mass $M$ in an ellipse with semi-major and minor axes $a$ and $b$. Determine the area that the radius vector drawn from the center of the planet to the satellite "sweeps" per unit time. Find the period of rotation of the satellite.
+</p>
+<center>
+  <figure>
+    <img src="2.6.46.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $2.6.46^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Kepler's Third Law
+$$\frac{T^2}{a^3}=\frac{4\pi ^2}{GM}$$
+From where
+$$\boxed{T=2\pi\sqrt{\frac{a^3}{GM}}}$$
+
+</p>
+<center>
+  <figure>
+    <img src="2.6.46_1.png"
+      loading="lazy"  width="290" />
+    <figcaption>
+    $v$ - sweep speed
+    </figcaption>
+  </figure>
+</center>
+<p>
+Kepler's Second Law
+$$\frac{dS}{dt}=\text{const};\quad \frac{dS}{dt}=v$$
+$$v=\frac{S}{T}=\frac{\pi ab}{2\pi}\cdot\sqrt{\frac{GM}{a^3}}$$
+From here the velocity $v$ could be found as
+$$\boxed{v=\frac{1}{2}b\cdot\sqrt{\frac{GM}{a}}}$$
+</p>
+
+
+<h3>Alternative solution</h3>
+<p>
+The radius of curvature of the orbit at the apex of the major axis of the ellipse
+\[
+R = \frac{a}{k^2} = \frac{b^2}{a}.
+\]
+Therefore
+\[
+\frac{v^2}{R} = \frac{v^2 a}{b^2} = \frac{G M}{r^2} \rightarrow vr = \sqrt{G M \frac{b^2}{a}},
+\]
+\[
+\frac{dS}{dt} = \frac{1}{2}vr = \frac{1}{2}b \sqrt{\frac{G M}{a}}.
+\]
+Satellite orbital period
+\[
+T = 2\pi \frac{ab}{\frac{dS}{dt}} = 2\pi \frac{a^{3/2}}{\sqrt{G M}}.
+\]
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$T=2\pi\sqrt{\frac{a^3}{GM}}$$
+$$v=\frac{1}{2}b\cdot\sqrt{\frac{GM}{a}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
