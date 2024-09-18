@@ -122,8 +122,27 @@ papers.">
             <li><a href="#14">Special theory of relativity</a></li>
         </ol>
     </div>
+    <style>
+        .pinned-container a {
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+        .pinned-container a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 1024px) {
+            .margin-main {
+                margin-left: 50px;
+                width: 100%;
+            }
+            .pinned-container {
+                width:auto;
+            }
+        }
+    </style>
     <script type="text/javascript">
-        window.addEventListener('scroll', function() {
+        function checkScroll() {
             var pinnedContainer = document.getElementById('pinned-container');
             
             if (window.scrollY > 300) {
@@ -133,7 +152,10 @@ papers.">
                 pinnedContainer.classList.remove('visible');
                 pinnedContainer.classList.add('hover-disabled');
             }
-        });
+        }
+
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
     </script>"""
 chapters = []
 with open("database/chapters.csv") as file:

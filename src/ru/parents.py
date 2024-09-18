@@ -147,13 +147,32 @@ BaseHtml = """<!DOCTYPE html>
             <li><a href="#9">Магнетизм</a></li>
             <li><a href="#10">Сложные поля</a></li>
             <li><a href="#11">Э/м индукция</a></li>
-            <li><a href="#12">Электромагнитные волны</a></li>
+            <li><a href="#12">Э/м волны</a></li>
             <li><a href="#13">Оптика</a></li>
             <li><a href="#14">СТО</a></li>
         </ol>
     </div>
+    <style>
+        .pinned-container a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .pinned-container a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 1024px) {
+            .margin-main {
+                margin-left: 50px;
+                width: 100%;
+            }
+            .pinned-container {
+                width:auto;
+            }
+        }
+    </style>
     <script type="text/javascript">
-        window.addEventListener('scroll', function() {
+        function checkScroll() {
             var pinnedContainer = document.getElementById('pinned-container');
             
             if (window.scrollY > 300) {
@@ -163,7 +182,10 @@ BaseHtml = """<!DOCTYPE html>
                 pinnedContainer.classList.remove('visible');
                 pinnedContainer.classList.add('hover-disabled');
             }
-        });
+        }
+
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
     </script>"""
 chapters = []
 with open("database/chapters.csv", encoding="UTF-8") as file:
