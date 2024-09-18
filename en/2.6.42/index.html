@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The plane of the satellite's orbit is divided into sectors with a common vertex in the center of the planet of mass M and the same small solution angles d \varphi. Find the change in the satellite's speed as it passes through each sector, if its speed is in the pericenter v_p, and the distance from the satellite to the center of the planet is in the pericenter r_p.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The plane of the satellite's orbit is divided into sectors with a common vertex in the center of the planet of mass M and the same small solution angles d \varphi. Find the change in the satellite's speed as it passes through each sector, if its speed is in the pericenter v_p, and the distance from the satellite to the center of the planet is in the pericenter r_p.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The plane of the satellite's orbit is divided into sectors with a common vertex in the center of the planet of mass M and the same small solution angles d \varphi. Find the change in the satellite's speed as it passes through each sector, if its speed is in the pericenter v_p, and the distance from the satellite to the center of the planet is in the pericenter r_p.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The plane of the satellite's orbit is divided into sectors with a common vertex in the center of the planet of mass M and the same small solution angles d \varphi. Find the change in the satellite's speed as it passes through each sector, if its speed is in the pericenter v_p, and the distance from the satellite to the center of the planet is in the pericenter r_p.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.6">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.6.42^*.$ The plane of the satellite's orbit is divided into sectors with a common vertex in the center of the planet of mass $M$ and the same small solution angles $d \varphi$. Find the change in the satellite's speed as it passes through each sector, if its speed is in the pericenter $v_p$, and the distance from the satellite to the center of the planet is in the pericenter $r_p$.
+</p>
+<center>
+  <figure>
+    <img src="2.6.42.png"
+      loading="lazy"  width="120" />
+    <figcaption>
+      For problem $2.6.42^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.6.42_1.png"
+      loading="lazy"  width="300" />
+    <figcaption>
+      Change in speed over a short period of time
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+For a short time, $dt$, the body moves along the arc of the circle of arc $d\varphi$ with radius-curvature of the trajectory $R_n$.</p><p>
+Newton's second law for an external force, the gravitational force
+$$ma=\frac{GmM}{R_n^2}$$
+By definition of acceleration
+$$a=\frac{dv}{dt}\Rightarrow \frac{dv}{dt}=\frac{GM}{R_n^2}\quad (1)$$
+In a small amount of time
+$$R_n=v_ndt\quad (2)$$
+By definition the arc length of the circle corresponding to the angle $d\varphi$
+$$dR=d\varphi \cdot R_n\quad (3)$$
+After substituting $(2)$ and $(3)$ into $(1)$
+$$\frac{dv}{dR}v_n=\frac{GM}{R_n^2}\Rightarrow \frac{dv}{d\varphi}v_n=\frac{GM}{R_n}$$
+After the transformation, we can get a change in the satellite's speed
+$$\boxed{dv=\frac{GM\cdot d\varphi}{R_nv_n}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $dv=\gamma Md\varphi/(v_{\mathrm{n}}r_{\mathrm{n}})$. The vector $dv$ is directed towards the centre of the planet
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
