@@ -124,7 +124,7 @@ BaseHtml = """<!DOCTYPE html>
           October 2023
         </p>
         <h2 style="text-align: center; margin-top: 0.9rem; "><a href="../savchenko.pdf" target="_blank">Условия задач</a></h2>
-        <h3 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a href="https://savchenkosolutions.com/">English solutions</a></h3>
+        <h3 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a style="color: hsla(240, 100%, 33%, 1);" href="https://savchenkosolutions.com/">English solutions</a></h3>
         
 
         <p class="description">
