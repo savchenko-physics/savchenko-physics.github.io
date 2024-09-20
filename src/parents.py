@@ -1,50 +1,50 @@
 import os
 import csv
 
-current_directory = os.getcwd().replace("src", "en")
-print(current_directory)
-MaxColumns = 3
-def column_len(problems_number):
-    ans = [problems_number // MaxColumns]*MaxColumns
-    for i in range(problems_number % MaxColumns):
-        ans[i]+=1
-    return ans
+def update_en(current_directory):
+    MaxColumns = 3
+    
+    def column_len(problems_number):
+        ans = [problems_number // MaxColumns]*MaxColumns
+        for i in range(problems_number % MaxColumns):
+            ans[i]+=1
+        return ans
 
 
-def existed_folders():
-    folders = [f for f in os.listdir(current_directory) if os.path.isdir(os.path.join(current_directory, f)) and "." in f]
-    return sorted(folders, key=lambda x: list(map(int, x.split('.'))))
+    def existed_folders():
+        folders = [f for f in os.listdir(current_directory) if os.path.isdir(os.path.join(current_directory, f)) and "." in f]
+        return sorted(folders, key=lambda x: list(map(int, x.split('.'))))
 
-def split_numbers(input_string):
-    numbers = input_string.split('.')
-    return [int(num) for num in numbers]
+    def split_numbers(input_string):
+        numbers = input_string.split('.')
+        return [int(num) for num in numbers]
 
-def PrimeDistribution(problems_list):
-    if not len(problems_list):
-        return ""
+    def PrimeDistribution(problems_list):
+        if not len(problems_list):
+            return ""
 
-    problems_html = """<ul class="column">"""
-    for problem in problems_list:
-        problems_html += f"""
+        problems_html = """<ul class="column">"""
+        for problem in problems_list:
+            problems_html += f"""
                 <li><a href="en/{problem}">{problem}</a></li>"""
-    problems_html+="""
+        problems_html+="""
             </ul>
         """
-    return problems_html
+        return problems_html
 
-def ProblemsDistribution(problems_list):
-    problems_html = ""
-    val1 = 0
-    for i in column_len(len(problems_list)):
-        val2 = val1+i
-        problems_html+=PrimeDistribution(problems_list[val1:val2])
-        val1 = val2
-    
-    return problems_html
+    def ProblemsDistribution(problems_list):
+        problems_html = ""
+        val1 = 0
+        for i in column_len(len(problems_list)):
+            val2 = val1+i
+            problems_html+=PrimeDistribution(problems_list[val1:val2])
+            val1 = val2
+        
+        return problems_html
 
-existed_problems = [[[] for _ in range(15)] for _ in range(15)]
+    existed_problems = [[[] for _ in range(15)] for _ in range(15)]
 
-BaseHtml = """<!DOCTYPE html>
+    BaseHtml = """<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -157,24 +157,24 @@ papers.">
         window.addEventListener('load', checkScroll);
         window.addEventListener('scroll', checkScroll);
     </script>"""
-chapters = []
-with open("database/chapters.csv") as file:
-    reader = csv.reader(file)
+    chapters = []
+    with open("database/chapters.csv") as file:
+        reader = csv.reader(file)
 
-    for index, row in enumerate(reader):
-        # dsa = f"""
-        #     <li><a href="#{row[0]}">{row[1]}</a></li>"""
-        # BaseHtml = BaseHtml+dsa
-        chapters.append(row[1])
+        for index, row in enumerate(reader):
+            # dsa = f"""
+            #     <li><a href="#{row[0]}">{row[1]}</a></li>"""
+            # BaseHtml = BaseHtml+dsa
+            chapters.append(row[1])
 
-sections = []
-with open("database/sections.csv") as file:
-    reader = csv.reader(file)
+    sections = []
+    with open("database/sections.csv") as file:
+        reader = csv.reader(file)
 
-    for row in reader:
-        sections.append(row)
+        for row in reader:
+            sections.append(row)
 
-BaseHtml = BaseHtml+"""
+    BaseHtml = BaseHtml+"""
         </ol>
     </div>
 
@@ -182,34 +182,34 @@ BaseHtml = BaseHtml+"""
 <main>
     <article class="margin-main">"""
 
-for problem in existed_folders():
-    chapter = int(problem.split('.')[0])
-    section = int(problem.split('.')[1])
+    for problem in existed_folders():
+        chapter = int(problem.split('.')[0])
+        section = int(problem.split('.')[1])
 
-    existed_problems[chapter][section].append(problem)
+        existed_problems[chapter][section].append(problem)
 
-for index, chapter in enumerate(existed_problems):
-    if all(not sublist for sublist in chapter):
-        continue
+    for index, chapter in enumerate(existed_problems):
+        if all(not sublist for sublist in chapter):
+            continue
 
-    BaseHtml = BaseHtml+f"""
+        BaseHtml = BaseHtml+f"""
         <h2 id="{index}" style="text-align: center;">Chapter {index}. {chapters[index-1]}</h2>
       """
 
-    for index1, section in enumerate(chapter):
-        if not len(section):
-            continue
-        FullName = f"{index}.{index1}"
+        for index1, section in enumerate(chapter):
+            if not len(section):
+                continue
+            FullName = f"{index}.{index1}"
 
-        for index2, i in enumerate(sections):
-            if i[0] == FullName:
-                BaseHtml = BaseHtml+f"""
+            for index2, i in enumerate(sections):
+                if i[0] == FullName:
+                    BaseHtml = BaseHtml+f"""
         <h3 id="{FullName}" style="text-align: center;">§ {i[0]}. {i[1]}</h3>
         <div class="columns">{ProblemsDistribution(section)}</div>
         """
-                break
+                    break
     
-BaseHtml += """
+    BaseHtml += """
           </div>
     </article>
 </main>
@@ -254,5 +254,5 @@ BaseHtml += """
 </html>
 """
 
-with open(f"{current_directory.replace("\\en", "")}\\index.html", "w", encoding="UTF-8") as file:
-    file.write(BaseHtml)
+    with open(f"{current_directory.replace("\\en", "")}\\index.html", "w", encoding="UTF-8") as file:
+        file.write(BaseHtml)

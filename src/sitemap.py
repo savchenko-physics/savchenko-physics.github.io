@@ -3,7 +3,7 @@ import time
 from xml.etree.ElementTree import Element, SubElement, tostring
 from urllib.parse import urljoin
 
-def generate_sitemap(root_dir, base_url, output_file):
+def generate_sitemap():
     xml_header = """<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\n        http://www.google.com/schemas/sitemap-image/1.1\n        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">\n"""
     xml_footer = "</urlset>"
     
@@ -24,11 +24,11 @@ def generate_sitemap(root_dir, base_url, output_file):
 
     sitemap_content = xml_header + "\n".join(urls) + "\n" + xml_footer
     
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(sitemap1_file, 'w', encoding='utf-8') as f:
         f.write(sitemap_content)
 
 
-def generate_base_sitemap(root_dir, base_url, output_file):
+def generate_base_sitemap():
     sitemap_time = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(os.path.getmtime(sitemap1_file)))
 
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -39,7 +39,7 @@ def generate_base_sitemap(root_dir, base_url, output_file):
       </sitemap>
 </sitemapindex>"""
 
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(sitemap_file, 'w', encoding='utf-8') as f:
         f.write(sitemap_content)
 
 
@@ -47,6 +47,3 @@ root_dir = os.getcwd().replace("src", "")
 base_url = 'http://savchenkosolutions.com/'
 sitemap_file = f'{root_dir}sitemap.xml'
 sitemap1_file = f'{root_dir}sitemap_1.xml'
-
-generate_sitemap(root_dir, base_url, sitemap1_file)
-generate_base_sitemap(root_dir, base_url, sitemap_file)
