@@ -7,7 +7,7 @@ def main():
     directory = os.getcwd().replace("src", "")
     
     parents.update_en(f"{directory}\\en")
-    ru.parents.update_ru(f"{directory}")
+    ru.parents.update_ru(directory)
     sitemap.generate_sitemap()
     sitemap.generate_base_sitemap()
 
