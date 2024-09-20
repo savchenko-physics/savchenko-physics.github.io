@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="At the ends of a long thread, weights of mass m each are suspended. The thread is spanned over two light little blocks located at a distance of 2l from each other. A 2m weight is attached to it in the middle between the blocks, and the system starts moving. Find the speed of loads after a sufficiently long period of time has elapsed.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="At the ends of a long thread, weights of mass m each are suspended. The thread is spanned over two light little blocks located at a distance of 2l from each other. A 2m weight is attached to it in the middle between the blocks, and the system starts moving. Find the speed of loads after a sufficiently long period of time has elapsed.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="At the ends of a long thread, weights of mass m each are suspended. The thread is spanned over two light little blocks located at a distance of 2l from each other. A 2m weight is attached to it in the middle between the blocks, and the system starts moving. Find the speed of loads after a sufficiently long period of time has elapsed.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>At the ends of a long thread, weights of mass m each are suspended. The thread is spanned over two light little blocks located at a distance of 2l from each other. A 2m weight is attached to it in the middle between the blocks, and the system starts moving. Find the speed of loads after a sufficiently long period of time has elapsed.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.4">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.4.9^*.$ At the ends of a long thread, weights of mass $m$ each are suspended. The thread is spanned over two light little blocks located at a distance of $2l$ from each other. A $2m$ weight is attached to it in the middle between the blocks, and the system starts moving. Find the speed of loads after a sufficiently long period of time has elapsed.
+</p>
+<center>
+  <figure>
+    <img src="2.4.9.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $2.4.9^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.4.9_1.png"
+      loading="lazy"  width="450" />
+    <figcaption>
+      Changing the position of weights
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+From the geometry of the drawing, a trigonometric expression can be obtained by
+$$\tan\varphi=\frac{l}{h}\quad(1)$$
+$$\sin\varphi=\frac{l}{\sqrt{l^2+h^2}};\quad\cos\varphi=\frac{h}{\sqrt{l^2+h^2}}\quad(2)$$
+Over the long period of time the $2m$ weight would go down infinitely ($h\to \infty$)
+From $(1)$, we obtain that as $h$ increases $\tan\varphi$ decreases
+$$\tan\varphi \to 0;\quad\varphi \to 0$$
+For the small angle $\varphi$ we could use an approximation to the second order of magnitude
+$$\sin\varphi \approx\tan\varphi\approx\varphi;\quad\cos\varphi\approx 1$$
+From the geometry of the figure
+$$\sqrt{l^2+h^2}=l+\Delta x $$
+by the Pythagorean theorem, the change in the bottom of the thread connecting $2m$
+$$\Delta x = \sqrt{l^2+h^2}-l$$
+Similarly, from the geometry of the figure</p><p>
+Considering $h\gg l$,
+$$\sqrt{l^2+h^2}\approx l\Rightarrow \boxed{h-\Delta x=l}\quad(2)$$
+$L_1,~L_2$ — Length of threads at the initial moment</p><p>
+Conservation of the mechanical energy
+$$2mgL_1-2mgL_2=\frac{2mv_2^2}{2}-\frac{2mv_1^2}{2}$$
+$$v_1^2+v_2^2=2g\left(h-\Delta x\right)\quad(3)$$
+By the Newton's second law for the $m$ weight
+$$ma=T-mg$$
+Similarly, for the $2m$ weight
+$$2ma^*=2mg-2T\cos\varphi\approx2mg-2T\Leftrightarrow $$
+$$\Leftrightarrow ma^*=mg-T$$
+As they are connected by the same inextensible thread, their acceleration will be equal
+$$\left|a\right|=\left|a^*\right|\Rightarrow v=v^*$$
+Given that the system is being run from a stationary state $(v_0=v_0^*=0)$, let's substitute into $(3)$
+$$2v^2=2g\left(h-\Delta x\right)$$
+Taking into consideration $(2)$
+$$v^2=gl\Rightarrow \boxed{v=\sqrt{gl}}$$
+
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v=\sqrt{gl}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

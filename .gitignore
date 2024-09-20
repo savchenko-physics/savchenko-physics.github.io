@@ -9,3 +9,4 @@ src/database/russian.txt
 src/__pycache__/parents.cpython-312.pyc
 src/ru/__pycache__/parents.cpython-312.pyc
 src/__pycache__/sitemap.cpython-312.pyc
+src/path.py
