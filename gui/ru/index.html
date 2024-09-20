@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX Markdown Editor</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+       <div class="left-side">
+          <div class="window0" id="window2" style="flex: 1;">
+             <div class="container" style="width:100%; height: 10%;">
+                <div class="left-side" style="width:10%;">
+                   <div class="windowShort" id="window2">
+                      <textarea id="area1" placeholder="1.1.1" style="overflow: hidden;"></textarea>
+                   </div>
+                </div>
+                <div class="right-side" style="display: flex;flex-direction: column;width:95%;">
+                   <div class="windowShort" id="window3">
+                      <textarea id="area2" placeholder="Условие"></textarea>
+                   </div>
+                </div>
+             </div>
+             <div class="windowShort" id="window2" style="height: 80%;">
+                <textarea id="area3" placeholder="Решение"></textarea>
+             </div>
+             <div class="windowShort" id="window2" style="height: 9.5%;">
+                <textarea id="area4" placeholder="Ответ"></textarea>
+             </div>
+          </div>
+       </div>
+       <div class="right-side" >
+<!--           <div class="window" id="window3" style="position: relative; height: 100%;">
+             <p id="output">Compiled LaTeX will appear here...</p>
+             <div id="viewRawCode" style="position: absolute; bottom: 0; width: 100%;">
+                <button onclick="printHTMLCode()" style="">View raw code</button>
+             </div>
+          </div> -->
+            <div class="pageWrapper" style="position: relative; max-height: 99vh;">
+                <div class="window" id="window3" style="position: relative; min-height: 98vh; max-height: 98vh; overflow-y: auto; overflow-x: hidden; padding:15px;">
+                    <p id="output">Compiled LaTeX will appear here...</p>
+                </div>
+                    <div id="viewRawCode" class="bottomButton" style="align-self: flex-end;">
+                        <button onclick="printHTMLCode()">View raw code</button>
+                    </div>
+            </div>
+
+       </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
