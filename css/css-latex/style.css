@@ -875,9 +875,27 @@ h6 {
     margin: auto;
 }
 
-#logo {margin-top: 4vh; text-align: center; margin-right: 15px; }
-#logo img {display: inline; width: min(max(70px, 5.6vw), 93.33px); vertical-align: middle }
-#logo span { vertical-align: middle; font-family: 'Courier Prime'; color: darkred; font-size: min(max(45px, 3.5vw), 66.67px); font-weight: bold; white-space: nowrap }
+#logo {margin-top: 4vh; text-align: center; margin: 0.85rem 0; margin-bottom: 0;}
+#logo img {display: inline; width: 70px; vertical-align: middle }
+#logo span { vertical-align: middle; font-family: 'Courier Prime'; color: darkred; font-size: 2.8rem; font-weight: bold; white-space: nowrap }
+
+@media only screen and (max-width: 800px)
+{
+    #logo span { font-size: 2.5rem}
+    #logo img { width: 50px }
+}
+
+@media only screen and (max-width: 600px)
+{
+    #logo span { font-size: 2.3rem}
+    #logo img { width: 45px }
+}
+
+@media only screen and (max-width: 450px)
+{
+    #logo span { font-size: 2rem}
+    #logo img { width: 40px }
+}
 
 a[href$='.pdf'] {
 background-image: url("https://belphol.github.io/img/pdf_gray.gif");
