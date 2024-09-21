@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A wedge of mass m_2 with an angle \alpha is inserted between two identical smooth bars of mass m_1. Determine the acceleration of bodies.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A wedge of mass m_2 with an angle \alpha is inserted between two identical smooth bars of mass m_1. Determine the acceleration of bodies.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A wedge of mass m_2 with an angle \alpha is inserted between two identical smooth bars of mass m_1. Determine the acceleration of bodies.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A wedge of mass m_2 with an angle \alpha is inserted between two identical smooth bars of mass m_1. Determine the acceleration of bodies.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.48.$ A wedge of mass $m_2$ with an angle $\alpha$ is inserted between two identical smooth bars of mass $m_1$. Determine the acceleration of bodies.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.48/statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $2.1.48$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.48/sol.png"
+      loading="lazy"  width="400" />
+    <figcaption>
+      Forces acting on the system
+    </figcaption>
+  </figure>
+</center>
+<p>
+Let us consider a small displacement over time $dt$ from the point of view of kinematics:
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.48/sol1.png"
+      loading="lazy"  width="280" />
+    <figcaption>
+      Small transition in time $dt$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+From geometric considerations:
+$$ dy = dx \cdot ctg\,\beta $$
+Let us differentiate both parts of the expression twice:
+$$ \frac{dy}{d^2t} = \frac{dx}{d^2t} \cdot ctg\,\beta $$
+
+$$ a_1 = a_2 \cdot tg\,\beta\;(1) $$
+Since the Author did not say anything about friction, example $F_{tr}=0$
+Next, we write Newton's 2nd law for the bar $m_1$ on the $OY$ axis:
+$$ m_1a_1=N_1\,cos\,\beta $$
+
+$$ N_1=\frac{m_1a_1}{cos\,\beta}\;(a) $$
+Similarly for $m_2$:
+$$ m_2a_2=m_2g-2N_1\,sin\,\beta\;(b) $$
+Substitute $(a)$ into $(b)$:
+$$ m_2a_2=m_2g-2m_1a_1\cdot tg\,\beta $$
+We substitute $(1)$ into $(c)$:
+$$ m_2a_2=m_2g-2m_1a_2\cdot tg^2\,\beta $$
+We express $a_2$:
+$$ \boxed{a_2=\frac{m_2g}{m_2+2m_1\,tg^2\,\beta}}\;(d) $$
+Given $(1)$, we multiply $(d)$ by $tg\,\beta$:
+$$ \boxed{a_1=\frac{m_2g\,tg\,\beta}{m_2+2m_1\,tg^2\,\beta}} $$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+                        $$a_1=\frac{m_2g\,tg\,\beta}{m_2+2m_1\,tg^2\,\beta}$$
+            $$a_2=\frac{m_2g}{m_2+2m_1\,tg^2\,\beta}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
