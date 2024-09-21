@@ -72,7 +72,7 @@ function generateHtmlContent() {
     </p>
   </header>
 
-        <h3 id="back-link"><a href="../../#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Назад</a></h3>
+        <h3 id="back-link"><a href="../../ru#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Назад</a></h3>
     ${generateBasement()}
 
     <footer class="row container">
