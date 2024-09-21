@@ -63,9 +63,9 @@ papers.">
     <meta property="og:description" content="A website with solutions to physics problems from Savchenko Textbook">
     <meta name="yandex-verification" content="6cfda41f74038368">
     <title>Savchenko Solutions</title>
-    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
-    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
-    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="css/css-latex/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="js/jquery-1.10.1.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -85,21 +85,23 @@ papers.">
 
 <body id="top">
     <header class = "margin-main" style="text-align:center;">
-        <h2>Solutions of Savchenko Problems in Physics</h2>
+        <div id = "logo">
+            <span><img src = "img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
         <p class="author">
-          Aliaksandr Melnichenka <br/>
-          October 2023
+          Solutions of Savchenko Problems in Physics <br/>
+          knowledge must be free
         </p>
-        <h2 style="text-align: center;margin:0; font-size: 2.0rem;"><a href="https://savchenkosolutions.com/ru">Решения на русском</a></h2>
-        <h2 style="text-align: center; margin-top: 0.9rem; "><a href="https://savchenkosolutions.com/en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
+        <h2 style="text-align: center;margin:0; font-size: 2.0rem;"><a href="ru">Решения на русском</a></h2>
+        <h2 style="text-align: center; margin-top: 0.9rem; "><a href="en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
         <h3 style="text-align:center;  margin-top: 0.8rem; margin-bottom: 0.2rem;">
-            Beta version of <a href="https://savchenkosolutions.com/en/solutions.pdf" class="tooltip" target="_blank">Savchenko Solutions <span class="tooltiptext">Stefan Nicov, Aliaksandr Melnichenka et al.</span> </a>
+            Beta version of <a href="en/solutions.pdf" target="_blank">Savchenko Solutions </a>
         </h3>
         
 
         <p class="description">
         The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics olympiads in post-soviet countries. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this website, you can observe a non-profit startup creating the first wizard of this collection with the design of solutions of <a href="https://savchenkosolutions.com/about">different authors</a>. In total, over 700 solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing in Russian and English. If you'd like to contribute, feel free to email <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
+        On this website, you can observe a non-profit startup creating the first wizard of this collection with the design of solutions of <a href="about">different authors</a>. In total, over 700 solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing in Russian and English. If you'd like to contribute, feel free to email <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
         </p>
     </header>
 

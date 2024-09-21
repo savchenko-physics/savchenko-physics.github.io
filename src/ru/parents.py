@@ -95,9 +95,9 @@ def update_ru(current_directory):
     <meta property="og:description" content="Решение задач по физике Савченко О.Я.">
     <meta name="yandex-verification" content="6cfda41f74038368">
     <title>Решение Савченко О.Я.</title>
-    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
-    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
-    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="../css/css-latex/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <script src="../js/jquery-1.10.1.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -117,18 +117,20 @@ def update_ru(current_directory):
 
 <body id="top">
     <header class = "margin-main" style="text-align:center;">
-        <h2>Решение задач из Савченко О.Я.</h2>
+        <div id = "logo">
+            <span><img src = "../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
         <p class="author">
-          Aliaksandr Melnichenka <br/>
-          October 2023
+          Solutions of Savchenko Problems in Physics <br/>
+          knowledge must be free
         </p>
+        <h2 style="text-align: center; font-size: 1.8rem; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a style="color: hsla(240, 100%, 33%, 1);" href="../">English solutions</a></h2>
         <h2 style="text-align: center; margin-top: 0.9rem; "><a href="../savchenko.pdf" target="_blank">Условия задач</a></h2>
-        <h3 style="text-align: center; margin-top: 0.8rem; margin-bottom: 0.2rem;"><a style="color: hsla(240, 100%, 33%, 1);" href="https://savchenkosolutions.com/">English solutions</a></h3>
         
 
         <p class="description">
         Сборник задач по физике под редакцией О.Я. Савченко - один из самых популярных ресурсов для подготовки к олимпиадам по физике в странах постсоветского пространства. За более чем 30 лет, прошедших с момента его первого издания, не было создано ни одного полного руководства по решению задач из него.<br>
-        На этом сайте вы можете наблюдать попытку создания первого решебника этого сборника с оформлением решений <a href="https://savchenkosolutions.com/ru/about">разных авторов</a>. Всего было опубликовано более 700 решений из 2,023 задач. В 2023 году был запущен проект, который активно развивается на русском и английском языках. Если хотите поучаствовать, пишите <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
+        На этом сайте вы можете наблюдать попытку создания первого решебника этого сборника с оформлением решений <a href="about">разных авторов</a>. Всего было опубликовано более 700 решений из 2,023 задач. В 2023 году был запущен проект, который активно развивается на русском и английском языках. Если хотите поучаствовать, пишите <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
         </p>
     </header>
 
