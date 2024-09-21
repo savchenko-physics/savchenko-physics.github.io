@@ -4,3 +4,5 @@
 - Fix a bug with hover effect on attached container on first run
 - Adjust all russian solutions to the English-articles style
 - Show unique english articles on russian homepage and vice versa
+- Make pages with description of every author
+- Next to every link there should be an image of the author

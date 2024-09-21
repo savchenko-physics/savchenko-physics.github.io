@@ -536,6 +536,7 @@ dl dd {
 /* Center align author name, use small caps and add vertical spacing  */
 .author {
   margin: 0.85rem 0;
+  margin-top: 0;
   font-variant-caps: small-caps;
   text-align: center;
 }
@@ -872,4 +873,19 @@ h6 {
 .ScreenS{
     max-width: 380px;
     margin: auto;
+}
+
+#logo {margin-top: 4vh; text-align: center; margin-right: 15px; }
+#logo img {display: inline; width: min(max(70px, 5.6vw), 93.33px); vertical-align: middle }
+#logo span { vertical-align: middle; font-family: 'Courier Prime'; color: darkred; font-size: min(max(45px, 3.5vw), 66.67px); font-weight: bold; white-space: nowrap }
+
+a[href$='.pdf'] {
+background-image: url("https://belphol.github.io/img/pdf_gray.gif");
+background-position: right;
+background-repeat: no-repeat;
+padding-right: 18px;
+}
+a[href$='.pdf']:focus, a[href$='.pdf']:hover {
+background-image: url("https://belphol.github.io/img/pdf.gif");
+color: #820000;
 }
