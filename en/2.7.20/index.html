@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A spool of thread lies on a horizontal plane. The reel is pulled by a thread. At what angles \alpha between the force and the horizontal will the coil accelerate towards the taut thread?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A spool of thread lies on a horizontal plane. The reel is pulled by a thread. At what angles \alpha between the force and the horizontal will the coil accelerate towards the taut thread?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A spool of thread lies on a horizontal plane. The reel is pulled by a thread. At what angles \alpha between the force and the horizontal will the coil accelerate towards the taut thread?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A spool of thread lies on a horizontal plane. The reel is pulled by a thread. At what angles \alpha between the force and the horizontal will the coil accelerate towards the taut thread?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+    <h2>Solutions of Savchenko Problems in Physics</h2>
+    <p class="author">
+      Aliaksandr Melnichenka <br/>
+      October 2023
+    </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.7">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.7.20^*.$ A spool of thread lies on a horizontal plane. The reel is pulled by a thread. At what angles $\alpha$ between the force and the horizontal will the coil accelerate towards the taut thread?
+</p>
+<center>
+  <figure>
+    <img src="2.7.20.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $2.7.20^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.7.20_1.png"
+      loading="lazy"  width="270" />
+    <figcaption>
+      Forces acting on the spool
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+The second Newton's law for the horizontal axis
+$$ma=F\cos\alpha-F_{fr}\quad(1)$$
+Let's write a moment of inertia with respect to the axis of rotation of the spool with angular acceleration $\varepsilon$
+$$F_{fr}\cdot R - F\cdot r = \frac{mR^2}{2}\cdot \varepsilon\quad(2)$$
+The moment of inertia of the spool in our model (a solid cylinder, symmetry axis)
+$$I=\frac{mR^2}{2}$$
+Because there's no slippage:
+$$a=\varepsilon\cdot R\quad(3)$$
+Let's substitute $(3)$ into $(1)$
+$$F_{fr}=F\cos\alpha-m\varepsilon R\quad(4)$$
+and put into $(2)$
+$$\left(F\cos\alpha-m\varepsilon R\right)\cdot R - F\cdot r = \frac{mR^2}{2}\cdot \varepsilon$$
+After algebraic transformations
+$$F\left(R\cos\alpha-r\right)=\frac{3mR^2\varepsilon}{2} \Leftrightarrow \boxed{\varepsilon=\frac{2F\left(R\cos\alpha-r\right)}{3mR^2}} \quad(5)$$
+For the angular acceleration to be clockwise, and consequently the motion to be co-directional with the direction of $\vec{F}$, the external force moment from equation $(2)$ must be positive, and consequently the expression $(5)$ must be greater than 0. The moment of external forces in equation $(2)$ must be positive $(\varepsilon = 0)$
+$$\frac{2F\left(R\cos\alpha-r\right)}{3mR^2}>0$$
+$$R\cos\alpha-r>0\Leftrightarrow \boxed{\cos\alpha>\frac{r}{R}}$$
+The larger the angle $\alpha$, the smaller the value of the trigonometric function $\cos\alpha$, making the expression for the angle
+$$\boxed{\alpha<\arccos\left(\frac{r}{R}\right)}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$\cos\alpha>\frac{r}{R}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
