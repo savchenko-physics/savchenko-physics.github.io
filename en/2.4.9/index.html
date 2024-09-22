@@ -85,16 +85,21 @@ From $(1)$, we obtain that as $h$ increases $\tan\varphi$ decreases
 $$\tan\varphi \to 0;\quad\varphi \to 0$$
 For the small angle $\varphi$ we could use an approximation to the second order of magnitude
 $$\sin\varphi \approx\tan\varphi\approx\varphi;\quad\cos\varphi\approx 1$$
-From the geometry of the figure
+From the geometry of the figure, the length of the thread
 $$\sqrt{l^2+h^2}=l+\Delta x $$
 by the Pythagorean theorem, the change in the bottom of the thread connecting $2m$
 $$\Delta x = \sqrt{l^2+h^2}-l$$
 Similarly, from the geometry of the figure</p><p>
-Considering $h\gg l$,
-$$\sqrt{l^2+h^2}\approx l\Rightarrow \boxed{h-\Delta x=l}\quad(2)$$
+Considering $\sin\varphi\approx\tan\varphi$ and $h\gg l$, we obtain
+$$\sqrt{l^2+h^2}\approx h\Rightarrow \boxed{l=h-\Delta x}\quad(2)$$
 $L_1,~L_2$ — Length of threads at the initial moment</p><p>
-Conservation of the mechanical energy
-$$2mgL_1-2mgL_2=\frac{2mv_2^2}{2}-\frac{2mv_1^2}{2}$$
+Conservation of the mechanical energy $(dE_p+dE_k=0)$</p><p>
+Two weights with mass $m$ went up to $\Delta x$ and the $2m$ went down $h$, making change in potential energy
+$$dE_p=2mgh-2\cdot mg\Delta x$$
+In the meantime, the velocities of $m$ and $2m$ bodies become $v_1$ and $v_2$, respectively, making total kinetic energy of the system
+$$dE_k = 2\frac{mv_1^2}{2}+\frac{2m\cdot v_2^2}{2}$$
+Substituing into equations of conservation of the mechanical energy
+$$dE_p+dE_k=0\Leftrightarrow 2mgh-2\cdot mg\Delta x+2\frac{mv_1^2}{2}+\frac{2m\cdot v_2^2}{2}=0$$
 $$v_1^2+v_2^2=2g\left(h-\Delta x\right)\quad(3)$$
 By the Newton's second law for the $m$ weight
 $$ma=T-mg$$
