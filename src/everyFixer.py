@@ -20,11 +20,22 @@ def find_and_replace(file_path, old_word, new_word):
         # modified_content = re.sub(r'\b' + re.escape(old_word) + r'\b', new_word, content)
 
         # new_word = '<a href="../#'+extract_number_from_path(file_path)+'">←Назад</a>'
+        strs = ""
+        for i in range(len(file_path.split(os.sep))-9):
+            strs+="../"
 
-        modified_content = content.replace(old_word, new_word)
+        new_word = f"""        <div id = "logo">
+            <span><img src = "{strs}img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+          Solutions of Savchenko Problems in Physics <br/>
+          knowledge must be free
+        </p>"""
 
+        modified_content = content.replace(old_word, new_word)        
         if modified_content != content:
             print(file_path, new_word)
+
 
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(modified_content)
@@ -49,8 +60,18 @@ def find_pdfs(directory='.'):
 current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """aliaksandr@savchenkosolutions.com"""
-new_word = """alex@savchenkosolutions.com"""
+old_word = """        <h2>Решение задач из Савченко О.Я.</h2>
+        <p class="author">
+          Aliaksandr Melnichenka <br/>
+          October 2023
+        </p>"""
+new_word = """        <div id = "logo">
+            <span><img src = "img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+          Solutions of Savchenko Problems in Physics <br/>
+          knowledge must be free
+        </p>"""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)
