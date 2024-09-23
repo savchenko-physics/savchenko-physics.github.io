@@ -8,7 +8,7 @@
         http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
       <url>
         <loc>http://savchenkosolutions.com/</loc>
-        <lastmod>2024-09-23T17:42:38Z</lastmod>
+        <lastmod>2024-09-23T18:26:16Z</lastmod>
       </url>
       <url>
         <loc>http://savchenkosolutions.com/1/</loc>
@@ -3483,6 +3483,10 @@
         <lastmod>2024-09-22T02:07:17Z</lastmod>
       </url>
       <url>
+        <loc>http://savchenkosolutions.com/en/2.7.44/</loc>
+        <lastmod>2024-09-23T18:24:34Z</lastmod>
+      </url>
+      <url>
         <loc>http://savchenkosolutions.com/en/2.7.6/</loc>
         <lastmod>2024-09-22T02:07:17Z</lastmod>
       </url>
@@ -3616,7 +3620,7 @@
       </url>
       <url>
         <loc>http://savchenkosolutions.com/ru/</loc>
-        <lastmod>2024-09-23T17:42:39Z</lastmod>
+        <lastmod>2024-09-23T18:26:17Z</lastmod>
       </url>
       <url>
         <loc>http://savchenkosolutions.com/ru/about/</loc>
