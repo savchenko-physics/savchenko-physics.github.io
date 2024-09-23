@@ -540,6 +540,7 @@ dl dd {
   font-variant-caps: small-caps;
   line-height: 1.5;
   text-align: center;
+  hyphens: none;
 }
 .description {
   margin: auto;
