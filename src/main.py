@@ -1,7 +1,7 @@
 import os
 import parents
 import sitemap
-import ru.parentsf
+import ru.parents
 
 def main():
     directory = os.getcwd().replace("src", "")
