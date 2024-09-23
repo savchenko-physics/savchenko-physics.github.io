@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A uniform chain is suspended from the thread at one end so that the other end touches the surface of the table. The thread is burned out. Determine the dependence of the pressure force of the chain on the table on the length of its part that has not yet fallen. The impact of the links on the table is inelastic, the mass of the chain is m, its length is l.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A uniform chain is suspended from the thread at one end so that the other end touches the surface of the table. The thread is burned out. Determine the dependence of the pressure force of the chain on the table on the length of its part that has not yet fallen. The impact of the links on the table is inelastic, the mass of the chain is m, its length is l.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A uniform chain is suspended from the thread at one end so that the other end touches the surface of the table. The thread is burned out. Determine the dependence of the pressure force of the chain on the table on the length of its part that has not yet fallen. The impact of the links on the table is inelastic, the mass of the chain is m, its length is l.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A uniform chain is suspended from the thread at one end so that the other end touches the surface of the table. The thread is burned out. Determine the dependence of the pressure force of the chain on the table on the length of its part that has not yet fallen. The impact of the links on the table is inelastic, the mass of the chain is m, its length is l.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions of Savchenko Problems in Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.2.41.$ A uniform chain is suspended from the thread at one end so that the other end touches the surface of the table. The thread is burned out. Determine the dependence of the pressure force of the chain on the table on the length of its part that has not yet fallen. The impact of the links on the table is inelastic, the mass of the chain is $m$, its length is $l$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.2.41_1.png"
+      loading="lazy"  width="270" />
+  </figure>
+</center>
+<p>
+
+As the chain is homogeneous, the linear density
+$$\rho=\frac{m}{L}$$
+Than, the mass of the fallen part of the chain
+$$m_x'=\rho \cdot x=m\frac{x}{L}$$
+The first few parts of the chain with mass $m_x'$ came at near-zero velocity</p><p>
+Newton's second law for the force $F_1$, which is due to the change in momentum as it interacts with the ground.
+$$F_1=\frac{\Delta p}{\Delta t}=\frac{m_x'\cdot\Delta v}{\Delta t}$$
+As the lower part of the thread has almost no time to acquire velocity, the $\Delta v$ tends to zero:
+$$\Delta v \to 0;\quad F_1\to0$$
+The gravitational force of the fallen part of the chain:
+$$F_g=m_x'g=\frac{mx}{L}g$$
+Consider an infinitesimal fraction of $\Delta x$ that has velocity $v$ and will fall while $m_x'$ is at rest
+$$m'_{\Delta x}=\rho\cdot \Delta x=m\cdot\frac{\Delta x}{L}$$
+Change in the momentum $\Delta p'_{\Delta x}$ over the small period of time $\Delta t$
+$$\frac{\Delta p'_{\Delta x}}{\Delta t} =\frac{m'_{\Delta x}\cdot v}{\Delta t}=\frac{mv}{L}\frac{\Delta x}{\Delta t} = \boxed{\frac{mv^2}{L}}\quad(1)$$
+The falling time could be found as
+$$x=\frac{gt^2}{2}\Rightarrow t=\sqrt{\frac{2x}{g}}$$
+Similarly, the velocity at the lowest point
+$$v=gt=\sqrt{2gx}\Rightarrow v^2=2gx$$
+Substituting into $(1)$:
+$$F_2=\frac{\Delta p'_{\Delta x}}{\Delta t}=\frac{2mgx}{L}$$
+Support reaction force
+$$N=F_1+F_2+F_g=0+\frac{mgx}{L}+\frac{2mgx}{L}$$
+$$N=\frac{3mgx}{L}\quad(2)$$
+The length length of its part that has not yet fallen
+$$L_0=L-x\Leftrightarrow x=L-L_0$$
+After substituting into $(2)$
+$$\boxed{N=3mg\left(1-\frac{L_0}{L}\right)}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F=3mg(1-x/l)$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
