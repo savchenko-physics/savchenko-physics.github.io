@@ -1,8 +1,8 @@
-<p>a) If the distances between two points are constant, then if we project the velocity of point $A$ onto line $AB$, then the projection of the velocity of point $B$ onto line $AB$ is exactly the same</p>
-<p class="exp">$\fbox{$u_{AB} = v/\sqrt{2}$}$</p>
+<p>
+Acceleration of cargoes 1–3:
+$$ a_1=\frac{F(M+4m)}{2m(M+2m)} $$
 
-<p>б) The velocities of $A$ and $B$ are the same because either the body does not rotate, or its rotation occurs around line $AB$. </p>
-<p>The fact that the velocity of point $C$ has a different value indicates that its velocity $\vec u$ is made up of the velocity $\vec v$ in the plane of the figure and $\vec u_1$ perpendicular to the plane.</a>
-<p class="exp">$\vec{u}_1+\vec{v} = \vec{u}$</p>
-<p>From where</a>
-<p class="exp">$\fbox{$u_1 = \sqrt{u^2 - v^2}$}$</p>
+$$ a_2=\frac{FM}{2m(M+2m)} $$
+
+$$ a_3=\frac{F}{M+2m} $$
+</p>

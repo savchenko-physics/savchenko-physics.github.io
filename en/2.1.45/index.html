@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A coin is placed on a plane whose slope tangent is equal to the coefficient of friction. In the horizontal direction along the plane, the coin was given a velocity v. Find the steady speed of the coin.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A coin is placed on a plane whose slope tangent is equal to the coefficient of friction. In the horizontal direction along the plane, the coin was given a velocity v. Find the steady speed of the coin.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A coin is placed on a plane whose slope tangent is equal to the coefficient of friction. In the horizontal direction along the plane, the coin was given a velocity v. Find the steady speed of the coin.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A coin is placed on a plane whose slope tangent is equal to the coefficient of friction. In the horizontal direction along the plane, the coin was given a velocity v. Find the steady speed of the coin.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions of Savchenko Problems in Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.45^*.$ A coin is placed on a plane whose slope tangent is equal to the coefficient of friction. In the horizontal direction along the plane, the coin was given a velocity $v$. Find the steady speed of the coin.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.45/sol.jpg"
+loading="lazy" width="250" />
+<figcaption>
+Forces acting on the body
+</figcaption>
+</figure>
+</center>
+<p>
+Projecting $m\vec{g}$ on $OY$:
+</p>
+<br>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.45/sol1.jpg"
+loading="lazy" width="250" />
+<figcaption>
+Projecting on $OY$
+</figcaption>
+</figure>
+</center>
+<p>
+From the figure, we find the support reaction force:
+$$ N=mg \cos \alpha $$
+According to the Amontons-Coulomb Law:
+$$ F_{тр}=\mu N=\mu mg \cos \alpha $$
+Since $\mu = tg \alpha$ (by condition):
+$$ F_{тр}=\mu mg \cos \alpha $$
+
+$$ F_{тр}=mg \cdot tg \alpha \cdot \cos \alpha=mg \sin \alpha $$
+
+$$ F=mg \sin \alpha $$
+Redraw in the $XY$ plane
+At the initial moment $(\varphi=90^{\circ})$:
+</p>
+<br>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.45/sol3.jpg"
+loading="lazy" width="250" />
+<figcaption>
+Drawing in the $xOy$ plane
+</figcaption>
+</figure>
+</center>
+<p>
+At the final moment $(\varphi=0^{\circ})$:
+</p>
+<br>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.45/sol4.jpg"
+loading="lazy" width="250" />
+<figcaption>
+Forces acting on the body at the final moment
+</figcaption>
+</figure>
+</center>
+<p>
+Let's consider an arbitrary moment:
+</p>
+<br>
+<center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.45/sol2.jpg"
+loading="lazy" width="250" />
+<figcaption>
+Forces acting on a body at an arbitrary moment
+</figcaption>
+</figure>
+</center>
+<p>
+Note that $\varphi$ changes from $0^{\circ}$ to $90^{\circ}$:
+</p>
+<p>
+Let's write Newton's second law:
+$$ \left\{\begin{matrix}
+         \frac{du_x}{dt} = \frac{F   \sin   \varphi }{m}& \\
+         \frac{du_y}{dt} = \frac{F (1-  \cos   \varphi) }{m} &
+         \end{matrix}\right. $$
+
+$$ \left\{\begin{matrix}
+         \frac{d}{dt} (u   \sin \varphi)= \frac{F   \sin   \varphi }{m}& \\
+         \frac{d}{dt} (u   \cos \varphi) = \frac{F (1-  \cos   \varphi) }{m} &
+         \end{matrix}\right. $$
+We solve the system of differential equations:
+$$ \left\{\begin{matrix}
+         \frac{d\varphi}{dt} = \frac{F   \sin   \varphi }{mu}& (a)\\
+         \frac{du}{dt} = \frac{F (1-  \cos   \varphi) }{m} & (b)
+         \end{matrix}\right. $$
+We divide $(b)$ by $(a)$:
+$$ \frac{du}{d\varphi} = u\frac{1-  \cos   \varphi}{\sin   \varphi} $$
+
+$$ \frac{du}{u} = \frac{1-  \cos   \varphi}{\sin   \varphi} d\varphi $$
+
+$$ \frac{du}{u} = tg (\frac{\varphi}{2})   d\varphi $$
+We integrate both parts of the equation:
+<!-- $\int_{v_0}^{v}\frac{du}{u} = \int_{90^{\circ}}^{0^{\circ}}tg (\frac{\varphi}{2}) d\varphi \; (c)$ -->
+$$ \int \frac{du}{u} = \int tg (\frac{\varphi}{2})   d\varphi \; (c) $$
+
+$$ \int\frac{du}{u}=ln|u| \; (d) $$
+
+$$ \int tg (\frac{\varphi}{2})   d\varphi=-2 ln(\cos(\frac{x}{2})) \; (e) $$
+Substitute $(e)$ and $(d)$ into $(c)$:
+<div class="scroll-wrapper">
+$$ ln(v)+C=ln(\sin(\varphi)) -(ln(\sin(\frac{\varphi}{2})-\cos(\frac{\varphi}{2})))\; (e) $$
+</div>
+$$ \boxed{v_x=\frac{v}{2}} $$
+</p>
+        <h4>Answer</h4>
+        <p>
+            $$ v_x=\frac{v}{2} $$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
