@@ -65,11 +65,13 @@ function generateHtmlContent() {
 </head>
   <body style="">
       <header style="text-align:center;">
-    <h2>Решение задач из Савченко О.Я.</h2>
-    <p class="author">
-      Aliaksandr Melnichenka <br/>
-      October 2023
-    </p>
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
   </header>
 
         <h3 id="back-link"><a href="../../ru#${getFirstTwoSegments(document.getElementById('area1').value)}">$\\leftarrow$Назад</a></h3>
