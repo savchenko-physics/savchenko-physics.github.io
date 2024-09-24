@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Two identical balls with charges \pm q, rigidly connected by a weightless rod of length l, are in an electric field, which acts on them with force \pm q E. Determine the mass of the ball if the amplitude of small transverse oscillations of the balls is x_0 and the maximum velocity of the balls is v_0.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Two identical balls with charges \pm q, rigidly connected by a weightless rod of length l, are in an electric field, which acts on them with force \pm q E. Determine the mass of the ball if the amplitude of small transverse oscillations of the balls is x_0 and the maximum velocity of the balls is v_0.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Two identical balls with charges \pm q, rigidly connected by a weightless rod of length l, are in an electric field, which acts on them with force \pm q E. Determine the mass of the ball if the amplitude of small transverse oscillations of the balls is x_0 and the maximum velocity of the balls is v_0.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Two identical balls with charges \pm q, rigidly connected by a weightless rod of length l, are in an electric field, which acts on them with force \pm q E. Determine the mass of the ball if the amplitude of small transverse oscillations of the balls is x_0 and the maximum velocity of the balls is v_0.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#3.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $3.1.8.$ Two identical balls with charges $\pm q$, rigidly connected by a weightless rod of length $l$, are in an electric field, which acts on them with force $\pm q E$. Determine the mass of the ball if the amplitude of small transverse oscillations of the balls is $x_0$ and the maximum velocity of the balls is $v_0$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/3/3.1.8/statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $3.1.8$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Newton's second law for the normal force of the Coulomb, which creates a restoring moment of force, is found in projection onto the vertical axis
+$$ ma_\tau=-qE\sin\varphi $$
+Since the angle $\varphi$ is negligibly small, we will use $\sin\varphi\approx\varphi$
+$$ -qE\varphi=-qE\frac{2x}{l} $$
+From where we obtain the equation of harmonic oscillations
+$$ m\ddot{x}(t)+\frac{2qE}{l}x(t)=0 $$
+
+$$ \ddot{x}(t)+\frac{2qE}{ml}x(t)=0 $$
+The solution to which we know:
+$$ \omega=\sqrt{\frac{2qE}{ml}} $$
+From where, similarly to <a href="../3.1.6">3.1.6</a>, we find the maximum speed
+$$ \upsilon_0=x_0\omega=x_0\sqrt{\frac{2qE}{ml}} $$
+After mathematical transformations we obtain the mass of the ball
+$$ \boxed{m=\frac{2qEx_0^2}{l\upsilon_0^2}} $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$m=\frac{2qEx_0^2}{l\upsilon_0^2}$$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Dzikan Mikita<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

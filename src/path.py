@@ -1,9 +1,9 @@
 import os
 
 # Define the range of folders to create
-base = "2.7"
-start_year = 44
-end_year = 44
+base = "3.1"
+start_year = 15
+end_year = 17
 
 # Define the folder structure
 base_path = '.'  # You can change this to your desired base path  
