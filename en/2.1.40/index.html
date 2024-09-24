@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="The horizontal conveyor belt moves at a speed of u. A washer flies into the tape at a tangent to it, the initial velocity v of which is perpendicular to the edge of the tape. Find the maximum width of the tape at which the washer will reach its other edge if the coefficient of friction between the washer and the tape is \mu.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="The horizontal conveyor belt moves at a speed of u. A washer flies into the tape at a tangent to it, the initial velocity v of which is perpendicular to the edge of the tape. Find the maximum width of the tape at which the washer will reach its other edge if the coefficient of friction between the washer and the tape is \mu.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="The horizontal conveyor belt moves at a speed of u. A washer flies into the tape at a tangent to it, the initial velocity v of which is perpendicular to the edge of the tape. Find the maximum width of the tape at which the washer will reach its other edge if the coefficient of friction between the washer and the tape is \mu.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>The horizontal conveyor belt moves at a speed of u. A washer flies into the tape at a tangent to it, the initial velocity v of which is perpendicular to the edge of the tape. Find the maximum width of the tape at which the washer will reach its other edge if the coefficient of friction between the washer and the tape is \mu.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.40.$ The horizontal conveyor belt moves at a speed of $u$. A washer flies into the tape at a tangent to it, the initial velocity $v$ of which is perpendicular to the edge of the tape. Find the maximum width of the tape at which the washer will reach its other edge if the coefficient of friction between the washer and the tape is $\mu$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.40/statement.png"
+      loading="lazy"  width="250" />
+    <figcaption>
+      For problem $2.1.40$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.40/sol.png"
+loading="lazy" width="250" />
+<figcaption>
+Movement of the puck along the tape
+</figcaption>
+</figure>
+</center>
+
+<p>
+1. The acceleration of the puck is determined by the equation of Newton's second law:
+$$ \mu mg=ma $$
+
+$$ a=\mu g $$
+2. With a conveyor belt width of $d$, the washer will cover a uniformly slow distance of $x$ due to the belt movement. From the similarity of right triangles obtained on the vectors of given speeds and geometric parameters of the washer movement, we find the relationship:
+$$ \frac{d}{x} =\frac{v}{v_0} $$
+
+$$ \frac{d}{x} =\frac{v}{\sqrt{v^2+u^2}} $$
+
+$$ d =x \frac{v}{\sqrt{v^2+u^2}} $$
+3. The distance traveled by the washer $x$ can be found from kinematics:
+$$ \left\{\begin{matrix}
+          v=v_0-at & \\
+          x=v_0t-\frac{at^2}{2} &
+          \end{matrix}\right. $$
+
+$$ v=0\Rightarrow t=\frac{v_0}{a}=\frac{\sqrt{v^2+u^2}}{\mu g} $$
+
+$$ x=\frac{v^2+u^2}{\mu g}-\frac{v^2+u^2}{2\mu g}=\frac{v^2+u^2}{2\mu g} $$
+4. Next, we substitute the value of $x$ into the equation for $d$
+$$ \boxed{d = v\frac{\sqrt{v^2+u^2}}{2\mu g}} $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$d =\frac{v}{2\mu g} \sqrt{v^2+u^2}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

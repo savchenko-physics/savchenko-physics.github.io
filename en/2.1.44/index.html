@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Determine the steady-state velocity of a body on an inclined plane that changes one direction of its velocity u to the opposite direction with high frequency. The direction of movement of the plane is shown in the figure. Coefficient of friction \mu, angle of inclination of the plane \alpha, tg \alpha < \mu.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Determine the steady-state velocity of a body on an inclined plane that changes one direction of its velocity u to the opposite direction with high frequency. The direction of movement of the plane is shown in the figure. Coefficient of friction \mu, angle of inclination of the plane \alpha, tg \alpha < \mu.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Determine the steady-state velocity of a body on an inclined plane that changes one direction of its velocity u to the opposite direction with high frequency. The direction of movement of the plane is shown in the figure. Coefficient of friction \mu, angle of inclination of the plane \alpha, tg \alpha < \mu.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Determine the steady-state velocity of a body on an inclined plane that changes one direction of its velocity u to the opposite direction with high frequency. The direction of movement of the plane is shown in the figure. Coefficient of friction \mu, angle of inclination of the plane \alpha, tg \alpha < \mu.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.1.44^*.$ Determine the steady-state velocity of a body on an inclined plane that changes one direction of its velocity $u$ to the opposite direction with high frequency. The direction of movement of the plane is shown in the figure. Coefficient of friction $\mu$, angle of inclination of the plane $\alpha$, $tg \alpha < \mu$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/2/2.1.44/statement.png"
+      loading="lazy"  width="180" />
+    <figcaption>
+      For problem $2.1.44^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            <center>
+<figure>
+<img src="https://savchenkosolutions.com/2/2.1.44/draw.png"
+loading="lazy" width="350" />
+<figcaption>
+Forces acting on the body
+</figcaption>
+</figure>
+</center>
+<p>
+Since the speed changes quickly, the body does not have time to move in the horizontal direction and all the time moves in the direction of $\vec{v}$
+</p>
+<p>
+Since $v=\text{const}$, there is no acceleration in the direction along the speed $\vec{v}$
+$$ mg\sin\alpha = \mu mg \cos\alpha\cos\beta $$
+
+$$ \cos\beta = \frac{\tan\alpha}{\mu} $$
+From geometric considerations, the moduli of the vectors $\vec{v}$ and $\vec{u}$ are related by the relation
+$$ v=\frac{u}{\tan\beta} $$
+
+$$ v=u \frac{\frac{\tan\alpha}{\mu}}{\sqrt{1-\frac{\tan^2\alpha}{\mu^2}}} $$
+
+$$ \boxed{v = u \frac{\tan α}{\sqrt{\mu ^{2} − \tan^{2} α}}} $$
+</p>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$v = u \frac{\, \text{tg} α}{\sqrt{\mu ^{2} − \text{tg}^{2} α}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

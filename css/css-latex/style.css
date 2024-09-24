@@ -540,6 +540,7 @@ dl dd {
   font-variant-caps: small-caps;
   line-height: 1.5;
   text-align: center;
+  hyphens: none;
 }
 .description {
   margin: auto;
@@ -877,30 +878,36 @@ h6 {
 
 #logo {margin-top: 4vh; text-align: center; margin: 0.85rem 0; margin-bottom: 0;}
 #logo img {display: inline; width: 70px; vertical-align: middle }
-#logo span { vertical-align: middle; font-family: 'Courier Prime'; color: darkred; font-size: 2.8rem; font-weight: bold; white-space: nowrap }
+#logo span { vertical-align: middle; font-family: 'Courier Prime'; color: darkred; font-size: 2.8rem; font-weight: bold; white-space: nowrap; }
 
 @media only screen and (max-width: 800px)
 {
-    #logo span { font-size: 2.5rem}
-    #logo img { width: 50px }
+    #logo span { font-size: 2.8rem}
+    #logo img { width: 70px }
 }
 
 @media only screen and (max-width: 600px)
 {
+    #logo span { font-size: 2.6rem}
+    #logo img { width: 60px }
+}
+
+@media only screen and (max-width: 500px)
+{
     #logo span { font-size: 2.3rem}
+    #logo img { width: 50px }
+}
+
+@media only screen and (max-width: 420px)
+{
+    #logo span { font-size: 2.0rem}
     #logo img { width: 45px }
 }
 
-@media only screen and (max-width: 450px)
-{
-    #logo span { font-size: 2rem}
-    #logo img { width: 40px }
-}
-
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 360px)
 {
     #logo span { font-size: 1.8rem}
-    #logo img { width: 35px }
+    #logo img { width: 40px }
 }
 
 a[href$='.pdf'] {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A ball of mass m and radius r slides on the surface of a well whose radius of curvature is R. Find the dependence of the potential energy of the ball on a small displacement x from the equilibrium position.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A ball of mass m and radius r slides on the surface of a well whose radius of curvature is R. Find the dependence of the potential energy of the ball on a small displacement x from the equilibrium position.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A ball of mass m and radius r slides on the surface of a well whose radius of curvature is R. Find the dependence of the potential energy of the ball on a small displacement x from the equilibrium position.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A ball of mass m and radius r slides on the surface of a well whose radius of curvature is R. Find the dependence of the potential energy of the ball on a small displacement x from the equilibrium position.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#3.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $3.1.9.$ A ball of mass $m$ and radius $r$ slides on the surface of a well whose radius of curvature is $R$. Find the dependence of the potential energy of the ball on a small displacement $x$ from the equilibrium position.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/3/3.1.9/statement.png"
+      loading="lazy"  width="180" />
+    <figcaption>
+      For problem $3.1.9$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            As in <a href="../3.1.5">3.1.5</a>, we will propose two possible solutions: through small transformations and through integration</p><p>
+When the body deviates horizontally by a small value $x$, its height changes by the value
+$$ h=R'-\sqrt{{R'}^2-x^2}=R'\left(1-\sqrt{1-\frac{x^2}{{R'}^2}}\right)\quad(1) $$
+Where $R'$ is the distance from the center of curvature to the center of mass of the ball.
+$$ R'=R-r $$
+Considering the smallness of $x$
+$$ x\ll R'\Leftrightarrow \frac{x}{R'}\ll 1 $$
+So we can use approximation $(1+\xi)^a\approx 1+\xi a$, where $\xi \ll 1$
+$$ \left(1-\frac{x^2}{{R'}^2}\right)^{1/2}=1-\frac{x^2}{2{R'}^2} $$
+Substitute into $(1)$
+$$ h=R'\cdot \frac{x^2}{2{R'}^2}=\frac{x^2}{2R'} $$
+Substitute into the formula for potential energy
+$$ U=mgh=mg\frac{x^2}{2R'} $$
+Substituting the value for $R'$, we obtain the final expression
+$$ \boxed{U=\frac{mgx^2}{2(R-r)}} $$
+</p>
+<p style="text-align: right; font-style: italic; font-size: 14;">
+Aliaksandr Melnichenka<br>
+</p>
+<h3>Alternative solution</h3>
+<p>
+The change in energy with a small change in coordinate can be found by definition
+$$ dU=Fdx $$
+In this case, we will find the horizontal force that will return the ball to stable equilibrium taking into account the smallness of the angle $\varphi$
+$$ F=mg\sin\varphi=mg\frac{x}{R-r} $$
+Where we find the potential energy through integration $dU$
+$$ U=\int_{0}^{U}dU=\int_{0}^{x}mg\frac{x}{R-r}dx=\frac{mg}{R-r}\int_{0}^{x}xdx $$
+This integral is solved as
+$$ \int_{0}^{x}xdx=\frac{mg}{R-r}\cdot\frac{x^2}{2} $$
+Where does the potential energy of the ball come from?
+$$ \boxed{U=\frac{mgx^2}{2(R-r)}} $$
+</p>
+      <p style="text-align: right; font-style: italic; font-size: 14;">
+  Dzikan Mikita<br>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+             $$U=\frac{mgx^2}{2(R-r)}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

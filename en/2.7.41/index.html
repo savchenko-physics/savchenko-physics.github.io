@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A thin rod of mass m and length l lies on a smooth horizontal surface. A plasticine ball of mass m with a velocity v perpendicular to the rod hits one of its ends and sticks to it. How much heat will be released from such an impact?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A thin rod of mass m and length l lies on a smooth horizontal surface. A plasticine ball of mass m with a velocity v perpendicular to the rod hits one of its ends and sticks to it. How much heat will be released from such an impact?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A thin rod of mass m and length l lies on a smooth horizontal surface. A plasticine ball of mass m with a velocity v perpendicular to the rod hits one of its ends and sticks to it. How much heat will be released from such an impact?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A thin rod of mass m and length l lies on a smooth horizontal surface. A plasticine ball of mass m with a velocity v perpendicular to the rod hits one of its ends and sticks to it. How much heat will be released from such an impact?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.7">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.7.41.$ A thin rod of mass $m$ and length $l$ lies on a smooth horizontal surface. A plasticine ball of mass $m$ with a velocity $v$ perpendicular to the rod hits one of its ends and sticks to it. How much heat will be released from such an impact?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            </p>
+<center>
+  <figure>
+    <img src="2.7.41_1.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Collision of a ball with a rod
+    </figcaption>
+  </figure>
+</center>
+<p>
+After collision they will move as a unit, rotating around the centre of mass, which is at a distance $l/4$ from the contact point of the balls
+
+</p>
+<center>
+  <figure>
+    <img src="2.7.41_2.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Rotations around the centre of mass
+    </figcaption>
+  </figure>
+</center>
+<p>
+Conservation of angular momentum
+$$mv\cdot\frac{L}{4}=m\frac{\omega L}{4}\cdot\frac{L}{4}+I\omega\quad(1)$$
+Determening the moment of inertia, using parallel axis theorem
+$$I=\frac{1}{2}mL^2+m\left(\frac{L}{4}\right)^2=\frac{7}{48}mL^2\quad(2)$$
+From the $(1)$ and $(2)$
+$$v=\frac{5}{6}\omega L\Rightarrow \boxed{\omega=\frac{6v}{5L}}$$
+Also, in addition to rotational motion, translational motion will be observed. From the law of conservation of momentum
+$$mv=2mu\Rightarrow u=v/2$$
+$u$ — centre of mass velocity</p><p>
+THe initial energy was as a kinetic energy
+$$E_0=\frac{mv^2}{2}$$
+The total energy after the collision:
+$$E_f=\frac{2mu^2}{2}+\frac{I\omega ^2}{2}+\frac{m(\omega\cdot L/u)^2}{2}$$
+Conservation of energy
+$$E_0=E_f+Q$$
+Where, $Q$ — the released energy
+$$Q=E_0-E_f$$
+<div class="scroll-wrapper">
+$$Q=\frac{mv^2}{2}-\frac{mv^2}{2\cdot2}-\frac{7mL^2}{48}\cdot \left(\frac{6v}{5L}\right)^2\cdot \frac{1}{2}+\frac{m\cdot(6v/5L\cdot L/4)^2}{2}$$
+      </div>
+After the mathematical transformations
+$$\boxed{Q=\frac{mv^2}{10}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$Q=1/10\cdot mv^2$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Almaskhan Arsen<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
