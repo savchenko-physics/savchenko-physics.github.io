@@ -191,11 +191,13 @@ def update_ru(current_directory):
         window.addEventListener('scroll', checkScroll);
     </script>"""
     chapters = []
+    theory = []
     with open(f"ru/database/chapters.csv", encoding="UTF-8") as file:
         reader = csv.reader(file)
 
         for index, row in enumerate(reader):
             chapters.append(row[1])
+            theory.append(row[2])
 
     sections = []
     with open(f"ru/database/sections.csv", encoding="UTF-8") as file:
@@ -225,8 +227,12 @@ def update_ru(current_directory):
     for index, chapter in enumerate(existed_problems):
         if all(not sublist for sublist in chapter):
             continue
-
-        BaseHtml = BaseHtml+f"""
+        if len(theory[index-1]):
+            BaseHtml = BaseHtml+f"""
+        <h2 id="{index}" style="text-align: center;">Глава {index}. <a href="theory/{theory[index-1]}" target="_blank">{chapters[index-1]}</a></h2>
+      """
+        else:
+            BaseHtml = BaseHtml+f"""
         <h2 id="{index}" style="text-align: center;">Глава {index}. {chapters[index-1]}</h2>
       """
 
