@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="For one end of the rope covering the pole in an arc with an angle of \theta, pull with a force of F_0. What is the minimum force needed to be applied to the other end of the rope to hold it, if the coefficient of friction of the rope against the post is \mu?">
+    <meta name="description" content="A load of mass m is suspended from a system of identical rods connected by hinges, as shown in the figure. Determine the force that stretches the nth upper horizontal rod.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="For one end of the rope covering the pole in an arc with an angle of \theta, pull with a force of F_0. What is the minimum force needed to be applied to the other end of the rope to hold it, if the coefficient of friction of the rope against the post is \mu?">
+    <meta property="og:title" content="A load of mass m is suspended from a system of identical rods connected by hinges, as shown in the figure. Determine the force that stretches the nth upper horizontal rod.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="For one end of the rope covering the pole in an arc with an angle of \theta, pull with a force of F_0. What is the minimum force needed to be applied to the other end of the rope to hold it, if the coefficient of friction of the rope against the post is \mu?">
+    <meta property="og:description" content="A load of mass m is suspended from a system of identical rods connected by hinges, as shown in the figure. Determine the force that stretches the nth upper horizontal rod.">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>For one end of the rope covering the pole in an arc with an angle of \theta, pull with a force of F_0. What is the minimum force needed to be applied to the other end of the rope to hold it, if the coefficient of friction of the rope against the post is \mu?</title>
+    <title>A load of mass m is suspended from a system of identical rods connected by hinges, as shown in the figure. Determine the force that stretches the nth upper horizontal rod.</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -48,14 +48,14 @@
 
         <h3> Statement </h3>
         <p>
-            $2.8.17^*.$ For one end of the rope covering the pole in an arc with an angle of $\theta$, pull with a force of $F_0$. What is the minimum force needed to be applied to the other end of the rope to hold it, if the coefficient of friction of the rope against the post is $\mu$?
+            $2.8.25^*.$ A load of mass $m$ is suspended from a system of identical rods connected by hinges, as shown in the figure. Determine the force that stretches the nth upper horizontal rod.
 </p>
 <center>
   <figure>
-    <img src="2.8.17.png"
+    <img src="2.8.25.png"
       loading="lazy"  width="200" />
     <figcaption>
-      For problem $2.8.17^*$
+      For problem $2.8.25^*$
     </figcaption>
   </figure>
 </center>
@@ -68,38 +68,46 @@
 </p>
 <center>
   <figure>
-    <img src="2.8.17_1.png"
-      loading="lazy"  width="300" />
+    <img src="2.8.25_1.jpg"
+      loading="lazy"  width="350" />
     <figcaption>
-      For problem $2.8.17^*$
+      Forces acting on the system
     </figcaption>
   </figure>
 </center>
 <p>
 
-State of equilibrium for vertical axis
-$$(F_0+F_0+dF_0)\cdot\sin\left(\frac{d\theta}{2}\right)=dN$$
-Approximation for small angles
-$$\sin\left(\frac{d\theta}{2}\right)\approx\frac{d\theta}{2}$$
-Let's neglect the second order of magnitude summand $(dF_0d\theta\to 0)$
-$$F_0\cdot d\theta=dN$$
-Alternatively, the state of equilibrium for the horizontal axis
-$$F_0\cos\left(\frac{d\theta}{2}\right)=(F_0+dF_0)\cos\left(\frac{d\theta}{2}\right)+d\vec{F}_\text{fr}$$
-Approximation for small angles
-$$\cos\left(\frac{d\theta}{2}\right)\approx1$$
-$$dF_\text{fr}=-dF_0$$
-$$dF_\text{fr}=\mu\, dN$$
-$$-dF_0=\mu F_0d\theta\Leftrightarrow \boxed{-\frac{dF_0}{F_0}=\mu d\theta}$$
-Integrating of both sides of equation
-$$-\int_{F_0}^{F}\frac{dF}{F}=\mu \int_0^\theta d\theta$$
-$$\ln \left|\frac{F_0}{F}\right|=\mu\theta$$
-Substituting the minimum force $F$:
-$$\frac{F_0}{F}=e^{\mu \theta}\Rightarrow \boxed{F=F_0e^{-\mu \theta}}$$
+Let's consider forces acting on the 1st rod
+$$\left\{\begin{matrix}
+F_1=F_1'\cos(60^{\circ})=F_1'/2 \\
+T=F_1'\cos(30^{\circ})=\sqrt{3}F_1'/2
+\end{matrix}\right.$$
+
+$$\left\{\begin{matrix}
+F_1'''\cos(30^{\circ})=F_1'\cos(30^{\circ}) \\
+F_1'=F_1'''\\
+F_1'''\cos(60^{\circ})+F_1'\cos(60^{\circ})=F_1'' \\
+F_1'=F_1''\\
+\end{matrix}\right.$$
+
+And for the second rods
+
+$$\left\{\begin{matrix}
+F_2''\cos(30^{\circ})=F_1'''\cos(30^{\circ}) \\
+F_2'=F_1'''=F_1'\\
+F_2=F_2'\cos(60^{\circ})+F_1+F_1'''\cos(60^{\circ})\\
+F_2=3F_1'/2
+\end{matrix}\right.$$
+
+$$F_1'=\frac{2T}{\sqrt{3}}=\frac{2mg}{\sqrt{3}}$$
+$$\boxed{F_1=\frac{mg}{\sqrt{3}} \to F_2=\frac{3mg}{\sqrt{3}}}$$
+As we can see, the index of $F_2$ increased by two, leading to recurrence relation for $n^\text{th}$ index: $2n-1$
+$$\boxed{F_n=\frac{(2n-1)mg}{\sqrt{3}}}$$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$F=F_0e^{-\mu \theta}$$
+            $$T_n=(2n-1)mg/\sqrt{3}$$
         </p>
         <p style="text-align: right; font-style: italic; font-size: 14;">
           Almaskhan Arsen<br>
