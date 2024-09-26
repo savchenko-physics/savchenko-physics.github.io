@@ -34,7 +34,7 @@ def generate_base_sitemap():
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <sitemap>
-         <loc>http://savchenkosolutions.com/sitemap_1.xml</loc>
+         <loc>https://savchenkosolutions.com/sitemap_1.xml</loc>
          <lastmod>{sitemap_time}</lastmod>
       </sitemap>
 </sitemapindex>"""
@@ -44,6 +44,6 @@ def generate_base_sitemap():
 
 
 root_dir = os.getcwd().replace("src", "")
-base_url = 'http://savchenkosolutions.com/'
+base_url = 'https://savchenkosolutions.com/'
 sitemap_file = f'{root_dir}sitemap.xml'
 sitemap1_file = f'{root_dir}sitemap_1.xml'
