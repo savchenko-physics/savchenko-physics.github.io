@@ -98,9 +98,9 @@ papers.">
         <h2 style="text-align: center; margin-top: 0.9rem; "><a href="en/savchenko_en.pdf" target="_blank">Problem statements</a></h2>
 
 
-        <p class="description">
+        <p class="description" id="description">
         The collection of problems in physics edited by O.Y. Savchenko is one of the most popular resources for preparation for physics olympiads in post-soviet countries. For more than 30 years since its first edition, not a single complete guide to solving problems from it has been created.<br>
-        On this website, you can observe a non-profit startup creating the first wizard of this collection with the design of solutions of <a href="about">different authors</a>. In total,  """ + str(
+        On this website, you can observe a non-profit startup creating the first wizard of this collection with the design of solutions of <a href="about#team">different authors</a>. In total,  """ + str(
         count_solutions.count(directory)) + """ solutions have been published, out of 2,023 problems. In 2023, the project was launched, which is actively developing in Russian and English. If you'd like to contribute, feel free to email <a href="mailto: alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>.
         </p>
     </header>
