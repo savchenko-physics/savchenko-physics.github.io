@@ -67,8 +67,7 @@
 		    <h3>
 		    	Условие:
 		    </h3>
-		  	<div class="task">
-				<p>                                                         
+				<p>
 				\(3.2.11.\) Найдите частоту малых колебаний системы, описанной в задаче 3.1.10.
 
 				</p>
@@ -77,24 +76,33 @@
 					<img class="Statement" src="statement.png">
 				</div>
 
-			</div>
-		    <hr>
 		    <h3>
 		    	Решение:
 		    </h3>
-
-		    	$m\ddot{x}(t)-F=0$<br><br>
-$F=kqQ(\frac{1}{(L-x)^2}-\frac{1}{(L+x)^2})$$=-\frac{4kqQLx}{(L^2-x^2)^2}\approx-\frac{4kqQx}{L^3}$<br><br>
-$\ddot{x}(t)+\frac{4kqQx}{mL^3}x(t)$<br><br>
-$\omega=\sqrt{\frac{4kqQ}{mL^3}}=\sqrt{\frac{qQ}{m\pi\varepsilon_0L^3}}$<br><br>
-
-			<hr>
+Второй закон Ньютона
+$$m\ddot{x}(t)-F=0$$
+Где суммарную внешнюю силу найдём из закона Кулона
+$$F=kqQ\left(\frac{1}{(L-x)^2}-\frac{1}{(L+x)^2}\right)$$
+Используясь приближением для малого значения
+$$x =\frac{h}{R} \ll 1; \quad(1+x)^\alpha\approx 1+\alpha x$$
+$$F=-\frac{4kqQLx}{(L^2-x^2)^2}\approx-\frac{4kqQx}{L^3}$$
+Уравнение гармонических колебаний
+$$\ddot{x}(t)+\frac{4kqQx}{mL^3}x(t)$$
+Получаем искомую частоту малых колебаний
+$$\boxed{\omega=\sqrt{\frac{4kqQ}{mL^3}}=\sqrt{\frac{qQ}{m\pi\varepsilon_0L^3}}}$$
+</p>
+		  <p style="text-align: right; font-style: italic; font-size: 14;">
+			  Dzikan Mikita<br>
+	        </p>
 		    <h3>
 		    	Альтернативное решение:
 		    </h3>
 			<div class="solutions">
 		    	<img class="ScreenS" src="01.jpg">
-			</div>	
+			</div>
+		  <p style="text-align: right; font-style: italic; font-size: 14;">
+			  Aliaksandr Kanashenka<br>
+        	</p>
 
 			
 
