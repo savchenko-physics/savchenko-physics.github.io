@@ -872,7 +872,7 @@ h6 {
     margin: auto;
 }
 .ScreenS{
-    max-width: 380px;
+    max-width: min(380px, 80%);
     margin: auto;
 }
 
