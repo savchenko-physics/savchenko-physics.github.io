@@ -1,8 +1,12 @@
-<p>
-Acceleration of cargoes 1–3:
-$$ a_1=\frac{F(M+4m)}{2m(M+2m)} $$
-
-$$ a_2=\frac{FM}{2m(M+2m)} $$
-
-$$ a_3=\frac{F}{M+2m} $$
-</p>
+When rotating along an arc of a circle of radius $l$, the ball is subject to centripetal acceleration
+$$ a = \omega^2(R+l) $$
+Newton's second law for a ball:
+$$ m\ddot{x}(t)=-m\omega^2(R+l)\sin\varphi $$
+Neglecting gravitational interaction with the Earth, we write Newton's second law
+$$ m\ddot{x}(t)+m\omega^2(R+l)\sin\varphi=0\quad(1) $$
+Let's use the approximation for small angles $(\varphi \ll 1)$:
+$$ \sin\varphi\approx\varphi=\frac{x}{l} $$
+Using the approximation for $(1)$, we obtain the equation of harmonic oscillations
+$$ \ddot{x}(t)+\frac{\omega^2(R+l)}{l}x(t)=0 $$
+We solve the equation of harmonic oscillations of the form $\ddot{x}+\omega ^2x(t)=0$ using the standard method and obtain the desired oscillation period
+$$ \boxed{T=\frac{2\pi}{\omega}\sqrt{\frac{l}{R+l}}} $$

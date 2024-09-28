@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A spacecraft rotates around its axis with angular velocity \Omega. How does the period of oscillation of a pendulum of length l depend on the distance R of the suspension point to the axis of rotation? The plane of oscillation passes through the axis of rotation.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A spacecraft rotates around its axis with angular velocity \Omega. How does the period of oscillation of a pendulum of length l depend on the distance R of the suspension point to the axis of rotation? The plane of oscillation passes through the axis of rotation.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A spacecraft rotates around its axis with angular velocity \Omega. How does the period of oscillation of a pendulum of length l depend on the distance R of the suspension point to the axis of rotation? The plane of oscillation passes through the axis of rotation.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A spacecraft rotates around its axis with angular velocity \Omega. How does the period of oscillation of a pendulum of length l depend on the distance R of the suspension point to the axis of rotation? The plane of oscillation passes through the axis of rotation.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#3.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $3.2.17.$ A spacecraft rotates around its axis with angular velocity $\omega$. How does the period of oscillation of a pendulum of length $l$ depend on the distance $R$ of the suspension point to the axis of rotation? The plane of oscillation passes through the axis of rotation.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/3/3.2.17/3.2.17_1.png"
+      loading="lazy"  width="60" />
+    <figcaption>
+      The pendulum deflected a small distance $x$
+    </figcaption>
+  </figure>
+</center>
+<p>
+When rotating along an arc of a circle of radius $l$, the ball is subject to centripetal acceleration
+$$ a = \omega^2(R+l) $$
+Newton's second law for a ball:
+$$ m\ddot{x}(t)=-m\omega^2(R+l)\sin\varphi $$
+Neglecting gravitational interaction with the Earth, we write Newton's second law
+$$ m\ddot{x}(t)+m\omega^2(R+l)\sin\varphi=0\quad(1) $$
+Let's use the approximation for small angles $(\varphi \ll 1)$:
+$$ \sin\varphi\approx\varphi=\frac{x}{l} $$
+Using the approximation for $(1)$, we obtain the equation of harmonic oscillations
+$$ \ddot{x}(t)+\frac{\omega^2(R+l)}{l}x(t)=0 $$
+We solve the equation of harmonic oscillations of the form $\ddot{x}+\omega ^2x(t)=0$ using the standard method and obtain the desired oscillation period
+$$ \boxed{T=\frac{2\pi}{\omega}\sqrt{\frac{l}{R+l}}} $$
+        </p>
+		  <p style="text-align: right; font-style: italic; font-size: 14;">
+			  Dzikan Mikita<br>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$T=\frac{2\pi}{\omega}\sqrt{\frac{l}{R+l}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

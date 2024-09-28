@@ -6,7 +6,7 @@ def translate_russian_to_english(text):
     
     parts = pattern.split(text)
     
-    translator = GoogleTranslator(source='auto', target='ru')
+    translator = GoogleTranslator(source='auto', target='en')
     
     for i in range(0, len(parts), 2):  # only translate even indices (outside $$)
         parts[i] = translator.translate(parts[i])

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="a. A mathematical pendulum - an iron ball of mass m hanging on a long string - has a period T_0. In the presence of a magnet placed slightly below the ball, the period of oscillation became equal to T. Determine the magnetic force acting on the ball.b. An iron pendulum ball is placed between the poles of a magnet so that a horizontal magnetic force acts on it. Find this force and the new equilibrium position of the ball if the period of its oscillations after the magnetic field is switched on becomes equal to T.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="a. A mathematical pendulum - an iron ball of mass m hanging on a long string - has a period T_0. In the presence of a magnet placed slightly below the ball, the period of oscillation became equal to T. Determine the magnetic force acting on the ball.b. An iron pendulum ball is placed between the poles of a magnet so that a horizontal magnetic force acts on it. Find this force and the new equilibrium position of the ball if the period of its oscillations after the magnetic field is switched on becomes equal to T.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="a. A mathematical pendulum - an iron ball of mass m hanging on a long string - has a period T_0. In the presence of a magnet placed slightly below the ball, the period of oscillation became equal to T. Determine the magnetic force acting on the ball.b. An iron pendulum ball is placed between the poles of a magnet so that a horizontal magnetic force acts on it. Find this force and the new equilibrium position of the ball if the period of its oscillations after the magnetic field is switched on becomes equal to T.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>a. A mathematical pendulum - an iron ball of mass m hanging on a long string - has a period T_0. In the presence of a magnet placed slightly below the ball, the period of oscillation became equal to T. Determine the magnetic force acting on the ball.b. An iron pendulum ball is placed between the poles of a magnet so that a horizontal magnetic force acts on it. Find this force and the new equilibrium position of the ball if the period of its oscillations after the magnetic field is switched on becomes equal to T.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#3.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $3.2.7.$ a. A mathematical pendulum - an iron ball of mass $m$ hanging on a long string - has a period $T_0$. In the presence of a magnet placed slightly below the ball, the period of oscillation became equal to $T$. Determine the magnetic force acting on the ball.</p><p>
+b. An iron pendulum ball is placed between the poles of a magnet so that a horizontal magnetic force acts on it. Find this force and the new equilibrium position of the ball if the period of its oscillations after the magnetic field is switched on becomes equal to $T$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/3/3.2.7/statement.png"
+      loading="lazy"  width="330" />
+    <figcaption>
+      For problem $3.2.7$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            a) The period of oscillation of a mathematical pendulum
+$$ T_{0}=2\pi \sqrt{\frac{l}{g}}; \quad T =  \frac{2\pi}{\omega}\quad(1) $$
+Harmonic oscillation equation
+$$ m\ddot{x}=- (mg + F)sin\varphi = - (mg + F)\frac{x}{l} $$
+Where does the angular frequency of oscillations come from?
+$$ \omega = \sqrt{\frac{mg+F}{ml}} $$
+From $(1)$
+$$ \frac{T^{2}}{T_{0}^{2}}=\frac{mg}{mg + F} \Rightarrow \fbox{$F =\frac{mg(T_{0}^{2}-T^{2})}{T^{2}}$} $$
+b) For the second case, we write the equation of harmonic oscillations
+$$ m\ddot{x}=- \left(\sqrt{(mg)^{2} + F^{2}}\right)\sin\varphi $$
+Given the approximation value $\sin\varphi =\frac{x}{l}$
+$$ m\ddot{x} = - \left(\sqrt{(mg)^{2} + F^{2}}\right)\cdot\frac{x}{l} $$
+Solving the equation of harmonic oscillations of the form $\ddot{x}+\omega^2x=0$, we obtain the angular frequency
+$$ \omega =\sqrt{\frac{\sqrt{(mg)^{2}+F^{2}}}{ml}} $$
+Similarly, substituting into $(1)$
+$$ \frac{T_{0}^{4}}{T^{4}} = \frac{(mg)^{2}+ F^{2}}{(mg)^{2}} \Rightarrow  \fbox{$F = mg\sqrt{\frac{T_{0}^{4}-T^{4}}{T^{4}}}$} $$
+</p>
+
+          <p style="text-align: right; font-style: italic; font-size: 14;">
+          Dzikan Mikita<br>
+Aliaksandr Kanashenka
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$F =\frac{mg(T_{0}^{2}-T^{2})}{T^{2}};\quad F = mg\sqrt{\frac{T_{0}^{4}-T^{4}}{T^{4}}}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
