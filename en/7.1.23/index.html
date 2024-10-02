@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Find the period of small vibrations of a body of mass m, whose charge is q, inside a smooth sphere of radius R, if the charge Q is fixed at the top point of the sphere.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Find the period of small vibrations of a body of mass m, whose charge is q, inside a smooth sphere of radius R, if the charge Q is fixed at the top point of the sphere.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Find the period of small vibrations of a body of mass m, whose charge is q, inside a smooth sphere of radius R, if the charge Q is fixed at the top point of the sphere.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Find the period of small vibrations of a body of mass m, whose charge is q, inside a smooth sphere of radius R, if the charge Q is fixed at the top point of the sphere.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#7.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $7.1.23^*.$ Find the period of small vibrations of a body of mass $m$, whose charge is $q$, inside a smooth sphere of radius $R$, if the charge $Q$ is fixed at the top point of the sphere.
+</p>
+<center>
+  <figure>
+    <img src="7.1.23.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $7.1.23^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="7.1.23_1.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      Forces acting on the system of two charges
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Considering the fact that oscillations are small, $\varphi \ll 1$, we could use the approximations for small angle $\varphi$
+$$\sin\varphi \approx \varphi; \quad\cos\varphi \approx 1\quad(1)$$
+From where, we could approximate that the distance between charges remains approximately the same
+$$r\approx2R$$
+Thus, the сoulomb's law for two charges
+$$F_c = \frac{1}{4\pi\varepsilon_0}\frac{qQ}{4R^2}$$
+Let's write Newton's second law on a tangential trajectory, in the direction of motion of a charge of mass $m$
+$$ma = mg \sin\varphi + F_c \sin\frac{\varphi}{2}$$
+Considering the approximation $(1)$ and the expression
+$$ma = -mg\frac{x}{R} - \frac{x}{2R} \frac{1}{4\pi\varepsilon_0}\frac{qQ}{4R^2}$$
+$$a = -x\left(\frac{g}{R}+\frac{qQ}{32\pi\varepsilon_0mR^3}\right)$$
+Solving the equation of harmonic oscillations $(\ddot{x}+\omega^2x(t)=0)$, we could obtain the value for angular velocity
+$$\omega=\sqrt{\frac{g}{R}+\frac{qQ}{32\pi\varepsilon_0mR^3}}$$
+From here the period of oscillation
+$$\boxed{T=\frac{2\pi}{\omega} = \frac{2\pi}{\sqrt{\frac{g}{R}+\frac{qQ}{32\pi\varepsilon_0mR^3}}}}$$
+Since the expression under the square root cannot be less than zero, the ratio at which there will be no oscillations
+$$\frac{g}{R}+\frac{qQ}{32\pi\varepsilon_0mR^3} > 0 \Leftrightarrow  \boxed{\frac{qQ}{32\pi\varepsilon_0R^2}>-mg}$$
+        </p>
+
+        <h4>Answer</h4>
+      <div class="scroll-wrapper">
+        <p>
+            $$T=2\pi\left(\frac{g}{R}+\frac{qQ}{32\pi\varepsilon_0mR^3}\right)^{-1/2}\text{ with }\frac{qQ}{32\pi\varepsilon_0R^2}>-mg$$
+        </p>
+      </div>
+          <p style="text-align: right; font-style: italic; font-size: 14;">
+          Lutfulloyev Shukurullo<br>
+          Physics Department<br>
+          National University of Uzbekistan<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

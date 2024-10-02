@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Rolling mill rolls have radius R. Rotating, they retract the workpiece, if its thickness is small enough. The coefficient of friction between the rolls and the workpiece is \mu, and the gap between the rolls is d_0. Find the maximum thickness of the blank. The blank is not pushed.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Rolling mill rolls have radius R. Rotating, they retract the workpiece, if its thickness is small enough. The coefficient of friction between the rolls and the workpiece is \mu, and the gap between the rolls is d_0. Find the maximum thickness of the blank. The blank is not pushed.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Rolling mill rolls have radius R. Rotating, they retract the workpiece, if its thickness is small enough. The coefficient of friction between the rolls and the workpiece is \mu, and the gap between the rolls is d_0. Find the maximum thickness of the blank. The blank is not pushed.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Rolling mill rolls have radius R. Rotating, they retract the workpiece, if its thickness is small enough. The coefficient of friction between the rolls and the workpiece is \mu, and the gap between the rolls is d_0. Find the maximum thickness of the blank. The blank is not pushed.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.8">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.8.13.$ Rolling mill rolls have radius $R$. Rotating, they retract the workpiece, if its thickness is small enough. The coefficient of friction between the rolls and the workpiece is $\mu$, and the gap between the rolls is $d_0$. Find the maximum thickness of the blank. The blank is not pushed.
+</p>
+<center>
+  <figure>
+    <img src="2.8.13.png"
+      loading="lazy"  width="150" />
+    <figcaption>
+      For problem $2.8.13$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="2.8.13_1.png"
+      loading="lazy"  width="280" />
+    <figcaption>
+      Forces acting on the mill rolls
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+As the thickness of the workpiece increases, there will come a point where the mill rolls can no longer roll the workpiece.</p><p>
+It will happen until the vertical projection of friction force $\vec{F}_\text{fr}$ will exceed the vertical component of the support reaction force $\vec{N}$
+$$F_\text{fr}\cos\alpha\geq N\sin\alpha$$
+Considering the value of friction force $F_\text{fr} = \mu N$:
+$$\mu = \tan\alpha\quad(1)$$
+From the drawing
+$$\frac{d-d_0}{2} = R(1-\cos\alpha) \Rightarrow \boxed{d = d_0 + 2R(1-\cos\alpha)}\quad(2)$$
+From the expression $(1)$,
+$$\cos\alpha = \frac{1}{\sqrt{1+\tan^2\alpha}}=\frac{1}{\sqrt{1+\mu^2}}\quad(3)$$
+After substituting $(3)$ into $(2)$, we could obtain the maximum thickness of the blank
+$$\boxed{d = d_0 + 2R\left(1-\frac{1}{\sqrt{1+\mu^2}}\right)}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$d_\text{max}=d_0+2R\left(1-1/\sqrt{1+\mu^2} \right)$$
+        </p>
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Lutfulloyev Shukurullo<br>
+          Physics Department<br>
+          National University of Uzbekistan<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

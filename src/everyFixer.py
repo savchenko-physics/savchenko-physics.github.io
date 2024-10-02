@@ -49,10 +49,14 @@ def find_pdfs(directory='.'):
 current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """            Solutions of Savchenko Problems in Physics <br>
-            <i><b>knowledge must be free</b></i>"""
-new_word = """            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
-            <i><b>knowledge must be free</b></i>"""
+old_word = """        <div id = "logo">
+            <span><img src = "../../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>"""
+new_word = """       <a href="../../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>"""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)

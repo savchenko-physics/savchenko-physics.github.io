@@ -65,9 +65,11 @@ function generateHtmlContent() {
 </head>
   <body style="">
       <header style="text-align:center;">
-        <div id = "logo">
-            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
-        </div>
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
         <p class="author">
             Solutions&amp;nbsp;of&amp;nbsp;Savchenko Problems&amp;nbsp;in&amp;nbsp;Physics <br>
             <i><b>knowledge must be free</b></i>
