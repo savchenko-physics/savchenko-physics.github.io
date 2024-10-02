@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A plane capacitor is placed in a homogeneous magnetic field od induction B parallel to the plates. From point A, electrons enter perpendicularly to magnetic field direction. The tension (voltage) applied to the plates is V. What is the condition for which electrons pass through the capacitor?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A plane capacitor is placed in a homogeneous magnetic field od induction B parallel to the plates. From point A, electrons enter perpendicularly to magnetic field direction. The tension (voltage) applied to the plates is V. What is the condition for which electrons pass through the capacitor?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A plane capacitor is placed in a homogeneous magnetic field od induction B parallel to the plates. From point A, electrons enter perpendicularly to magnetic field direction. The tension (voltage) applied to the plates is V. What is the condition for which electrons pass through the capacitor?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A plane capacitor is placed in a homogeneous magnetic field od induction B parallel to the plates. From point A, electrons enter perpendicularly to magnetic field direction. The tension (voltage) applied to the plates is V. What is the condition for which electrons pass through the capacitor?</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#10.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+          $10.1.15$
+          An electron rotates in an orbit of radius $R$ around a proton. How will the frequency of rotation of an electron in the same orbit, if the system is placed in a weak magnetic field of induction $B$, directed along the axis of rotation? 
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+          Without magnetic field, electrical force is equivalent to centripetal force: 
+          $$m_e\frac{{v_0}^2}{R} = \frac{e^2}{4\pi\varepsilon_0 R^2}$$ 
+          and cosnidering that $\omega_0 = v_0 R$, 
+          $$\omega_0 = \frac{e^2}{4\pi\varepsilon_0 m_e R^3} \;(1)$$
+          If magnetic force is bigger than electric one, electron abandons the system, so
+          $$\frac{e^2}{4\pi\varepsilon_0 R^2}-evB = m_e\frac{v^2}{R}$$
+          where $v = \omega R$, then
+          $$\omega^2 = \frac{e^2}{4\pi\varepsilon_0 m_e R^3} - \frac{e\omega B}{m_e}$$
+          Taking in account (1),
+          $$\omega^2 + \frac{e\omega B}{m_e} - {\omega_0}^2 = 0$$
+          Applying the general formula of solution for quadratic equations, and considering $\omega > 0$
+          $$\omega = -\frac{eB}{2m_e} + \sqrt{\frac{e^2B^2}{4{m_e}^2}+{\omega_0}^2}$$
+          Now, it's time to check the orders of each magnitude. Let's see the terms under square root. Let's consider $e \approx 10^{-19} {\rm{C}}$, $B \approx 10^{-6} T$ (due to problem refers to weak magnetic field, we take in account the order of Earth's magnetic field from Problem 10.1.2), $m_e \approx 10^{-31} {\rm{kg}}$ and $R \approx 10^{-10} {\rm{m}}$ (in the order of Å). Hence,
+          $${\omega_0}^2 = 10^{32} {\rm{s^{-2}}}$$
+          and 
+          $$\frac{e^2B^2}{4{m_e}^2} \approx 10^{28} {\rm{s^{-2}}}$$
+          For that,
+          $${\omega_0}^2 >> \frac{e^2B^2}{4{m_e}^2}$$
+          by four orders. Finally,
+        </p>
+        <h4>Answer</h4>
+        <p>
+            $$\omega \approx \omega_0 - \frac{eB}{2m_e}$$
+        </p>
+        <p>
+            Note that $\omega_0$ is just two orders greater than $\frac{eB}{2m_e}$.
+        </p>
+
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
