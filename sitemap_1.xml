@@ -8,7 +8,7 @@
         http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
       <url>
         <loc>https://savchenkosolutions.com/</loc>
-        <lastmod>2024-10-03T21:13:57Z</lastmod>
+        <lastmod>2024-10-04T14:50:07Z</lastmod>
       </url>
       <url>
         <loc>https://savchenkosolutions.com/1/</loc>
@@ -3115,8 +3115,16 @@
         <lastmod>2024-09-30T21:34:38Z</lastmod>
       </url>
       <url>
+        <loc>https://savchenkosolutions.com/en/11.2.2/</loc>
+        <lastmod>2024-10-04T14:18:12Z</lastmod>
+      </url>
+      <url>
         <loc>https://savchenkosolutions.com/en/11.5.11/</loc>
         <lastmod>2024-09-30T21:34:38Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/12.1.4/</loc>
+        <lastmod>2024-10-04T14:18:12Z</lastmod>
       </url>
       <url>
         <loc>https://savchenkosolutions.com/en/13.2.11/</loc>
@@ -3487,6 +3495,10 @@
         <lastmod>2024-09-30T21:37:09Z</lastmod>
       </url>
       <url>
+        <loc>https://savchenkosolutions.com/en/2.7.19/</loc>
+        <lastmod>2024-10-04T14:49:55Z</lastmod>
+      </url>
+      <url>
         <loc>https://savchenkosolutions.com/en/2.7.20/</loc>
         <lastmod>2024-09-30T21:34:39Z</lastmod>
       </url>
@@ -3668,7 +3680,7 @@
       </url>
       <url>
         <loc>https://savchenkosolutions.com/en/3.3.3/</loc>
-        <lastmod>2024-10-03T21:13:42Z</lastmod>
+        <lastmod>2024-10-04T14:18:12Z</lastmod>
       </url>
       <url>
         <loc>https://savchenkosolutions.com/en/3.3.8/</loc>
@@ -3787,6 +3799,10 @@
         <lastmod>2024-09-30T21:34:39Z</lastmod>
       </url>
       <url>
+        <loc>https://savchenkosolutions.com/en/9.3.2/</loc>
+        <lastmod>2024-10-04T14:18:12Z</lastmod>
+      </url>
+      <url>
         <loc>https://savchenkosolutions.com/en/about/</loc>
         <lastmod>2024-09-30T21:26:04Z</lastmod>
       </url>
@@ -3800,7 +3816,7 @@
       </url>
       <url>
         <loc>https://savchenkosolutions.com/ru/</loc>
-        <lastmod>2024-10-03T21:13:57Z</lastmod>
+        <lastmod>2024-10-04T14:50:07Z</lastmod>
       </url>
       <url>
         <loc>https://savchenkosolutions.com/ru/about/</loc>
