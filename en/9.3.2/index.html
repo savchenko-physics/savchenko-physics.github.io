@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="A weight, oscillating freely on a spring, has moved from a distance of 0.5 cm from its equilibrium position to the largest one, equal to 1 cm, for a time of 0.01 s. What is the period of its oscillations?">
+    <meta name="description" content="Find the magnetic field induction inside a flat capacitor moving at a speed of 9 m/s parallel to its plates. The distance between the plates is 10 mm, and voltage across them is 10 kV.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="A weight, oscillating freely on a spring, has moved from a distance of 0.5 cm from its equilibrium position to the largest one, equal to 1 cm, for a time of 0.01 s. What is the period of its oscillations?">
+    <meta property="og:title" content="Find the magnetic field induction inside a flat capacitor moving at a speed of 9 m/s parallel to its plates. The distance between the plates is 10 mm, and voltage across them is 10 kV.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="A weight, oscillating freely on a spring, has moved from a distance of 0.5 cm from its equilibrium position to the largest one, equal to 1 cm, for a time of 0.01 s. What is the period of its oscillations?">
+    <meta property="og:description" content="Find the magnetic field induction inside a flat capacitor moving at a speed of 9 m/s parallel to its plates. The distance between the plates is 10 mm, and voltage across them is 10 kV.">
     <meta name="yandex-verification" content="6cfda41f74038368">
     <title>A weight, oscillating freely on a spring, has moved from a distance of 0.5 cm from its equilibrium position to the largest one, equal to 1 cm, for a time of 0.01 s. What is the period of its oscillations?</title>
     <link rel="stylesheet" href="../../css/css-latex/style.css">
@@ -44,30 +44,26 @@
         </p>
   </header>
 
-        <h3 id="back-link"><a href="../../#3.3">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../../#9.3">$\leftarrow$Back</a></h3>
 
         <h3> Statement </h3>
         <p>
-          $3.3.3$
-          A weight, oscillating freely on a spring, has moved from a distance of 0.5 cm from its equilibrium position to the largest one, equal to 1 cm, for a time of 0.01 s. What is the period of its oscillations?
+          $9.3.2$
+          Find the magnetic field induction inside a flat capacitor moving at a speed of 9 m/s parallel to its plates. The distance between the plates is 10 mm, and voltage across them is 10 kV.
         </p>
 
         <h3>Solution</h3>
         <p>
-          For a harmonic motion, variable position depends sinusoidally on time. In this case, we suppose that load is at equilibrium position at $t = 0$. So, sine function is more adequate to this situation without phase angle or null phase angle. So,
-          $$x(t) = A~\sin{~\omega t}$$
-          where $A$ is the amplitude such that $A = 1~{\rm{cm}}$, because it is the maximum distance. Let's suppose that $x_0 = 0.5~{\rm{cm}}$ is achieved at $t=t_1$ and $A$ is achieved at $t = t_2$. Then,
-          $$x_0 = A~\sin{~\omega t_1} \;(1)$$
-          $$A = A~\sin{~\omega t_2}$$ or
-          $$\sin{~\omega t_2} = 1$$
-          Hence, $\omega t_2 = \frac{\pi}{2} + 2k\pi$ with $k\in\mathbb{Z}$, for $k=0$, $t_2 = \frac{\pi}{2\omega}$. As $\omega = \frac{2\pi}{T}$, so $t_2 = \frac{T}{4}$. Since $\Delta t = t_2 - t_1 = 0.01~{\rm{s}}$,
-          $$t_1 = \frac{T}{4} - \Delta t \;(2)$$
-          Putting (2) into (1) and separating $T$, it is obtained
-          $$T = \frac{4\Delta t}{1-\frac{2}{\pi}\arcsin{\frac{x_0}{A}}}$$
+          It's known that
+          $$\vec{B} = \frac{\vec{v} \times \vec{E}}{c^2}$$
+          as $\vec{E} \perp \vec{v}$,
+          $$B = \frac{vE}{c^2}$$
+          In this case, $U = Ed$, where $d$ is distance between plates, so
+          $$B = \frac{vU}{dc^2}$$
         </p>
         <h4>Answer</h4>
         <p>
-            $$T = 0.06 {\rm{s}}$$
+            $$B = 10^{-10}~{\rm{T}}$$
         </p>
 
 
