@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Two sinusoidal waves with the same polarization $E_1~\sin{[\omega(t-z/c)+\varphi_1]}$, $E_2~\sin{[\omega(t-z/c)+\varphi_2]}$ are superimposed on each other.  What is the amplitude of the electric field strength of the resulting wave? What is the phase of this wave?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Two sinusoidal waves with the same polarization $E_1~\sin{[\omega(t-z/c)+\varphi_1]}$, $E_2~\sin{[\omega(t-z/c)+\varphi_2]}$ are superimposed on each other.  What is the amplitude of the electric field strength of the resulting wave? What is the phase of this wave?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Two sinusoidal waves with the same polarization $E_1~\sin{[\omega(t-z/c)+\varphi_1]}$, $E_2~\sin{[\omega(t-z/c)+\varphi_2]}$ are superimposed on each other.  What is the amplitude of the electric field strength of the resulting wave? What is the phase of this wave?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Two sinusoidal waves with the same polarization $E_1~\sin{[\omega(t-z/c)+\varphi_1]}$, $E_2~\sin{[\omega(t-z/c)+\varphi_2]}$ are superimposed on each other.  What is the amplitude of the electric field strength of the resulting wave? What is the phase of this wave?</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#12.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+          $12.1.4$
+          Two sinusoidal waves with the same polarization $E_1~\sin{[\omega(t-z/c)+\varphi_1]}$, $E_2~\sin{[\omega(t-z/c)+\varphi_2]}$ are superimposed on each other.  What is the amplitude of the electric field strength of the resulting wave? What is the phase of this wave?
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+          Since waves are superimposed,
+          $$E_R = E_{w1} + E_{w2}$$
+          $$E_R = E_1~\sin{[\omega(t-z/c)+\varphi_1]} + E_2~\sin{[\omega(t-z/c)+\varphi_2]}$$
+          $$E_R = (E_1\cos{\varphi_1}+E_2\cos{\varphi_2})\sin{[\omega(t-z/c)]} + (E_1\sin{\varphi_1}+E_2\sin{\varphi_2})\cos{[\omega(t-z/c)]}$$
+          Let's suppose that
+          $$E_1\cos{\varphi_1}+E_2\cos{\varphi_2} = E \cos{\varphi} = E_x$$
+          and
+          $$E_1\sin{\varphi_1}+E_2\sin{\varphi_2} = E \sin{\varphi} = E_y$$
+          and considering the trigonometric identity $\sin{(x+y)} = \sin{x}\cos{y} + \cos{x}\sin{y}$,
+          $$E_R = E \sin{[\omega(t-z/c)+\varphi]}$$
+          As $E = \sqrt{{E_x}^2 + {E_y}^2}$ and taking in account that $\cos{(x-y)} = \cos{x}\cos{y} + \sin{x}\sin{y}$
+        </p>
+        <h4>Answer 1</h4>
+        <p>
+            $$E = \sqrt{E_1^2+E_2^2+2E_1E_2\cos{(\varphi_1-\varphi_2)}}$$
+        </p>
+        <p>
+            Phase difference is
+            $$\tan{\varphi} = \frac{E_y}{E_x} = \frac{E_1\sin{\varphi_1}+E_2\sin{\varphi_2}}{E_1\cos{\varphi_1}+E_2\cos{\varphi_2}}$$
+            Finally, the phase is,
+        </p>
+        <h4>Answer 2</h4>
+        <p>
+            $$\Phi = \omega(t-z/c) + \arctan{\frac{E_1\sin{\varphi_1}+E_2\sin{\varphi_2}}{E_1\cos{\varphi_1}+E_2\cos{\varphi_2}}}$$
+        </p>
+
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
