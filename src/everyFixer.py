@@ -49,14 +49,8 @@ def find_pdfs(directory='.'):
 current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """        <div id = "logo">
-            <span><img src = "../../../img/book.png"><span><span>Savchenko Solutions</span>
-        </div>"""
-new_word = """       <a href="../../../" style="text-decoration: none;">
-            <div id="logo">
-                <span><img src="../../../img/book.png"></span><span>Savchenko Solutions</span>
-            </div>
-        </a>"""
+old_word = """$cos("""
+new_word = """$\\cos("""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)
