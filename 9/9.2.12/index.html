@@ -1,46 +1,40 @@
-<html>
-	<head>
-		<title>Решебник Савченко</title>
-		
-		<meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
-		<meta name="description" content="Решение задачника Савенко О.Я.">
-		<meta http-equiv="content-language" content="ru">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Решебник Савченко"/>
-		<meta property="og:image" content="img/logo.png">
-		<meta property="og:description" content="Сайт с решениями задач из сбоника задач Савенко О.Я.">
-		<meta name="yandex-verification" content="6cfda41f74038368" />
+<!DOCTYPE html>
+<html lang="ru">
 
-		<link rel="stylesheet" type="text/css" href="../../css/css-latex/style.css">
-		<link rel="icon" href="../../img/logo.png" type="image/png" />
-
-		<script src="../../js/jquery-1.10.1.min.js"></script>
-
-	  <script type="text/javascript" async
-	          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	  </script>
-
-	  <!-- MathJax configuration -->
-	  <script type="text/x-mathjax-config">
-	  	MathJax.Hub.Config({
-		  extensions: ['tex2jax.js'],
-		  jax: ['input/TeX','output/HTML-CSS'],
-		  tex2jax: {
-		    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-		    processEscapes: true,
-		    processClass: 'tex2jax',
-		    ignoreClass: 'html'
-		  },
-		  showProcessingMessages: false,
-		  messageStyle: 'none'
-		});
-	  </script>
-	</head>
-
-	<body style="">
-		<div class="container row">
-			<div class="col flash">    <header class = "margin-main" style="text-align:center;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="решение, савченко, оливер, яковлевич, о.я., сборник задач по физике, решебник">
+    <meta name="description" content="Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток I. Определите индукцию магнитного поля в центре полуокружности.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток I. Определите индукцию магнитного поля в центре полуокружности.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток I. Определите индукцию магнитного поля в центре полуокружности.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток I. Определите индукцию магнитного поля в центре полуокружности.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
        <a href="../../" style="text-decoration: none;">
             <div id="logo">
                 <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
@@ -50,65 +44,55 @@
             Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
             <i><b>knowledge must be free</b></i>
         </p>
-    </header>
-			</div>
-				
-			<div id="main" class="col col-lg-9">
-			<div class="row">
-				<div class="col caption">
-					<h2>
-						<a href="../../ru#9.2">←Назад</a>
-					</h2>
-				</div>
-			</div>
+  </header>
+
+        <h3 id="back-link"><a href="../../ru#9.2">$\leftarrow$Назад</a></h3>
+
+        <h3> Условие </h3>
+        <p>
+            $9.2.12.$ Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток $I$. Определите индукцию магнитного поля в центре полуокружности.
+        </p>
+
+        <h3>Решение</h3>
+        <p>
+            Магнитное поле в искомой точке будет перпендикулярно плоскости провода, а значит для нахождения индукции надо найти индукцию $\vec{B}_1$ полубесконечого провода и полуокружности $\vec{B}_2$
+$$B_1 = \int\limits_{0}^{\infty}\varepsilon_0 \mu_0 \left[\frac{\vec{(dx\lambda )}}{4\pi\varepsilon_0 (x^2 + R^2)} \times \vec{v} \right]$$
+$$B_1 = \int\limits_{0}^{\infty}\frac{Idx\mu_0}{4\pi (x^2+ R^2)}\cdot \sin\alpha\quad(1)$$
+Из геометрических соображений
+$$\sin\alpha= \frac{R}{\sqrt{x^2 + R^2}}\quad(2)$$
+Далее, подставляем $(2)$ в $(1)$
+$$B_1 = \int\limits_0^\infty \frac{\mu_0 I dxR}{4\pi{(x^2 + R^2)}^{3/2}} = \frac{\mu_0 IR}{4\pi}\int\limits_0^\infty \frac{dx}{(x^2+R^2)^{3/2}}$$
+Вводим относительную величину $u=\frac{x}{R}$:
+$$B_1 = \frac{\mu_0 I}{4\pi R}\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}}\quad(3)$$
+к этому интегралу вернёмся чуть позже, а пока обозначим его значение как $(3)$
+Теперь посчитаем значение  $B_2$
+$$B_2 = \int\limits_0^\pi\frac{\mu_0 IR}{4\pi R^2}~d\alpha = \frac{\mu_0 I}{4\pi R}\int\limits_0^\pi d\alpha$$
+$$\boxed{B_2= \frac{\mu_0 I}{4R}}\quad(4)$$
+Тогда, учитывая, что наличие двух проводов, суммарная магнитная индукция
+$$\boxed{B = 2B_1 + B_2}\quad(5)$$
+Возвращаемся к нашему $(3)$ интегралу 😋
+
+$$A=\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}}$$
+Делаем тригонометрическую замену
+$$u = \tan \alpha;\quad du = \frac{d\alpha}{\cos^2 \alpha}$$
+$$\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}} = \int\limits_0^\frac{\pi}{2} \frac{d\alpha}{\cos^2 \alpha  \cdot (\tan^2\alpha +1)^{3/2}} $$
+$$\boxed{A = \int\limits_0^\frac{\pi}{2} \cos\alpha ~d\alpha = 1}$$
+Так как значение $(3)$ равно $1$, то
+$$\boxed{B_1 = \frac{\mu_0 I}{4\pi R}}\quad(6)$$
+Подставляем выражения для компонент $B_1$ и $B_2$ из $(6)$ и $(5)$, соответственно, в выражение для суммарной магнитной индукции $(5)$
+$$B = \frac{\mu_0 I}{4R}\left(1+\frac{2}{\pi}\right) \Rightarrow \boxed{B = \frac{\mu_0 I}{4\pi R}(\pi + 2)} $$
+        </p>
+
+        <h4>Ответ</h4>
+        <p>
+            $$B = \frac{\mu_0 I}{4\pi R}(\pi + 2) $$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
+        </p>
 
 
-		<div id="1" class="row odd">
-
-		  <div class="col col-lg-12">
-		    <h3>
-		    	Условие:
-		    </h3>
-		  	<div class="task">
-				<p>                                                         
-				\(9.2.12.\) 
-				Провод, лежащий в одной плоскости, состоит из двух длинных прямых параллельных участков, связанных полуокружностью. По проводу течет ток $I$. Определите индукцию магнитного поля в центре полуокружности.   <br>
-				</p>
-				
-<!-- 				<div class="StatementDiv">
-					<img class="Statement" src="statement.png">
-				</div> -->
-			</div>
-		    <hr>
-		    <h3>
-		    	Решение:
-		    </h3>
-
-		    <div class="solutions">
-				<p class="TxtSolutions">   
-					Магнитное полк в искомой точке будет перпендикулярно плоскости провода, а значит для нахождения индукции надо найти индукцию полубесконечого $B_1$ провода и полуокружности $B_2$
-$B_1 = \int\limits_{0}^{\infty}\varepsilon_0 \mu_0 [\frac{\vec{(dx\lambda )}}{4\pi\varepsilon_0 (x^2 + R^2)} \times \vec{v} ]$$= \int\limits_{0}^{\infty}\frac{Idx\mu_0}{4\pi (x^2+ R^2)}\cdot \sin\alpha$$= \{\sin\alpha$$= \frac{R}{\sqrt{x^2 + R^2}}\} \Rightarrow$ <br><br> $\Rightarrow B_1 = \int\limits_0^\infty \frac{\mu_0 I dxR}{4\pi{(x^2 + R^2)}^{3/2}} $$= \frac{\mu_0 IR}{4\pi}\int\limits_0^\infty \frac{dx}{(x^2+R^2)^{3/2}} $$= \frac{\mu_0 I}{4\pi R}\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}}$ к этому интегралу вернёмся чуть позже, а пока обозначим его значение как $(1)$ 
-Теперь посчитаем значение  $B_2$  <br><br>
-$B_2 = \int\limits_0^\pi\frac{\mu_0 IRd\alpha}{4\pi R^2} $$= \frac{\mu_0 I}{4\pi R}\int\limits_0^\pi d\alpha$$= \frac{\mu_0 I}{4R}$ <br><br>
-Тогда $B = 2B_1 + B_2$  <br><br>
-$\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}} = \{u = \tan(a), du = \frac{da}{\cos^2 (a)}\} $$= \int\limits_0^\frac{\pi}{2} \frac{da}{\cos^2 (a) \cdot (\tan^2(a)+1)^{3/2}} $$= \int\limits_0^\frac{\pi}{2} \cos(a)da = 1$ <br><br>
- Так как значение $(1)$ равно 1, то $B_1 = \frac{\mu_0 I}{4\pi R}$ , тогда $B = \frac{\mu_0 I}{4R}(1+\frac{2}{\pi}) $$=\frac{\mu_0 I}{4\pi R}(\pi + 2) $<br><br>  
-				</p>
-			</div>		
-
-		    <h3>
-		    	Ответ: $\fbox{$\frac{\mu_0 I}{4\pi R}(\pi + 2) $}$
-			
-		    </h3>
-		  </div>
-
-		</div>
-
-
-
-
-
-		</div>		    <footer class="row container">
+    <footer class="row container">
       <br>
         <p>
             <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
@@ -117,17 +101,6 @@ $\int\limits_0^\infty \frac{du}{(u^2+1)^{3/2}} = \{u = \tan(a), du = \frac{da}{\
             <small>Все права принадлежат авторам. <br> Коммерческое использование материалов — с письменного разрешения авторов. <br> alex@savchenkosolutions.com <br></small>
         </p>
     </footer>
+  </body>
 
-	    <script type="text/javascript" src="../../js/bootstrap-affix.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			   	setTimeout(function () {
-		      		$('.back-to-top').affix();
-		    	}, 100);
-			
-			});
-		</script>
-
-
-	</body>
 </html>
