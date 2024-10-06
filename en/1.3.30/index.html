@@ -57,55 +57,55 @@
         <p>
             <p>Using the result obtained in <a href="../1.3.6" target="_blank">1.3.6</a>, at some point in time $t$ we can write the following equations for the velocity of a point:</p>
 <p class="exp">
-$$v_x = v \cos \alpha$$
-$$v_y = v \sin \alpha - gt$$
+$$v_x = v \cos\alpha$$
+$$v_y = v \sin\alpha - gt$$
 </p>
 <p>The equation for the displacement of a point along the axes will be:</p>
 <p class="exp">
-$$x = vt \cos \alpha$$
-$$ y = vt \sin \alpha - \frac{gt^2}{2} $$
+$$x = vt \cos\alpha$$
+$$ y = vt \sin\alpha - \frac{gt^2}{2} $$
 </p>
 <p>At any point $M$, the square of the distance $r^2$ from the origin to this point can be found using the Pythagorean theorem. We are looking for the square so as not to bother with extracting the square root, since we do not need the value of $r$ itself:</p>
 <p class="exp">
 $$L_M = r_M^2 = x_M^2 + y_M^2 $$
-$$ L_M = (vt \cos \alpha)^2 + \left(vt \sin \alpha - \frac{gt^2}{2}\right)^2 $$
+$$ L_M = (vt \cos\alpha )^2 + \left(vt \sin\alpha - \frac{gt^2}{2}\right)^2 $$
 </p>
 <p>To determine the domain of decrease of the function $L(t)$, we need to find the values ​​of $t$ for which the derivative $L'(t)$ will be negative. Let's simplify $L(t)$ by opening the brackets and using the basic trigonometric identity, and then find the derivative:</p>
 <p class="exp">
-$$ L(t) = t^2v^2 - vt^3g\sin \alpha + \frac{1}{4}g^2t^4 $$
+$$ L(t) = t^2v^2 - vt^3g\sin\alpha + \frac{1}{4}g^2t^4 $$
 
-$$ \frac{dL}{dt} = 2tv^2 - 3vt^2g\sin \alpha + g^2t^3  $$
+$$ \frac{dL}{dt} = 2tv^2 - 3vt^2g\sin\alpha + g^2t^3  $$
 
-$$ \frac{dL}{dt} = t(2v^2 - 3v\tan\sin \alpha + g^2t^2) $$
+$$ \frac{dL}{dt} = t(2v^2 - 3v\tan\sin\alpha + g^2t^2) $$
 </p>
 <p>It remains to solve the inequality:</p>
 <p class="exp">
-$$2v^2 - 3v\tan\sin \alpha + g^2t^2 < 0$$
+$$2v^2 - 3v\tan\sin\alpha + g^2t^2 < 0$$
 </p>
 <p>First, we determine the points where the left side becomes zero, and then we find the necessary intervals. We get a quadratic equation with respect to $t$; its solution is trivial and I will not give it. We get two roots, which can be written in one expression:</p>
 <p class="exp">
-$$ t \in \left[t_1;\min\left(t_2, \frac{2v\sin \alpha}{g}\right)\right], $$
+$$ t \in \left[t_1;\min\left(t_2, \frac{2v\sin\alpha}{g}\right)\right], $$
 
-$$ t_1 = \frac{v}{2g}\left(3\sin \alpha - \sqrt{1 - 9\cos^2  \alpha}\right), $$
+$$ t_1 = \frac{v}{2g}\left(3\sin\alpha - \sqrt{1 - 9\cos^2  \alpha}\right), $$
 
-$$ t_2 = \frac{v}{2g}\left(3\sin \alpha + \sqrt{1 - 9\cos^2  \alpha}\right), $$
+$$ t_2 = \frac{v}{2g}\left(3\sin\alpha + \sqrt{1 - 9\cos^2  \alpha}\right), $$
 
-$$ \alpha \in [70.53^\circ; 90^\circ] $$
+$$ \alpha\in [70.53^\circ; 90^\circ] $$
 </p>
 <p>If you are interested in the duration of the time interval during which the approach occurs, it is equal to:</p>
 <p class="exp">
-$$ \min\left(t_2, \frac{2v\sin \alpha}{g}\right) - t_1 $$
+$$ \min\left(t_2, \frac{2v\sin\alpha}{g}\right) - t_1 $$
 </p>
 <p>If the minimum is $t_2$, we get the solution:</p>
 <p class="exp">
-$$ \frac{v}{g} \cdot \sqrt{1 - 9\cos^2  \alpha}, \quad \alpha \in [70.53^\circ; 90^\circ] $$
+$$ \frac{v}{g} \cdot \sqrt{1 - 9\cos^2  \alpha}, \quad \alpha\in [70.53^\circ; 90^\circ] $$
 </p>
         </p>
 
         <h4>Answer</h4>
         <p>
-                        <p>$t=(V/g)\sqrt{9\sin^{2}\alpha-8}\text{ with }\sin\alpha>\sqrt{8/9};$</p>
-            <p>$ t=0\text{ with }\sin\alpha<\sqrt{8/9}.$</p>
+                        <p>$t=(V/g)\sqrt{9\sin^{2}\alpha -8}\text{ with }\sin\alpha >\sqrt{8/9};$</p>
+            <p>$ t=0\text{ with }\sin\alpha <\sqrt{8/9}.$</p>
         </p>
 
 

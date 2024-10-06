@@ -56,51 +56,51 @@
 
             <p>Используя результат, полученный в <a href="../1.3.6" target="_blank">1.3.6</a>, в некий момент времени $t$ можно записать следующие уравнения для скорости точки:</p>
             <p class="exp">
-            $v_x = v \cos \alpha$ <br>
-            $v_y = v \sin \alpha - gt$
+            $v_x = v \cos\alpha$ <br>
+            $v_y = v \sin\alpha - gt$
             </p>
             <p>Уравнение перемещения точки по осям будет иметь вид:</p>
             <p class="exp">
-            $x = vt \cos \alpha$ <br>
-            $$y = vt \sin \alpha - \frac{gt^2}{2}$$
+            $x = vt \cos\alpha$ <br>
+            $$y = vt \sin\alpha - \frac{gt^2}{2}$$
             </p>
             <p>В любой точке $M$ квадрат расстояния $r^2$ от начала координат до этой точки может быть найден по теореме Пифагора. Мы ищем квадрат, чтобы не заморачиваться извлечением квадратного корня, поскольку сама величина $r$ нам не нужна:</p>
             <p class="exp">
             $L_M = r_M^2 = x_M^2 + y_M^2 $<br>
-            $$L_M = (vt \cos \alpha)^2 + \left(vt \sin \alpha - \frac{gt^2}{2}\right)^2$$
+            $$L_M = (vt \cos\alpha )^2 + \left(vt \sin\alpha - \frac{gt^2}{2}\right)^2$$
             </p>
             <p>Чтобы определить область убывания функции $L(t)$, нужно найти значения $t$, при которых производная $L'(t)$ будет отрицательной. Упростим $L(t)$, раскрыв скобки и используя основное тригонометрическое тождество, а затем найдем производную:</p>
             <p class="exp">
-            $$L(t) = t^2v^2 - vt^3g\sin \alpha + \frac{1}{4}g^2t^4$$ 
-            $$\frac{dL}{dt} = 2tv^2 - 3vt^2g\sin \alpha + g^2t^3 $$
-            $$\frac{dL}{dt} = t(2v^2 - 3v\tan\sin \alpha + g^2t^2)$$
+            $$L(t) = t^2v^2 - vt^3g\sin\alpha + \frac{1}{4}g^2t^4$$ 
+            $$\frac{dL}{dt} = 2tv^2 - 3vt^2g\sin\alpha + g^2t^3 $$
+            $$\frac{dL}{dt} = t(2v^2 - 3v\tan\sin\alpha + g^2t^2)$$
             </p>
             <p>Осталось решить неравенство:</p>
             <p class="exp">
-            $2v^2 - 3v\tan\sin \alpha + g^2t^2 < 0$
+            $2v^2 - 3v\tan\sin\alpha + g^2t^2 < 0$
             </p>
             <p>Сначала определим точки, где левая часть обращается в ноль, а потом найдем необходимые интервалы. Получается квадратное уравнение относительно $t$; его решение тривиально и приводить я его не буду. Получаем два корня, которые можно записать одним выражением:</p>
             <p class="exp">
-            $$t \in \left[t_1;\min\left(t_2, \frac{2v\sin \alpha}{g}\right)\right],$$ 
-            $$t_1 = \frac{v}{2g}\left(3\sin \alpha - \sqrt{1 - 9\cos^2  \alpha}\right),$$
-            $$t_2 = \frac{v}{2g}\left(3\sin \alpha + \sqrt{1 - 9\cos^2  \alpha}\right),$$ 
-            $$\alpha \in [70.53^\circ; 90^\circ]$$
+            $$t \in \left[t_1;\min\left(t_2, \frac{2v\sin\alpha}{g}\right)\right],$$ 
+            $$t_1 = \frac{v}{2g}\left(3\sin\alpha - \sqrt{1 - 9\cos^2  \alpha}\right),$$
+            $$t_2 = \frac{v}{2g}\left(3\sin\alpha + \sqrt{1 - 9\cos^2  \alpha}\right),$$ 
+            $$\alpha\in [70.53^\circ; 90^\circ]$$
             </p>
             <p>Если интересует длительность промежутка времени, в который приближение происходит, она равна:</p>
             <p class="exp">
-            $$\min\left(t_2, \frac{2v\sin \alpha}{g}\right) - t_1$$
+            $$\min\left(t_2, \frac{2v\sin\alpha}{g}\right) - t_1$$
             </p>
             <p>Если минимум равен $t_2$, получаем решение:</p>
             <p class="exp">
-            $$\frac{v}{g} \cdot \sqrt{1 - 9\cos^2  \alpha}, \quad \alpha \in [70.53^\circ; 90^\circ]$$
+            $$\frac{v}{g} \cdot \sqrt{1 - 9\cos^2  \alpha}, \quad \alpha\in [70.53^\circ; 90^\circ]$$
             </p>
 
 
         <h4> 
             Ответ: 
         </h4>
-            <p>$t=(V/g)\sqrt{9\sin^{2}\alpha-8}\text{ при }\sin\alpha>\sqrt{8/9};$</p>
-            <p>$ t=0\text{ при }\sin\alpha<\sqrt{8/9}.$</p>
+            <p>$t=(V/g)\sqrt{9\sin^{2}\alpha -8}\text{ при }\sin\alpha >\sqrt{8/9};$</p>
+            <p>$ t=0\text{ при }\sin\alpha <\sqrt{8/9}.$</p>
 
 
         <br>
