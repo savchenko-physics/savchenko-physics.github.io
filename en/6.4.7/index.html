@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#6.4">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $6.4.7^*.$ Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius $R_1$ and $R_2$. Cylinder length $l \gg R_1$, $R_2$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="6.4.7_1.png"
+      loading="lazy"  width="140" />
+    <figcaption>
+      For problem $6.4.7^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+
+Let's subdivide the cylindrical capacitor into a series of capacitors with cross-sectional area $S$ and thickness $dx$
+</p>
+<center>
+  <figure>
+    <img src="6.4.7_2.png"
+      loading="lazy"  width="320" />
+    <figcaption>
+Series of capacitors
+    </figcaption>
+  </figure>
+</center>
+<p>
+then the total capacitance $C_0$ of the capacitor could be found as
+$$\frac{1}{C_0} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots +\frac{1}{C_{n-1}}+\frac{1}{C_n} = \sum_i\frac{1}{C_i}=\int\frac{1}{dC}\quad(1)$$
+The capacitance of the small capacitor with the cross-sectional area $S$ and thickness $dx$ placed on the distance $x$ from the central axis of the cylinder
+$$dC = \frac{\varepsilon_0 S}{dx} = \varepsilon_0\frac{2\pi x l}{dx}\quad(2)$$
+After substituting $(2)$ into $(1)$
+$$\boxed{\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\int_{R_1}^{R_2} \frac{dx}{x}}$$
+After integration of the following expression
+$$\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\cdot\ln{\frac{R_2}{R_1}} $$
+After the transformations, we obtain the capacity of a cylindrical capacitor:
+$$\boxed{C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}} $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Aliaksandr Melnichenka<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
