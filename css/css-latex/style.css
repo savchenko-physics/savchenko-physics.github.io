@@ -911,13 +911,13 @@ h6 {
 }
 
 a[href$='.pdf'] {
-    background-image: url("https://belphol.github.io/img/pdf_gray.gif");
+    background-image: url("../../img/pdf_gray.gif");
     background-position: right;
     background-repeat: no-repeat;
     padding-right: 18px;
 }
 a[href$='.pdf']:focus, a[href$='.pdf']:hover {
-    background-image: url("https://belphol.github.io/img/pdf.gif");
+    background-image: url("../../img/pdf.gif");
     color: #820000;
 }
 #back-link{
