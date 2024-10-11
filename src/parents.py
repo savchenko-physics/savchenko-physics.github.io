@@ -163,6 +163,7 @@ papers.">
         window.addEventListener('scroll', checkScroll);
     </script>"""
     chapters = []
+    theory = []
     with open("database/chapters.csv") as file:
         reader = csv.reader(file)
 
@@ -171,6 +172,7 @@ papers.">
             #     <li><a href="#{row[0]}">{row[1]}</a></li>"""
             # BaseHtml = BaseHtml+dsa
             chapters.append(row[1])
+            theory.append(row[2])
 
     sections = []
     with open("database/sections.csv") as file:
@@ -196,8 +198,12 @@ papers.">
     for index, chapter in enumerate(existed_problems):
         if all(not sublist for sublist in chapter):
             continue
-
-        BaseHtml = BaseHtml+f"""
+        if len(theory[index - 1]):
+            BaseHtml = BaseHtml + f"""
+        <h2 id="{index}" style="text-align: center;">Chapter {index}. <a href="theory/{theory[index - 1]}" target="_blank">{chapters[index - 1]}</a></h2>
+      """
+        else:
+            BaseHtml = BaseHtml + f"""
         <h2 id="{index}" style="text-align: center;">Chapter {index}. {chapters[index-1]}</h2>
       """
 
