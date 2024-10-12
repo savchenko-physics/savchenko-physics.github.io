@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="In a uniformly charged infinite plate, a spherical cavity was cut out as shown in the figure. Plate's thickness is $h$ and its bulk charge density is $\rho$.  What is the electric field strength at point A? At point B? Find the dependence of the electric field strength along the line OA on the distance to the point O.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="In a uniformly charged infinite plate, a spherical cavity was cut out as shown in the figure. Plate's thickness is $h$ and its bulk charge density is $\rho$.  What is the electric field strength at point A? At point B? Find the dependence of the electric field strength along the line OA on the distance to the point O.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="In a uniformly charged infinite plate, a spherical cavity was cut out as shown in the figure. Plate's thickness is $h$ and its bulk charge density is $\rho$.  What is the electric field strength at point A? At point B? Find the dependence of the electric field strength along the line OA on the distance to the point O.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>In a uniformly charged infinite plate, a spherical cavity was cut out as shown in the figure. Plate's thickness is $h$ and its bulk charge density is $\rho$.  What is the electric field strength at point A? At point B? Find the dependence of the electric field strength along the line OA on the distance to the point O.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#6.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $6.2.12.$ In a uniformly charged infinite plate, a spherical cavity was cut out as shown in the figure. Plate's thickness is $h$ and its bulk charge density is $\rho$.  What is the electric field strength at point A? At point B? Find the dependence of the electric field strength along the line OA on the distance to the point O.
+</p>
+<center>
+  <figure>
+    <img src="statement.png"
+      loading="lazy"  width="350" />
+    <figcaption>
+      For problem $6.2.12$
+    </figcaption>
+  </figure>
+</center>
+        <h3>Solution</h3>
+        <p>
+            The idea for solving this problem is to consider superposition principle: as cavity is uncharged, we can suppose that it exists a superposition of a plate (with charge density $\rho$) and a sphere with charge density $-\rho$. So, if we analyze the field in A without cavity, we have two plates of thickness $\frac{h}{2}$, one over A and the other one under A, both with charge density $\rho$, then field in A is null. While for A in the sphere's surface, applying Gauss's Law,
+            $$-E_A\cdot 4\pi\left(\frac{h}{2}\right)^2 = -\frac{q_{enc}}{\varepsilon_0}$$
+            as $V = \frac{4}{3}\pi\left(\frac{h}{2}\right)^3$, so $6\frac{V}{h} = 4\pi\left(\frac{h}{2}\right)^2$, and taking in account that $\rho = \frac{q_{enc}}{V}$
+        </p>
+        <h4>Answer 1</h4>
+        <p>
+            $$E_A = \frac{\rho h}{6\varepsilon_0}$$
+        </p>
+
+        <p>
+            For point B, the way is similar: in this case the plate without cavity generates certain field in B, located on its surface. From Gauss's Law
+            $$E_p\cdot S = \frac{q_t}{\varepsilon_0}$$
+            as $S = \frac{V}{h}$, and $\rho = \frac{q_t}{V}$
+            $$E_p = \frac{\rho h}{\varepsilon_0}$$
+            but, for one of the side of plate, field is $E_B' = \frac{E_p}{2}  = \frac{\rho h}{2\varepsilon_0}$
+            Now, overlapping with field generated by sphere,
+            $$E_B = E_B' - E_c$$
+            where $E_c = E_A$,
+        </p>
+        <h4>Answer 2</h4>
+        <p>
+            $$E_B = \frac{\rho h}{3\varepsilon_0}$$
+        </p>
+
+        <p>
+            As A is on line OA, all points over that line "feel" only the electric field generated by sphere. From Gauss's Law
+            $$-E(r) \cdot 4\pi r^2 = -\frac{q_{enc}}{\varepsilon_0}$$
+            as $V = \frac{4}{3}\pi r^3$, so $3\frac{V}{r} = 4\pi r^2$, and $\rho = \frac{q_{enc}}{V}$
+        </p>
+        <h4>Answer 3</h4>
+        <p>
+            $$E(r) = \frac{\rho r}{3\varepsilon_0}$$
+            for $0\leq r \leq \frac{h}{2}$.
+        </p>
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+            BSc. Luis Daniel Fernández Quintana<br>
+            Physics Department (FCNE)<br>
+            Universidad de Oriente, Cuba<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
