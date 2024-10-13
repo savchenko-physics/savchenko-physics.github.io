@@ -1,12 +1,12 @@
-When rotating along an arc of a circle of radius $l$, the ball is subject to centripetal acceleration
-$$ a = \omega^2(R+l) $$
-Newton's second law for a ball:
-$$ m\ddot{x}(t)=-m\omega^2(R+l)\sin\varphi $$
-Neglecting gravitational interaction with the Earth, we write Newton's second law
-$$ m\ddot{x}(t)+m\omega^2(R+l)\sin\varphi=0\quad(1) $$
-Let's use the approximation for small angles $(\varphi \ll 1)$:
-$$ \sin\varphi\approx\varphi=\frac{x}{l} $$
-Using the approximation for $(1)$, we obtain the equation of harmonic oscillations
-$$ \ddot{x}(t)+\frac{\omega^2(R+l)}{l}x(t)=0 $$
-We solve the equation of harmonic oscillations of the form $\ddot{x}+\omega ^2x(t)=0$ using the standard method and obtain the desired oscillation period
-$$ \boxed{T=\frac{2\pi}{\omega}\sqrt{\frac{l}{R+l}}} $$
+Разобьём систему на отдельно провод и кольцо с током с соответствующими им полями $B_1 $ и $B_2$</p><p>
+Из школьного курса известно, что поле бесконечного провода 
+$$B_1 = \frac{\mu_0I}{2\pi l} = \frac{\mu_0 I}{2\sqrt{R^2 + h^2}}$$
+Поле кольца мы находили в задаче <a href="../9.2.10">9.2.10</a>: 
+$$B_2 = \frac{\mu_0 I R^2}{2 (R^2 + h^2)^{3/2}}$$
+Стоит отметить что $\vec{B_1}$ и $\vec{B_2}$ имеют разное направление, вектор $\vec{B_1}$ перпендикулярен плоскости точки и провода, а вектор $\vec{B_2}$ направлен вдоль оси. Несложно показать, что косинус угла между этими векторами 
+$$\cos\gamma = \frac{R}{\sqrt{R^2+h^2}}$$
+тогда
+$$|\vec B| = |\vec B_1 + \vec B_2| = \sqrt{{B_1}^2+{B_2}^2+2B_1B_2\cos\gamma}$$
+$$\boxed{B=\frac{\mu_0I}{2}\left[\frac{1}{\pi^2(R^2+h^2)} + \frac{R^4}{(R^2+h^2)^3} + \frac{2R^3}{\pi (R^2+h^2)^{5/2}}\right]^{1/2}}\quad(1)$$
+При $h = 0$ подставляем в выражение $(1)$
+$$B(0) = \frac{\mu_0I}{2R}$$[\frac{1}{\pi^2} + 1 + \frac{2}{\pi}]^{1/2} = \frac{\mu_0I}{2R}(\frac{1}{\pi} + 1) = \frac{\mu_0I}{2\pi R}(1 + \pi )$$
