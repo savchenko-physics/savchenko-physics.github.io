@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="An electrolyte with density \rho and specific conductivity \lambda is poured into a rectangular cuvette, two opposite walls of which are metallic and the rest are made of an insulator. Voltage V is applied to the metallic walls of the cuvette, and the entire cuvette is placed in a uniform vertical magnetic field of induction B. Determine the difference in liquid levels near the non-metallic walls of the cuvette. The length of the cuvette is a, the width is b.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="An electrolyte with density \rho and specific conductivity \lambda is poured into a rectangular cuvette, two opposite walls of which are metallic and the rest are made of an insulator. Voltage V is applied to the metallic walls of the cuvette, and the entire cuvette is placed in a uniform vertical magnetic field of induction B. Determine the difference in liquid levels near the non-metallic walls of the cuvette. The length of the cuvette is a, the width is b.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="An electrolyte with density \rho and specific conductivity \lambda is poured into a rectangular cuvette, two opposite walls of which are metallic and the rest are made of an insulator. Voltage V is applied to the metallic walls of the cuvette, and the entire cuvette is placed in a uniform vertical magnetic field of induction B. Determine the difference in liquid levels near the non-metallic walls of the cuvette. The length of the cuvette is a, the width is b.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>An electrolyte with density \rho and specific conductivity \lambda is poured into a rectangular cuvette, two opposite walls of which are metallic and the rest are made of an insulator. Voltage V is applied to the metallic walls of the cuvette, and the entire cuvette is placed in a uniform vertical magnetic field of induction B. Determine the difference in liquid levels near the non-metallic walls of the cuvette. The length of the cuvette is a, the width is b.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.1.4.$ An electrolyte with density $\rho$ and specific conductivity $\lambda$ is poured into a rectangular cuvette, two opposite walls of which are metallic and the rest are made of an insulator. Voltage $V$ is applied to the metallic walls of the cuvette, and the entire cuvette is placed in a uniform vertical magnetic field of induction $B$. Determine the difference in liquid levels near the non-metallic walls of the cuvette. The length of the cuvette is $a$, the width is $b$.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.1.4/statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $9.1.4$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            We will find the resistance between the connected contacts as
+$$ R = \frac{\rho l}{S} = \frac{l}{\lambda S} $$
+At voltage $V$, according to Ohm's law, we find the current $I$ as
+$$ I = \frac{V}{R} = \frac{V\lambda S}{l} = \frac{V\lambda}{b}S\quad(1) $$
+The angle of inclination of the liquid level $\alpha$, we express from the equilibrium condition, and through the change in the electrolyte level $\Delta h$
+$$ \tan\alpha = \frac{\Delta h}{a}=\frac{F}{mg}\quad(2) $$
+From Ampere's law
+$$ F = Ib \cdot B $$
+Substituting the value of current $I$ from expression $(1)$
+$$ F= V\lambda SB= V\lambda a \left(h + \frac{\Delta h}{2}\right) $$
+Considering that the mass of the electrolyte $m = \rho hS$, we rewrite the expression $(2)$
+$$ \tan\alpha =\frac{V\lambda SB}{\rho hsg} \Rightarrow \boxed{\Delta h = \frac{V\lambda Ba}{h\rho g}} $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$\Delta h = \frac{V\lambda Ba}{h\rho g}$$
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
