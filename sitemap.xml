@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <sitemap>
+         <loc>https://savchenkosolutions.com/sitemap_recent.xml</loc>
+         <lastmod>2024-10-14T19:12:36Z</lastmod>
+      </sitemap>
+      <sitemap>
          <loc>https://savchenkosolutions.com/sitemap_1.xml</loc>
-         <lastmod>2024-10-14T17:44:44Z</lastmod>
+         <lastmod>2024-10-14T19:12:36Z</lastmod>
       </sitemap>
 </sitemapindex>
