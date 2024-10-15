@@ -3,11 +3,51 @@ import time
 from xml.etree.ElementTree import Element, SubElement, tostring
 from urllib.parse import urljoin
 from datetime import datetime, timedelta
+import git
 
 root_dir = os.getcwd().replace("src", "")
 base_url = 'https://savchenkosolutions.com/'
 
+def mark_verified(file_path):
+    print(file_path)
+
+repo = git.Repo("C:/Users/melnichenkaa/OneDrive - Berea College/Documents/GitHub/savchenko-physics.github.io")
+
+def get_file_creation_date(repo_path, file_path):
+    repos_nick = file_path.split("savchenko-physics.github.io\\")[1]
+    text_svc_file = "sitemap\\verified"
+    if os.path.exists(text_svc_file):
+        with open(text_svc_file, 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                saved_nick, saved_date = line.strip().split()
+                if saved_nick == repos_nick:
+                    return saved_date
+
+    """Get the creation date of the file from git history."""
+
+    print(repos_nick)
+
+    commits = list(repo.iter_commits(paths=file_path))
+
+    if not commits:
+        print(f"No commits found for {file_path}")
+        return None
+
+    # The first commit that includes the file is the creation date
+    creation_commit = commits[-1]
+    creation_date = datetime.fromtimestamp(creation_commit.committed_datetime.timestamp())
+    formatted_creation_date = creation_date.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+    with open(text_svc_file, 'a') as f:
+        f.write(f"{repos_nick} {formatted_creation_date}\n")
+
+    return formatted_creation_date
+
+
 def generate_sitemap():
+    print("Generating sitemap")
+
     xml_header = """<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\n        http://www.google.com/schemas/sitemap-image/1.1\n        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">\n"""
     xml_footer = "</urlset>"
 
@@ -28,16 +68,7 @@ def generate_sitemap():
             file_path = os.path.join(dirpath, 'index.html')
             file_mod_time = os.path.getctime(file_path)
 
-            # lastmod = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(file_mod_time))
-
-            file_stats = os.stat(file_path)
-            try:
-                # Use creation time (available on some systems like macOS)
-                file_creation_time = file_stats.st_birthtime
-            except AttributeError:
-                # Fallback to ctime (on Unix, this is metadata change time)
-                file_creation_time = file_stats.st_ctime
-            lastmod = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(file_creation_time))
+            lastmod = get_file_creation_date(root_dir, file_path)
 
             # Create the relative and full URL
             relative_path = os.path.relpath(file_path, root_dir).replace(os.sep, '/')
@@ -74,7 +105,7 @@ def generate_sitemap():
         f.write(older_sitemap_content)
 
 def generate_base_sitemap():
-    sitemap_time = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(os.path.getmtime(f"{root_dir}sitemap_1.xml")))
+    sitemap_time = get_file_creation_date(root_dir, f"{root_dir}sitemap_1.xml")
 
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -87,6 +118,7 @@ def generate_base_sitemap():
          <lastmod>{sitemap_time}</lastmod>
       </sitemap>
 </sitemapindex>"""
+
     with open(f"{root_dir}sitemap.xml", 'w', encoding='utf-8') as f:
         f.write(sitemap_content)
 

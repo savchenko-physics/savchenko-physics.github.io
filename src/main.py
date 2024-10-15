@@ -1,7 +1,8 @@
 import os
 import parents
-import sitemap
 import ru.parents
+import sitemap
+
 
 def main():
     directory = os.getcwd().replace("src", "")
@@ -10,6 +11,8 @@ def main():
     ru.parents.update_ru(directory)
     sitemap.generate_sitemap()
     sitemap.generate_base_sitemap()
+
+    print("Project updated!")
 
 if __name__ == "__main__":
     main()

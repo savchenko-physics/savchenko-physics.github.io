@@ -3,6 +3,8 @@ import csv
 from src import count_solutions
 
 def update_ru(current_directory):
+    print("Updating Russian catalog")
+
     MaxColumns = 3
     
     def column_len(problems_number):

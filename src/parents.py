@@ -4,6 +4,8 @@ from src import count_solutions
 
 
 def update_en(directory):
+    print("Updating English catalog")
+
     MaxColumns = 3
     current_directory = f"{directory}\\en"
     def column_len(problems_number):
