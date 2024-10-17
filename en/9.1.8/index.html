@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A square frame with current is located in a uniform magnetic field of induction B. The frame mass is m, and the current in it is I. Determine the frequency of free oscillations of the frame around the OO^\prime axis.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A square frame with current is located in a uniform magnetic field of induction B. The frame mass is m, and the current in it is I. Determine the frequency of free oscillations of the frame around the OO^\prime axis.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A square frame with current is located in a uniform magnetic field of induction B. The frame mass is m, and the current in it is I. Determine the frequency of free oscillations of the frame around the OO^\prime axis.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A square frame with current is located in a uniform magnetic field of induction B. The frame mass is m, and the current in it is I. Determine the frequency of free oscillations of the frame around the OO^\prime axis.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.1">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.1.8^*.$ A square frame with current is located in a uniform magnetic field of induction $B$. The frame mass is $m$, and the current in it is $I$. Determine the frequency of free oscillations of the frame around the $OO^\prime$ axis.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.1.8/statement.png"
+      loading="lazy"  width="200" />
+    <figcaption>
+      For problem $9.1.8^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Let's consider a small deviation from equilibrium by an angle $\alpha$: </p><p>
+The moment acting on the frame from the magnetic field:
+$$ M = BIS\cdot \sin\alpha = BIa^2 \sin\alpha $$
+where $a$ is the side of the frame</p><p>
+gravity does not create a moment as it passes through the point of rotation</p><p>
+From the basic equation of rotational motion:
+$$ J\ddot{\alpha} = \sum\pm{M_i} $$
+for our case:
+$$ J\ddot{\alpha} = -BIa^2 \sin\alpha\quad (1) $$
+now we will find the moment of inertia $J$ of the frame during the observed oscillations</p><p>
+The moment of inertia of the upper and lower sides of the frame is
+$$ J_1=J_2 = \frac{m}{4}\cdot \left(\frac{a}{2}\right)^2 = \frac{m a^2}{16}\quad (2) $$
+where $a/2$ is the distance to this side.</p><p>
+Moment of inertia of the lateral sides:
+$$ J_3 = J_4 = \frac{1}{12} \cdot \frac{m}{4}\cdot a^2 = \frac{m a^2}{48}\quad (3) $$
+We find the moment of inertia $J$ by substituting $(2)$ and $(3)$
+$$ J = J_1 + J_2 + J_3 + J_4  $$
+
+$$ J = 2\cdot \frac{m a^2}{16} + 2 \cdot \frac{m a^2}{48} = \frac{m a^2}{6} $$
+then equation $(1)$ will look like:
+$$ \frac{m a^2}{6}\ddot{\alpha} = -BIa^2 \sin\alpha $$
+
+$$ \ddot{\alpha} = -\frac{6BI}{m} \alpha (t) $$
+Solving the equation of harmonic oscillations, we find the oscillation frequency
+$$ \boxed{\omega = \sqrt{\frac{6BI}{m}}} $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$\omega = \sqrt{\frac{6BI}{m}}$$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

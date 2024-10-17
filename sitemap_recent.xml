@@ -7,6 +7,46 @@
         http://www.google.com/schemas/sitemap-image/1.1
         http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
       <url>
+        <loc>https://savchenkosolutions.com/en/9.1.10/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.11/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.12/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.13/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.14/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.15/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.6/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.7/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.8/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/9.1.9/</loc>
+        <lastmod>2024-10-16T19:50:47Z</lastmod>
+      </url>
+      <url>
         <loc>https://savchenkosolutions.com/en/9.1.5/</loc>
         <lastmod>2024-10-14T15:18:19Z</lastmod>
       </url>
@@ -25,13 +65,5 @@
       <url>
         <loc>https://savchenkosolutions.com/en/9.1.4/</loc>
         <lastmod>2024-10-14T13:45:01Z</lastmod>
-      </url>
-      <url>
-        <loc>https://savchenkosolutions.com/en/6.2.13/</loc>
-        <lastmod>2024-10-13T00:18:06Z</lastmod>
-      </url>
-      <url>
-        <loc>https://savchenkosolutions.com/en/6.2.12/</loc>
-        <lastmod>2024-10-11T22:52:30Z</lastmod>
       </url>
 </urlset>

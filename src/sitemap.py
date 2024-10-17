@@ -28,19 +28,21 @@ def get_file_creation_date(repo_path, file_path):
 
     print(repos_nick)
 
-    commits = list(repo.iter_commits(paths=file_path))
-
-    if not commits:
-        print(f"No commits found for {file_path}")
-        return None
 
     # The first commit that includes the file is the creation date
-    creation_commit = commits[-1]
-    creation_date = datetime.fromtimestamp(creation_commit.committed_datetime.timestamp())
-    formatted_creation_date = creation_date.strftime('%Y-%m-%dT%H:%M:%SZ')
+    try:
+        commits = list(repo.iter_commits(paths=file_path))
 
-    with open(text_svc_file, 'a') as f:
-        f.write(f"{repos_nick} {formatted_creation_date}\n")
+        creation_commit = commits[-1]
+        creation_date = datetime.fromtimestamp(creation_commit.committed_datetime.timestamp())
+        formatted_creation_date = creation_date.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+        with open(text_svc_file, 'a') as f:
+            f.write(f"{repos_nick} {formatted_creation_date}\n")
+    except:
+        creation_time = os.path.getctime(file_path)
+        creation_date = datetime.fromtimestamp(creation_time)
+        formatted_creation_date = creation_date.strftime('%Y-%m-%dT%H:%M:%SZ')
 
     return formatted_creation_date
 
