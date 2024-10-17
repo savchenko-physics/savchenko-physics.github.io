@@ -61,7 +61,7 @@ def generate_sitemap():
     excluded_urls.append(f"{base_url}en/")
 
     # Calculate the cutoff date
-    cutoff_date = datetime.now() - timedelta(days=3)
+    cutoff_date = datetime.now() - timedelta(days=5)
 
     urls = []
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Determine the magnetic field induction of a rectangular frame a \times b with a current I at a point A located at a distance r much greater than the linear dimensions of the frame. The radius vector \vec{r} forms an angle \alpha with the plane of the frame.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Determine the magnetic field induction of a rectangular frame a \times b with a current I at a point A located at a distance r much greater than the linear dimensions of the frame. The radius vector \vec{r} forms an angle \alpha with the plane of the frame.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Determine the magnetic field induction of a rectangular frame a \times b with a current I at a point A located at a distance r much greater than the linear dimensions of the frame. The radius vector \vec{r} forms an angle \alpha with the plane of the frame.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Determine the magnetic field induction of a rectangular frame a \times b with a current I at a point A located at a distance r much greater than the linear dimensions of the frame. The radius vector \vec{r} forms an angle \alpha with the plane of the frame.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.2.17^*.$ Determine the magnetic field induction of a rectangular frame $a \times b$ with a current $I$ at a point $A$ located at a distance $r$ much greater than the linear dimensions of the frame. The radius vector $\vec{r}$ forms an angle $\alpha$ with the plane of the frame.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.17/9.2.17_1.png"
+      loading="lazy"  width="350" />
+    <figcaption>
+      Direction of total magnetic induction
+    </figcaption>
+  </figure>
+</center>
+<p>
+From symmetry, it follows that the magnetic field induction will be present only in the plane defined by the angle $\alpha$, since the components of the wire of length $a$ will compensate each other</p><p>
+Let's write out the cosines of the angles that $\vec{r}$ makes with wires of length $b$
+let the angle $\alpha_1$ be for the nearest wire, and the angle $\alpha_2$ be for the farthest one, then </p><p>
+$$ \cos\alpha_1 = \frac{{2r\cos\alpha} - a}{2r} = \cos\alpha - \frac{a}{2r} $$
+
+$$ \cos\alpha_2 = \frac{{2r\cos\alpha} + a}{2r} = \cos\alpha + \frac{a}{2r} $$
+<b><i>Theoretical digression</i></b>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.17/9.2.17_2.png"
+      loading="lazy"  width="140" />
+    <figcaption>
+      Magnetic induction created by a wire of length $l$
+    </figcaption>
+  </figure>
+</center>
+<p>
+A magnetic wire of length $l$ creates a magnetic field equal to
+$$ B=\frac{\mu_0I}{2\pi r}\cos\alpha_0 $$
+From the geometry of the problem, we obtain
+$$ \cos\alpha_0 = \frac{b/2}{\sqrt{r^2+b^2/4}} = \frac{b}{2r}\left(1+\frac{b^2}{4r^2}\right)^{1/2} $$
+Using the approximation $(1+x)^\alpha\approx1+\alpha x$, we transform to the first order of smallness
+$$ \cos\alpha_0 = \frac{b}{2r}\left(1-\frac{b^2}{8r^2}\right)\approx\frac{b}{2r} $$
+A more detailed derivation of this formula is on pages 76-78 <a href="http://belpho.org/books/Magnitostatika.pdf">"Magnetostatics. Electrodynamics. Theory of Oscillations"</a> — A.I. Slobodanyuk
+From where we get
+$$ \boxed{B_0=B_1=B_2=\frac{\mu_0Ib}{4\pi r^2}} $$
+NO: we used an approximation that will later give us an answer with an accuracy of up to first order</p><p>
+From the <a href="#drawing">drawing</a> it follows that the total magnetic induction of the magnetic field $\vec{B}$ will be equal to the vector sum of the components $\vec{B}_1$ and $\vec{B}_2$
+$$ \vec{B}=\vec{B}_1+\vec{B}_2 $$
+Then the vector modulus can be found using the cosine law.
+$$ B = \sqrt{B_1^2+B_2^2-2B_1B_2\cos\Delta\alpha} $$
+
+$$ B = B_0\sqrt{2-2\cos\Delta\alpha} = 2B_0\sin\frac{\Delta\alpha}{2}\quad(1) $$
+Considering the smallness of the angle $\Delta \alpha$,
+$$ \sin\frac{\Delta\alpha}{2} \approx \frac{\Delta\alpha}{2}=\frac{a}{2r} $$
+We substitute $(1)$:
+$$ B = 2B_0\sin\frac{\Delta\alpha}{2} = B_0 \Delta\alpha $$
+We obtain in approximation to the first order:
+$$ \boxed{B = \frac{\mu_0Ib}{4\pi r^2}\frac{a}{r} = \frac{\mu_0M}{4\pi r^3}} $$
+If, when solving the problem, you managed to get an answer up to the second order, be the first to send the solution to <a href="mailto:alex@savchenkosolutions.com" target="_blank">alex@savchenkosolutions.com</a>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$B=\mu_0M\sqrt{1+3\sin^2\alpha} /(4\pi r^3), ~M=Iab$$
+        </p>
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Aliaksandr Melnichenka<br>
+          Andrei Yersh<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

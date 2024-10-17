@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A straight wire has a turn of radius R. Current I flows through the wire. Determine the magnetic field induction at the center of the turn and on its axis at a distance h from its center.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A straight wire has a turn of radius R. Current I flows through the wire. Determine the magnetic field induction at the center of the turn and on its axis at a distance h from its center.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A straight wire has a turn of radius R. Current I flows through the wire. Determine the magnetic field induction at the center of the turn and on its axis at a distance h from its center.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A straight wire has a turn of radius R. Current I flows through the wire. Determine the magnetic field induction at the center of the turn and on its axis at a distance h from its center.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.2.14^*.$ A straight wire has a turn of radius $R$. Current $I$ flows through the wire. Determine the magnetic field induction at the center of the turn and on its axis at a distance $h$ from its center.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.14/statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $9.2.14^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Let's split the system into a separate wire and a ring with current with the corresponding fields $B_1 $ and $B_2$</p><p>
+From the school course it is known that the field of an infinite wire
+$$ B_1 = \frac{\mu_0I}{2\pi l} = \frac{\mu_0 I}{2\sqrt{R^2 + h^2}} $$
+We found the ring field in the problem <a href="../9.2.10">9.2.10</a>:
+$$ B_2 = \frac{\mu_0 I R^2}{2 (R^2 + h^2)^{3/2}} $$
+It is worth noting that $\vec{B_1}$ and $\vec{B_2}$ have different directions, the vector $\vec{B_1}$ is perpendicular to the plane of the point and the wire, and the vector $\vec{B_2}$ is directed along the axis. It is easy to show that the cosine of the angle between these vectors
+$$ \cos\gamma = \frac{R}{\sqrt{R^2+h^2}} $$
+тогда
+<div class="scroll-wrapper">
+$$ |\vec B| = |\vec B_1 + \vec B_2| = \sqrt{{B_1}^2+{B_2}^2+2B_1B_2\cos\gamma} $$
+</div>
+<div class="scroll-wrapper">
+$$ \boxed{B=\frac{\mu_0I}{2}\left[\frac{1}{\pi^2(R^2+h^2)} + \frac{R^4}{(R^2+h^2)^3} + \frac{2R^3}{\pi (R^2+h^2)^{5/2}}\right]^{1/2}}\quad(1) $$
+</div>
+When $h = 0$ we substitute $(1)$ into the expression
+<div class="scroll-wrapper">
+$$ B(0) = \frac{\mu_0I}{2R}\sqrt{\frac{1}{\pi^2} + 1 + \frac{2}{\pi}} \Rightarrow \boxed{B(0) = \frac{\mu_0I}{2\pi R}(1 + \pi)} $$
+</div>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+        <div class="scroll-wrapper">
+		  $$B(h)=\frac{\mu_0I}{2}\sqrt{\frac{1}{\pi^2(R^2+h^2)} + \frac{R^4}{(R^2+h^2)^3} + \frac{2R^3}{\pi (R^2+h^2)^{5/2}}}$$
+		</div>
+$$B(0) = \frac{\mu_0I}{2\pi R}( \pi + 1)$$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

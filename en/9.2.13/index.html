@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta name="description" content="A long straight wire with current I has a section in the form of a semicircle of radius R. Determine the magnetic field induction at the center of the semicircle.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta property="og:title" content="A long straight wire with current I has a section in the form of a semicircle of radius R. Determine the magnetic field induction at the center of the semicircle.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta property="og:description" content="A long straight wire with current I has a section in the form of a semicircle of radius R. Determine the magnetic field induction at the center of the semicircle.">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.</title>
+    <title>A long straight wire with current I has a section in the form of a semicircle of radius R. Determine the magnetic field induction at the center of the semicircle.</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -46,60 +46,44 @@
         </p>
   </header>
 
-        <h3 id="back-link"><a href="../../#6.4">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
 
         <h3> Statement </h3>
         <p>
-            $6.4.7^*.$ Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius $R_1$ and $R_2$. Cylinder length $l \gg R_1$, $R_2$.
+            $9.2.13.$ A long straight wire with current $I$ has a section in the form of a semicircle of radius $R$. Determine the magnetic field induction at the center of the semicircle.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.13/statement.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $9.2.13$
+    </figcaption>
+  </figure>
+</center>
+<p>
         </p>
 
         <h3>Solution</h3>
         <p>
+            Let's write down the expression for the induction of a section of wire
+$$ d\vec B = \frac{\mu_0 [\vec{(Idx)}\times \vec{R}]}{4\pi R^3} $$
+We find the modulus of the vector $d\vec B$ by transforming the vector product
+$$ dB = \frac{\mu_0 Idx}{4\pi R^2}\sin\alpha $$
+Where $\alpha$ is the angle between the radius vector and the direction of the current element. Given that they coincide, then $\alpha = 0$:
+$$ \sin\alpha = 0\Rightarrow dB = 0 $$
+For a straight section of wire, then such a design creates a field similar to the field of the semicircle, which we already calculated in <a href="../9.2.11">9.2.11</a>
+$$ \boxed{B = \frac{\mu_0 I}{4R}} $$
 
-</p>
-<center>
-  <figure>
-    <img src="6.4.7_1.png"
-      loading="lazy"  width="140" />
-    <figcaption>
-      For problem $6.4.7^*$
-    </figcaption>
-  </figure>
-</center>
-<p>
-
-Let's subdivide the cylindrical capacitor into a series of capacitors with cross-sectional area $S$ and thickness $dx$
-</p>
-<center>
-  <figure>
-    <img src="6.4.7_2.png"
-      loading="lazy"  width="320" />
-    <figcaption>
-Series of capacitors
-    </figcaption>
-  </figure>
-</center>
-<p>
-then the total capacitance $C_0$ of the capacitor could be found as
-$$\frac{1}{C_0} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots +\frac{1}{C_{n-1}}+\frac{1}{C_n} = \sum_i\frac{1}{C_i}=\int\frac{1}{dC}\quad(1)$$
-The capacitance of the small capacitor with the cross-sectional area $S$ and thickness $dx$ placed on the distance $x$ from the central axis of the cylinder
-$$dC = \frac{\varepsilon_0 S}{dx} = \varepsilon_0\frac{2\pi x l}{dx}\quad(2)$$
-After substituting $(2)$ into $(1)$
-$$\boxed{\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\int_{R_1}^{R_2} \frac{dx}{x}}$$
-After integration of the following expression
-$$\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\cdot\ln{\frac{R_2}{R_1}} $$
-After the transformations, we obtain the capacity of a cylindrical capacitor:
-$$\boxed{C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}} $$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}$$
+            $$B=\frac{\mu_0 I}{4R}$$
         </p>
-        <p style="text-align: right; font-style: italic; font-size: 14;">
-          Aliaksandr Melnichenka<br>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
         </p>
-
 
 
     <footer class="row container">

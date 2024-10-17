@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en">
     <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
-    <meta name="description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta name="description" content="How many times will the magnetic field induction in the center of a ring with current decrease if it is bent at an angle \alpha? The current in the ring does not change.">
     <meta name="author" content="Aliaksandr Melnichenka">
     <meta name="date" content="2023-10" scheme="YYYY-MM">
-    <meta property="og:title" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta property="og:title" content="How many times will the magnetic field induction in the center of a ring with current decrease if it is bent at an angle \alpha? The current in the ring does not change.">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.">
+    <meta property="og:description" content="How many times will the magnetic field induction in the center of a ring with current decrease if it is bent at an angle \alpha? The current in the ring does not change.">
     <meta name="yandex-verification" content="6cfda41f74038368">
-    <title>Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius R_1 and R_2. Cylinder length l \gg R_1, R_2.</title>
+    <title>How many times will the magnetic field induction in the center of a ring with current decrease if it is bent at an angle \alpha? The current in the ring does not change.</title>
     <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
     <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
     <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
@@ -46,11 +46,11 @@
         </p>
   </header>
 
-        <h3 id="back-link"><a href="../../#6.4">$\leftarrow$Back</a></h3>
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
 
         <h3> Statement </h3>
         <p>
-            $6.4.7^*.$ Find the capacity of a cylindrical capacitor formed by two coaxial cylinders of radius $R_1$ and $R_2$. Cylinder length $l \gg R_1$, $R_2$.
+            $9.2.11.$ How many times will the magnetic field induction in the center of a ring with current decrease if it is bent at an angle $\alpha$? The current in the ring does not change.
         </p>
 
         <h3>Solution</h3>
@@ -59,47 +59,38 @@
 </p>
 <center>
   <figure>
-    <img src="6.4.7_1.png"
-      loading="lazy"  width="140" />
+    <img src="https://savchenkosolutions.com/9/9.2.11/9.2.11_1.png"
+      loading="lazy"  width="200" />
     <figcaption>
-      For problem $6.4.7^*$
+      Magnetic field induction at the center of a bent ring
     </figcaption>
   </figure>
 </center>
 <p>
+In <a href="../9.2.10">9.2.10</a> we obtained an expression for the magnetic induction at the center of the ring
+$$ B_0 = \frac{\mu_0 I}{2R}\quad(1) $$
+Due to superposition, the magnetic induction at the center of one semicircle will be half of this value:
+$$ B_1 = B_2 = \frac{B_0}{2} = \frac{\mu_0 I}{4R}\quad(2) $$
+From the drawing, it is clear that the angle between the vectors $\vec{B}_1$ and $\vec{B}_2$ is equal to $\alpha$
+$$ (\vec{B_1},\vec{B_2})=\alpha $$
+The total vector of magnetic induction is equal to the vector sum of the components of magnetic induction of two rings $\vec{B}_1$ and $\vec{B}_2$
+$$ \vec{B} =  \vec{B_1} + \vec{B_2}  $$
+We will find the modulus of this vector using the cosine law.
+$$ B = \sqrt{{B_1}^2 + {B_2}^2 - 2B_1 B_2 \cos\alpha}  $$
+Taking into account the expression $(2)$, we find the total magnetic induction as
+$$ B= \frac{\mu_0 I}{4R}\sqrt{2-2\cos\alpha}  = \frac{\mu_0 I}{2R}\cdot\sin\frac{\alpha}{2}\quad(3) $$
+Dividing the expression $(3)$ by $(1)$, we obtain the desired ratio
+$$ \boxed{\frac{B}{B_0} = \sin\frac{\alpha}{2}} $$
 
-Let's subdivide the cylindrical capacitor into a series of capacitors with cross-sectional area $S$ and thickness $dx$
-</p>
-<center>
-  <figure>
-    <img src="6.4.7_2.png"
-      loading="lazy"  width="320" />
-    <figcaption>
-Series of capacitors
-    </figcaption>
-  </figure>
-</center>
-<p>
-then the total capacitance $C_0$ of the capacitor could be found as
-$$\frac{1}{C_0} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots +\frac{1}{C_{n-1}}+\frac{1}{C_n} = \sum_i\frac{1}{C_i}=\int\frac{1}{dC}\quad(1)$$
-The capacitance of the small capacitor with the cross-sectional area $S$ and thickness $dx$ placed on the distance $x$ from the central axis of the cylinder
-$$dC = \frac{\varepsilon_0 S}{dx} = \varepsilon_0\frac{2\pi x l}{dx}\quad(2)$$
-After substituting $(2)$ into $(1)$
-$$\boxed{\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\int_{R_1}^{R_2} \frac{dx}{x}}$$
-After integration of the following expression
-$$\frac{1}{C_0} = \frac{1}{2\pi\varepsilon_0l}\cdot\ln{\frac{R_2}{R_1}} $$
-After the transformations, we obtain the capacity of a cylindrical capacitor:
-$$\boxed{C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}} $$
         </p>
 
         <h4>Answer</h4>
         <p>
-            $$C_0 = \frac{2\pi\varepsilon_0l}{\ln{\frac{R_2}{R_1}}}$$
+            $$\frac{B}{B_0} =\sin\frac{\alpha}{2}$$
         </p>
-        <p style="text-align: right; font-style: italic; font-size: 14;">
-          Aliaksandr Melnichenka<br>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
         </p>
-
 
 
     <footer class="row container">
