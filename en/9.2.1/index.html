@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="An electric field of strength E~ of charges moving with velocity v creates a magnetic field whose induction \vec{B} = K[\vec{v}\times \vec{E}]. The coefficient K is equal to \varepsilon_0 \mu_0in SI and 1/c in CGS, where c is the speed of light. Prove that the magnetic interaction of two moving charges is weaker than their electrical interaction.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="An electric field of strength E~ of charges moving with velocity v creates a magnetic field whose induction \vec{B} = K[\vec{v}\times \vec{E}]. The coefficient K is equal to \varepsilon_0 \mu_0in SI and 1/c in CGS, where c is the speed of light. Prove that the magnetic interaction of two moving charges is weaker than their electrical interaction.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="An electric field of strength E~ of charges moving with velocity v creates a magnetic field whose induction \vec{B} = K[\vec{v}\times \vec{E}]. The coefficient K is equal to \varepsilon_0 \mu_0in SI and 1/c in CGS, where c is the speed of light. Prove that the magnetic interaction of two moving charges is weaker than their electrical interaction.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>An electric field of strength E~ of charges moving with velocity v creates a magnetic field whose induction \vec{B} = K[\vec{v}\times \vec{E}]. The coefficient K is equal to \varepsilon_0 \mu_0in SI and 1/c in CGS, where c is the speed of light. Prove that the magnetic interaction of two moving charges is weaker than their electrical interaction.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.2.1.$ An electric field of strength $E~$ of charges moving with velocity $v$ creates a magnetic field whose induction $\vec{B} = K[\vec{v}\times \vec{E}]$. The coefficient $K$ is equal to $\varepsilon_0 \mu_0$
+in SI and $1/c$ in CGS, where $c$ is the speed of light. Prove that the magnetic interaction of two moving charges is weaker than their electrical interaction.
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.1/statement.png"
+      loading="lazy"  width="150" />
+    <figcaption>
+      For problem $9.2.1$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Proof</h3>
+        <p>
+            Magnetic field, the induction of which
+$$ |\vec{B}| = \varepsilon_0 \mu_0\left[\vec{v}\times \vec{E}\right] \le \varepsilon_0 \mu_0vE $$
+then the force of magnetic interaction (Lorentz force) of charges
+$$ F_B = |q[\vec{v} \times \vec{B}]| = qvB \le \varepsilon_0 \mu_0 qv^2E $$
+taking into account the force of electrostatic interaction $F_E = qE$, we obtain
+$$ \frac{F_B}{F_E} \le \varepsilon_0 \mu_0 v^2 = \frac{v^2}{c^2} $$
+Considering the smallness of the speed $v \ll c$, then
+$$ \boxed{\frac{F_B}{F_E} \approx 0} $$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>

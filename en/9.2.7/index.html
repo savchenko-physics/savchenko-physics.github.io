@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Long straight wires with current intersect at an angle \alpha. Find the magnetic field induction on a straight line passing through the point of intersection of the wires perpendicular to both of them. The current in the wires is I.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Long straight wires with current intersect at an angle \alpha. Find the magnetic field induction on a straight line passing through the point of intersection of the wires perpendicular to both of them. The current in the wires is I.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Long straight wires with current intersect at an angle \alpha. Find the magnetic field induction on a straight line passing through the point of intersection of the wires perpendicular to both of them. The current in the wires is I.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Long straight wires with current intersect at an angle \alpha. Find the magnetic field induction on a straight line passing through the point of intersection of the wires perpendicular to both of them. The current in the wires is I.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#9.2">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $9.2.7.$ Long straight wires with current intersect at an angle $\alpha$. Find the magnetic field induction on a straight line passing through the point of intersection of the wires perpendicular to both of them. The current in the wires is $I$.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+
+</p>
+<center>
+  <figure>
+    <img src="https://savchenkosolutions.com/9/9.2.7/9.2.7_1.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      Direction of magnetic induction created by current in wires
+    </figcaption>
+  </figure>
+</center>
+<p>
+We find the total vector of magnetic induction as the sum of the vectors of magnetic induction created by each of the vectors
+$$ \vec{B} = \vec{B_1} + \vec{B_2}\quad(1) $$
+According to the right-hand rule, we can determine the direction of the magnetic induction lines and notice that $\vec{B_1}$ and $\vec{B_2}$ lie in the same plane, parallel to the plane of the wires, at an angle of $\pi - \alpha$. Then, the total magnetic induction vector $\vec{B}$ from the expression $(1)$, then when adding through the cosine theorem will be an adjacent angle — $\alpha$
+$$ \boxed{B=\sqrt{B_1^2+B_2^2 - 2B_1B_2\cos\alpha}}\quad(2) $$
+We will find the magnetic induction of each of them as the induction of an infinite single-horned wire.
+$$ B_1 = B_2 = \frac{\mu_0 I}{2\pi R}\quad(3) $$
+We substitute the obtained expression $(3)$ into $(2)$ and obtain the desired magnetic field induction
+$$ B = \frac{\mu_0 I}{2\pi R} \sqrt{2-2\cos\alpha} \Rightarrow  \boxed{B = \frac{\mu_0 I}{\pi R}\sin\left(\frac{\alpha}{2}\right)} $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$B = \frac{\mu_0 I}{\pi R}\sin\left(\frac{\alpha}{2}\right)$$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+          Andrei Yersh<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
