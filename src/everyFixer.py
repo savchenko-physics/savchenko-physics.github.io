@@ -49,8 +49,8 @@ def find_pdfs(directory='.'):
 current_folder = os.getcwd().replace("src", "\\")
 pdf_files_list = find_pdfs(current_folder)
 
-old_word = """\\text{\\arcsin }"""
-new_word = """\\arcsin """
+old_word = """physicshub"""
+new_word = """Nursultan Rayapov"""
 
 for pdf_file in pdf_files_list:
     find_and_replace(pdf_file, old_word, new_word)

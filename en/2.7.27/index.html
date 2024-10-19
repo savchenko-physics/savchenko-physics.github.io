@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="A light rod with weights of mass m_1 and m_2 fixed to its ends rests with its middle on a rigid support. At the initial moment, the rod is held horizontally and then released. With what force does it press on the support immediately after it is released?">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="A light rod with weights of mass m_1 and m_2 fixed to its ends rests with its middle on a rigid support. At the initial moment, the rod is held horizontally and then released. With what force does it press on the support immediately after it is released?">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="A light rod with weights of mass m_1 and m_2 fixed to its ends rests with its middle on a rigid support. At the initial moment, the rod is held horizontally and then released. With what force does it press on the support immediately after it is released?">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>A light rod with weights of mass m_1 and m_2 fixed to its ends rests with its middle on a rigid support. At the initial moment, the rod is held horizontally and then released. With what force does it press on the support immediately after it is released?</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.7">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $2.7.27^*.$ A light rod with weights of mass $m_1$ and $m_2$ fixed to its ends rests with its middle on a rigid support. At the initial moment, the rod is held horizontally and then released. With what force does it press on the support immediately after it is released?
+</p>
+<center>
+  <figure>
+    <img src="2.7.27.png"
+      loading="lazy"  width="230" />
+    <figcaption>
+      For problem $2.7.27^*$
+    </figcaption>
+  </figure>
+</center>
+<p>
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            Newton's second law for a rotational movement
+$$M = I\varepsilon$$
+$$m_1gR - m_2 g R = I\varepsilon\quad(1)$$
+Since there is no slippage:
+$$\varepsilon = \frac{a}{R}$$
+Substituting into $(1)$
+$$\boxed{(m_1 - m_2) g R^2 = Ia}\quad(2)$$
+Conservation of angular momentum
+$$I\omega = m_1vR + m_2vR\quad(3)$$
+Let's express velocity through angular velocity
+$$v=\omega R\quad(4)$$
+After substituting $(4)$ into $(3)$
+$$\boxed{I = (m_1+m_2)R^2} \quad (5)$$
+Let's equate the expressions $(2)$ and $(5)$
+$$(m_1 - m_2) g R^2 = (m_1+m_2)aR^2$$
+After mathematical transformations
+$$a = g \frac{m_1 - m_2}{m_1 + m_2}\quad(6)$$
+Describe the forces acting on the vertical axis
+$$N = (m_1+m_2)g - a (m_1-m_2)\quad(7)$$
+Substituting the acceleration $(6)$ into expression $(7)$
+$$N = g\cdot\left((m_1+m_2)+ \frac{(m_1-m_2)^2}{m_1+m_2}\right)$$
+From here we find the support reaction force:
+$$\boxed{N = \frac{4m_1m_2g}{m_1+m_2}}$$
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$N = 4m_1m_2g/(m_1 + m_2)$$
+        </p>
+        <p style="text-align: right; font-style: italic; font-size: 14;">
+          Bakhodirov Mustafa<br>
+        </p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
