@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Estimate how many times per 1 \text{ s} in 1 \text{ cm}^3 of air nitrogen molecules collide with each other and nitrogen molecules collide with oxygen molecules.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Estimate how many times per 1 \text{ s} in 1 \text{ cm}^3 of air nitrogen molecules collide with each other and nitrogen molecules collide with oxygen molecules.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Estimate how many times per 1 \text{ s} in 1 \text{ cm}^3 of air nitrogen molecules collide with each other and nitrogen molecules collide with oxygen molecules.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Estimate how many times per 1 \text{ s} in 1 \text{ cm}^3 of air nitrogen molecules collide with each other and nitrogen molecules collide with oxygen molecules.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#5.3">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $5.3.3.$ Estimate how many times per $1 \text{ s}$ in $1 \text{ cm}^3$ of air nitrogen molecules collide with each other and nitrogen molecules collide with oxygen molecules.
+
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            In <a href="../5.3.1">5.3.1</a> we obtained a formula for the mean free path of gas molecules
+$$ \lambda = \frac{1}{\sqrt{2}\pi d^2n}\quad(1) $$
+From this estimate it follows that the average number of collisions that will occur with a gas molecule after passing the path $dx$ will be
+$$ N = \sqrt{2}\pi d^2n\cdot dx\quad(2) $$
+From here, dividing by a small time interval $dt$, we obtain the number of collisions occurring with the molecule during a given time interval
+$$ Z = \sqrt{2}\pi d^2n \cdot\frac{dx}{dt}\quad(3) $$
+Let us rewrite expression $(3)$, taking into account the definition of velocity $u = \frac{dx}{dt}$:
+$$ \boxed{Z = \sqrt{2}\pi d^2n u}\quad(4) $$
+The average speed of gas molecules with a molar mass of $\mu$ can be found in approximation using the formula for the mean-square speed of molecules
+$$ u = \sqrt{ \frac{3RT}{\mu}}\quad(5.1) $$
+However, for a more accurate estimate we will use the average speed formula
+$$ u = \sqrt{ \frac{8RT}{\pi\mu}}\quad(5.2) $$
+According to Dalton's law, the total atmospheric pressure will be the sum of the pressures created by the molecules of nitrogen $N_2$ and oxygen $O_2$
+$$ p_a=p_{N_2}+p_{O_2}\quad(6) $$
+The atmosphere consists of $78\%$ nitrogen $N_2$ and $21\%$ oxygen $O_2$, with $1\%$ occupied by other gases</p><p>
+Then, from the Ideal Gas Equation, we obtain the concentration of nitrogen and oxygen molecules, respectively
+$$ n_{N_2}=\frac{0.78\cdot p_a}{RT}\quad(7) $$
+
+$$ n_{O_2}=\frac{0.2\cdot p_a}{RT}\quad(8) $$
+Hence, the number of collisions of nitrogen molecules with each other per unit of time. Considering that each oscillation occurs between two molecules simultaneously, we multiply by $\frac{1}{2}$:
+$$ Z_{NN}=\frac{N\cdot Z_N}{2}=\frac{0.78\cdot p_a}{RT}\cdot \frac{\sqrt{2}}{2}\pi d_N^2\cdot \sqrt{ \frac{8RT}{\pi\mu _N}}\quad(9) $$
+<div class="scroll-wrapper">
+$$ \boxed{Z_{NN}=1.56p_a\cdot d_N^2\cdot \sqrt{\frac{\pi}{RT\mu_N}}}\approx6\cdot10^{28}\text{ s}^{-1}\cdot\text{cm}^{-3}\quad(10) $$
+</div>
+Similarly, the number of collisions of nitrogen molecules with oxygen molecules
+$$ Z_{ON}=N\cdot Z_O=\frac{0.21\cdot p_a}{RT}\cdot \sqrt{2} \pi d_O^2 \cdot \sqrt{ \frac{8RT}{\pi\mu _O}}\quad(11) $$
+<div class="scroll-wrapper">
+$$ \boxed{Z_{ON}=0.84p_a\cdot d_O^2\cdot \sqrt{\frac{\pi}{RT\mu_O}}}\approx3\cdot10^{28}\text{ s}^{-1}\cdot\text{cm}^{-3}\quad(12) $$
+</div>
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$ \nu_1\approx6\cdot10^{28}\text{ s}^{-1}\cdot\text{cm}^{-3}; ~\nu_2\approx3\cdot10^{28}\text{ s}^{-1}\cdot\text{cm}^{-3}. $$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+		  Aliaksandr Melnichenka<br>
+		</p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
