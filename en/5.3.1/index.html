@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="At atmospheric pressure and a temperature of 0 \,^{\circ}C, the mean free path of a hydrogen molecule is 0.1 ~\mu m. Estimate the diameter of this molecule.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="At atmospheric pressure and a temperature of 0 \,^{\circ}C, the mean free path of a hydrogen molecule is 0.1 ~\mu m. Estimate the diameter of this molecule.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="At atmospheric pressure and a temperature of 0 \,^{\circ}C, the mean free path of a hydrogen molecule is 0.1 ~\mu m. Estimate the diameter of this molecule.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>At atmospheric pressure and a temperature of 0 \,^{\circ}C, the mean free path of a hydrogen molecule is 0.1 ~\mu m. Estimate the diameter of this molecule.</title>
+    <link rel="stylesheet" href="https://savchenkosolutions.com/css/css-latex/style.css">
+    <link rel="icon" href="https://savchenkosolutions.com/img/logo.png" type="image/png">
+    <script src="https://savchenkosolutions.com/js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+       <a href="../../" style="text-decoration: none;">
+            <div id="logo">
+                <span><img src="../../img/book.png"></span><span>Savchenko Solutions</span>
+            </div>
+        </a>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#5.3">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+            $5.3.1.$ At atmospheric pressure and a temperature of $0 \,^{\circ}C$, the mean free path of a hydrogen molecule is $0.1 ~\mu m$. Estimate the diameter of this molecule.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            To find the mean free path $\lambda$, it is necessary to find the volume that a particle must travel to meet another. <p></p>
+Each particle has a volume
+$$ V=\frac{1}{n}\quad(1) $$
+In this case, a particle with an effective cross-section $S=\pi(2r)^2=\pi d^2$? cross-section at which it touches at least the edge of another particle, will pass through a volume
+$$ V = \lambda \pi d^2\quad(2) $$
+If we assume that all other particles are at rest, then
+$$ \lambda = \frac{1}{\pi d^2n}\quad(3) $$
+If the beam particle is part of an established equilibrium system with identical particles, then the square of the relative velocity is equal to:
+$$ \overline{{v}_{\mathrm{relative}}^2}=\overline{({v}_1-{v}_2)^2}=\overline{{v}_1^2+{v}_2^2-2{v}_1\cdot{v}_2}\quad(4) $$
+At equilibrium, the values of the velocities
+${\displaystyle {\overline { {v} _{1}\cdot {v} _{2}}}=0}$, and the relative velocity is equal
+at equilibrium, the values of the velocities
+$$ {\displaystyle v_{\rm {rel}}={\sqrt {\overline {\ {v} _{\rm {relative}}^{2}}}}={\sqrt {\overline {\ {v} _{1}^{2}+\ {v} _{2}^{2}}}}={\sqrt {2}}v.}\quad(5) $$
+The mean free path of a particle in this case is then defined as
+$$ \boxed{\lambda = \frac{1}{\sqrt{2}\pi d^2n}}\quad(6) $$
+From the formula for the mean free path we obtain that
+$$ d=\frac{1}{\sqrt{\sqrt{2}\pi \lambda n}}\quad(7) $$
+The concentration of particles can be expressed through the Ideal Gas Law
+$$ p=nkT_0\Rightarrow \boxed{n=\frac{p}{kT_0}}\quad(8) $$
+Substituting $(8)$ into $(7)$, we get
+$$ \boxed{d=\frac{kT_0}{\sqrt{\sqrt{2}\pi \lambda p}}\approx 0.3 \text{ nm}}\quad(9) $$
+
+        </p>
+
+        <h4>Answer</h4>
+        <p>
+            $$d=\frac{kT_0}{\sqrt{\sqrt{2}\pi \lambda p}}\approx 0.3 \text{ nm}$$
+        </p>
+		<p style="text-align: right; font-style: italic; font-size: 14;">
+		  Aliaksandr Melnichenka<br>
+		</p>
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
