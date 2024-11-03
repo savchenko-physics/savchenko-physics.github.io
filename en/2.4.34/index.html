@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en">
+    <meta name="keywords" content="Savchenko Problems in Physics, Savchenko solutions, physics problems, physics olympiad preparation, IPhO, Jaan Kalda">
+    <meta name="description" content="Two loads of mass $m_1$ and $m_2$ ($m_1 > m_2$) are connected by a thread thrown over a fixed block. At the initial moment, the load of mass $m_1$  is held at a height $h$ above the floor. Then it is released without a push. How much heat will be released when the load hits the floor? The impact is absolutely inelastic.">
+    <meta name="author" content="Aliaksandr Melnichenka">
+    <meta name="date" content="2023-10" scheme="YYYY-MM">
+    <meta property="og:title" content="Two loads of mass $m_1$ and $m_2$ ($m_1 > m_2$) are connected by a thread thrown over a fixed block. At the initial moment, the load of mass $m_1$  is held at a height $h$ above the floor. Then it is released without a push. How much heat will be released when the load hits the floor? The impact is absolutely inelastic.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Two loads of mass $m_1$ and $m_2$ ($m_1 > m_2$) are connected by a thread thrown over a fixed block. At the initial moment, the load of mass $m_1$  is held at a height $h$ above the floor. Then it is released without a push. How much heat will be released when the load hits the floor? The impact is absolutely inelastic.">
+    <meta name="yandex-verification" content="6cfda41f74038368">
+    <title>Two loads of mass $m_1$ and $m_2$ ($m_1 > m_2$) are connected by a thread thrown over a fixed block. At the initial moment, the load of mass $m_1$  is held at a height $h$ above the floor. Then it is released without a push. How much heat will be released when the load hits the floor? The impact is absolutely inelastic.</title>
+    <link rel="stylesheet" href="../../css/css-latex/style.css">
+    <link rel="icon" href="../../img/logo.png" type="image/png">
+    <script src="../../js/jquery-1.10.1.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ['tex2jax.js'],
+            jax: ['input/TeX', 'output/HTML-CSS'],
+            tex2jax: {
+                inlineMath: [['$', '$'], ['$', '$']],
+                processEscapes: true,
+                processClass: 'tex2jax',
+                ignoreClass: 'html'
+            },
+            showProcessingMessages: false,
+            messageStyle: 'none'
+        });
+    </script>
+</head>
+  <body style="">
+      <header style="text-align:center;">
+        <div id = "logo">
+            <span><img src = "../../img/book.png"><span><span>Savchenko Solutions</span>
+        </div>
+        <p class="author">
+            Solutions&nbsp;of&nbsp;Savchenko Problems&nbsp;in&nbsp;Physics <br>
+            <i><b>knowledge must be free</b></i>
+        </p>
+  </header>
+
+        <h3 id="back-link"><a href="../../#2.4">$\leftarrow$Back</a></h3>
+
+        <h3> Statement </h3>
+        <p>
+          $2.4.34$
+          Two loads of mass $m_1$ and $m_2$ ($m_1 \geq m_2$) are connected by a thread thrown over a fixed block. At the initial moment, the load of mass $m_1$  is held at a height $h$ above the floor. Then it is released without a push. How much heat will be released when the load hits the floor? The impact is absolutely inelastic.
+        </p>
+
+        <center>
+            <figure>
+              <img src="statement.png"
+                loading="lazy"  width="250" />
+              <figcaption>
+                For problem $2.4.34$
+              </figcaption>
+            </figure>
+          </center>
+
+        <h3>Solution</h3>
+        <p>
+            Applying Energy Conservation Law:
+            $$m_1 g h = Q + m_2 g H\;(1)$$
+            where $Q$ is lost energy by heat and $H$ is the height achieved by body of mass $m_2$ after the impact of body of mass $m_1$, and is given by,
+            $$H = h + \frac{v^2}{2g}\;(2)$$
+            Why? Potential energy of body 1 is converted in kinetic energy of body 1 and kinetic energy of body 2 with same velocity due to the constraint ($v_1=v_2=v$), after totally inelastic collision with ground, part of this energy is transformed in heat and the other one in potential energy for body 2, which behaves as a projectile launched vertically upwards from height $h$. For determining this velocity $v$, it's necessary to know what acceleration did the system have before impact. Applying Newton Second Law, for body 1:
+            $$m_1 g - T = m_1 a \;(3)$$
+            and for body 2,
+            $$T - m_2 g = m_2 a\;(4)$$
+            Suming up equations (3) and (4) side by side,
+            $$a = \frac{m_1-m_2}{m_1+m_2}g\;(5)$$
+            As $h = \frac{v^2}{2a}$, so,
+            $$v = \sqrt{2ah}\;(6)$$
+            Substituting (5) into (6),
+            $$v = \sqrt{2gh\left(\frac{m_1-m_2}{m_1+m_2}\right)}\;(7)$$
+            Putting (7) into (2)
+            $$H = \frac{2m_1}{m_1+m_2}h\;(8)$$
+            Finally, substituting (8) into (1) and separating $Q$,
+        </p>
+        <h4>Answer</h4>
+        <p>
+            $$Q = m_1gh \frac{m_1-m_2}{m_1+m_2}$$
+        </p>
+
+
+        <p style="text-align: right; font-style: italic; font-size: 14;">   
+          BSc. Luis Daniel Fernández Quintana<br>
+          Physics Department (FCNE)<br>
+          Universidad de Oriente, Cuba<br>
+        </p>
+
+
+
+    <footer class="row container">
+      <br>
+        <p>
+            <small> © <strong>Savchenko Solutions</strong>, 2023-2024 <br></small>
+        </p>
+        <p>
+            <small>All rights belong to the authors. <br> Commercial use of materials - with the written permission of the authors. <br> alex@savchenkosolutions.com <br></small>
+        </p>
+    </footer>
+  </body>
+
+</html>
