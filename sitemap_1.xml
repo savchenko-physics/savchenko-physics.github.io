@@ -7,6 +7,22 @@
         http://www.google.com/schemas/sitemap-image/1.1
         http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
       <url>
+        <loc>https://savchenkosolutions.com/en/5.3.3/</loc>
+        <lastmod>2024-10-22T18:38:00Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/5.3.1/</loc>
+        <lastmod>2024-10-21T20:34:15Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/5.3.2/</loc>
+        <lastmod>2024-10-21T20:34:15Z</lastmod>
+      </url>
+      <url>
+        <loc>https://savchenkosolutions.com/en/2.7.27/</loc>
+        <lastmod>2024-10-19T14:35:30Z</lastmod>
+      </url>
+      <url>
         <loc>https://savchenkosolutions.com/en/9.2.10/</loc>
         <lastmod>2024-10-17T15:43:29Z</lastmod>
       </url>
